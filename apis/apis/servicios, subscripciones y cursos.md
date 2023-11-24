@@ -1,0 +1,2 @@
+1. pagina bien detallada sobre las ventajas del student pack de github: https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279?WT.mc_id=academic-91025-alfredodeza
+2. Microsoft Dev Essentials: https://my.visualstudio.com/?auth_redirect=true

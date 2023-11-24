@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "ec676f75cab10e99",
+    "type": "split",
+    "children": [
+      {
+        "id": "172c8bed9b8c848f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04886d4b72aac825",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "01_ejercicios/frontend/images/Pasted image 20231108103652.png"
+              }
+            }
+          },
+          {
+            "id": "650811af9eb5321e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01_ejercicios/frontend/zustand/code testing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "237279d821e21812",
+    "type": "split",
+    "children": [
+      {
+        "id": "5bf6441b55c9d289",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d47fd180b31e4bff",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "266954635425dae2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e43da51e413c923c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ac748ac7479053c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "d11639e54f185305",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aba0865792554afa",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01_ejercicios/frontend/zustand/code testing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cdb4aae00f804e28",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01_ejercicios/frontend/zustand/code testing.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4394a5470fe39d82",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7213f9b71aa3d511",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01_ejercicios/frontend/zustand/code testing.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "650811af9eb5321e",
+  "lastOpenFiles": [
+    "Pasted image 20231124152731.png",
+    "Pasted image 20231124152624.png",
+    "01_ejercicios/frontend/pnpm.md",
+    "01_ejercicios/frontend/zustand/code testing.md",
+    "01_ejercicios/backend_rest/golang/todo/03_unit testing.md",
+    "01_ejercicios/backend_rest/golang/gingormcrud/01_notes.md",
+    "servicios, subscripciones y cursos.md",
+    "01_ejercicios/frontend/images/Pasted image 20231108103652.png",
+    "01_ejercicios/frontend/images/Pasted image 20231108111823.png",
+    "Pasted image 20231016081429.png",
+    "01_ejercicios/frontend/images/Pasted image 20231108110818.png",
+    "01_ejercicios/frontend/images/Pasted image 20231108110916.png",
+    "01_ejercicios/frontend/images/Pasted image 20231108100205.png",
+    "01_ejercicios/frontend/images",
+    "01_ejercicios/frontend/images/Pasted image 20231108100928.png",
+    "01_ejercicios/frontend/APIs de prueba.md",
+    "01_ejercicios/frontend/ts/yarn_todo/01_instalacion y codificacion.md",
+    "01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
+    "04_github/04_ammends.md",
+    "01_ejercicios/backend_rest/golang/gingormcrud",
+    "04_github/03_excluir archivos que ya habian sido replicados.md",
+    "01_ejercicios/testing/03_frontend.md",
+    "03_services behind proxy/01_npm, git, maven, intellij, gradle, node.md",
+    "04_github/02_ deshacer el ultimo commit.md",
+    "04_github/01_notes.md",
+    "01_ejercicios/backend_rest/golang/todo/02_conexion entre la app y postgres.md",
+    "05_software/dev.md",
+    "01_ejercicios/backend_rest/golang/todo/01_postgres.md",
+    "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
+    "07_despliegue/02_GCP GKE con la RestAPI en Go.md",
+    "01_ejercicios/frontend/redux-toolkit/01_vite_clients_crud/01_instalacion.md",
+    "07_despliegue/images/Pasted image 20231014215325.png",
+    "06_backup_automatizacion/01_input data.md",
+    "01_ejercicios/testing/01_teoria.md",
+    "07_despliegue/03_Gitlab CI+Kubernetes+JSBTODO.md",
+    "01_ejercicios/frontend/redux-toolkit/01_vite_clients_crud/04_testing.md",
+    "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
+    "01_ejercicios/graphql_api/golang/images/Pasted image 20231010151632.png",
+    "01_ejercicios/graphql_api/golang/images",
+    "01_ejercicios/graphql_api/golang/mongocrud",
+    "01_ejercicios/graphql_api/golang",
+    "01_ejercicios/graphql_api",
+    "01_ejercicios/testing/images",
+    "01_ejercicios/testing",
+    "07_despliegue/images",
+    "07_despliegue"
+  ]
+}
