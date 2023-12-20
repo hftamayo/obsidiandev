@@ -49,6 +49,9 @@ MEjorando el codigo y corriendo el test con mi celular:
 
 ![[Pasted image 20230908091825.png]]
 
-haciendo otro cambio al codigo y corriendolo con proxychains:
+Corriendo los test sin proxy y seleccionando la suite que quiero ejecutar:
 
+![[Pasted image 20231211145150.png]]
+
+![[Pasted image 20231211145212.png]]
 

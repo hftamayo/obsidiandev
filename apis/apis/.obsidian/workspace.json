@@ -8,29 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "04886d4b72aac825",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "01_ejercicios/frontend/images/Pasted image 20231108103652.png"
-              }
-            }
-          },
-          {
             "id": "650811af9eb5321e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_ejercicios/frontend/zustand/code testing.md",
+                "file": "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 415.5
   },
   "right": {
     "id": "ac748ac7479053c5",
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_ejercicios/frontend/zustand/code testing.md",
+                "file": "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_ejercicios/frontend/zustand/code testing.md",
+                "file": "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_ejercicios/frontend/zustand/code testing.md"
+                "file": "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md"
               }
             }
           }
@@ -159,51 +148,50 @@
   },
   "active": "650811af9eb5321e",
   "lastOpenFiles": [
-    "Pasted image 20231124152731.png",
-    "Pasted image 20231124152624.png",
-    "01_ejercicios/frontend/pnpm.md",
-    "01_ejercicios/frontend/zustand/code testing.md",
-    "01_ejercicios/backend_rest/golang/todo/03_unit testing.md",
-    "01_ejercicios/backend_rest/golang/gingormcrud/01_notes.md",
+    "Pasted image 20231127092753.png",
     "servicios, subscripciones y cursos.md",
-    "01_ejercicios/frontend/images/Pasted image 20231108103652.png",
-    "01_ejercicios/frontend/images/Pasted image 20231108111823.png",
-    "Pasted image 20231016081429.png",
-    "01_ejercicios/frontend/images/Pasted image 20231108110818.png",
-    "01_ejercicios/frontend/images/Pasted image 20231108110916.png",
-    "01_ejercicios/frontend/images/Pasted image 20231108100205.png",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216183153.png",
+    "01_ejercicios/backend_rest/reactjs/02_pnpmtodo.md",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216210523.png",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216210424.png",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216204716.png",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216204658.png",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216204639.png",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216204604.png",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216191602.png",
+    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216191218.png",
+    "08_devops/01_kubernetes.md",
+    "08_devops/img",
+    "08_devops",
+    "01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
+    "07_despliegue/04_GCP GKE MicroServices App.md",
+    "07_despliegue/02_GCP GKE de Hello World App.md",
+    "07_despliegue/img",
+    "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
+    "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
+    "04_github/01_notes.md",
+    "03_services behind proxy/07_resolver los nombres de los containers.md",
+    "03_services behind proxy/08_contenedor restarting in loop.md",
+    "03_services behind proxy/10_instalacion de mysql bare metal.md",
+    "03_services behind proxy/09_docker volumes.md",
+    "03_services behind proxy/02_docker.md",
+    "01_ejercicios/backend_rest/golang/todo/03_unit testing.md",
+    "01_ejercicios/backend_rest/golang/gingormcrud/02_code testing.md",
+    "01_ejercicios/frontend/zustand/code testing.md",
+    "01_ejercicios/frontend/pnpm.md",
+    "01_ejercicios/backend_rest/golang/gingormcrud/01_notes.md",
     "01_ejercicios/frontend/images",
-    "01_ejercicios/frontend/images/Pasted image 20231108100928.png",
     "01_ejercicios/frontend/APIs de prueba.md",
     "01_ejercicios/frontend/ts/yarn_todo/01_instalacion y codificacion.md",
-    "01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
     "04_github/04_ammends.md",
     "01_ejercicios/backend_rest/golang/gingormcrud",
     "04_github/03_excluir archivos que ya habian sido replicados.md",
     "01_ejercicios/testing/03_frontend.md",
     "03_services behind proxy/01_npm, git, maven, intellij, gradle, node.md",
-    "04_github/02_ deshacer el ultimo commit.md",
-    "04_github/01_notes.md",
-    "01_ejercicios/backend_rest/golang/todo/02_conexion entre la app y postgres.md",
-    "05_software/dev.md",
-    "01_ejercicios/backend_rest/golang/todo/01_postgres.md",
-    "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
-    "07_despliegue/02_GCP GKE con la RestAPI en Go.md",
-    "01_ejercicios/frontend/redux-toolkit/01_vite_clients_crud/01_instalacion.md",
-    "07_despliegue/images/Pasted image 20231014215325.png",
-    "06_backup_automatizacion/01_input data.md",
-    "01_ejercicios/testing/01_teoria.md",
-    "07_despliegue/03_Gitlab CI+Kubernetes+JSBTODO.md",
-    "01_ejercicios/frontend/redux-toolkit/01_vite_clients_crud/04_testing.md",
-    "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
-    "01_ejercicios/graphql_api/golang/images/Pasted image 20231010151632.png",
     "01_ejercicios/graphql_api/golang/images",
     "01_ejercicios/graphql_api/golang/mongocrud",
     "01_ejercicios/graphql_api/golang",
     "01_ejercicios/graphql_api",
-    "01_ejercicios/testing/images",
-    "01_ejercicios/testing",
-    "07_despliegue/images",
-    "07_despliegue"
+    "01_ejercicios/testing/images"
   ]
 }
