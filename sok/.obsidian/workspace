@@ -1,0 +1,141 @@
+{
+  "main": {
+    "id": "fd7b8c4dc96fe048",
+    "type": "split",
+    "children": [
+      {
+        "id": "b19de80e62b56cea",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "frontend/react/command cheat sheet.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "43143cfb945f4d12",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fc5984f23956813",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43abe5d5024cae1d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ca56c53b9633b564",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "45dfcdc380170fa5",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9b352e1894691921",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2dc20511e3b3d8e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e02ee35753b9d840",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "frontend/react/command cheat sheet.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0acc772e71c2d578",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "frontend/react/command cheat sheet.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d0258705e5c04c55",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9e750f3e18a5cba3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "frontend/react/command cheat sheet.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b19de80e62b56cea",
+  "lastOpenFiles": [
+    "frontend/react/img/Pasted image 20220912154315.png",
+    "frontend/react/3. mostrar el modal de login y signup.md",
+    "frontend/react/img/Pasted image 20220912142726.png",
+    "frontend/react/2. index.js.md",
+    "frontend/react/img/Pasted image 20220905192333.png",
+    "frontend/react/1. installation steps.md",
+    "frontend/react/img/Pasted image 20220905141419.png"
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "a9cc22cb8a1d5fa7",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f4a36504737836d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7aaa685bf793a38b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719181604.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "04a6f84ea68fef60",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d13453eebf34b6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cc608bc4e85db50",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4568807c5d8f886e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f53c045bc326eda0",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "b776e199a02ca547",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "548e178bee51e98c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8393e5d3baba781b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "07b07c6959c49549",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719181604.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f54ce1ea8b5a4c3a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719181604.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e25408bee184e023",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "273c3befaaff8b86",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719181604.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6cc608bc4e85db50",
+  "lastOpenFiles": [
+    "portswigger_academy/expert/09_http_request_smuggling/06_ Exploiting HTTP request smuggling to deliver reflected XSS.md",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719183101.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719183045.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719182949.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719182857.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719182640.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719182613.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719182554.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719182354.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719182332.png",
+    "portswigger_academy/expert/09_http_request_smuggling/images/Pasted image 20230719182301.png",
+    "portswigger_academy/expert/09_http_request_smuggling/05_ Exploiting HTTP request smuggling to reveal front-end request rewriting.md",
+    "portswigger_academy/expert/09_http_request_smuggling/04_ Exploiting HTTP request smuggling to bypass front-end security controls, TE.CL vulnerability.md",
+    "Pasted image 20230713183554.png.md",
+    "portswigger_academy/expert/09_http_request_smuggling/03_Exploiting HTTP request smuggling to bypass front-end security controls, CL.TE vulnerability.md",
+    "portswigger_academy/expert/09_http_request_smuggling/02_ HTTP request smuggling, confirming a TE.CL vulnerability via differential responses.md",
+    "portswigger_academy/expert/09_http_request_smuggling/01_ confirming a CL.TE vuln via different responses.md",
+    "portswigger_academy/expert/09_http_request_smuggling/01_basic CL TE vuln.md",
+    "portswigger_academy/expert/09_http_request_smuggling/02_basic TE.CL vulnerability.md",
+    "portswigger_academy/Client_Side/CSRF/04_SameSite Lax ByPass via cookie refresh.md",
+    "portswigger_academy/Client_Side/CSRF/03_SameSite Strict bypass via client-side redirect.md",
+    "portswigger_academy/Client_Side/CSRF/02_Same Site Strict bypass via sibling domain.md",
+    "portswigger_academy/Server Side/Business Logic/01_auth bypass via encryption oracle.md",
+    "portswigger_academy/expert/insecure_deserial/06_php deserialization with pre built gadget chain.md",
+    "portswigger_academy/Server Side/Business Logic/images",
+    "portswigger_academy/Server Side/Business Logic",
+    "portswigger_academy/expert/insecure_deserial/04_php_arbitrary_object_injection.md",
+    "portswigger_academy/expert/01_insecure_deserial/05_java_deserialization_apache_commons.md",
+    "portswigger_academy/expert/04_http host header attacks/06_host validation bypass.md",
+    "portswigger_academy/expert/01_insecure_deserial/07_ruby_deserialization.md",
+    "portswigger_academy/expert/01_insecure_deserial/06_php deserialization with pre built gadget chain.md",
+    "portswigger_academy/expert/03_web cache poisoning/07_unkeyed query parameter.md",
+    "portswigger_academy/expert/03_web cache poisoning/04_using an unknown header.md",
+    "portswigger_academy/Server Side/Authentication/02_offline password cracking.md",
+    "portswigger_academy/Server Side/Authentication/01_Brute-forcing a stay-logged-in cookie.md",
+    "portswigger_academy/Server Side/XXE/01_Exfiltrate data using malicious DTD.md",
+    "portswigger_academy/Server Side/Authentication/images",
+    "portswigger_academy/Server Side/Authentication",
+    "portswigger_academy/Server Side/XXE/images",
+    "portswigger_academy/Server Side/XXE",
+    "portswigger_academy/Server Side",
+    "portswigger_academy/Client_Side/DOM Vulns/03_open redirection.md",
+    "portswigger_academy/Client_Side/CSRF/images",
+    "portswigger_academy/Client_Side/CSRF",
+    "portswigger_academy/expert/09_http_request_smuggling/images"
+  ]
+}

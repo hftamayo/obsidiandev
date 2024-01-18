@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
+                "file": "01_ejercicios/frontend/boilerplates/02_signup_login_pnpm_webpack_redux_tailwind.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
+                "file": "01_ejercicios/frontend/boilerplates/02_signup_login_pnpm_webpack_redux_tailwind.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
+                "file": "01_ejercicios/frontend/boilerplates/02_signup_login_pnpm_webpack_redux_tailwind.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md"
+                "file": "01_ejercicios/frontend/boilerplates/02_signup_login_pnpm_webpack_redux_tailwind.md"
               }
             }
           }
@@ -148,26 +148,38 @@
   },
   "active": "650811af9eb5321e",
   "lastOpenFiles": [
-    "Pasted image 20231127092753.png",
-    "servicios, subscripciones y cursos.md",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216183153.png",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118103427.png",
+    "01_ejercicios/frontend/boilerplates/02_signup_login_pnpm_webpack_redux_tailwind.md",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118110051.png",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118105949.png",
     "01_ejercicios/backend_rest/reactjs/02_pnpmtodo.md",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216210523.png",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216210424.png",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216204716.png",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216204658.png",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216204639.png",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216204604.png",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216191602.png",
-    "01_ejercicios/backend_rest/reactjs/images/Pasted image 20231216191218.png",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118105429.png",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118103927.png",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118103704.png",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118103542.png",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118101139.png",
+    "Pasted image 20231127092753.png",
+    "01_ejercicios/frontend/boilerplates/imges/Pasted image 20240118102945.png",
+    "01_ejercicios/frontend/boilerplates/imges",
+    "01_ejercicios/frontend/pnpm.md",
+    "01_ejercicios/frontend/boilerplates/01_crud_pnpm_webpack_redux_tailwind.md",
+    "01_ejercicios/frontend/APIs de prueba.md",
+    "01_ejercicios/frontend/boilerplates",
+    "02_portoflio/applicaciones/01_roster.md",
     "08_devops/01_kubernetes.md",
+    "08_devops/02_GCP.md",
+    "03_services behind proxy/11_neovim.md",
+    "03_services behind proxy/06_tmux.md",
+    "07_despliegue/03_Gitlab CI+Kubernetes+JSBTODO.md",
+    "07_despliegue/04_GCP GKE MicroServices App.md",
+    "07_despliegue/02_GCP GKE de Hello World App.md",
+    "03_services behind proxy/01_npm, git, maven, intellij, gradle, node.md",
+    "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
+    "servicios, subscripciones y cursos.md",
     "08_devops/img",
     "08_devops",
     "01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
-    "07_despliegue/04_GCP GKE MicroServices App.md",
-    "07_despliegue/02_GCP GKE de Hello World App.md",
     "07_despliegue/img",
-    "01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
     "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
     "04_github/01_notes.md",
     "03_services behind proxy/07_resolver los nombres de los containers.md",
@@ -176,22 +188,10 @@
     "03_services behind proxy/09_docker volumes.md",
     "03_services behind proxy/02_docker.md",
     "01_ejercicios/backend_rest/golang/todo/03_unit testing.md",
-    "01_ejercicios/backend_rest/golang/gingormcrud/02_code testing.md",
-    "01_ejercicios/frontend/zustand/code testing.md",
-    "01_ejercicios/frontend/pnpm.md",
-    "01_ejercicios/backend_rest/golang/gingormcrud/01_notes.md",
     "01_ejercicios/frontend/images",
-    "01_ejercicios/frontend/APIs de prueba.md",
-    "01_ejercicios/frontend/ts/yarn_todo/01_instalacion y codificacion.md",
-    "04_github/04_ammends.md",
     "01_ejercicios/backend_rest/golang/gingormcrud",
-    "04_github/03_excluir archivos que ya habian sido replicados.md",
-    "01_ejercicios/testing/03_frontend.md",
-    "03_services behind proxy/01_npm, git, maven, intellij, gradle, node.md",
     "01_ejercicios/graphql_api/golang/images",
     "01_ejercicios/graphql_api/golang/mongocrud",
-    "01_ejercicios/graphql_api/golang",
-    "01_ejercicios/graphql_api",
-    "01_ejercicios/testing/images"
+    "01_ejercicios/graphql_api/golang"
   ]
 }

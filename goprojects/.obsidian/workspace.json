@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "d89b06834c98da92",
+    "type": "split",
+    "children": [
+      {
+        "id": "eac53dd1144f582e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b544b1f3803eb8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02_api_postgres_docker/02_ run a project.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "63958d765369a7fb",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2f7c13949865b32",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f263a970733a5714",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "229574b99454fcf7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "88eb0d8ce1a98ca6",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "e6bef27cf8efdc51",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "eafca78e512a92bb",
+    "type": "split",
+    "children": [
+      {
+        "id": "61608ffacc1b41dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "182a16d898105b40",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02_api_postgres_docker/02_ run a project.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "24fe1058440bbe83",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02_api_postgres_docker/02_ run a project.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f9cf5241886941af",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f4349357f4acdb7b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02_api_postgres_docker/02_ run a project.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3b544b1f3803eb8b",
+  "lastOpenFiles": [
+    "Pasted image 20230521072146.png",
+    "Pasted image 20230521072120.png",
+    "02_api_postgres_docker/01_instalacion y setup.md",
+    "02_api_postgres_docker/02_ run a project.md",
+    "images/Pasted image 20221130150103.png",
+    "02_api_postgres_docker/images",
+    "02_api_postgres_docker",
+    "5. chapter 2.md",
+    "4. dockerizar numconverter.md",
+    "images/Pasted image 20221127183947.png",
+    "images/Pasted image 20221117153005.png",
+    "3. roman server guia definitiva.md",
+    "images/Pasted image 20221116095315.png",
+    "images/Pasted image 20221110150726.png",
+    "neovim config.md",
+    "2. romanserver intentos.md",
+    "images/Pasted image 20221103152845.png"
+  ]
+}
