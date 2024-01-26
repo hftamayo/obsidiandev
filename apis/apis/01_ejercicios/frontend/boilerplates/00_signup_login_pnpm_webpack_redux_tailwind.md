@@ -37,3 +37,11 @@ Script de prueba para tailwind:
 
 ![[Pasted image 20240118110051.png]]
 
+fixing the hot load on change:
+=
+
+![[Pasted image 20240119084249.png]]
+
+==rm -rf node-modules/ pnpm-lock.yaml
+pnpm install
+
