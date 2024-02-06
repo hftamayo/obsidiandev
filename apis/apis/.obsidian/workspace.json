@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_devops/07_instalar y configurar microk8s en VM OJ.md",
+                "file": "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08_devops/07_instalar y configurar microk8s en VM OJ.md",
+                "file": "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "08_devops/07_instalar y configurar microk8s en VM OJ.md",
+                "file": "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "08_devops/07_instalar y configurar microk8s en VM OJ.md"
+                "file": "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md"
               }
             }
           }
@@ -148,22 +148,22 @@
   },
   "active": "650811af9eb5321e",
   "lastOpenFiles": [
-    "08_devops/img/Pasted image 20240202115034.png",
-    "Pasted image 20231127092753.png",
+    "01_ejercicios/backend_rest/javaspring/todo/03_unit testing y design patterns.md",
+    "Pasted image 20240205144135.png",
     "08_devops/07_instalar y configurar microk8s en VM OJ.md",
-    "08_devops/img/Pasted image 20240202135342.png",
-    "08_devops/img/Pasted image 20240202135100.png",
-    "08_devops/img/Pasted image 20240202134833.png",
-    "08_devops/img/Pasted image 20240202134111.png",
-    "08_devops/img/Pasted image 20240202134015.png",
-    "08_devops/img/Pasted image 20240202133828.png",
-    "08_devops/img/Pasted image 20240202133520.png",
-    "08_devops/img/Pasted image 20240202133012.png",
-    "08_devops/img/Pasted image 20240202132558.png",
+    "08_devops/img/Pasted image 20240205115634.png",
+    "08_devops/img/Pasted image 20240205131851.png",
+    "Pasted image 20231127092753.png",
+    "08_devops/img/Pasted image 20240205131805.png",
+    "08_devops/img/Pasted image 20240205131735.png",
+    "08_devops/img/Pasted image 20240205131707.png",
+    "08_devops/img/Pasted image 20240205131632.png",
+    "08_devops/img/Pasted image 20240205130351.png",
+    "08_devops/img/Pasted image 20240205130307.png",
     "08_devops/06_ instalar y configurar minikube en debian.md",
+    "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
     "08_devops/05_configurar un cluster on premise de k8s.md",
     "08_devops/04_intento fallido de configurar un cluster K8s con kubeadm.md",
-    "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
     "08_devops/01_kubernetes.md",
     "01_ejercicios/graphql_api/nodejs/01_proyecto 101.md",
     "01_ejercicios/graphql_api/nodejs",
@@ -187,7 +187,6 @@
     "03_services behind proxy/06_tmux.md",
     "07_despliegue/03_Gitlab CI+Kubernetes+JSBTODO.md",
     "07_despliegue/04_GCP GKE MicroServices App.md",
-    "07_despliegue/02_GCP GKE de Hello World App.md",
     "08_devops/img",
     "08_devops",
     "07_despliegue/img",

@@ -74,3 +74,24 @@ curl -X DELETE http://localhost:8080/deletetask/3
 
 
 ![[Pasted image 20230719154956.png]]
+
+TESTING DE USUARIOS:
+=
+
+curl -X POST http://localhost:8002/users/saveuser -H "Content-Type: application/json" -d '{"name":"Herbert Tamayo", "email":"hftamayo@gmail.com", "password": "Java123", "age": 25, "isAdmin": true, "status": true}'
+
+
+TESTING DE LOS ENDPOINTS DE AUTHENTICACION:
+=
+
+==Register:
+
+curl -X POST http://localhost:8002/api/auth/register -H "Content-Type: application/json" -d '{"name":"Herbert Tamayo", "email":"hftamayo@gmail.com", "password": "Java123", "age": 25, "isAdmin": true, "status": true}'
+
+![[Pasted image 20240205144135.png]]
+
+notese los bugs en rojo los cuales deben corregirse
+
+==Login:
+
+curl -X POST http://localhost:8002/api/auth/login -H "Content-Type: application/json" -d '{ "email":"hftamayo@gmail.com", "password": "Java123"}'

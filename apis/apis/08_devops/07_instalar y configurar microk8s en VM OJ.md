@@ -134,7 +134,75 @@ borrando el pod actual para que k8s haga uno nuevo usando el nuevo valor de secr
 
 ![[Pasted image 20240202135100.png]]
 
+==aca no es necesario volver a ejecutar ningun comando pues el pod se vuelve a generar.
+
 verificando:  ==microk8s.kubectl describe pod jenkins-0 -n jenkins
 
 ![[Pasted image 20240202135342.png]]
+...
+
+![[Pasted image 20240205115634.png]]
+
+nuevamente me generó el error que no puede descargar la imagen desde el origen que especifiqué en el values.yaml , verificando nuevamente mi values.yaml:
+
+![[Pasted image 20240205122544.png]]
+
+y mi docker hub:
+
+![[Pasted image 20240205122609.png]]
+
+ajustando cambios y probando:
+
+![[Pasted image 20240205122647.png]]
+
+en este caso, tambien movi de lugar el values.yaml entonces ahora si necesito hacer un cambio al secret:
+
+borrando el pod:
+![[Pasted image 20240205123142.png]]
+
+actualizando el despliegue de jenkins con el nuevo valor de values.yaml y junto con su nueva ubicacion:
+
+![[Pasted image 20240205124230.png]]
+
+Verificando status:
+
+![[Pasted image 20240205125133.png]]
+
+![[Pasted image 20240205125308.png]]
+
+...
+
+![[Pasted image 20240205125335.png]]
+
+verificando si puedo haer un pull de la imagen:
+
+![[Pasted image 20240205125545.png]]
+
+efectivamente la imagen no existe pues sigue buscando la version 1.0.0 cuando lo correcto es latest. Ahora bien puesto que movi el values.yaml es probable que aun no se haya actualizado el deploy, borrando la version actual:
+
+![[Pasted image 20240205125856.png]]
+
+volviendo a ejecutar la instalacion con la nueva ubicacion y nuevos valores en el values.yaml:
+
+![[Pasted image 20240205130351.png]]
+
+![[Pasted image 20240205130212.png]]
+
+![[Pasted image 20240205130307.png]]
+
+esperando algunos momentos estoy teniendo esta salida:
+
+![[Pasted image 20240205131632.png]]
+
+verificando los servicios y el log del pod:
+
+![[Pasted image 20240205131707.png]]
+
+![[Pasted image 20240205131735.png]]
+
+![[Pasted image 20240205131805.png]]
+
+sin embargo, si trato de hacer un port forward:
+
+![[Pasted image 20240205131851.png]]
 
