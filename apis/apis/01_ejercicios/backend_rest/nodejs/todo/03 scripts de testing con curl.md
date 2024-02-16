@@ -1,4 +1,118 @@
 
+ENDPOINTS Y TESTING  EN EXPERIMENTAL:
+=
+
+USER WORFLOW:
+=
+
+==REGISTER:==
+
+curl -X POST http://10.2.0.238:8003/nodetodo/users/register -H "Content-Type: application/json" -d '{"name": "Wilfrido Vargas", "email":"wilfrido@merengue.com", "password":"password123", "age": "22"}'
+
+==output:
+
+{"httpStatusCode":200,"resultMessage":"User created successfully","newUser":{"name":"Wilfrido Vargas","email":"wilfrido@merengue.com","age":22,"_id":"65cf89c6cabbdb52f571209c","createdAt":"2024-02-16T16:13:58.056Z","updatedAt":"2024-02-16T16:13:58.056Z","__v":0}}
+
+
+==LOGIN
+
+curl --cookie-jar sessions.txt -i -X POST http://10.2.0.238:8003/nodetodo/users/login -H "Content-Type: application/json" -d '{"email": "wilfrido@merengue.com", "password":"password123"}'
+
+==output:
+
+{"httpStatusCode":200,"resultMessage":"User login successfully","loggedUser":{"_id":"65cf89c6cabbdb52f571209c","name":"Wilfrido Vargas","email":"wilfrido@merengue.com","age":22,"createdAt":"2024-02-16T16:13:58.056Z","updatedAt":"2024-02-08T16:10:08.461Z","__v":0}}
+
+==GET DETAILS:
+
+curl -i -b sessions.txt http://10.2.0.238:8003/nodetodo/users/me
+
+==output:
+
+{"httpStatusCode":200,"resultMessage":"User Found","searchUser":{"_id":"65cf89c6cabbdb52f571209c","name":"Wilfrido Vargas","email":"wilfrido@merengue.com","age":22,"createdAt":"2024-02-16T16:13:58.056Z","updatedAt":"2024-02-16T16:13:58.056Z","__v":0}}
+
+==UPDATE PASSWORD:
+
+curl -i -b sessions.txt -X PUT http://10.2.0.238:8003/nodetodo/users/updatepassword -H "Content-Type: application/json" -d '{"password": "password123", "newPassword": "password1234"}'
+
+==output:==
+{"httpStatusCode":200,"resultMessage":"Password updated successfully","updatedUser":{"_id":"65cf89c6cabbdb52f571209c","name":"Wilfrido Vargas","email":"wilfrido@merengue.com","age":22,"createdAt":"2024-02-16T16:13:58.056Z","updatedAt":"2024-02-16T16:25:30.249Z","__v":0}}
+
+==LOGOUT :==
+
+curl -i -b sessions.txt -X POST http://10.2.0.238:8003/nodetodo/users/logout
+
+==output:==
+
+{"httpStatusCode":200,"resultMessage":"User logged out successfully"}
+
+==probando la nueva clave:==
+
+curl --cookie-jar sessions.txt -i -X POST http://10.2.0.238:8003/nodetodo/users/login -H "Content-Type: application/json" -d '{"email": "wilfrido@merengue.com", "password":"password1234"}'
+
+{"httpStatusCode":200,"resultMessage":"User login successfully","loggedUser":{"_id":"65cf89c6cabbdb52f571209c","name":"Wilfrido Vargas","email":"wilfrido@merengue.com","age":22,"createdAt":"2024-02-16T16:13:58.056Z","updatedAt":"2024-02-16T16:25:30.249Z","__v":0}}
+
+==UPDATE DETAILS:
+
+curl  -i -b sessions.txt -X PUT http://10.2.0.238:8003/nodetodo/users/updatedetails -H "Content-Type: application/json" -d  '{"name": "herbert tamayo", "email": "hftamayo@gmail.com", "age": "35"}'
+
+==output:==
+
+{"httpStatusCode":200,"resultMessage":"Data updated successfully","updatedUser":{"_id":"65cf89c6cabbdb52f571209c","name":"herbert tamayo","email":"hftamayo@gmail.com","age":35,"createdAt":"2024-02-16T16:13:58.056Z","updatedAt":"2024-02-16T16:47:36.998Z","__v":0}}
+
+==DELETE USER:==
+
+curl -i -b sessions.txt -X DELETE http://10.2.0.238:8003/nodetodo/users/deleteuser
+
+{"httpStatusCode":200,"resultMessage":"User deleted successfully"}
+
+TODO WORKFLOW (REQUIRES ACTIVE SESSION):
+=
+
+==NEW:==
+curl -i -b sessions.txt -X POST http://10.2.0.238:8003/nodetodo/todos/create -H "Content-Type: application/json" -d '{"title": "go to the supermarket", "description": "cheese, fruits, veggies"}'
+
+==output:==
+
+{"httpStatusCode":200,"resultMessage":"Todo created successfully","newTodo":{"title":"go to the supermarket","description":"cheese, fruits, veggies","completed":false,"user":"65cb80af449a37007de1e826","_id":"65cf94a7cabbdb52f57120ac","createdAt":"2024-02-16T17:00:23.068Z","updatedAt":"2024-02-16T17:00:23.068Z","__v":0}}
+
+==GET ALL TODOS:==
+curl -i -b sessions.txt -X GET http://10.2.0.238:8003/nodetodo/todos/list
+
+==output:==
+
+{"httpStatusCode":200,"resultMessage":"Tasks found","activeTodos":[{"_id":"65cf94a7cabbdb52f57120ac","title":"go to the supermarket","description":"cheese, fruits, veggies","completed":false,"user":"65cb80af449a37007de1e826","createdAt":"2024-02-16T17:00:23.068Z","updatedAt":"2024-02-16T17:00:23.068Z","__v":0}]}
+
+==GET A TODO:==
+curl -i -b sessions.txt -X GET http://10.2.0.238:8003/nodetodo/todos/task/65cf94a7cabbdb52f57120ac
+
+==output:==
+
+{"httpStatusCode":200,"resultMessage":"Todo found","searchTodo":{"_id":"65cf94a7cabbdb52f57120ac","title":"go to the supermarket","description":"cheese, fruits, veggies","completed":false,"user":"65cb80af449a37007de1e826","createdAt":"2024-02-16T17:00:23.068Z","updatedAt":"2024-02-16T17:00:23.068Z","__v":0}}
+
+
+==UPDATE:
+
+curl -i -b sessions.txt -X PUT http://10.2.0.238:8003/nodetodo/todos/update/5f7f8b1e9f3f9c1d6c1e4d1d -H "Content-Type: application/json" -d '{"title": "this is my new update", "description": "this is my new description", "completed": true}'
+
+==output:==
+
+{"resultMessage":"Todo updated successfully","updateTodo":{"_id":"5f7f8b1e9f3f9c1d6c1e4d1d","title":"this is my new update","description":"this is my new description","completed":true,"user":"5f7f8b1e9f3f9c1d6c1e4d1e","createdAt":"2024-02-08T16:10:08.998Z","updatedAt":"2024-02-09T17:45:25.902Z","__v":0}}
+
+==DELETE:==
+
+curl -i -b sessions.txt -X DELETE http://10.2.0.238:8003/nodetodo/todos/delete/65cf94a7cabbdb52f57120ac
+
+==output:==
+
+{"httpStatusCode":200,"resultMessage":"Todo Deleted Successfully"}
+
+
+
+================================================================
+DEPRECATED
+================================================================
+
+
 Para probarlo en el OJ todo tiene que salir por proxychains:
 
 levantando el tunel con el server 10.0.0.65:

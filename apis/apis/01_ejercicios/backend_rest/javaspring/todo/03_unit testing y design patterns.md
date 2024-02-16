@@ -94,4 +94,4 @@ notese los bugs en rojo los cuales deben corregirse
 
 ==Login:
 
-curl -X POST http://localhost:8002/api/auth/login -H "Content-Type: application/json" -d '{ "email":"hftamayo@gmail.com", "password": "Java123"}'
+curl -X POST http://localhost:8002/api/auth/login -H "Content-Type: application/json" -d '{ "usernameOrEmail":"hftamayo@gmail.com", "password": "Java123"}'

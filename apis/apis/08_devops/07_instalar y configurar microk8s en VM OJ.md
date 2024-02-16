@@ -206,3 +206,46 @@ sin embargo, si trato de hacer un port forward:
 
 ![[Pasted image 20240205131851.png]]
 
+pues al dia siguiente y despues de haber buscado ayuda en el discord sin ningun exito, me le quedé viendo a la pantalla e hice un history, ahi me di cuenta que en algun momento probé con el namespace y decidí volver a probar:
+
+![[Pasted image 20240206120816.png]]
+
+![[Pasted image 20240206122509.png]]
+
+puesto que la consola quedó ocupada, haré un Ctrl+C y tengo que hacer los siguientes cambios:
+
+1. puesto que el servicio es de tipo ClusterIP unicamente es accesible entre los equipos que pertenecen al cluster, si lo quiero acceder desde mi navegador o desde otro equipo debería ser NodePort, favor ver esta tabla;
+
+![[Pasted image 20240206122731.png]]
+
+2.  ejecutar el port forwarding con un parametro para poder seguir usando la consola
+3. verificar si efectivamente el puerto esta abierto
+4. el port forward es accesible unicamente desde dentro del hostOS
+
+Aca algunas capturas:
+
+![[Pasted image 20240206123245.png]]
+
+Deteniendo el proceso y forwardeando el puerto 8080 con la interface 0.0.0.0:
+
+![[Pasted image 20240206124857.png]]
+
+![[Pasted image 20240206125236.png]]
+
+probando otra vez el port forwarding:
+
+![[Pasted image 20240206125352.png]]
+
+![[Pasted image 20240206125452.png]]
+
+
+obteniendo la clave:
+
+![[Pasted image 20240206130043.png]]
+
+admin at 
+
+![[Pasted image 20240206130538.png]]
+
+
+
