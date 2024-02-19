@@ -248,4 +248,32 @@ admin at
 ![[Pasted image 20240206130538.png]]
 
 
+AMPLIANDO EL METODO ANTERIOR
+=
 
+el problema de usar port forwarding es que yo necesito tener siempre una sesion remota donde fue ejecutada el port forwarding, si me desconecto jenkins se cierra, entonces yo debería tener el deploy de este servicio en modo NodePort, aca el proceso que espero de resultado:
+
+
+archivo values antes de ser modificado:
+
+![[Pasted image 20240219154152.png]]
+
+archivo modificado:
+
+![[Pasted image 20240219154400.png]]
+
+verificando el estado de los pods antes de ejecutar la actualizacion:
+
+![[Pasted image 20240219154502.png]]
+
+corriendo las actualizaciones:
+
+![[Pasted image 20240219155310.png]]
+
+probando con Helm:
+
+![[Pasted image 20240219155520.png]]
+
+![[Pasted image 20240219155715.png]]
+
+![[Pasted image 20240219155927.png]]

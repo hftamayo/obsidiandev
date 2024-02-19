@@ -11,11 +11,9 @@
             "id": "650811af9eb5321e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
-                "mode": "source",
-                "source": false
+                "file": "08_devops/img/Pasted image 20240219154152.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
+                "file": "08_devops/img/Pasted image 20240219154152.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
+                "file": "08_devops/img/Pasted image 20240219154152.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md"
+                "file": "08_devops/img/Pasted image 20240219154152.png"
               }
             }
           }
@@ -146,21 +144,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "650811af9eb5321e",
+  "active": "d47fd180b31e4bff",
   "lastOpenFiles": [
-    "08_devops/img/Pasted image 20240208122957.png",
     "Pasted image 20231127092753.png",
-    "08_devops/08_ setting up a pipeline in Jenkins.md",
-    "08_devops/img/Pasted image 20240208123032.png",
     "08_devops/07_instalar y configurar microk8s en VM OJ.md",
+    "08_devops/img/Pasted image 20240219155927.png",
+    "08_devops/img/Pasted image 20240219155715.png",
+    "08_devops/img/Pasted image 20240219155520.png",
+    "08_devops/img/Pasted image 20240219155310.png",
+    "08_devops/img/Pasted image 20240219154502.png",
+    "08_devops/img/Pasted image 20240219154400.png",
+    "08_devops/img/Pasted image 20240219154152.png",
+    "08_devops/08_ setting up a pipeline in Jenkins.md",
     "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
-    "08_devops/img/Pasted image 20240207121252.png",
-    "08_devops/img/Pasted image 20240207124639.png",
-    "08_devops/img/Pasted image 20240207124541.png",
-    "08_devops/img/Pasted image 20240207124515.png",
-    "08_devops/img/Pasted image 20240207124431.png",
-    "08_devops/img/Pasted image 20240207124344.png",
-    "08_devops/img/Pasted image 20240207123820.png",
+    "08_devops/img/Pasted image 20240208122957.png",
+    "08_devops/img/Pasted image 20240208123032.png",
     "01_ejercicios/backend_rest/javaspring/todo/03_unit testing y design patterns.md",
     "08_devops/06_ instalar y configurar minikube en debian.md",
     "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
