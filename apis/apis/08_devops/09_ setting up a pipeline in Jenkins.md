@@ -67,3 +67,8 @@ le di correr y a los 4 segundos me generó error:
 1. ver el video de la clase de Rossana pues aca si estoy perdido
 2. validar con un linter si mi Jenkinsfile no tiene observaciones
 3. ir probando stage por stage
+
+
+INTENTO 2:
+=
+

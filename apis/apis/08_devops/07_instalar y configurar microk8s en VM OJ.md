@@ -277,3 +277,27 @@ probando con Helm:
 ![[Pasted image 20240219155715.png]]
 
 ![[Pasted image 20240219155927.png]]
+
+
+como podemos ver, el servicio no es accesible aun hacia afuera del host, asi que esta es la explicación de gemini:
+
+![[Pasted image 20240220150744.png]]
+
+![[Pasted image 20240220151026.png]]
+
+recordemos que microk8s tiene 1 nodo y justo es la salida del comando get nodes y esta en modo Ready.
+
+para verificar la ip del nodo:
+
+![[Pasted image 20240220151521.png]]
+
+conectandome por el puerto 30568:
+
+![[Pasted image 20240220151544.png]]
+
+por qué el puerto 30568 no aparece como LISTEN en el comando netstat? 
+
+![[Pasted image 20240220151728.png]]
+
+
+
