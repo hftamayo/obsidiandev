@@ -67,3 +67,53 @@ Now you have a local copy of the repository at the specific commit you specified
 la idea es instalar todos estos plugins
 
 hay un par de cosas como la de migrar a nvim 0.8 y otros aspectos pero en general se ve bastante bien.
+
+migrando a la version 0.8
+=
+
+![[Pasted image 20240223155731.png]]
+
+primero quite la version del repo:
+
+==sudo apt-get remove --purge nvim
+
+luego segui la insalacion por medio de AppImage
+
+### AppImage ("universal" Linux package)
+
+The [Releases](https://github.com/neovim/neovim/releases) page provides an [AppImage](https://appimage.org/) that runs on most Linux systems. No installation is needed, just download `nvim.appimage` and run it. (It might not work if your Linux distribution is more than 4 years old.)
+
+```
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+```
+
+To expose nvim globally:
+
+```
+mkdir -p /opt/nvim
+mv nvim.appimage /opt/nvim/nvim
+```
+
+And the following line to `~/.bashrc`:
+
+```
+export PATH="$PATH:/opt/nvim/" 
+```
+
+If the `./nvim.appimage` command fails, try:
+
+```shell
+./nvim.appimage --appimage-extract
+./squashfs-root/AppRun --version
+
+# Optional: exposing nvim globally.
+sudo mv squashfs-root /
+sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+nvim
+```
+
+
+![[Pasted image 20240225013002.png]]
+

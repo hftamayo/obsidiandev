@@ -13,9 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08_devops/09_ setting up a pipeline in Jenkins.md",
+                "file": "03_services behind proxy/11_neovim.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          },
+          {
+            "id": "5f2b61188c5b0256",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
               }
             }
           }
@@ -85,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08_devops/09_ setting up a pipeline in Jenkins.md",
+                "file": "03_services behind proxy/11_neovim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "08_devops/09_ setting up a pipeline in Jenkins.md",
+                "file": "03_services behind proxy/11_neovim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "08_devops/09_ setting up a pipeline in Jenkins.md"
+                "file": "03_services behind proxy/11_neovim.md"
               }
             }
           }
@@ -148,9 +158,13 @@
   },
   "active": "650811af9eb5321e",
   "lastOpenFiles": [
+    "Pasted image 20240225013002.png",
+    "Pasted image 20240223155731.png",
+    "03_services behind proxy/06_tmux.md",
+    "05_software/dev.md",
+    "08_devops/09_ setting up a pipeline in Jenkins.md",
     "08_devops/img/Pasted image 20240220152455.png",
     "Pasted image 20231127092753.png",
-    "08_devops/09_ setting up a pipeline in Jenkins.md",
     "08_devops/08_recuperar la clave de jenkins.md",
     "08_devops/07_instalar y configurar microk8s en VM OJ.md",
     "08_devops/img/Pasted image 20240220150744.png",
@@ -160,7 +174,6 @@
     "08_devops/img/Pasted image 20240220151026.png",
     "08_devops/img/Pasted image 20240219154152.png",
     "08_devops/img/Pasted image 20240219155927.png",
-    "08_devops/img/Pasted image 20240219155715.png",
     "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
     "01_ejercicios/backend_rest/javaspring/todo/03_unit testing y design patterns.md",
     "08_devops/06_ instalar y configurar minikube en debian.md",
@@ -185,8 +198,6 @@
     "01_ejercicios/frontend/pnpm.md",
     "01_ejercicios/frontend/APIs de prueba.md",
     "01_ejercicios/frontend/boilerplates",
-    "08_devops/02_GCP.md",
-    "03_services behind proxy/11_neovim.md",
     "08_devops/img",
     "08_devops",
     "07_despliegue/img",
