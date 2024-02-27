@@ -4,26 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "172c8bed9b8c848f",
+        "id": "1aaae1c292a9cf79",
         "type": "tabs",
         "children": [
           {
-            "id": "650811af9eb5321e",
+            "id": "df880c80929c34cb",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "08_devops/img/Pasted image 20240226144009.png"
-              }
-            }
-          },
-          {
-            "id": "5f2b61188c5b0256",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.8"
+                "file": "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -93,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08_devops/img/Pasted image 20240226144009.png",
+                "file": "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "08_devops/img/Pasted image 20240226144009.png",
+                "file": "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "08_devops/img/Pasted image 20240226144009.png"
+                "file": "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md"
               }
             }
           }
@@ -154,21 +146,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d47fd180b31e4bff",
+  "active": "df880c80929c34cb",
   "lastOpenFiles": [
-    "Pasted image 20240225013002.png",
-    "Pasted image 20240223155731.png",
+    "01_ejercicios/cors/img/Pasted image 20240223155731.png",
+    "Pasted image 20231127092753.png",
+    "01_ejercicios/cors/02_arquitectura de autenticacion.md",
+    "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
+    "01_ejercicios/cors/img/Pasted image 20240227120945.png",
+    "01_ejercicios/cors/img/Pasted image 20240227120921.png",
+    "01_ejercicios/cors/img/Pasted image 20240227120855.png",
+    "01_ejercicios/cors/img/Pasted image 20240227120828.png",
+    "01_ejercicios/cors/img/Pasted image 20240227120743.png",
+    "01_ejercicios/cors/img/Pasted image 20240227115843.png",
+    "01_ejercicios/cors/img/Pasted image 20240227115822.png",
+    "01_ejercicios/cors/img/Pasted image 20240227115746.png",
+    "01_ejercicios/cors/img/Pasted image 20240227115229.png",
+    "01_ejercicios/cors/img",
+    "01_ejercicios/cors",
     "08_devops/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
-    "08_devops/img/Pasted image 20240226160146.png",
-    "08_devops/img/Pasted image 20240226155933.png",
     "08_devops/07_instalar y configurar microk8s en VM OJ.md",
-    "08_devops/img/Pasted image 20240226155755.png",
-    "08_devops/img/Pasted image 20240226155506.png",
-    "08_devops/img/Pasted image 20240226155312.png",
-    "08_devops/img/Pasted image 20240226155225.png",
-    "08_devops/img/Pasted image 20240226155150.png",
-    "08_devops/img/Pasted image 20240226154920.png",
-    "08_devops/img/Pasted image 20240226154901.png",
     "08_devops/05_guidelines para un cluster on premise de k8s.md",
     "08_devops/09_ setting up a pipeline in Jenkins.md",
     "03_services behind proxy/11_neovim.md",
@@ -192,15 +188,11 @@
     "02_portoflio/img",
     "02_portoflio/applicaciones/02_ Kodigo GeekShow 2024 challenges.md",
     "02_portoflio/applicaciones/01_roster.md",
-    "01_ejercicios/frontend/boilerplates/01_crud_pnpm_webpack_redux_tailwind.md",
-    "08_devops/03_docker.md",
     "01_ejercicios/frontend/boilerplates/imges",
     "01_ejercicios/frontend/boilerplates",
     "08_devops/img",
     "08_devops",
     "07_despliegue/img",
-    "01_ejercicios/frontend/images",
-    "01_ejercicios/backend_rest/golang/gingormcrud",
-    "01_ejercicios/graphql_api/golang/images"
+    "01_ejercicios/frontend/images"
   ]
 }
