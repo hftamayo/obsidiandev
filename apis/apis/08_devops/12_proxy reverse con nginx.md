@@ -30,3 +30,32 @@ verificando el puerto de escucha del NodePort:
 
 no puedo alcanzarlo, voy a borrar el servicio y hacer un manifiesto para el deploy:
 
+![[Pasted image 20240228134101.png]]
+
+![[Pasted image 20240228134156.png]]
+
+exponiendo el pod fuera del cluster:
+
+![[Pasted image 20240228134415.png]]
+
+![[Pasted image 20240228134834.png]]
+
+![[Pasted image 20240228135114.png]]
+
+
+aplicando las reglas de reverse proxy:
+
+![[Pasted image 20240228151738.png]]
+
+
+![[Pasted image 20240228151900.png]]
+
+![[Pasted image 20240228151933.png]]
+
+chequeando los logs:
+
+![[Pasted image 20240228152354.png]]
+
+==TROUBLESHOOTING:==
+=
+ff

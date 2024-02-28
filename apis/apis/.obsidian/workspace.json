@@ -13,7 +13,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png"
+                "file": "08_devops/img/Pasted image 20240228134101.png"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png",
+                "file": "08_devops/img/Pasted image 20240228134101.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png",
+                "file": "08_devops/img/Pasted image 20240228134101.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png"
+                "file": "08_devops/img/Pasted image 20240228134101.png"
               }
             }
           }
@@ -146,26 +146,29 @@
   },
   "active": "d47fd180b31e4bff",
   "lastOpenFiles": [
-    "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228110450.png",
-    "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228110424.png",
+    "08_devops/img/Pasted image 20240228152354.png",
+    "08_devops/img/Pasted image 20240228134101.png",
+    "08_devops/12_proxy reverse con nginx.md",
+    "08_devops/img/Pasted image 20240228151933.png",
+    "08_devops/img/Pasted image 20240228151900.png",
+    "08_devops/img/Pasted image 20240228151738.png",
+    "08_devops/img/Pasted image 20240228135114.png",
+    "08_devops/img/Pasted image 20240228134834.png",
+    "08_devops/07_instalar y configurar microk8s en VM OJ.md",
+    "08_devops/img/Pasted image 20240228134415.png",
+    "08_devops/img/Pasted image 20240228134156.png",
+    "01_ejercicios/backend_rest/javaspring/todo/03_unit testing y design patterns.md",
+    "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
+    "01_ejercicios/backend_rest/javaspring/todo/02_ data migration.md",
+    "01_ejercicios/backend_rest/javaspring/todo/10_V2.md",
     "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png",
-    "08_devops/img/Pasted image 20240227154845.png",
-    "08_devops/img/Pasted image 20240227154138.png",
-    "08_devops/img/Pasted image 20240227153715.png",
-    "08_devops/img/Pasted image 20240227153453.png",
-    "08_devops/img/Pasted image 20240227152657.png",
-    "08_devops/img/Pasted image 20240227151752.png",
-    "Pasted image 20231127092753.png",
     "01_ejercicios/graphql_api/nodejs/01_proyecto 101.md",
     "01_ejercicios/backend_rest/nodejs/todo-ts/01_install jest y ts a todo v1.md",
     "01_ejercicios/graphql_api/Untitled",
     "01_ejercicios/backend_rest/nodejs/todo-ts/99_migrar de commonjs to ECM modules.md",
-    "08_devops/12_proxy reverse con nginx.md",
     "01_ejercicios/backend_rest/nodejs/todo-ts/images",
     "01_ejercicios/backend_rest/nodejs/todo-ts",
-    "08_devops/07_instalar y configurar microk8s en VM OJ.md",
     "08_devops/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
-    "08_devops/img/Pasted image 20240227131136.png",
     "08_devops/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
     "01_ejercicios/cors/03_ reverse proxy con nginx para gestion cross site de cookies.md",
     "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
@@ -178,16 +181,12 @@
     "03_services behind proxy/06_tmux.md",
     "05_software/dev.md",
     "08_devops/08_recuperar la clave de jenkins.md",
-    "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
-    "01_ejercicios/backend_rest/javaspring/todo/03_unit testing y design patterns.md",
     "08_devops/06_ instalar y configurar minikube en debian.md",
     "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
     "08_devops/04_intento fallido de configurar un cluster K8s con kubeadm.md",
     "08_devops/01_kubernetes.md",
     "01_ejercicios/graphql_api/nodejs",
     "01_ejercicios/frontend/boilerplates/01_mern_startingenterprise.md",
-    "01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
-    "01_ejercicios/frontend/boilerplates/03_landing Entreprise 01.md",
     "02_portoflio/img",
     "01_ejercicios/frontend/boilerplates/imges",
     "01_ejercicios/frontend/boilerplates",

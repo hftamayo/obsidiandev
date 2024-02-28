@@ -48,6 +48,22 @@ TEST DEL SERVICE:
 SCRIPTS PARA TESTING DE LOS ENDPOINTS
 ==============================
 
+TESTING DE LOS ENDPOINTS DE AUTHENTICACION:
+=
+==Register:
+
+curl -i -X POST http://localhost:8002/api/auth/register -H "Content-Type: application/json" -d '{"name":"Herbert Tamayo", "email":"hftamayo@gmail.com", "password": "Java123", "age": 25, "isAdmin": true, "status": true}'
+
+![[Pasted image 20240205144135.png]]
+
+notese los bugs en rojo los cuales deben corregirse
+
+==Login:
+
+curl  --cookie-jar jsb.txt -i -X POST http://localhost:8002/api/auth/login -H "Content-Type: application/json" -d '{ "email":"sebas@gmail.com", "password": "password123"}'
+
+
+
 * Todo Model:
 
 
@@ -81,17 +97,3 @@ TESTING DE USUARIOS:
 curl -X POST http://localhost:8002/users/saveuser -H "Content-Type: application/json" -d '{"name":"Herbert Tamayo", "email":"hftamayo@gmail.com", "password": "Java123", "age": 25, "isAdmin": true, "status": true}'
 
 
-TESTING DE LOS ENDPOINTS DE AUTHENTICACION:
-=
-
-==Register:
-
-curl -X POST http://localhost:8002/api/auth/register -H "Content-Type: application/json" -d '{"name":"Herbert Tamayo", "email":"hftamayo@gmail.com", "password": "Java123", "age": 25, "isAdmin": true, "status": true}'
-
-![[Pasted image 20240205144135.png]]
-
-notese los bugs en rojo los cuales deben corregirse
-
-==Login:
-
-curl -X POST http://localhost:8002/api/auth/login -H "Content-Type: application/json" -d '{ "usernameOrEmail":"hftamayo@gmail.com", "password": "Java123"}'
