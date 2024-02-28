@@ -11,11 +11,9 @@
             "id": "df880c80929c34cb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
-                "mode": "source",
-                "source": false
+                "file": "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
+                "file": "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
+                "file": "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md"
+                "file": "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png"
               }
             }
           }
@@ -146,25 +144,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "df880c80929c34cb",
+  "active": "d47fd180b31e4bff",
   "lastOpenFiles": [
-    "01_ejercicios/cors/img/Pasted image 20240223155731.png",
+    "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228110450.png",
+    "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228110424.png",
+    "01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240228100629.png",
+    "08_devops/img/Pasted image 20240227154845.png",
+    "08_devops/img/Pasted image 20240227154138.png",
+    "08_devops/img/Pasted image 20240227153715.png",
+    "08_devops/img/Pasted image 20240227153453.png",
+    "08_devops/img/Pasted image 20240227152657.png",
+    "08_devops/img/Pasted image 20240227151752.png",
     "Pasted image 20231127092753.png",
-    "01_ejercicios/cors/02_arquitectura de autenticacion.md",
+    "01_ejercicios/graphql_api/nodejs/01_proyecto 101.md",
+    "01_ejercicios/backend_rest/nodejs/todo-ts/01_install jest y ts a todo v1.md",
+    "01_ejercicios/graphql_api/Untitled",
+    "01_ejercicios/backend_rest/nodejs/todo-ts/99_migrar de commonjs to ECM modules.md",
+    "08_devops/12_proxy reverse con nginx.md",
+    "01_ejercicios/backend_rest/nodejs/todo-ts/images",
+    "01_ejercicios/backend_rest/nodejs/todo-ts",
+    "08_devops/07_instalar y configurar microk8s en VM OJ.md",
+    "08_devops/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
+    "08_devops/img/Pasted image 20240227131136.png",
+    "08_devops/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
+    "01_ejercicios/cors/03_ reverse proxy con nginx para gestion cross site de cookies.md",
     "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
-    "01_ejercicios/cors/img/Pasted image 20240227120945.png",
-    "01_ejercicios/cors/img/Pasted image 20240227120921.png",
-    "01_ejercicios/cors/img/Pasted image 20240227120855.png",
-    "01_ejercicios/cors/img/Pasted image 20240227120828.png",
-    "01_ejercicios/cors/img/Pasted image 20240227120743.png",
-    "01_ejercicios/cors/img/Pasted image 20240227115843.png",
-    "01_ejercicios/cors/img/Pasted image 20240227115822.png",
-    "01_ejercicios/cors/img/Pasted image 20240227115746.png",
-    "01_ejercicios/cors/img/Pasted image 20240227115229.png",
+    "01_ejercicios/cors/02_arquitectura de autenticacion.md",
     "01_ejercicios/cors/img",
     "01_ejercicios/cors",
-    "08_devops/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
-    "08_devops/07_instalar y configurar microk8s en VM OJ.md",
     "08_devops/05_guidelines para un cluster on premise de k8s.md",
     "08_devops/09_ setting up a pipeline in Jenkins.md",
     "03_services behind proxy/11_neovim.md",
@@ -177,22 +184,13 @@
     "01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
     "08_devops/04_intento fallido de configurar un cluster K8s con kubeadm.md",
     "08_devops/01_kubernetes.md",
-    "01_ejercicios/graphql_api/nodejs/01_proyecto 101.md",
     "01_ejercicios/graphql_api/nodejs",
     "01_ejercicios/frontend/boilerplates/01_mern_startingenterprise.md",
     "01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
     "01_ejercicios/frontend/boilerplates/03_landing Entreprise 01.md",
-    "01_ejercicios/backend_rest/reactjs/02_pnpmtodo.md",
-    "01_ejercicios/frontend/boilerplates/02_Authorization.md",
-    "04_github/01_notes.md",
     "02_portoflio/img",
-    "02_portoflio/applicaciones/02_ Kodigo GeekShow 2024 challenges.md",
-    "02_portoflio/applicaciones/01_roster.md",
     "01_ejercicios/frontend/boilerplates/imges",
     "01_ejercicios/frontend/boilerplates",
-    "08_devops/img",
-    "08_devops",
-    "07_despliegue/img",
-    "01_ejercicios/frontend/images"
+    "08_devops/img"
   ]
 }

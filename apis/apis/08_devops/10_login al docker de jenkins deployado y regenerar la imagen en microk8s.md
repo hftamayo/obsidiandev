@@ -70,6 +70,3 @@ de hecho la diferencia en el tamaño de la imagen es clave, probablmente hubo al
 
 
 ![[Pasted image 20240226160146.png]]
-
-
-9. actualizando el pod con esta nueva imagen:
