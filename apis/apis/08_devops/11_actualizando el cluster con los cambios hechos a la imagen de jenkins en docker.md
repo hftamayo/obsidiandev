@@ -29,3 +29,4 @@ entrando al cluster para verificar el estado de kubectl:
 ![[Pasted image 20240227141049.png]]
 
 
+==favor leer el proximo articulo:

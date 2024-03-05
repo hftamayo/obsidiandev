@@ -58,4 +58,7 @@ chequeando los logs:
 
 ==TROUBLESHOOTING:==
 =
-ff
+este enfqoue es totalmente erroneo debido a que:
+1. el nginx nunca va a poder rutear algo que esta fuera del cluster, simplemente no tiene sentido
+2. el frontend esta fuera del alcance del proxy puesto que nunca va a poder reotientar comunicacion del root hacia el frontend
+3. este enfoque se deja deprecado hasta que las aplcciones esten en el cluster

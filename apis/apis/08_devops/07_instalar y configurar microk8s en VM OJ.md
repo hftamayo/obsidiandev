@@ -63,9 +63,15 @@ primero desinstalar la version existente:
 
 ![[Pasted image 20240202122503.png]]
 
+=============
+IMPORTANTE: DE ACA EN ADELANTE USO EL METODO DE ROSSANA SOBRE LA INSTALACION DE JENKINS EN EL CLUSTER DE K8S USANDO HELM
+=========
+
+
+
 ![[Pasted image 20240202122701.png]]
 
-copiando el Docker proporcionado por Rossana Suarez:
+copiando el Docker proporcionado por Rossana Suarez: (https://github.com/roxsross/bootcamp-devops-2023/blob/ejercicio3-despliega/jenkins/helm/Dockerfile)
 
 ![[Pasted image 20240202124638.png]]
 
