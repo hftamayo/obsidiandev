@@ -59,3 +59,5 @@ ya trae unos sugeridos para instalacion, voy a señalar los que rossana instaló
 
 ![[Pasted image 20240305154545.png]]
 
+![[Pasted image 20240307132734.png]]
+

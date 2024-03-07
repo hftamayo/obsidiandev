@@ -11,11 +11,9 @@
             "id": "df880c80929c34cb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "08_devops/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
-                "mode": "source",
-                "source": false
+                "file": "08_devops_bootcamp_roxross/img/Pasted image 20240307132734.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "08_devops/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
+                "file": "08_devops_bootcamp_roxross/img/Pasted image 20240307132734.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "08_devops/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
+                "file": "08_devops_bootcamp_roxross/img/Pasted image 20240307132734.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "08_devops/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md"
+                "file": "08_devops_bootcamp_roxross/img/Pasted image 20240307132734.png"
               }
             }
           }
@@ -146,32 +144,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "df880c80929c34cb",
+  "active": "d47fd180b31e4bff",
   "lastOpenFiles": [
-    "08_devops/img/Pasted image 20240305143218.png",
-    "08_devops/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
-    "08_devops/img/Pasted image 20240305154545.png",
-    "08_devops/img/Pasted image 20240305154440.png",
-    "08_devops/img/Pasted image 20240305154351.png",
-    "08_devops/img/Pasted image 20240305154218.png",
-    "08_devops/img/Pasted image 20240305154136.png",
-    "08_devops/img/Pasted image 20240305153947.png",
-    "08_devops/img/Pasted image 20240305153615.png",
-    "08_devops/07_instalar y configurar microk8s en VM OJ.md",
-    "08_devops/img/Pasted image 20240305153024.png",
-    "08_devops/img/Pasted image 20240305152943.png",
-    "08_devops/img/Pasted image 20240305152211.png",
-    "08_devops/12_confusion sobre ejecucion de kubectl desde el pod donde esta jenkins.md",
+    "08_devops_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307144544.png",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307135506.png",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307135130.png",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307135101.png",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307134641.png",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307134613.png",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307133001.png",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307132914.png",
+    "08_devops_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240307132734.png",
+    "01_ejercicios/frontend/boilerplates/04_mern_dashboard.md",
+    "01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
+    "01_ejercicios/frontend/boilerplates/01_mern_startingenterprise.md",
+    "08_devops_bootcamp_roxross/img/Pasted image 20240305143218.png",
+    "08_devops_bootcamp_roxross/07_instalar y configurar microk8s en VM OJ.md",
+    "08_devops_bootcamp_roxross/12_confusion sobre ejecucion de kubectl desde el pod donde esta jenkins.md",
     "01_ejercicios/backend_rest/nodejs/todo/09_debugging del CORS.md",
     "01_ejercicios/backend_rest/nodejs/todo/03 scripts de testing con curl.md",
-    "08_devops/99_proxy reverse con nginx.md",
-    "08_devops/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
-    "08_devops/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
-    "08_devops/09_ setting up a pipeline in Jenkins.md",
-    "08_devops/08_recuperar la clave de jenkins.md",
-    "08_devops/04_intento fallido de configurar un cluster K8s con kubeadm.md",
-    "08_devops/05_guidelines para un cluster on premise de k8s.md",
-    "08_devops/06_ instalar y configurar minikube en debian.md",
+    "08_devops_bootcamp_roxross/99_proxy reverse con nginx.md",
+    "08_devops_bootcamp_roxross/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
+    "08_devops_bootcamp_roxross/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
+    "08_devops_bootcamp_roxross/09_ setting up a pipeline in Jenkins.md",
+    "08_devops_bootcamp_roxross/08_recuperar la clave de jenkins.md",
+    "08_devops_bootcamp_roxross/04_intento fallido de configurar un cluster K8s con kubeadm.md",
+    "08_devops_bootcamp_roxross/05_guidelines para un cluster on premise de k8s.md",
+    "08_devops_bootcamp_roxross/06_ instalar y configurar minikube en debian.md",
     "01_ejercicios/backend_rest/reactjs/02_pnpmtodo.md",
     "01_ejercicios/backend_rest/javaspring/todo/03_unit testing y design patterns.md",
     "01_ejercicios/backend_rest/javaspring/todo/02_ data migration.md",
@@ -183,16 +184,12 @@
     "01_ejercicios/backend_rest/nodejs/todo-ts/images",
     "01_ejercicios/backend_rest/nodejs/todo-ts",
     "01_ejercicios/cors/03_ reverse proxy con nginx para gestion cross site de cookies.md",
-    "01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
-    "01_ejercicios/cors/02_arquitectura de autenticacion.md",
     "01_ejercicios/cors/img",
     "01_ejercicios/cors",
-    "03_services behind proxy/11_neovim.md",
-    "03_services behind proxy/06_tmux.md",
     "01_ejercicios/graphql_api/nodejs",
     "02_portoflio/img",
     "01_ejercicios/frontend/boilerplates/imges",
     "01_ejercicios/frontend/boilerplates",
-    "08_devops/img"
+    "08_devops_bootcamp_roxross/img"
   ]
 }
