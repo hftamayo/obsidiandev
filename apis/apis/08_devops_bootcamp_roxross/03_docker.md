@@ -102,11 +102,23 @@ ejecutando el comando ==docker login== para capturar las credenciales y que de e
 ![[Pasted image 20240313131629.png]]
 
 
+bueno, aca hay un typo en mi config.json:
+
+![[Pasted image 20240313142728.png]]
+
+notese que en credStore inicialmente no hay la comilla de cierre, pues una vez que ya lo solucioné veamos que pasa:
+
+![[Pasted image 20240313142847.png]]
+
+
 exportando la llave publica:
 
 ![[Pasted image 20240313133433.png]]
 
-copio toda la llave publica y me la llevo al docker hub:
+==ENTONCES ESTE METODO NO FUNCIONÓ O AL MENOS REQUIERE DEPURACIÓN Y PROBABLEMENTE SEA SEGUIRME LA COLA PUES DOCKER HUB YA TIENE TOCKENS DE ACCESO==
+
+==DEJANDO SIN EFECTO ESTE MÉTODO Y GENERANDO EL ACCESS TOKEN:
+
 
 ![[Pasted image 20240313133844.png]]
 
@@ -114,4 +126,15 @@ copio toda la llave publica y me la llevo al docker hub:
 
 
 ![[Pasted image 20240313134159.png]]
+
+==MODIFICO EL CONFIG.JSON PARA AGREGAR EL TOKEN==:
+
+![[Pasted image 20240313143443.png]]
+
+![[Pasted image 20240313143320.png]]
+
+
+==reiniciamos el servicio docker ==
+
+![[Pasted image 20240313144027.png]]
 

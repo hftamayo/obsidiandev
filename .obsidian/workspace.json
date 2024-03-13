@@ -13,7 +13,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313114045.png"
+                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313114045.png",
+                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313114045.png",
+                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313114045.png"
+                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png"
               }
             }
           }
@@ -147,16 +147,16 @@
   "active": "2409bcabe9880884",
   "lastOpenFiles": [
     "apis/apis/08_devops_bootcamp_roxross/03_docker.md",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313144027.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313143443.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313143320.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142847.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313114045.png",
     "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313134159.png",
     "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313134011.png",
     "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313133844.png",
     "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313133433.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313131629.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313131223.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313125741.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313125437.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313125146.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313125101.png",
     "apis/apis/04_github/05_set up a SSH Key as auth method.md",
     "portswigger/portswigger_academy/expert/06_jwt/03_bypass weak signin key.md",
     "fromcherry_to_obsidian/portswigger labs.ctb",
