@@ -13,7 +13,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png"
+                "file": "apis/apis/07_despliegue/img/Pasted image 20240314151458.png"
               }
             }
           }
@@ -83,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png",
+                "file": "apis/apis/07_despliegue/img/Pasted image 20240314151458.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png",
+                "file": "apis/apis/07_despliegue/img/Pasted image 20240314151458.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png"
+                "file": "apis/apis/07_despliegue/img/Pasted image 20240314151458.png"
               }
             }
           }
@@ -146,25 +146,31 @@
   },
   "active": "2409bcabe9880884",
   "lastOpenFiles": [
+    "apis/apis/07_despliegue/05_setting up de una llave SSH para conexion con mi server on premise.md",
+    "apis/apis/07_despliegue/img/Pasted image 20240314151846.png",
+    "apis/apis/07_despliegue/img/Pasted image 20240314151806.png",
+    "apis/apis/07_despliegue/img/Pasted image 20240314151658.png",
+    "apis/apis/07_despliegue/img/Pasted image 20240314151458.png",
+    "apis/apis/08_devops_bootcamp_roxross/15_actualizar el cluster k8s con un cambio en el docker image.md",
+    "apis/apis/08_devops_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
+    "apis/apis/08_devops_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md",
+    "apis/apis/08_devops_bootcamp_roxross/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
+    "apis/apis/08_devops_bootcamp_roxross/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240314135841.png",
+    "apis/apis/08_devops_bootcamp_roxross/03_CREDS DE DOCKER.md",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240314143943.png",
     "apis/apis/08_devops_bootcamp_roxross/03_docker.md",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313144027.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313143443.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313143320.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142847.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313142728.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313114045.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313134159.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313134011.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313133844.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240313133433.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240314143202.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240314142636.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240314142401.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240314142316.png",
+    "apis/apis/08_devops_bootcamp_roxross/02_GCP.md",
     "apis/apis/04_github/05_set up a SSH Key as auth method.md",
     "portswigger/portswigger_academy/expert/06_jwt/03_bypass weak signin key.md",
     "fromcherry_to_obsidian/portswigger labs.ctb",
     "fromcherry_to_obsidian/htb2022_p2.ctb",
     "fromcherry_to_obsidian/htb2022.ctb~",
     "fromcherry_to_obsidian/htb2022.ctb",
-    "fromcherry_to_obsidian",
-    "apis/apis/08_devops_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
-    "apis/apis/08_devops_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md"
+    "fromcherry_to_obsidian"
   ]
 }

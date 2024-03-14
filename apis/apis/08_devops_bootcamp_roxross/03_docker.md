@@ -115,9 +115,8 @@ exportando la llave publica:
 
 ![[Pasted image 20240313133433.png]]
 
-==ENTONCES ESTE METODO NO FUNCIONÓ O AL MENOS REQUIERE DEPURACIÓN Y PROBABLEMENTE SEA SEGUIRME LA COLA PUES DOCKER HUB YA TIENE TOCKENS DE ACCESO==
+==POR ALGUN MOTIVO NO FUNCIONA Y ANTES DE DEPURARLO, EN LUGAR DE SEGUIR USANDO UNA CLAVE VOY A DOCKER HUB A GENERAR UNA PERSONAL ACCESS TOKEN EL CUAL LA VOY A REGISTRAR CON GPG:
 
-==DEJANDO SIN EFECTO ESTE MÉTODO Y GENERANDO EL ACCESS TOKEN:
 
 
 ![[Pasted image 20240313133844.png]]
@@ -133,8 +132,74 @@ exportando la llave publica:
 
 ![[Pasted image 20240313143320.png]]
 
+==MODIFICAR A PATA EL CONFIG.JSON NO DA BOLA, siguiendo este metodo:
+
+
+entonces ahora que ya tengo mi token debo hacer un pass init para mi perfil:
+
+
+![[Pasted image 20240314125010.png]]
+
+en la primera flecha yo debo copiar toda la cadena porque en la parte de arriba use nada más los primeros 7 y por eso es que no me guardaba las credenciales:
+
+
+![[Pasted image 20240314125131.png]]
+
+==recordatorio: en la segunda flecha usar el PAT
+
+
+==probando si puedo subir una imagen:
+
+
+![[Pasted image 20240314125629.png]]
+
+==al final resulta que esto no debe hacerse asi, que lo ideal es gestionar credenciales de docker usando Hashicorp Vault o AWS Secrets Manager"== 
+
+
+==ELIMINANDO EL DOCKER HELPER DEL SERVER EN PRODUCCION:
+=
+
+
+![[Pasted image 20240314142316.png]]
+
+![[Pasted image 20240314142401.png]]
+
+![[Pasted image 20240314142636.png]]
+
+![[Pasted image 20240314143202.png]]
+
+
+
+---------------------------------------------------------------------
+OPERACIONES DEPRECADAS: rabbit holes
+=
+
+
 
 ==reiniciamos el servicio docker ==
 
 ![[Pasted image 20240313144027.png]]
+
+==obteniendo un error y tratando de subsanarlo:
+
+
+![[Pasted image 20240314115103.png]]
+
+probando:
+
+![[Pasted image 20240314115227.png]]
+
+==editando el archivo:
+
+![[Pasted image 20240314115507.png]]
+
+
+verificando permisos:
+
+
+![[Pasted image 20240314115713.png]]
+
+intentando de otra forma:
+
+![[Pasted image 20240314120517.png]]
 
