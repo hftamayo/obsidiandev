@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b9b2ea9b119bfe7a",
+        "id": "f9e1bb00bec95f84",
         "type": "tabs",
         "children": [
           {
-            "id": "20465db988d9955c",
+            "id": "1943eeaad0e96b20",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "goprojects/images/Pasted image 20230521072120.png"
+                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "goprojects/images/Pasted image 20230521072120.png",
+                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "goprojects/images/Pasted image 20230521072120.png",
+                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "goprojects/images/Pasted image 20230521072120.png"
+                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md"
               }
             }
           }
@@ -144,23 +146,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2409bcabe9880884",
+  "active": "1943eeaad0e96b20",
   "lastOpenFiles": [
-    "goprojects/images/Pasted image 20230521072146.png",
-    "goprojects/images/Pasted image 20230521072120.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/05_instalacion de la capa de datos en produccion.md",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319153354.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319144359.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319145132.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319145034.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319144607.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319144522.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319143849.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319144224.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319144020.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240319091436.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/05_ creacion de la imagen y container de mysql en docker.md",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/02_ data migration.md",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/01_sourcecode.md",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/07_creacion de la imagen y container de la v1 (del codigo java).md",
+    "apis/apis/01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
+    "apis/apis/01_ejercicios/frontend/boilerplates/02_Authorization.md",
+    "apis/apis/01_ejercicios/frontend/boilerplates/04_mern_dashboard.md",
+    "apis/apis/08_devops_bootcamp_roxross/15_actualizar el cluster k8s con un cambio en el docker image.md",
+    "apis/apis/08_devops_bootcamp_roxross/16_solving the access of jenkins to the docker daemon running on host OS.md",
     "goprojects/6. neovim config.md",
     "goprojects/7. kickstart neovim.md",
-    "goprojects/images/Pasted image 20240316200035.png",
-    "goprojects/images/Pasted image 20240316205659.png",
-    "goprojects/images/Pasted image 20240316205559.png",
-    "goprojects/images/Pasted image 20240316205236.png",
-    "goprojects/images/Pasted image 20240316204520.png",
-    "goprojects/images/Pasted image 20240316204419.png",
-    "goprojects/images/Pasted image 20240316203940.png",
-    "goprojects/images/Pasted image 20240316200259.png",
-    "goprojects/images/Pasted image 20240316194307.png",
     "apis/apis/04_github/01_notes.md",
-    "apis/apis/08_devops_bootcamp_roxross/15_actualizar el cluster k8s con un cambio en el docker image.md",
     "apis/apis/05_software/dev.md",
     "apis/apis/08_devops_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
     "apis/apis/08_devops_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md",
@@ -170,22 +181,12 @@
     "apis/apis/01_ejercicios/kotlin",
     "apis/apis/04_github/05_set up a SSH Key as auth method.md",
     "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt/01_setup and first steps.md",
-    "apis/apis/01_ejercicios/frontend/boilerplates/04_mern_dashboard.md",
     "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt/img",
     "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt",
     "apis/apis/01_ejercicios/frontend/boilerplates/03_landing Entreprise 01.md",
-    "apis/apis/01_ejercicios/frontend/boilerplates/02_Authorization.md",
     "apis/apis/01_ejercicios/frontend/boilerplates/01_mern_startingenterprise.md",
-    "apis/apis/01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
     "apis/apis/01_ejercicios/backend_rest/reactjs/02_pnpmtodo.md",
     "apis/apis/01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
-    "apis/apis/07_despliegue/05_setting up de una llave SSH para conexion con mi server on premise.md",
-    "apis/apis/08_devops_bootcamp_roxross/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
-    "apis/apis/08_devops_bootcamp_roxross/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
-    "apis/apis/08_devops_bootcamp_roxross/03_CREDS DE DOCKER.md",
-    "apis/apis/08_devops_bootcamp_roxross/03_docker.md",
-    "apis/apis/08_devops_bootcamp_roxross/02_GCP.md",
-    "portswigger/portswigger_academy/expert/06_jwt/03_bypass weak signin key.md",
     "fromcherry_to_obsidian/portswigger labs.ctb",
     "fromcherry_to_obsidian/htb2022_p2.ctb",
     "fromcherry_to_obsidian/htb2022.ctb~",

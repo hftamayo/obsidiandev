@@ -20,3 +20,28 @@ respecto a actualizar el cluster de k8s podría incluir en el manifesto del depl
 
 pues efectivamente se reinició el servicio, quizas como buena practica debería utilizar tags para la imagen de docker.
 
+==utilizando tags en el dockerfile:
+
+![[Pasted image 20240318105248.png]]
+
+
+![[Pasted image 20240318105416.png]]
+
+![[Pasted image 20240318105441.png]]
+
+
+![[Pasted image 20240318105322.png]]
+
+![[Pasted image 20240318110648.png]]
+
+![[Pasted image 20240318110838.png]]
+
+![[Pasted image 20240318111021.png]]
+
+como puedo ver en la ultima imagen no estoy usando 0.0.1, sigo usando latest, ==entonces para corregir el rumbo:
+
+
+![[Pasted image 20240318113429.png]]
+
+![[Pasted image 20240318113508.png]]
+
