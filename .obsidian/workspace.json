@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b5a402afcd825099",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
+                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
+                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md"
+                "file": "apis/apis/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md"
               }
             }
           }
@@ -146,8 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1943eeaad0e96b20",
+  "active": "b5a402afcd825099",
   "lastOpenFiles": [
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/05_instalacion de la capa de datos en produccion.md",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240319153354.png",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
