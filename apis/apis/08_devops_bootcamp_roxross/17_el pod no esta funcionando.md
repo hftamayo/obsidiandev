@@ -17,3 +17,17 @@
 
 ![[Pasted image 20240320152017.png]]
 
+==en esta etapa ejecute el numeral 18 donde aplique una service-account con los manifestos service-account.yml y clusterRoleBinding.yml
+
+![[Pasted image 20240402152753.png]]
+
+
+==tengo que actualizar el deployment del jenkins para que use esta cuenta:
+
+![[Pasted image 20240402154652.png]]
+
+
+actualizando el deployment:
+
+![[Pasted image 20240402155614.png]]
+

@@ -23,9 +23,11 @@
             "id": "b5a402afcd825099",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320153728.png"
+                "file": "apis/apis/08_devops_bootcamp_roxross/17_el pod no esta funcionando.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320153728.png",
+                "file": "apis/apis/08_devops_bootcamp_roxross/17_el pod no esta funcionando.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320153728.png",
+                "file": "apis/apis/08_devops_bootcamp_roxross/17_el pod no esta funcionando.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320153728.png"
+                "file": "apis/apis/08_devops_bootcamp_roxross/17_el pod no esta funcionando.md"
               }
             }
           }
@@ -157,47 +159,48 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2409bcabe9880884",
+  "active": "b5a402afcd825099",
   "lastOpenFiles": [
+    "Pasted image 20240402155614.png",
+    "Pasted image 20240402154652.png",
     "apis/apis/08_devops_bootcamp_roxross/18_serviceAccount y roleBinding manifesto.md",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320153909.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320153728.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320145545.png",
     "apis/apis/08_devops_bootcamp_roxross/17_el pod no esta funcionando.md",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320152017.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320151858.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320151531.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320150523.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320150359.png",
+    "Pasted image 20240402152753.png",
+    "apis/apis/08_devops_bootcamp_roxross/99_proxy reverse con nginx.md",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240321100740.png",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240321110018.png",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240321105110.png",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240321103307.png",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240321102839.png",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240321102300.png",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/images/Pasted image 20240321102103.png",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/10_rebuild project after fresh install.md",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/03_unit testing y design patterns.md",
+    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
+    "goprojects/7. kickstart neovim.md",
+    "goprojects/8_instalar el plugin de copilot en neovim.md",
+    "goprojects/6. neovim config.md",
+    "apis/apis/03_services behind proxy/11_neovim.md",
+    "apis/apis/05_software/dev.md",
+    "apis/apis/01_ejercicios/frontend/boilerplates/04_mern_dashboard.md",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt/01_setup and first steps.md",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/99_migrar de commonjs to ECM modules.md",
+    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/01_install jest y ts a todo v1.md",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320153909.png",
     "apis/apis/08_devops_bootcamp_roxross/16_solving the access of jenkins to the docker daemon running on host OS.md",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320145927.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240320145856.png",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/05_instalacion de la capa de datos en produccion.md",
-    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/00_secrets file.md",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/05_ creacion de la imagen y container de mysql en docker.md",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/02_ data migration.md",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/01_sourcecode.md",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/07_creacion de la imagen y container de la v1 (del codigo java).md",
     "apis/apis/01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
     "apis/apis/01_ejercicios/frontend/boilerplates/02_Authorization.md",
-    "apis/apis/01_ejercicios/frontend/boilerplates/04_mern_dashboard.md",
     "apis/apis/08_devops_bootcamp_roxross/15_actualizar el cluster k8s con un cambio en el docker image.md",
-    "goprojects/6. neovim config.md",
-    "goprojects/7. kickstart neovim.md",
-    "apis/apis/04_github/01_notes.md",
-    "apis/apis/05_software/dev.md",
-    "apis/apis/08_devops_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
-    "apis/apis/08_devops_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md",
     "apis/apis/01_ejercicios/kotlin/img",
-    "apis/apis/01_ejercicios/kotlin/01_rebuild despues de un fresh install.md",
-    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/10_rebuild project after fresh install.md",
     "apis/apis/01_ejercicios/kotlin",
-    "apis/apis/04_github/05_set up a SSH Key as auth method.md",
-    "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt/01_setup and first steps.md",
     "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt/img",
     "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt",
-    "apis/apis/01_ejercicios/frontend/boilerplates/03_landing Entreprise 01.md",
     "fromcherry_to_obsidian/portswigger labs.ctb",
     "fromcherry_to_obsidian/htb2022_p2.ctb",
     "fromcherry_to_obsidian/htb2022.ctb~",
