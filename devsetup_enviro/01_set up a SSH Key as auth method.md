@@ -27,4 +27,11 @@ por cada repo existente debo hacer los siguientes cambios:
 ![[Pasted image 20240313112137.png]]
 
 
+==REPITIENDO EL PROCESO EN UN EQUIPO NUEVO
+=
+
+
+![[Pasted image 20240403161138.png]]
+
+![[Pasted image 20240403161202.png]]
 
