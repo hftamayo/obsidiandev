@@ -19,3 +19,5 @@
 ==previamente en el server la llave publica estaba disponible, aca esta la sintaxi para habilitar la llave publica en el server:
 
 ![[Pasted image 20240404083117.png]]
+
+![[Pasted image 20240404084358.png]]
