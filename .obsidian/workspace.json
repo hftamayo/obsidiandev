@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devsetup_enviro/03_agregando un gestor de contraseñas.md",
+                "file": "reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devsetup_enviro/03_agregando un gestor de contraseñas.md",
+                "file": "reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devsetup_enviro/03_agregando un gestor de contraseñas.md",
+                "file": "reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devsetup_enviro/03_agregando un gestor de contraseñas.md"
+                "file": "reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md"
               }
             }
           }
@@ -148,31 +148,33 @@
   },
   "active": "1943eeaad0e96b20",
   "lastOpenFiles": [
-    "devsetup_enviro/images/Pasted image 20240405092710.png",
-    "devsetup_enviro/images/Pasted image 20240405082847.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407211746.png",
+    "reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
+    "reqs_proyectos_dev/images/Pasted image 20240407213246.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407213227.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407213203.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407213142.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407213113.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407212909.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407212838.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407212745.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407212710.png",
+    "reqs_proyectos_dev/images/Pasted image 20240407212559.png",
+    "apis/apis/08_devops_bootcamp_roxross/17_info del k8s node.md",
+    "apis/apis/08_devops_bootcamp_roxross/17_el pod no esta funcionando.md",
+    "apis/apis/08_devops_bootcamp_roxross/16_solving the access of jenkins to the docker daemon running on host OS.md",
     "devsetup_enviro/03_agregando un gestor de contraseñas.md",
-    "devsetup_enviro/images/Pasted image 20240405085946.png",
-    "devsetup_enviro/images/Pasted image 20240405083504.png",
     "devsetup_enviro/06_automatizacion del entorno dev.md",
-    "devsetup_enviro/images/Pasted image 20240405082130.png",
     "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
     "devsetup_enviro/02_llave privada para conectarse a un server.md",
-    "devsetup_enviro/images/Pasted image 20240404130607.png",
     "devsetup_enviro/05_web browsers.md",
     "devsetup_enviro/00_instalacion dual boot.md",
     "devsetup_enviro/00_wifi del OJ.md",
     "devsetup_enviro/04_xpad.md",
-    "devsetup_enviro/images/Pasted image 20240404092304.png",
-    "reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
-    "reqs_proyectos_dev/images/Pasted image 20240404085813.png",
     "reqs_proyectos_dev/images",
     "reqs_proyectos_dev",
-    "devsetup_enviro/images/Pasted image 20240404084955.png",
-    "devsetup_enviro/images/Pasted image 20240404084358.png",
-    "devsetup_enviro/images/Pasted image 20240404083117.png",
     "devsetup_enviro/images",
     "devsetup_enviro",
-    "apis/apis/08_devops_bootcamp_roxross/17_el pod no esta funcionando.md",
     "apis/apis/08_devops_bootcamp_roxross/18_serviceAccount y roleBinding manifesto.md",
     "apis/apis/08_devops_bootcamp_roxross/99_proxy reverse con nginx.md",
     "apis/apis/01_ejercicios/backend_rest/javaspring/todo/10_rebuild project after fresh install.md",
@@ -186,8 +188,6 @@
     "apis/apis/01_ejercicios/frontend/boilerplates/04_mern_dashboard.md",
     "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt/01_setup and first steps.md",
     "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/99_migrar de commonjs to ECM modules.md",
-    "apis/apis/01_ejercicios/backend_rest/nodejs/todo-ts/01_install jest y ts a todo v1.md",
-    "apis/apis/08_devops_bootcamp_roxross/16_solving the access of jenkins to the docker daemon running on host OS.md",
     "apis/apis/01_ejercicios/kotlin/img",
     "apis/apis/01_ejercicios/kotlin",
     "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt/img",
