@@ -86,7 +86,7 @@ verificando los datos del comtenedor asociado a este Jenkins:
 
 ![[Pasted image 20240405110428.png]]
 
-aca el hallazgo más importante es que kubernete esta usando contained en lugar de docker para la gestion de contenedores, por eso es que yo no veía los containers listados:
+aca el hallazgo más importante es que microk8s esta usando contained en lugar de docker para la gestion de contenedores, por eso es que yo no veía los containers listados:
 
 ![[Pasted image 20240405110524.png]]
 
