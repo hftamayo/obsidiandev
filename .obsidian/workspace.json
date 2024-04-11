@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/21_el pod no funciona_depurandolo parte 2.md",
+                "file": "apis/apis/08_devops_bootcamp_roxross/22_el pod no funciona_depurando parte 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/21_el pod no funciona_depurandolo parte 2.md",
+                "file": "apis/apis/08_devops_bootcamp_roxross/22_el pod no funciona_depurando parte 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/21_el pod no funciona_depurandolo parte 2.md",
+                "file": "apis/apis/08_devops_bootcamp_roxross/22_el pod no funciona_depurando parte 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "apis/apis/08_devops_bootcamp_roxross/21_el pod no funciona_depurandolo parte 2.md"
+                "file": "apis/apis/08_devops_bootcamp_roxross/22_el pod no funciona_depurando parte 3.md"
               }
             }
           }
@@ -173,23 +173,25 @@
   },
   "active": "e5aa9433a98ef211",
   "lastOpenFiles": [
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410133311.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411134408.png",
+    "apis/apis/08_devops_bootcamp_roxross/22_el pod no funciona_depurando parte 3.md",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411145942.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411145646.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411145520.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411145422.png",
     "apis/apis/08_devops_bootcamp_roxross/21_el pod no funciona_depurandolo parte 2.md",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410143842.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410143155.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410143114.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410142500.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410142222.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410141851.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410141613.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410141127.png",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410140934.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411144743.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411144352.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411143851.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411143056.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411142956.png",
+    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240411141705.png",
+    "devsetup_enviro/06_automatizacion del entorno dev.md",
     "apis/apis/08_devops_bootcamp_roxross/18_serviceAccount y roleBinding manifesto.md",
     "apis/apis/08_devops_bootcamp_roxross/17_info del k8s node.md",
     "apis/apis/08_devops_bootcamp_roxross/17_el pod no esta funcionando.md",
     "apis/apis/08_devops_bootcamp_roxross/20_desplegando jenkinsvit en el cluster de minikube.md",
     "apis/apis/08_devops_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
-    "apis/apis/08_devops_bootcamp_roxross/img/Pasted image 20240410135851.png",
     "apis/apis/08_devops_bootcamp_roxross/19_eliminando microk8s e instalando minikube.md",
     "apis/apis/08_devops_bootcamp_roxross/12_confusion sobre ejecucion de kubectl desde el pod donde esta jenkins.md",
     "apis/apis/08_devops_bootcamp_roxross/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
@@ -200,7 +202,6 @@
     "reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
     "apis/apis/08_devops_bootcamp_roxross/16_solving the access of jenkins to the docker daemon running on host OS.md",
     "devsetup_enviro/03_agregando un gestor de contraseñas.md",
-    "devsetup_enviro/06_automatizacion del entorno dev.md",
     "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
     "devsetup_enviro/02_llave privada para conectarse a un server.md",
     "devsetup_enviro/05_web browsers.md",
@@ -212,7 +213,6 @@
     "devsetup_enviro/images",
     "devsetup_enviro",
     "apis/apis/08_devops_bootcamp_roxross/99_proxy reverse con nginx.md",
-    "apis/apis/01_ejercicios/backend_rest/javaspring/todo/10_rebuild project after fresh install.md",
     "apis/apis/01_ejercicios/kotlin/img",
     "apis/apis/01_ejercicios/kotlin",
     "apis/apis/01_ejercicios/backend_rest/nodejs/microrpt/img",
