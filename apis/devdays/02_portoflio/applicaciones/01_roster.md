@@ -1,4 +1,4 @@
-1. RemindMe
+1. Sotiria
 	1. BackEnd:
 		1. Rest:
 			1. Java: Spring Boot, Rabbit MQ
