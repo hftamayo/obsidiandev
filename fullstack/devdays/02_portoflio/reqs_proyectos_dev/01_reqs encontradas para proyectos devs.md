@@ -1,4 +1,4 @@
-
+****
 ![[Pasted image 20240404085813.png]]
 
 
@@ -43,4 +43,12 @@
 ![[Pasted image 20240407213246.png]]
 
 ![[Pasted image 20240424100200.png]]
+
+==prueba técnica: hacer una aplicacion pero que no sea un CRUD
+
+![[Pasted image 20240425191959.png]]
+
+![[Pasted image 20240425192108.png]]
+
+![[Pasted image 20240425192235.png]]
 

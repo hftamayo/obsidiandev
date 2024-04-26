@@ -36,3 +36,4 @@
 5. Fitness / Recomendaciones de lugares y comidas, ofertas:
 6. LetsOrder para emprendedores
 7. ChatBot Con Rust
+8. AkiPago para pagos e intercambio de dinero

@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "72cf72c911e1f2a3",
+        "id": "e9ad74183c0ae841",
         "type": "tabs",
         "children": [
           {
-            "id": "0d1606bea3d0c63c",
+            "id": "3106d2c3d6949a1e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "apis/devdays/02_portoflio/applicaciones/03_sotiria.md",
+                "file": "devops/01_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "0866286c6b826be7",
+            "id": "f4b363debcd81a9c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "apis/devdays/08_devops_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md",
+                "file": "devops/01_bootcamp_roxross/minikube/22_el pod no funciona_depurando parte 3.md",
                 "mode": "source",
                 "source": false
               }
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "apis/devdays/02_portoflio/applicaciones/03_sotiria.md",
+                "file": "devops/01_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "apis/devdays/02_portoflio/applicaciones/03_sotiria.md",
+                "file": "devops/01_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "apis/devdays/02_portoflio/applicaciones/03_sotiria.md"
+                "file": "devops/01_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md"
               }
             }
           }
@@ -158,52 +158,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2409bcabe9880884",
+  "active": "3106d2c3d6949a1e",
   "lastOpenFiles": [
-    "apis/devdays/02_portoflio/applicaciones/img/Pasted image 20240425103508.png",
-    "apis/devdays/02_portoflio/applicaciones/03_sotiria.md",
-    "apis/devdays/02_portoflio/applicaciones/img/Pasted image 20240425103901.png",
-    "apis/devdays/02_portoflio/applicaciones/img/Pasted image 20240425103835.png",
-    "apis/devdays/02_portoflio/applicaciones/img/Pasted image 20240425103627.png",
-    "apis/devdays/02_portoflio/applicaciones/img/Pasted image 20240425103538.png",
-    "apis/devdays/02_portoflio/applicaciones/img",
-    "apis/devdays/02_portoflio/applicaciones/01_roster.md",
-    "apis/devdays/02_portoflio/applicaciones/02_ Kodigo GeekShow 2024 challenges.md",
-    "apis/devdays/05_software/dev.md",
-    "apis/devdays/01_ejercicios/frontend/pnpm.md",
-    "apis/devdays/01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
-    "apis/devdays/08_devops_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
-    "apis/devdays/08_devops_bootcamp_roxross/img/Pasted image 20240424132527.png",
-    "apis/devdays/08_devops_bootcamp_roxross/img/Pasted image 20240424133143.png",
-    "apis/devdays/08_devops_bootcamp_roxross/img/Pasted image 20240424132929.png",
-    "apis/devdays/08_devops_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md",
-    "apis/devdays/08_devops_bootcamp_roxross/img/Pasted image 20240424132756.png",
-    "apis/devdays/08_devops_bootcamp_roxross/img/Pasted image 20240424132649.png",
-    "apis/devdays/08_devops_bootcamp_roxross/minikube/24_configurando jenkins en minikube.md",
-    "apis/devdays/08_devops_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
-    "apis/devdays/08_devops_bootcamp_roxross/minikube/22_el pod no funciona_depurando parte 3.md",
-    "apis/devdays/08_devops_bootcamp_roxross/minikube/23_conectandome al servicio deployado en minikube.md",
-    "apis/devdays/02_portoflio/reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
-    "apis/devdays/08_devops_bootcamp_roxross/minikube/21_el pod no funciona_depurandolo parte 2.md",
-    "apis/devdays/08_devops_bootcamp_roxross/minikube",
-    "apis/devdays/08_devops_bootcamp_roxross/minikube/20_desplegando jenkinsvit en el cluster de minikube.md",
-    "apis/devdays/08_devops_bootcamp_roxross/12_confusion sobre ejecucion de kubectl desde el pod donde esta jenkins.md",
-    "apis/devdays/08_devops_bootcamp_roxross/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
-    "apis/devdays/08_devops_bootcamp_roxross/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
-    "apis/devdays/08_devops_bootcamp_roxross/09_ setting up a pipeline in Jenkins.md",
-    "apis/devdays/08_devops_bootcamp_roxross/08_recuperar la clave de jenkins.md",
-    "apis/devdays/08_devops_bootcamp_roxross/07_instalar y configurar microk8s en VM OJ.md",
-    "apis/devdays/08_devops_bootcamp_roxross/17_info del k8s node.md",
-    "apis/devdays/01_ejercicios/backend_rest/javaspring/todo/03_unit testing y design patterns.md",
-    "apis/devdays/01_ejercicios/backend_rest/javaspring/todo/02_ data migration.md",
-    "apis/devdays/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
-    "apis/devdays/02_portoflio/reqs_proyectos_dev/images",
-    "apis/devdays/02_portoflio/reqs_proyectos_dev",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240426150559.png",
+    "devops/01_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240426150637.png",
+    "devops/01_bootcamp_roxross/minikube/22_el pod no funciona_depurando parte 3.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240426144520.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240426145139.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240426144810.png",
+    "devops/01_bootcamp_roxross/minikube/23_conectandome al servicio deployado en minikube.md",
+    "fullstack/devdays/03_contrataciones/img/Pasted image 20240426142140.png",
+    "devops",
+    "devops/01_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md",
+    "fullstack/devdays/03_contrataciones/01_tendencias EU.md",
+    "fullstack/devdays/03_contrataciones/img/Pasted image 20240426142240.png",
+    "fullstack/devdays/03_contrataciones/img/Pasted image 20240426142200.png",
+    "fullstack/devdays/02_portoflio/applicaciones/01_roster.md",
+    "fullstack/devdays/03_contrataciones/img",
+    "fullstack/devdays/03_contrataciones",
+    "apis/devdays/03_tendencias contrataciones.md",
+    "fullstack/devdays/01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
+    "fullstack/devdays/02_portoflio/applicaciones/03_sotiria.md",
+    "fullstack/devdays/02_portoflio/applicaciones/img/Pasted image 20240426083630.png",
+    "fullstack/devdays/02_portoflio/applicaciones/img/Pasted image 20240426083508.png",
+    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
+    "fullstack/devdays/02_portoflio/applicaciones/img",
+    "fullstack/devdays/02_portoflio/applicaciones/02_ Kodigo GeekShow 2024 challenges.md",
+    "fullstack/devdays/05_software/dev.md",
+    "fullstack/devdays/01_ejercicios/frontend/pnpm.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
+    "devops/01_bootcamp_roxross/minikube/24_configurando jenkins en minikube.md",
+    "devops/01_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
+    "devops/01_bootcamp_roxross/minikube/21_el pod no funciona_depurandolo parte 2.md",
+    "devops/01_bootcamp_roxross/minikube",
+    "devops/01_bootcamp_roxross/minikube/20_desplegando jenkinsvit en el cluster de minikube.md",
+    "devops/01_bootcamp_roxross/12_confusion sobre ejecucion de kubectl desde el pod donde esta jenkins.md",
+    "devops/01_bootcamp_roxross/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
+    "devops/01_bootcamp_roxross/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
+    "devops/01_bootcamp_roxross/09_ setting up a pipeline in Jenkins.md",
+    "devops/01_bootcamp_roxross/08_recuperar la clave de jenkins.md",
+    "devops/01_bootcamp_roxross/07_instalar y configurar microk8s en VM OJ.md",
+    "devops/01_bootcamp_roxross/17_info del k8s node.md",
+    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images",
+    "fullstack/devdays/02_portoflio/reqs_proyectos_dev",
     "devsetup_enviro/images",
     "devsetup_enviro",
-    "apis/devdays/01_ejercicios/kotlin/img",
-    "apis/devdays/01_ejercicios/kotlin",
-    "apis/devdays/01_ejercicios/backend_rest/nodejs/microrpt/img",
-    "apis/devdays/01_ejercicios/backend_rest/nodejs/microrpt"
+    "fullstack/devdays/01_ejercicios/kotlin/img"
   ]
 }
