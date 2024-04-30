@@ -269,3 +269,11 @@ In your case, the code seems to be correct. So, please check the following:
 
 If the problem persists after checking these points, please provide more information about your Spring Security version and your project setup.
 
+==INTERACCION ENTRE LAS CLASES CUSTOMACCESSDECISIONMANAGER Y CUSTOMACCESSDENIEDHANDLER
+
+From the code you've provided, it seems like you've implemented CustomAccessDecisionManager correctly. However, the issue might be with how it's being used in your FilterConfig class. The CustomAccessDecisionManager should be used to make access control decisions, but it seems like you're trying to use it in the authentication process. This could be why you're experiencing issues when you include it in your FilterConfig.  
+
+CustomAccessDecisionManager and CustomAccessDeniedHandler are not the same, but they do work closely together in the access control process. The CustomAccessDecisionManager is used to make access control decisions, i.e., to decide whether a user should be granted access to a resource based on their authentication and authorization. If the CustomAccessDecisionManager decides that access should be denied, it throws an AccessDeniedException. The 
+
+CustomAccessDeniedHandler is then used to handle this exception and determine what should happen when access is denied (e.g., redirecting the user, sending an error response, etc.).  
+In your current FilterConfig class, you're catching and rethrowing exceptions in your authorizeRequests configuration. This might be unnecessary, as Spring Security should handle most exceptions for you. Here's how you can simplify this:
