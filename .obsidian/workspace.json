@@ -11,13 +11,38 @@
             "id": "f4b363debcd81a9c",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/microservices.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "eab1ac014be140ae",
+            "type": "leaf",
+            "state": {
               "type": "image",
               "state": {
-                "file": "devops/01_bootcamp_roxross/img/Pasted image 20240430144224.png"
+                "file": "fullstack/devdays/02_portoflio/img/2024_microservices_roadmap.gif"
+              }
+            }
+          },
+          {
+            "id": "940edcd9e6c3b040",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/buenas practicas.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -83,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops/01_bootcamp_roxross/img/Pasted image 20240430144224.png",
+                "file": "fullstack/devdays/02_portoflio/buenas practicas.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops/01_bootcamp_roxross/img/Pasted image 20240430144224.png",
+                "file": "fullstack/devdays/02_portoflio/buenas practicas.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops/01_bootcamp_roxross/img/Pasted image 20240430144224.png"
+                "file": "fullstack/devdays/02_portoflio/buenas practicas.md"
               }
             }
           }
@@ -144,49 +169,49 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2409bcabe9880884",
+  "active": "940edcd9e6c3b040",
   "lastOpenFiles": [
-    "devops/01_bootcamp_roxross/18_serviceAccount y roleBinding manifesto.md",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240430144224.png",
+    "proyectos 2024 portfolio.jpeg",
+    "most common used design patterns.jpeg",
+    "free apis.jpeg",
+    "fullstack/devdays/02_portoflio/design patterns.md",
+    "fullstack/devdays/02_portoflio/microservices.md",
+    "fullstack/devdays/02_portoflio/free apis.md",
+    "fullstack/devdays/02_portoflio/img/road to dev senior.png",
+    "fullstack/devdays/02_portoflio/img/2024_microservices_roadmap.gif",
+    "fullstack/devdays/02_portoflio/img/code review pyramid.jpeg",
+    "README.md",
+    "fullstack/devdays/02_portoflio/img/most common used design patterns.jpeg",
+    "fullstack/devdays/02_portoflio/buenas practicas.md",
+    "fullstack/devdays/02_portoflio/img/E2E software lifecycle.gif",
+    "fullstack/devdays/02_portoflio/img/sdlc_2023.gif",
+    "fullstack/devdays/02_portoflio/img/solid_principles.gif",
+    "fullstack/devdays/02_portoflio/img/microservices best practices.gif",
+    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
+    "fullstack/devdays/03_contrataciones/01_tendencias EU.md",
+    "devops/01_bootcamp_roxross/minikube/28_ alternativa al metodo de Rossana_docker plugin.md",
+    "devops/01_bootcamp_roxross/minikube/27_Running el CICD usando el plugin docker.md",
     "devops/01_bootcamp_roxross/minikube/26_ DiD y riesgo de seguridad del approach de Rossana.md",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240430152412.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240430144356.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240430144304.png",
+    "devops/01_bootcamp_roxross/18_serviceAccount y roleBinding manifesto.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
     "devops/01_bootcamp_roxross/minikube/22_el pod no funciona_depurando parte 3.md",
-    "fullstack/devdays/Pasted image 20231127092753.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240429130616.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240429142630.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240429142407.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240429142032.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240429141804.png",
     "devops/01_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
     "fullstack/devdays/02_portoflio/applicaciones/03_sotiria.md",
     "devops/01_bootcamp_roxross/minikube/23_conectandome al servicio deployado en minikube.md",
     "devops",
     "devops/01_bootcamp_roxross/14_jenkins pipeline para despliegue on premise de k8s.md",
-    "fullstack/devdays/03_contrataciones/01_tendencias EU.md",
     "fullstack/devdays/02_portoflio/applicaciones/01_roster.md",
     "fullstack/devdays/03_contrataciones/img",
     "fullstack/devdays/03_contrataciones",
     "apis/devdays/03_tendencias contrataciones.md",
     "fullstack/devdays/01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
-    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
     "fullstack/devdays/02_portoflio/applicaciones/img",
     "fullstack/devdays/02_portoflio/applicaciones/02_ Kodigo GeekShow 2024 challenges.md",
     "fullstack/devdays/05_software/dev.md",
     "fullstack/devdays/01_ejercicios/frontend/pnpm.md",
     "fullstack/devdays/01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
     "devops/01_bootcamp_roxross/minikube/24_configurando jenkins en minikube.md",
-    "devops/01_bootcamp_roxross/13_ instalar y configurar jenkins, kubectl, docker, helm en el cluster de microk8s.md",
-    "devops/01_bootcamp_roxross/minikube/21_el pod no funciona_depurandolo parte 2.md",
     "devops/01_bootcamp_roxross/minikube",
-    "devops/01_bootcamp_roxross/minikube/20_desplegando jenkinsvit en el cluster de minikube.md",
-    "devops/01_bootcamp_roxross/12_confusion sobre ejecucion de kubectl desde el pod donde esta jenkins.md",
-    "devops/01_bootcamp_roxross/11_actualizando el cluster con los cambios hechos a la imagen de jenkins en docker.md",
-    "devops/01_bootcamp_roxross/10_login al docker de jenkins deployado y regenerar la imagen en microk8s.md",
-    "devops/01_bootcamp_roxross/09_ setting up a pipeline in Jenkins.md",
-    "devops/01_bootcamp_roxross/08_recuperar la clave de jenkins.md",
     "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images",
     "fullstack/devdays/02_portoflio/reqs_proyectos_dev",
     "devsetup_enviro/images",

@@ -1,0 +1,1 @@
+![[most common used design patterns.jpeg]]
