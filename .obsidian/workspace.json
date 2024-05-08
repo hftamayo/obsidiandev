@@ -13,36 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/microservices.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eab1ac014be140ae",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/img/2024_microservices_roadmap.gif"
-              }
-            }
-          },
-          {
-            "id": "940edcd9e6c3b040",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/buenas practicas.md",
+                "file": "devops/01_bootcamp_roxross/minikube/30_Haciendo funcionar el Docker In Docker.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -108,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/buenas practicas.md",
+                "file": "devops/01_bootcamp_roxross/minikube/30_Haciendo funcionar el Docker In Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/buenas practicas.md",
+                "file": "devops/01_bootcamp_roxross/minikube/30_Haciendo funcionar el Docker In Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/buenas practicas.md"
+                "file": "devops/01_bootcamp_roxross/minikube/30_Haciendo funcionar el Docker In Docker.md"
               }
             }
           }
@@ -169,33 +146,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "940edcd9e6c3b040",
+  "active": "f4b363debcd81a9c",
   "lastOpenFiles": [
-    "proyectos 2024 portfolio.jpeg",
-    "most common used design patterns.jpeg",
-    "free apis.jpeg",
-    "fullstack/devdays/02_portoflio/design patterns.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240508152604.png",
+    "devops/01_bootcamp_roxross/minikube/30_Haciendo funcionar el Docker In Docker.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240508152311.png",
+    "devops/01_bootcamp_roxross/minikube/28_ alternativa al metodo de Rossana.md",
+    "devops/01_bootcamp_roxross/minikube/26_ DiD y riesgo de seguridad del approach de Rossana.md",
+    "devops/01_bootcamp_roxross/minikube/27_Running el CICD usando el plugin docker.md",
+    "devops/01_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
+    "devops/01_bootcamp_roxross/minikube/24_configurando jenkins en minikube.md",
     "fullstack/devdays/02_portoflio/microservices.md",
+    "fullstack/devdays/02_portoflio/devops.md",
+    "fullstack/devdays/02_portoflio/img/data lake.jpeg",
+    "fullstack/devdays/02_portoflio/img/ventajas de usar containers.jpeg",
+    "fullstack/devdays/02_portoflio/img/animacion cool de un pipeline.gif",
+    "fullstack/devdays/02_portoflio/img/2024_devops_roadmap.gif",
+    "fullstack/devdays/02_portoflio/buenas practicas.md",
+    "fullstack/devdays/02_portoflio/img/proyectos 2024 portfolio 1.jpeg",
+    "fullstack/devdays/02_portoflio/img/most common used design patterns 1.jpeg",
+    "fullstack/devdays/02_portoflio/img/free apis 1.jpeg",
+    "fullstack/devdays/02_portoflio/design patterns.md",
     "fullstack/devdays/02_portoflio/free apis.md",
     "fullstack/devdays/02_portoflio/img/road to dev senior.png",
-    "fullstack/devdays/02_portoflio/img/2024_microservices_roadmap.gif",
-    "fullstack/devdays/02_portoflio/img/code review pyramid.jpeg",
     "README.md",
-    "fullstack/devdays/02_portoflio/img/most common used design patterns.jpeg",
-    "fullstack/devdays/02_portoflio/buenas practicas.md",
-    "fullstack/devdays/02_portoflio/img/E2E software lifecycle.gif",
-    "fullstack/devdays/02_portoflio/img/sdlc_2023.gif",
-    "fullstack/devdays/02_portoflio/img/solid_principles.gif",
-    "fullstack/devdays/02_portoflio/img/microservices best practices.gif",
     "fullstack/devdays/02_portoflio/reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
     "fullstack/devdays/03_contrataciones/01_tendencias EU.md",
-    "devops/01_bootcamp_roxross/minikube/28_ alternativa al metodo de Rossana_docker plugin.md",
-    "devops/01_bootcamp_roxross/minikube/27_Running el CICD usando el plugin docker.md",
-    "devops/01_bootcamp_roxross/minikube/26_ DiD y riesgo de seguridad del approach de Rossana.md",
     "devops/01_bootcamp_roxross/18_serviceAccount y roleBinding manifesto.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
     "devops/01_bootcamp_roxross/minikube/22_el pod no funciona_depurando parte 3.md",
-    "devops/01_bootcamp_roxross/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
     "fullstack/devdays/02_portoflio/applicaciones/03_sotiria.md",
     "devops/01_bootcamp_roxross/minikube/23_conectandome al servicio deployado en minikube.md",
     "devops",
@@ -208,9 +187,6 @@
     "fullstack/devdays/02_portoflio/applicaciones/img",
     "fullstack/devdays/02_portoflio/applicaciones/02_ Kodigo GeekShow 2024 challenges.md",
     "fullstack/devdays/05_software/dev.md",
-    "fullstack/devdays/01_ejercicios/frontend/pnpm.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
-    "devops/01_bootcamp_roxross/minikube/24_configurando jenkins en minikube.md",
     "devops/01_bootcamp_roxross/minikube",
     "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images",
     "fullstack/devdays/02_portoflio/reqs_proyectos_dev",
