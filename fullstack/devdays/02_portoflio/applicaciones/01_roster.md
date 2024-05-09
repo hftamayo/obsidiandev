@@ -37,3 +37,5 @@
 6. LetsOrder para emprendedores
 7. ChatBot Con Rust
 8. AkiPago para pagos e intercambio de dinero
+9. Aplicacion para hacer encuesta y obtener datos (predictive)
+10. applicacion movil para insitucion educativa:  horarios, grupos, inscripciones, comunidad, job posting, mensajes privados, alertas, cuadro academico
