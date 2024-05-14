@@ -1,7 +1,4 @@
 
-ENDPOINTS Y TESTING  EN EXPERIMENTAL:
-=
-
 USER WORFLOW:
 =
 
@@ -18,6 +15,7 @@ curl -X POST http://10.2.0.238:8003/nodetodo/users/register -H "Content-Type: ap
 
 curl --cookie-jar sessions.txt -i -X POST http://10.2.0.238:8003/nodetodo/users/login -H "Content-Type: application/json" -d '{"email": "wilfrido@merengue.com", "password":"password123"}'
 
+
 ==output:
 
 {"httpStatusCode":200,"resultMessage":"User login successfully","loggedUser":{"_id":"65cf89c6cabbdb52f571209c","name":"Wilfrido Vargas","email":"wilfrido@merengue.com","age":22,"createdAt":"2024-02-16T16:13:58.056Z","updatedAt":"2024-02-08T16:10:08.461Z","__v":0}}
@@ -25,6 +23,8 @@ curl --cookie-jar sessions.txt -i -X POST http://10.2.0.238:8003/nodetodo/users/
 ==GET DETAILS:
 
 curl -i -b sessions.txt http://10.2.0.238:8003/nodetodo/users/me
+
+curl -i -b sessions.txt http://localhost:8003/nodetodo/users/me
 
 ==output:
 
