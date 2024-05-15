@@ -7,3 +7,4 @@
 
 ![[data lake.jpeg]]
 
+![[cicd_pipeline_argocd_githubactions.gif]]
