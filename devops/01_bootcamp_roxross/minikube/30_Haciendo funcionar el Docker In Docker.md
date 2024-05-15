@@ -10,3 +10,5 @@ aun y cuando instalé el paquete sudo y tambien jenkins esta en el grupo sudoers
 ![[Pasted image 20240508152604.png]]
 
 ==indudablemente que esto no es lo ideal pues si esto en produccion se escala el usuario jenkins autometicamente controlo el pod y alguna acitividad podría lograr en el host OS pero al final pude salir de este rabit hole
+
+Despues de esto puedo ir probando el pipeline con toda normalidad y las etapas se van ejecutando si no hay observaciones gramaticales en el codigo.

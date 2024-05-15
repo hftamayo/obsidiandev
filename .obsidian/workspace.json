@@ -4,16 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "5345876dbf378a1e",
+        "id": "f0e88c50f0cb6243",
         "type": "tabs",
         "children": [
           {
-            "id": "111e96a54bbd7358",
+            "id": "8c67d1d3be89cb18",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster.md",
+                "file": "devops/01_bootcamp_roxross/minikube/31_como gestionar credenciales en Jenkins.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cefe2216c2e8fe03",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "devops/01_bootcamp_roxross/03_CREDS DE DOCKER.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster.md",
+                "file": "devops/01_bootcamp_roxross/minikube/31_como gestionar credenciales en Jenkins.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster.md",
+                "file": "devops/01_bootcamp_roxross/minikube/31_como gestionar credenciales en Jenkins.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster.md"
+                "file": "devops/01_bootcamp_roxross/minikube/31_como gestionar credenciales en Jenkins.md"
               }
             }
           }
@@ -146,10 +158,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "111e96a54bbd7358",
+  "active": "8c67d1d3be89cb18",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias y trends.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240515114918.png",
+    "devops/01_bootcamp_roxross/minikube/31_como gestionar credenciales en Jenkins.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240515122007.png",
+    "devops/01_bootcamp_roxross/03_CREDS DE DOCKER.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240515120901.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240515120820.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240515115608.png",
+    "Pasted image 20240515115240.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240515115046.png",
+    "devops/01_bootcamp_roxross/minikube/30_Haciendo funcionar el Docker In Docker.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias y trends.md",
     "fullstack/devdays/02_portoflio/planificacion/03_sotiria.md",
     "fullstack/devdays/01_ejercicios/backend_rest/nodejs/todo/03B_testing de endpoints con Postman.md",
     "fullstack/devdays/01_ejercicios/backend_rest/nodejs/todo/03A_testing de los endpoints con curl.md",
@@ -159,17 +181,8 @@
     "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images/Pasted image 20240509145552.png",
     "fullstack/devdays/02_portoflio/reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
     "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images/Pasted image 20240509145749.png",
-    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images/Pasted image 20240509145732.png",
-    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images/Pasted image 20240509145713.png",
-    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images/Pasted image 20240509145658.png",
-    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images/Pasted image 20240509145643.png",
-    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images/Pasted image 20240509145625.png",
-    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/images/Pasted image 20240509145612.png",
-    "devops/01_bootcamp_roxross/03_CREDS DE DOCKER.md",
     "devops/01_bootcamp_roxross/minikube/03_CREDS DE DOCKER.md",
     "devops/01_bootcamp_roxross/minikube/28_ alternativa al metodo de Rossana.md",
-    "devops/01_bootcamp_roxross/minikube/30_Haciendo funcionar el Docker In Docker.md",
-    "fullstack/devdays/03_contrataciones/img/Pasted image 20240508155017.png",
     "fullstack/devdays/03_contrataciones/02_backend job offers.md",
     "fullstack/devdays/03_contrataciones/01_tendencias EU.md",
     "devops/01_bootcamp_roxross/minikube/26_ DiD y riesgo de seguridad del approach de Rossana.md",
@@ -182,8 +195,6 @@
     "fullstack/devdays/02_portoflio/design patterns.md",
     "fullstack/devdays/02_portoflio/free apis.md",
     "README.md",
-    "devops/01_bootcamp_roxross/18_serviceAccount y roleBinding manifesto.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
     "devops",
     "fullstack/devdays/03_contrataciones/img",
     "fullstack/devdays/03_contrataciones",

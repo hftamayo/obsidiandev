@@ -1,6 +1,6 @@
 1. Sotiria: (React.JS + Node.JS)
 Frontend: 
-- verificar el motivo por qué DashboardButton no se esta renderizando
+- dockerizar y hacer pruebas con el backend en el entorno dev
 
 Backend: 
 - verificar los outputs de los endpoints tanto en curl como en Postman por posible data expose
@@ -20,9 +20,7 @@ Backend:
 1. Todo: (JavaSpringBoot)
 
 Backend:
-  - limpiar el metodo updateUserStatusAndRole de los logger.info y mover la business logic al service y serviceImpl
   - verificar que una cuenta con status=false no se pueda loggear
-  - limpiar de logger.info el CustomAccessDecisionManager
   - log de todas las operaciones, ejemplo: el usuario ADMIN123 activo a la cuenta de usuario 4, rafamurillo en datetime 
  
 
