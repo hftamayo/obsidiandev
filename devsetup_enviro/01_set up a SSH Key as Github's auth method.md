@@ -35,3 +35,9 @@ por cada repo existente debo hacer los siguientes cambios:
 
 ![[Pasted image 20240403161202.png]]
 
+![[Pasted image 20240516082549.png]]
+
+==notese que aunque el ultimo comando me generó error aun asi pude conectarme al repo:
+
+![[Pasted image 20240516082655.png]]
+

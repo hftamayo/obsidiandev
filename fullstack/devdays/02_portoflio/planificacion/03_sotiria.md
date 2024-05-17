@@ -49,3 +49,33 @@ PROJECT'S INSTALL AND SETUP
 
 ![[Pasted image 20240429080051.png]]
 
+==CONTENEDOR DE LA APLICACION
+=
+
+- Este es el Dockerfile:
+
+![[Pasted image 20240517075822.png]]
+
+
+- Estado del Container:
+
+![[Pasted image 20240517075905.png]]
+
+![[Pasted image 20240517075949.png]]
+
+![[Pasted image 20240517080020.png]]
+
+
+- Sin embargo no conecta:
+
+![[Pasted image 20240517080106.png]]
+
+![[Pasted image 20240517080158.png]]
+
+==y esto es porque Vite restringue conexiones que no vengan de Localhost, asi que en el vite.config se hace el siguiente cambio:
+
+![[Pasted image 20240517082446.png]]
+
+![[Pasted image 20240517083032.png]]
+
+- ![[Pasted image 20240517083204.png]]

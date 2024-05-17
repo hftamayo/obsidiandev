@@ -277,3 +277,65 @@ CustomAccessDecisionManager and CustomAccessDeniedHandler are not the same, but 
 
 CustomAccessDeniedHandler is then used to handle this exception and determine what should happen when access is denied (e.g., redirecting the user, sending an error response, etc.).  
 In your current FilterConfig class, you're catching and rethrowing exceptions in your authorizeRequests configuration. This might be unnecessary, as Spring Security should handle most exceptions for you. Here's how you can simplify this:
+
+==ejemplo de una clase FilterConfig sumamente completa:
+
+@Configuration
+@EnableWebSecurity
+@RequiredArgsConstructor
+
+public class FilterConfig {
+    private final AuthenticationFilter authenticationFilter;
+    private final AuthenticationProvider authenticationProvider;
+    private static final Logger logger = LoggerFactory.getLogger(FilterConfig.class);
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
+        logger.info("Configuring Security Filter Chain");
+        return httpSecurity
+                .csrf(csrf ->
+                        csrf.disable())
+                .authorizeRequests(authorizeRequests ->
+                        {
+                            try {
+                                authorizeRequests
+                                        .requestMatchers("/api/auth/**").permitAll()
+                                        .requestMatchers("/api/health/**").permitAll()
+                                        .requestMatchers("/api/user/**").hasRole("USER")
+                                        .requestMatchers("/api/supervisor/**").hasRole("SUPERVISOR")
+                                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+                                        .anyRequest().authenticated()
+                                        .and()
+                                        .formLogin()
+                                        .loginPage("/login")
+                                        .defaultSuccessUrl("/home")
+                                        .failureUrl("/login?error=true")
+                                        .permitAll()
+                                        .and()
+                                        .exceptionHandling()
+                                        .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED))
+                                        .and()
+                                        .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                                        .and()
+                                        .requiresChannel()
+                                        .anyRequest()
+                                        .requiresSecure()
+                                        .and()
+                                        .logout()
+                                        .logoutUrl("/logout")
+                                        .logoutSuccessUrl("/login?logout=true")
+                                        .permitAll();
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
+                            }
+                        }
+                )
+                .sessionManagement(sessionManager ->
+                        sessionManager
+                                .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .authenticationProvider(authenticationProvider)
+                .addFilterBefore(authenticationFilter, UsernamePasswordAuthenticationFilter.class)
+                .build();
+    }
+
+}

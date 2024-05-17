@@ -20,8 +20,8 @@ Backend:
 1. Todo: (JavaSpringBoot)
 
 Backend:
-  - verificar que una cuenta con status=false no se pueda loggear
-  - log de todas las operaciones, ejemplo: el usuario ADMIN123 activo a la cuenta de usuario 4, rafamurillo en datetime 
+  - log de todas las operaciones, ejemplo: el usuario ADMIN123 activo a la cuenta de usuario 4, rafamurillo en datetime
+  - function para verificar si hay conexion con el backend y decidir el mejor camino para finalizar la aplicacion e informar al usuario
  
 
 
