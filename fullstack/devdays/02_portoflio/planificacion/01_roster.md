@@ -64,5 +64,16 @@ Backend:
    
 8. Fintech (JSB + React+Next.JS)
     - pago de serivico, intercambio de dinero (estilo TigoMoney)
+
+9. Self Service Ventas:
+* aplicacion movil que permita escanear un codigo de un producto, consultar sus features y agregarlos a la canasta
+* el usuario puede pagar con su medio de pago electronico deseado
+* pasa a despacho y se lleva la compra
+* puede hacer reeña de su experiencia
+* puede pedir domicilio oretirar
+* tamien recibirá cupones
+
+10. e-inventario:
+	1. escaneas un item y te genera codigo QR y ubicacion
     
   
