@@ -44,6 +44,18 @@
             }
           },
           {
+            "id": "ffc2f3ef9de1103b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "96911147a267c7d0",
             "type": "leaf",
             "state": {
@@ -56,12 +68,12 @@
             }
           },
           {
-            "id": "c45ab0a1ddb0bf5e",
+            "id": "07591d285ff0e52e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/99_devops_bestpractices.md",
+                "file": "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
                 "mode": "source",
                 "source": false
               }
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops/99_devops_bestpractices.md",
+                "file": "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops/99_devops_bestpractices.md",
+                "file": "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops/99_devops_bestpractices.md"
+                "file": "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md"
               }
             }
           }
@@ -195,28 +207,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c45ab0a1ddb0bf5e",
+  "active": "96911147a267c7d0",
   "lastOpenFiles": [
-    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/07_creacion de la imagen y container de la v1 (del codigo java).md",
+    "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
     "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
-    "devops/99_devops_bestpractices.md",
-    "devops/img/nginx_api_gateway.gif",
-    "devops/img/restapidesign.gif",
-    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/images/Pasted image 20240520143337.png",
-    "fullstack/devdays/02_portoflio/planificacion/01_roster.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521123008.png",
     "devops/01_bootcamp_roxross/minikube/32_no puedo conectarme a Jenkins.md",
-    "Pasted image 20240520135915.png",
-    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/images/Pasted image 20240520143508.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521130747.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521130720.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521130705.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521124511.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521123527.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521123346.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521123211.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240521123126.png",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/images/Pasted image 20240521111641.png",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/10_V2.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/09_deploy de los containers de la v1 en cloud providers y local.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/08_debug y deploy de la aplicacion en una imagen.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/07_creacion de la imagen y container de la v1 (del codigo java).md",
+    "fullstack/devdays/02_portoflio/planificacion/01_roster.md",
+    "devops/99_devops_bestpractices.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/05_instalacion de la capa de datos en produccion.md",
     "devops/01_bootcamp_roxross/minikube/31_como gestionar credenciales en Jenkins.md",
-    "fullstack/devdays/Pasted image 20231127092753.png",
     "devops/01_bootcamp_roxross/03_docker.md",
     "fullstack/devdays/02_portoflio/planificacion/03_sotiria.md",
-    "fullstack/devdays/02_portoflio/planificacion/img/Pasted image 20240517083204.png",
-    "fullstack/devdays/02_portoflio/planificacion/img/Pasted image 20240517075822.png",
-    "fullstack/devdays/02_portoflio/planificacion/img/Pasted image 20240517083032.png",
-    "fullstack/devdays/02_portoflio/planificacion/img/Pasted image 20240517082446.png",
-    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/11_Spring Security.md",
     "devops/01_bootcamp_roxross/03_CREDS DE DOCKER.md",
     "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
     "devsetup_enviro/02_llave privada para conectarse a un server SSH.md",
@@ -229,10 +246,6 @@
     "fullstack/devdays/01_ejercicios/backend_rest/nodejs/todo/03A_testing de los endpoints con curl.md",
     "fullstack/devdays/01_ejercicios/backend_rest/nodejs/todo/07_unit testing.md",
     "fullstack/devdays/01_ejercicios/backend_rest/nodejs/todo/06_ scripts para testear.md",
-    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
-    "devops/01_bootcamp_roxross/minikube/03_CREDS DE DOCKER.md",
-    "devops/01_bootcamp_roxross/minikube/28_ alternativa al metodo de Rossana.md",
-    "fullstack/devdays/03_contrataciones/02_backend job offers.md",
     "devops",
     "fullstack/devdays/03_contrataciones/img",
     "fullstack/devdays/03_contrataciones",
