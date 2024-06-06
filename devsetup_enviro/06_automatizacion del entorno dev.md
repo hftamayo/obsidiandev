@@ -11,3 +11,8 @@ el stage 3 es la descarga de los IDES:
 - Intellij: dark purple theme, copilot, 
 - pycharm:
 - neovim:
+
+stage4: devOps:
+- docker
+- minikube
+
