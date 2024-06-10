@@ -8,6 +8,18 @@
         "type": "tabs",
         "children": [
           {
+            "id": "ce9b5f8fb7862bc1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "dc2e1a07b5a4daca",
             "type": "leaf",
             "state": {
@@ -102,9 +114,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "24acb7dd4d8a90ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/04_github/05_ solve merge conflicts.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -170,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops/01_bootcamp_roxross/devops_commands_cheatseet.md",
+                "file": "fullstack/devdays/04_github/05_ solve merge conflicts.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops/01_bootcamp_roxross/devops_commands_cheatseet.md",
+                "file": "fullstack/devdays/04_github/05_ solve merge conflicts.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops/01_bootcamp_roxross/devops_commands_cheatseet.md"
+                "file": "fullstack/devdays/04_github/05_ solve merge conflicts.md"
               }
             }
           }
@@ -231,34 +255,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d1c64fa041877b6",
+  "active": "24acb7dd4d8a90ac",
   "lastOpenFiles": [
-    "devops/01_bootcamp_roxross/img/Pasted image 20240606134022.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610144510.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610141123.png",
+    "fullstack/devdays/04_github/05_ solve merge conflicts.md",
     "devops/01_bootcamp_roxross/devops_commands_cheatseet.md",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240606134329.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240606134230.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240606134210.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610144453.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610144345.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610143032.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610141710.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610141649.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610141531.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610141413.png",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240610141226.png",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
     "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/03_tracear el lifecycle de la conexion con el datalayer.md",
+    "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
+    "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
     "devsetup_enviro/06_automatizacion del entorno dev.md",
     "devops/01_bootcamp_roxross/03_docker.md",
     "fullstack/devdays/01_ejercicios/backend_rest/django/01_first steps.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/django/img/Pasted image 20240523174737.png",
     "fullstack/devdays/01_ejercicios/backend_rest/django/img",
-    "fullstack/devdays/01_ejercicios/backend_rest/django/img/Pasted image 20240523174820.png",
-    "Pasted image 20240523174708.png",
     "fullstack/devdays/01_ejercicios/backend_rest/django",
     "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/99_unit testing.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
-    "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
-    "devops/01_bootcamp_roxross/imgprojs/Pasted image 20240523112030.png",
     "devops/01_bootcamp_roxross/imgprojs",
-    "devops/01_bootcamp_roxross/imgprojs/Pasted image 20240523120839.png",
-    "devops/01_bootcamp_roxross/imgprojs/Pasted image 20240523120815.png",
     "devops/01_bootcamp_roxross/01_kubernetes.md",
-    "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/07_creacion de la imagen y container de la v1 (del codigo java).md",
     "devops/01_bootcamp_roxross/minikube/32_no puedo conectarme a Jenkins.md",
     "fullstack/devdays/03_contrataciones/03_backend job offers.md",
@@ -269,8 +295,6 @@
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/08_debug y deploy de la aplicacion en una imagen.md",
     "devops/99_devops_bestpractices.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/05_instalacion de la capa de datos en produccion.md",
-    "devops/01_bootcamp_roxross/minikube/31_como gestionar credenciales en Jenkins.md",
-    "fullstack/devdays/02_portoflio/planificacion/03_sotiria.md",
     "devops/img",
     "devops",
     "fullstack/devdays/03_contrataciones/img",
