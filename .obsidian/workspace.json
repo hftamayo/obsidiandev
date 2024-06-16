@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
                 "mode": "source",
                 "source": false
               }
@@ -127,8 +127,7 @@
               }
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/04_github/05_ solve merge conflicts.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/04_github/05_ solve merge conflicts.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +233,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/04_github/05_ solve merge conflicts.md"
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md"
               }
             }
           }
@@ -255,28 +254,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "24acb7dd4d8a90ac",
+  "active": "ce9b5f8fb7862bc1",
   "lastOpenFiles": [
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610144510.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610141123.png",
-    "fullstack/devdays/04_github/05_ solve merge conflicts.md",
-    "devops/01_bootcamp_roxross/devops_commands_cheatseet.md",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610144453.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610144345.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610143032.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610141710.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610141649.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610141531.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610141413.png",
-    "devops/01_bootcamp_roxross/img/Pasted image 20240610141226.png",
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
+    "fullstack/devdays/03_contrataciones/img/Pasted image 20240611152854.png",
+    "Pasted image 20240611140803.png",
+    "Pasted image 20240611140454.png",
+    "devops/01_bootcamp_roxross/devops_commands_cheatseet.md",
     "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/03_tracear el lifecycle de la conexion con el datalayer.md",
     "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
     "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
+    "fullstack/devdays/04_github/05_ solve merge conflicts.md",
+    "fullstack/devdays/04_github/images/Pasted image 20240611095008.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240611104520.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240611105301.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240611105157.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240611105138.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240611105051.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240611104746.png",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
     "devsetup_enviro/06_automatizacion del entorno dev.md",
     "devops/01_bootcamp_roxross/03_docker.md",
     "fullstack/devdays/01_ejercicios/backend_rest/django/01_first steps.md",

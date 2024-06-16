@@ -36,3 +36,4 @@ SRE DEVOPS
 =
 
 
+![[Pasted image 20240611152854.png]]

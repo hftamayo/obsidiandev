@@ -1,4 +1,10 @@
 
+https://labs.iximiuz.com --> labs y challenges
+https://validkube.com  --> validador de yamls
+awseducate.com
+go.aws/46x4Gmw -> Cloud Practitioner Challenge
+
+
 kubernetes:
 =
 
@@ -69,4 +75,15 @@ VERIFICANDO EL DEPLOY Y LOS OBJETOS CREADOS ALREDEDOR:
 
 ==Hostpath no se recomienda para produccion, puede ir bien con minikube o kind para los devs
 
+
+==esquema de la arquitectura del juego pacman desplegado en K8S:
+
+![[Pasted image 20240611140454.png]]
+
+
+==ejemplo de K8s gitpos:
+
+![[Pasted image 20240611140803.png]]
+
+==en este flow, es el operador -argo o flux- quien es el encargado de desplegar la aplicacion en la infraestructura, es asi que al CI/CD se le quita carga.
 
