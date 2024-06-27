@@ -15,3 +15,5 @@
 
 ![[E2E software lifecycle.gif]]
 
+12 Design Patterns
+![[design_patterns.gif]]

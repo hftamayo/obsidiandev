@@ -15,13 +15,14 @@ BACKEND
 
 ==Python
 
-
-
-
 FRONTEND
 =
 
 ==React.JS
+* micro frontends
+* 
+
+==Next.JS
 
 
 ==Kotlin
@@ -32,8 +33,24 @@ INGENIERO DEVOPS
 - Hashicorp Vault
 
 
+AWS DEVELOPER
+=
+
+![[Pasted image 20240626222413.png]]
+
+![[Pasted image 20240626222443.png]]
+
+
 SRE DEVOPS
 =
 
 
 ![[Pasted image 20240611152854.png]]
+
+
+CERTIFICATIONS:
+=
+
+- CKAD = Certified Kubernets Application Developer
+- Hashicorp Terraform Associate Certification
+- 

@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/01_bootcamp_roxross/devops_commands_cheatseet.md",
+                "file": "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -126,8 +126,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "20ead479fa107268",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/buenas practicas.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -193,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+                "file": "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+                "file": "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -233,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md"
+                "file": "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md"
               }
             }
           }
@@ -254,29 +267,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce9b5f8fb7862bc1",
+  "active": "4d1c64fa041877b6",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
-    "fullstack/devdays/03_contrataciones/img/Pasted image 20240611152854.png",
-    "Pasted image 20240611140803.png",
-    "Pasted image 20240611140454.png",
-    "devops/01_bootcamp_roxross/devops_commands_cheatseet.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/03_tracear el lifecycle de la conexion con el datalayer.md",
-    "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
+    "devops/01_bootcamp_roxross/img/Pasted image 20240627133836.png",
     "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
+    "devops/01_bootcamp_roxross/devops_commands_cheatseet.md",
+    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+    "fullstack/devdays/03_contrataciones/img/Pasted image 20240626222413.png",
+    "fullstack/devdays/03_contrataciones/img/Pasted image 20240626222443.png",
+    "fullstack/devdays/02_portoflio/buenas practicas.md",
+    "fullstack/devdays/02_portoflio/planificacion/img/design_patterns.gif",
+    "Pasted image 20240611140454.png",
+    "Pasted image 20240611140803.png",
     "fullstack/devdays/04_github/05_ solve merge conflicts.md",
+    "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/03_tracear el lifecycle de la conexion con el datalayer.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
+    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
+    "fullstack/devdays/03_contrataciones/img/Pasted image 20240611152854.png",
     "fullstack/devdays/04_github/images/Pasted image 20240611095008.png",
     "fullstack/devdays/04_github/images/Pasted image 20240611104520.png",
     "fullstack/devdays/04_github/images/Pasted image 20240611105301.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240611105157.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240611105138.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240611105051.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240611104746.png",
-    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
     "devsetup_enviro/06_automatizacion del entorno dev.md",
     "devops/01_bootcamp_roxross/03_docker.md",
     "fullstack/devdays/01_ejercicios/backend_rest/django/01_first steps.md",
@@ -293,8 +307,6 @@
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/10_V2.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/09_deploy de los containers de la v1 en cloud providers y local.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/08_debug y deploy de la aplicacion en una imagen.md",
-    "devops/99_devops_bestpractices.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/05_instalacion de la capa de datos en produccion.md",
     "devops/img",
     "devops",
     "fullstack/devdays/03_contrataciones/img",

@@ -3,6 +3,11 @@ https://labs.iximiuz.com --> labs y challenges
 https://validkube.com  --> validador de yamls
 awseducate.com
 go.aws/46x4Gmw -> Cloud Practitioner Challenge
+https://workshops.aws
+https://ecsworkshop.com
+https://eksworkshop.com
+
+
 
 
 kubernetes:
