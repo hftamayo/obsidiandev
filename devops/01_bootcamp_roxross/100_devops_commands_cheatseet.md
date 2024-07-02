@@ -6,6 +6,9 @@ go.aws/46x4Gmw -> Cloud Practitioner Challenge
 https://workshops.aws
 https://ecsworkshop.com
 https://eksworkshop.com
+https://skillbuilder.aws -> insignias de diveras tecnologias
+https://www.localstack.cloud -> unit testing de deploys en la nube para manejar costos del provider y sólo subir infras ya testeadas
+
 
 
 
