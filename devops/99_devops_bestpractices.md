@@ -13,3 +13,5 @@
 ![[restapidesign.gif]]
 
 ![[nginx_api_gateway.gif]]
+
+![[k8s attack surface.gif]]

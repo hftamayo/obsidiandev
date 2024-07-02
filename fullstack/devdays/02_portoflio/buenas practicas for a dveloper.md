@@ -17,3 +17,5 @@
 
 12 Design Patterns
 ![[design_patterns.gif]]
+
+![[improveapiperformance.gif]]

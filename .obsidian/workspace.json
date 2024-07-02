@@ -152,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -218,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+                "file": "devops/99_devops_bestpractices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -235,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+                "file": "devops/99_devops_bestpractices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -258,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md"
+                "file": "devops/99_devops_bestpractices.md"
               }
             }
           }
@@ -279,35 +279,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "20ead479fa107268",
+  "active": "4d1c64fa041877b6",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+    "fullstack/devdays/02_portoflio/img/improveapiperformance.gif",
+    "devops/99_devops_bestpractices.md",
+    "devops/img/k8s attack surface.gif",
+    "Pasted image 20240611140803.png",
+    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240702125126.png",
+    "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
+    "devops/01_bootcamp_roxross/terraform/01_notas del bootcamp.md",
     "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
     "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
     "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
     "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/03_tracear el lifecycle de la conexion con el datalayer.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev.md",
-    "devops/01_bootcamp_roxross/terraform/01_notas del bootcamp.md",
     "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "devops/99_devops_bestpractices.md",
-    "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
-    "Pasted image 20240702131129.png",
-    "Pasted image 20240702131022.png",
-    "Pasted image 20240702125945.png",
-    "Pasted image 20240702125746.png",
-    "Pasted image 20240702125651.png",
-    "Pasted image 20240702125126.png",
+    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240702131129.png",
+    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240702131022.png",
+    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240702125945.png",
+    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240702125746.png",
+    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240702125651.png",
     "devops/01_bootcamp_roxross/terraform/img",
     "devops/01_bootcamp_roxross/terraform",
     "devops/01_bootcamp_roxross/01_kubernetes.md",
-    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
     "fullstack/devdays/04_github/05_ solve merge conflicts.md",
     "fullstack/devdays/03_contrataciones/04_contactos linkedin.md",
     "devops/01_bootcamp_roxross/img/Pasted image 20240627133836.png",
-    "fullstack/devdays/03_contrataciones/img/Pasted image 20240626222413.png",
-    "fullstack/devdays/03_contrataciones/img/Pasted image 20240626222443.png",
-    "fullstack/devdays/02_portoflio/planificacion/img/design_patterns.gif",
     "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
     "devsetup_enviro/06_automatizacion del entorno dev.md",
     "devops/01_bootcamp_roxross/03_docker.md",
