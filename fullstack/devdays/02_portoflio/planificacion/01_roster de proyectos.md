@@ -75,5 +75,20 @@ Backend:
 
 10. e-inventario:
 	1. escaneas un item y te genera codigo QR y ubicacion
+
+11.  DevOps
+	1. On-Premise:
+		1. deploy de una CI/CD usando un minikube y Jenkins en Debian
+		2. deploy de una CI/CD usando openshift en RHEL
+	2. Cloud:
+		1. ... usando Terraform
+		2. .... usando TravisCI
+		3. .... usando CircleCI
+		4. ... usando Github Actions
+		5. ... usandi Azure DevOps
+		6. ... manejo de creds usando Hashicorp Vault
+		7. 
+		8. ... usando Azure Boards for Project Management
+			1. Servicios AWS demandados para un AWS DevOps: CloudFormation, OpsWorks, Elastic Beanstak, CloudWatch, Lambda, Fargate, ECS, EKS, IAM roles, , autoscaling de servicios, API Gateway, RDS, DynamoDB
     
   

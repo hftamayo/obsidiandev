@@ -10,10 +10,15 @@ BACKEND
 - authentication: Basic auth, JWT, OAuth 2.0
 
 ==Node.JS
+- Federated GraphQL 
+- Typescript
+- microservices archs
+- Lambda and API Gateway
 
 ==Golang
 
 ==Python
+* TDD y DDD
 
 FRONTEND
 =
@@ -31,6 +36,7 @@ FRONTEND
 INGENIERO DEVOPS
 =
 - Hashicorp Vault
+- Openshift o Kubernetes
 
 
 AWS DEVELOPER
