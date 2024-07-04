@@ -8,9 +8,13 @@ https://ecsworkshop.com
 https://eksworkshop.com
 https://skillbuilder.aws -> insignias de diveras tecnologias
 https://www.localstack.cloud -> unit testing de deploys en la nube para manejar costos del provider y sólo subir infras ya testeadas
+portal.cloud.hashicorp.com  -> tiene una capa gratuita donde puedo usar los productos hashicorp
 
 
+Articulos sobre proyectos DevOps:
 
+1. E2E DevSecOps Netflix Clone: https://medium.com/@bhandariajay006/project-8-end-to-end-devsecops-netflix-clone-application-deployment-7f918d0b8f81
+2. 
 
 
 kubernetes:
