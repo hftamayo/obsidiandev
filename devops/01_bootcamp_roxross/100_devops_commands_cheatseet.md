@@ -14,7 +14,34 @@ portal.cloud.hashicorp.com  -> tiene una capa gratuita donde puedo usar los prod
 Articulos sobre proyectos DevOps:
 
 1. E2E DevSecOps Netflix Clone: https://medium.com/@bhandariajay006/project-8-end-to-end-devsecops-netflix-clone-application-deployment-7f918d0b8f81
-2. 
+2. Deploy of Swiggy Applications using github actions: 
+https://www.linkedin.com/feed/update/urn:li:activity:7208442052924108800/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7208442052924108800%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+Step 1 → Setup Terraform and configure aws on your local machine  
+  
+Step 2 → Building a simple Infrastructure from code using terraform  
+Step 3 → IAM Role for EC2  
+Step 4 →Setup github actions with ec2  
+Step 5 →setup sonarqube and dockerhub for github actions  
+Step 6→ Elastic kubernetes service or Eks cluster setup  
+Step 7 → build and push docker image  
+Step 8 →Monitering via Prmotheus and grafana  
+Step 9 → Destroy all the things
+
+3. Monitoring a K8S using prometeus and Grafana:
+https://www.linkedin.com/feed/update/urn:li:activity:7208293341271138304/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7208293341271138304%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+4. Mastering K8S security: 
+https://www.linkedin.com/feed/update/urn:li:activity:7204452021158993920/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7204452021158993920%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+5. Diez ejercicios para implementar proyectos DevOs en AWS:
+https://www.linkedin.com/feed/update/urn:li:activity:7207351865762537472/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7207351865762537472%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+6. Ejercicios DevOps On-Premise y con Provider:
+https://www.linkedin.com/feed/update/urn:li:activity:7113100075467161602/
+
+
+7. 
 
 
 kubernetes:
