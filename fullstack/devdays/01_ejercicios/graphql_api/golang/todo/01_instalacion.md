@@ -1,4 +1,4 @@
-Given the [`Todo`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fgolang%2Fmyprojects%2Fgographqltodo%2Fapi%2Fv1%2Fmodels%2Ftodo.go%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A12%2C%22character%22%3A5%7D%5D "api/v1/models/todo.go") model you've provided, let's continue with the scenario of migrating your API to GraphQL, focusing on integrating this model into a GraphQL setup using `gqlgen` for Go.
+nuestGiven the [`Todo`](command:_github.copilot.openSymbolFromReferences?%5B%7B%22%24mid%22%3A1%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fgolang%2Fmyprojects%2Fgographqltodo%2Fapi%2Fv1%2Fmodels%2Ftodo.go%22%2C%22scheme%22%3A%22file%22%7D%2C%7B%22line%22%3A12%2C%22character%22%3A5%7D%5D "api/v1/models/todo.go") model you've provided, let's continue with the scenario of migrating your API to GraphQL, focusing on integrating this model into a GraphQL setup using `gqlgen` for Go.
 
 ### Step 1: Define GraphQL Schema for Todo
 
