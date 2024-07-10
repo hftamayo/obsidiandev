@@ -11,3 +11,9 @@ setup de la estructura inicial:
 
 ![[Pasted image 20240709110640.png]]
 
+
+agregando models y generando el scaffold:
+
+![[Pasted image 20240710083321.png]]
+
+![[Pasted image 20240710083344.png]]
