@@ -1,6 +1,21 @@
 16 Junio - 16 Diciembre 2024
 =
 
+==PRODUCTOS:
+
+
+| ID  | Tecnologia | Proyecto                       | Arquitectura                                                             | Stack                                       |
+| --- | ---------- | ------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------- |
+| 1   | React.JS   | Auth+Dashboard+CRUD+Search+RPT | - V1: monolito<br>- V2: microfrontend                                    | - Tailwind<br>- Redux<br>- Express<br>-Jest |
+| 2   | Node.JS    | NodeTodo                       | -  REST<br>- Model-View-Controller<br>-V1: monolito<br>-V2: microservice | -MongoDB<br>- Express<br>-Jest              |
+| 3   | Node.JS    | GraphQLTodo                    | -GraphQL<br>-Model-View-Controller<br>-V1: monolito<br>-V2: microservice | -MongoDB                                    |
+| 4   | JSB        | JSBTODO                        | -SpringBoot                                                              | - Multi layered arch<br>-MySQL<br>-Redis    |
+| 5   | Go         | GoRestTodo                     | - REST<br>- GIN/GORM<br>                                                 | - MVVN<br>- PostgreSQL<br>-Redis            |
+| 6   | Django     | DjangoTodo                     |                                                                          | - MySQL<br>- Redis                          |
+
+
+
+
 ==React.JS
 1.  unir landing, login/register, dashboard, crud y con unit test
 2. microfrontend

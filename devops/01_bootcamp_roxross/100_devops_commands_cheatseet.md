@@ -44,7 +44,18 @@ https://www.linkedin.com/feed/update/urn:li:activity:7207351865762537472/?update
 https://www.linkedin.com/feed/update/urn:li:activity:7113100075467161602/
 
 
-7. 
+7. Ejercicios Serverless:
+https://www.linkedin.com/feed/update/urn:li:activity:7216830387610603521?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7216830387610603521%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+8. Automating Tetris deploy with DevSecOps:
+https://www.linkedin.com/feed/update/urn:li:activity:7218135802961158144?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7218135802961158144%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+https://www.linkedin.com/feed/update/urn:li:activity:7214499687519657984/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7214499687519657984%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+9. Lambda exercise con AWS:
+https://www.linkedin.com/feed/update/urn:li:activity:7217354498736807936/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7217354498736807936%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
+
+10. 
 
 
 kubernetes:
