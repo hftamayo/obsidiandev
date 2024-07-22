@@ -55,7 +55,10 @@ https://www.linkedin.com/feed/update/urn:li:activity:7214499687519657984/?update
 9. Lambda exercise con AWS:
 https://www.linkedin.com/feed/update/urn:li:activity:7217354498736807936/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7217354498736807936%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
 
-10. 
+10. Deploy Mario Bros usando Terraform y AWS
+https://www.linkedin.com/posts/aakib-khan-29b7aa252_deployment-of-super-mario-on-kubernetes-using-activity-7218948867323514881-V1y7?utm_source=combined_share_message&utm_medium=member_desktop
+
+11. 
 
 
 kubernetes:

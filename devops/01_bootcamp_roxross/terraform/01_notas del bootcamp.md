@@ -39,3 +39,21 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 github.com/tfutils/tfenv -> busca e instala una version especifica de Terraform
 
 
+==herramientas para escaneo dinamico:
+- Sonarqube
+- Horusec
+- Trivy
+- Zap -> si, el mismo MIM Proxy de OWASP
+
+Pra hacer la demo de DevSecOps Roxx usó el proyecto OWASP Juice Shop
+
+==All in one solutions para DevSecOps:
+- Faraday
+- Defectdojo
+- AWS Security hub
+- semgrep
+
+Ejemplo de Jenkinspipeline con DevSecOps:
+
+![[Pasted image 20240717123638.png]]
+

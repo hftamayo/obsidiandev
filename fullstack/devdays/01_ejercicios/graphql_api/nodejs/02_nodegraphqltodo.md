@@ -24,3 +24,8 @@ npm install express apollo-server graphql type-graphql prisma @prisma/client dot
 
 ![[Pasted image 20240711100926.png]]
 
+==PASO 5: paquetes en --save-dev
+
+==PASO 6: generar el tsconfig.json
+
+![[Pasted image 20240722155857.png]]
