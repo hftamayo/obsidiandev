@@ -37,6 +37,7 @@ INGENIERO DEVOPS
 =
 - Hashicorp Vault
 - Openshift o Kubernetes
+- Stack: Azure, Terraform, Azure Cloud Services, Azure DevOps, Docker, Python/Powershell/Bash
 
 
 AWS DEVELOPER
