@@ -314,3 +314,23 @@ However, consider the following recommendations:
 6. **Monitoring and Logging**: Ensure that CORS requests and responses are properly logged at the API gateway level for auditing and troubleshooting purposes.
 
 By focusing on these areas, you can ensure that removing CORS support from your backend and delegating it to an API gateway does not introduce security vulnerabilities or performance issues, and that your system remains maintainable and easy to debug.
+
+==este fue un comentario que William Romero puso en una de esas preguntas de linkedin:
+
+[
+
+Normally, is common on new applications development, take in count network issues and any kind of those situations.  For that reason is important that every system which will be online, will be builded with a ==non-connection layer that will broadcast the information stored on device when the network returns.
+
+
+
+
+
+
+
+
+
+
+
+
+
+](https://www.linkedin.com/advice/1/youre-facing-app-performance-issues-due-poor-tmpaf?contributionUrn=urn%3Ali%3Acomment%3A%28articleSegment%3A%28urn%3Ali%3AlinkedInArticle%3A7219758856350892032%2C7219758857940586496%29%2C7222426541941493760%29&dashContributionUrn=urn%3Ali%3Afsd_comment%3A%287222426541941493760%2Curn%3Ali%3AarticleSegment%3A%28urn%3Ali%3AlinkedInArticle%3A7219758856350892032%2C7219758857940586496%29%29&articleSegmentUrn=urn%3Ali%3AarticleSegment%3A%28urn%3Ali%3AlinkedInArticle%3A7219758856350892032%2C7219758857940586496%29&trackingId=2ULBe7xxJbR4%2BYnViQXgSw%3D%3D)

@@ -75,8 +75,15 @@ Backend:
 
 10. e-inventario:
 	1. escaneas un item y te genera codigo QR y ubicacion
+11. K-Dev:
+	1. llevan un listado de features segun la etapa del proyecto que esta trabajando
+	2. agregar recordatorios y links por etapa del proyecto que esta en ejecucion
+	3. version web y movil
+	4. sustituye anotaciones desperdigados y recursos tecnicos utiles pero que son dificiles de tracear, tambien evito el uso de notas en whatsapp
+	5. pomodoro incluido
+	6. el PM puede monitorear productividad diaria y anotaciones
 
-11.  DevOps
+13.  DevOps
 	1. On-Premise:
 		1. deploy de una CI/CD usando un minikube y Jenkins en Debian
 		2. deploy de una CI/CD usando openshift en RHEL

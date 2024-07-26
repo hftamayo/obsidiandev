@@ -95,3 +95,6 @@
 10. Aplicacion para hacer encuesta y obtener datos (predictive)
 11. applicacion movil para insitucion educativa:  horarios, grupos, inscripciones, comunidad, job posting, mensajes privados, alertas, cuadro academico
 
+## SAMPLE PROJECTS:
+
+-bagels NYC: https://www.utopiabagelsny.com

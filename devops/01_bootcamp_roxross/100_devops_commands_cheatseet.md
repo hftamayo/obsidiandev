@@ -9,10 +9,10 @@ https://eksworkshop.com
 https://skillbuilder.aws -> insignias de diveras tecnologias
 https://www.localstack.cloud -> unit testing de deploys en la nube para manejar costos del provider y sólo subir infras ya testeadas
 portal.cloud.hashicorp.com  -> tiene una capa gratuita donde puedo usar los productos hashicorp
+https://go.qwiklabs.com -> training and cert
 
 Plugins para Jenkins sugeridos:
 - Blue Ocean, Common API for Blue Ocean, REST API for Blue Ocean
-
 
 Articulos sobre proyectos DevOps:
 
