@@ -45,15 +45,17 @@
 4. monitoreo con grafana
 
 
-Piramide de prioridad diaria:
+Piramide de prioridad dia de semana:
 1. React JS -> reactsotiria {funcionalidades en experimental , CI/CD de main, unit test en unstable, microfrontends}: 7:30-8:20
 2. Node JS -> nodetodo {unit e integration tests en unstable, CI/CD de main, logging and monitoring, auth y autorization, error catching, non-connection layer, TDD, interactuar con STRIPE, data load, pagination, performance }: 8:30-9:20
 3. JSB -> jsbtodo {idem del anterior}: 9:30-10:20
 4. DevOps -> continuar ejercicios: 10:30-11:20
 5. Moviles -> MVVN Kotlin: 11:30-12:20
 6. Golang -> report microservice: 12:30-13:20
-7. Node JS -> graphqltodo (aprendizaje): 13:50-14:20
-8. Golang -> gographqltodo (aprendizaje): 14:30-15:00
-9. django -> djangotodo (aprendizaje): 15:10-15:40
+7. Node JS -> graphqltodo (aprendizaje): 13:50-14:20 -> lista de Youtube y Practical GraphQL book 
+8. Golang -> gographqltodo (aprendizaje): 14:30-15:00 -> [video](https://www.youtube.com/watch?v=Yzh23D31Kq8&list=PLsQR_Tmsj29ljwXy7zl_rNXzIf8RXPKjL&index=4)  y  Restful Web Services 2nd edition, usar gotodo
+9. django -> djangotodo (aprendizaje): 15:10-15:40 -> [video](https://www.youtube.com/watch?v=i5JykvxUk_A&list=PLsQR_Tmsj29lbZPln-5cRu_uQYYdRb6J3&index=2)
 10. linkedin -> 16:00
 11. WebSec -> 19:00-20:00
+
+Piramide de prioridad fin de semana:

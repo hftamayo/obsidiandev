@@ -32,7 +32,7 @@
             }
           },
           {
-            "id": "0ed55009fe2d841a",
+            "id": "0f64abd09513d872",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -213,7 +213,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 524.5
+    "width": 314.5
   },
   "right": {
     "id": "5da3876508e8e1d2",
@@ -292,16 +292,16 @@
   },
   "active": "ce9b5f8fb7862bc1",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+    "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
     "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
+    "devops/99_devops_bestpractices.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev.md",
     "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
-    "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
-    "devops/99_devops_bestpractices.md",
     "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
     "fullstack/devdays/01_ejercicios/graphql_api/architecture",
     "fullstack/devdays/01_ejercicios/graphql_api/nodejs/images/Pasted image 20240722155857.png",

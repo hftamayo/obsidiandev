@@ -98,3 +98,5 @@
 ## SAMPLE PROJECTS:
 
 -bagels NYC: https://www.utopiabagelsny.com
+- the farmers dog: https://www.thefarmersdog.com
+- 
