@@ -163,7 +163,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -229,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -246,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -269,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md"
+                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md"
               }
             }
           }
@@ -290,13 +291,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce9b5f8fb7862bc1",
+  "active": "07591d285ff0e52e",
   "lastOpenFiles": [
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
     "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
     "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
     "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
     "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
     "devops/99_devops_bestpractices.md",

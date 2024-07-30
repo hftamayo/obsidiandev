@@ -14,6 +14,30 @@ BACKEND
 - Typescript
 - microservices archs
 - Lambda and API Gateway
+- React Native, Next.js and python background (fastAPI)
+- Responsibilities:  
+- Develop and maintain scalable web and mobile applications using React Native and Next.js.  
+- Write clean, maintainable, and efficient code in TypeScript.  
+- Collaborate closely with stakeholders to gather and understand requirements, and translate them into technical specifications.  
+- Participate in the entire application lifecycle, focusing on coding, debugging, and testing.  
+- Work with cross-functional teams to ensure high-quality product delivery.  
+- Engage in proactive problem-solving and ownership of projects from start to finish.  
+- Communicate effectively with team members and stakeholders to ensure seamless project execution.  
+- Contribute to the continuous improvement of the development process.
+- Qualifications:  
+- Strong proficiency in React Native, Next.js, and TypeScript.  
+- Experience with Node.js and building RESTful APIs.  
+- Solid understanding of modern front-end technologies and frameworks.  
+- Familiarity with Git and version control systems.  
+- Excellent problem-solving skills and attention to detail.  
+- Strong communication and collaboration skills.  
+- Ability to work independently and take ownership of projects.
+
+- Experience with FastApi is a plus
+
+- Experience with devops and CICDs is a plus  
+- Experience in a fast-paced, growth-oriented environment is a plus.
+- 
 
 ==Golang
 
