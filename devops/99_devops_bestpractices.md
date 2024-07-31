@@ -38,3 +38,4 @@ DevOps metrics:
 
 ![[Pasted image 20240715124811.png]]
 
+![[devsecops.gif]]

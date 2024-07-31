@@ -37,7 +37,51 @@ BACKEND
 
 - Experience with devops and CICDs is a plus  
 - Experience in a fast-paced, growth-oriented environment is a plus.
-- 
+
+
+==AWS Typescript developer
+## About the job
+
+Main Responsibilities:
+
+The Developer Engineer is responsible for developing and creating technical solutions using, as a
+
+principal tool, Typescript and AWS. Also, the Developer Engineer is responsible and accountable for
+
+following the software architecture and design patterns that the project has already defined.
+
+Requirements:
+
+● Candidates should have development experience in AWS Lambda, TypeScript, Javascript, and
+
+backend technologies like NodeJS and Java/J2EE.
+
+● Experience knowledge of system design (software architecture, design patterns, API Design and
+
+Development and good practices).
+
+● Experience in Microservice technology and development experience of RESTFUL.
+
+● Experience in Docker and Unit Testing.
+
+● Experience with monitoring tools like Cloud Watch and AWS X-Ray.
+
+● Experience in deployment and troubleshooting issues.
+
+● Knowledge of CI/CD tools likJobe AWS Cloud Development Kit or AWS Cloud Formation.
+
+● Familiarity with No-SQL databases like DynamoDB and System Integration Patterns (PubSub).
+
+● Experience using Agile/Scrum software development methodologies using tools such as Jira,
+
+Confluence, BitBucket.
+
+● Experience with GIT or similar source control tools.
+
+● Experience in working in an Offshore/Onsite model.
+
+● Good communication skills.
+
 
 ==Golang
 

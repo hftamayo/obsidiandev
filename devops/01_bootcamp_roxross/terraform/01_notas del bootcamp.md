@@ -57,3 +57,13 @@ Ejemplo de Jenkinspipeline con DevSecOps:
 
 ![[Pasted image 20240717123638.png]]
 
+==Chaos Engineering
+
+![[Pasted image 20240731131655.png]]
+
+![[Pasted image 20240731131907.png]]
+
+![[Pasted image 20240731132814.png]]
+
+![[Pasted image 20240731132846.png]]
+
