@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -230,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md"
+                "file": "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md"
               }
             }
           }
@@ -291,8 +291,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07591d285ff0e52e",
+  "active": "92beff450f148d50",
   "lastOpenFiles": [
+    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
+    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
     "devops/99_devops_bestpractices.md",
     "devsecops.gif",
     "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
@@ -308,12 +313,7 @@
     "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731132846.png",
     "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731132814.png",
     "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731131907.png",
-    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
     "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
-    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
     "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
     "fullstack/devdays/01_ejercicios/graphql_api/architecture",
     "devops/01_bootcamp_roxross/aws/01_lambda.md",
