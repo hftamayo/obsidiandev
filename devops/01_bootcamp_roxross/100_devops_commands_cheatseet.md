@@ -1,4 +1,26 @@
 
+==============links bootcamp 2024====
+
+AWS SimuLearn: Cloud Practitioner (NUEVO & GRATIS)
+• 12 Labs de Soluciones
+• Impulsado por GenAI
+• Simula escenarios reales de clientes
+[Accede a AWS SimuLearn] https://lnkd.in/dig288Ai
+
+2️⃣ AWS Educate (GRATIS: LABS + INSIGNIAS)
+• 18 Labs Prácticos
+• Ideal para principiantes
+• Obtén Insignias Digitales
+[Accede a AWS Educate] https://lnkd.in/dU2bPdnZ
+
+3️⃣ **AWS Cloud Quest Practitioner (GRATIS + INSIGNIA)**
+• 12 Tareas Prácticas
+• Aprende los fundamentos
+• Obtén una Insignia Digital
+[Accede a AWS Cloud Quest] https://lnkd.in/dYin8G8g
+
+=====================
+
 https://labs.iximiuz.com --> labs y challenges
 https://validkube.com  --> validador de yamls
 awseducate.com
