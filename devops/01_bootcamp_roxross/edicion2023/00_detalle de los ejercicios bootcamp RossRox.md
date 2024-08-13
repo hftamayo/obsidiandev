@@ -4,7 +4,6 @@ Web General del Bootcamp Edicion 2023: https://reto.295devops.com
 Mi repo donde estan los fuentes asi como mis propuestas de solucion:
 https://github.com/hftamayo/devopsrossrox
 
-
 ESTRUCTURA DEL BOOTCAMP EDICION IV:
 =
 

@@ -86,6 +86,8 @@ https://www.linkedin.com/posts/aakib-khan-29b7aa252_deployment-of-super-mario-on
 kubernetes:
 =
 
+
+
 gestor de multi clusters: https://k8slens.dev
 
 

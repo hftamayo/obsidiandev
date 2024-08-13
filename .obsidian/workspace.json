@@ -8,36 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ce9b5f8fb7862bc1",
+            "id": "c70d62d2eb4774ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc2e1a07b5a4daca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0f64abd09513d872",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
+                "file": "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,31 +37,43 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
+                "file": "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "c5372a2ebad06f3c",
+            "id": "490bdcd061b44a24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/01_bootcamp_roxross/terraform/01_notas del bootcamp.md",
+                "file": "devops/02_cloud_providers/aws/01_lambda.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "9d296301d496e91c",
+            "id": "ce9b5f8fb7862bc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/01_bootcamp_roxross/aws/01_lambda.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dc2e1a07b5a4daca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
                 "mode": "source",
                 "source": false
               }
@@ -164,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -230,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "devops/02_cloud_providers/aws/01_lambda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "devops/02_cloud_providers/aws/01_lambda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md"
+                "file": "devops/02_cloud_providers/aws/01_lambda.md"
               }
             }
           }
@@ -291,52 +279,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07591d285ff0e52e",
+  "active": "490bdcd061b44a24",
   "lastOpenFiles": [
-    "devops/01_bootcamp_roxross/aws/01_lambda.md",
-    "devops/01_bootcamp_roxross/terraform/01_notas del bootcamp.md",
-    "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
+    "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
     "devops/99_devops_bestpractices.md",
-    "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
+    "devops/01_bootcamp_roxross/edicion2024/img",
+    "devops/01_bootcamp_roxross/edicion2024",
     "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
-    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+    "devops/01_bootcamp_roxross/05_guidelines para un cluster on premise de k8s.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/33_depurar un pod que no puedo conectarme.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/32_no puedo conectarme a Jenkins.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/31_como gestionar credenciales en Jenkins.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/30_Haciendo funcionar el Docker In Docker.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/28_ alternativa al metodo de Rossana.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/27_Running el CICD usando el plugin docker.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/26_ DiD y riesgo de seguridad del approach de Rossana.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/24_configurando jenkins en minikube.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/23_conectandome al servicio deployado en minikube.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/22_el pod no funciona_depurando parte 3.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/21_el pod no funciona_depurandolo parte 2.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/20_desplegando jenkinsvit en el cluster de minikube.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/19_eliminando microk8s e instalando minikube.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/18_serviceAccount y roleBinding manifesto.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/17_info del k8s node.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/17_el pod no esta funcionando.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/16_solving the access of jenkins to the docker daemon running on host OS.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/15_actualizar el cluster k8s con un cambio en el docker image.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/14_jenkins pipeline para despliegue on premise de k8s.md",
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023",
+    "devops/02_cloud_providers/gcp",
+    "devops/03_comandos",
+    "devops/01_bootcamp_roxross/terraform/Untitled",
+    "devops/02_cloud_providers",
     "devsecops.gif",
     "Pasted image 20240611140454.png",
     "Pasted image 20240611140803.png",
     "Pasted image 20240711100926.png",
-    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240711131751.png",
-    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240717123638.png",
-    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731131655.png",
-    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731132846.png",
-    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731132814.png",
-    "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731131907.png",
+    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240711131751.png",
+    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240717123638.png",
+    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240731131655.png",
+    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240731132846.png",
+    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240731132814.png",
+    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240731131907.png",
     "fullstack/devdays/01_ejercicios/graphql_api/architecture",
-    "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
-    "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",
-    "fullstack/devdays/04_github/06_merge de una rama de otro en otro.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/images",
-    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/01_proyecto 101.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/golang/mongocrud/01_instalacion.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo",
-    "fullstack/devdays/01_ejercicios/graphql/Untitled.md",
-    "fullstack/devdays/01_ejercicios/graphql",
-    "fullstack/devdays/01_ejercicios/Untitled.md",
-    "devops/01_bootcamp_roxross/aws/img",
-    "devops/01_bootcamp_roxross/aws",
-    "devops/01_bootcamp_roxross/aws.md",
-    "fullstack/devdays/04_github/05_ solve merge conflicts.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/03_tracear el lifecycle de la conexion con el datalayer.md",
-    "devops/01_bootcamp_roxross/terraform/img",
-    "devops/01_bootcamp_roxross/terraform",
-    "devops/01_bootcamp_roxross/01_kubernetes.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/django/img",
-    "fullstack/devdays/01_ejercicios/backend_rest/django"
+    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/images"
   ]
 }

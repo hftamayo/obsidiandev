@@ -22,7 +22,7 @@ MILESTONE 2: SEMI SENIOR DEVELOPER
 3. BackEnd: GraphQL
 4. Authentication: OAuth
 5. Testing: Integration tests, E2E using Playwright
-6. DevOps: Terraform, EKS, Prometeus, Grafana, CloudWatch, AWS X-Ray, serverless using Lambdas, Hashicorp Vault
+6. DevOps: Terraform, EKS, Prometeus, Grafana, CloudWatch, AWS X-Ray, serverless using Lambdas, Hashicorp Vault, Github Actions
 7. Data Layer: DynamoDB, Redis
 8. Years of continue experience: up to 5 years
 9. Jobs: 
