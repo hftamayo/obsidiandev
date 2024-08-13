@@ -164,7 +164,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -230,7 +230,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
+                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +247,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
+                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +270,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md"
+                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md"
               }
             }
           }
@@ -291,19 +291,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8974b21cad0ab970",
+  "active": "07591d285ff0e52e",
   "lastOpenFiles": [
+    "devops/01_bootcamp_roxross/aws/01_lambda.md",
+    "devops/01_bootcamp_roxross/terraform/01_notas del bootcamp.md",
+    "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
     "devops/99_devops_bestpractices.md",
     "devops/01_bootcamp_roxross/00_detalle de los ejercicios bootcamp 2023.md",
-    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
-    "devsecops.gif",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
-    "devops/01_bootcamp_roxross/terraform/01_notas del bootcamp.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
+    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+    "devsecops.gif",
     "Pasted image 20240611140454.png",
     "Pasted image 20240611140803.png",
     "Pasted image 20240711100926.png",
@@ -313,10 +316,7 @@
     "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731132846.png",
     "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731132814.png",
     "devops/01_bootcamp_roxross/terraform/img/Pasted image 20240731131907.png",
-    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
-    "devops/01_bootcamp_roxross/100_devops_commands_cheatseet.md",
     "fullstack/devdays/01_ejercicios/graphql_api/architecture",
-    "devops/01_bootcamp_roxross/aws/01_lambda.md",
     "fullstack/devdays/01_ejercicios/backend_rest/javaspring/todo/12_Dockerfile y container de la Version 2.md",
     "fullstack/devdays/01_ejercicios/backend_rest/golang/fibertodo/02_conexion entre la app y postgres.md",
     "devops/01_bootcamp_roxross/minikube/33_depurar un pod que no puedo conectarme.md",

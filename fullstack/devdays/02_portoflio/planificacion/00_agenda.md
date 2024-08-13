@@ -59,3 +59,11 @@ Piramide de prioridad dia de semana:
 11. WebSec -> 19:00-20:00
 
 Piramide de prioridad fin de semana:
+
+
+==piramide de prioridad de fuentes de ingresos:
+
+1. trabajo permanente como dev
+2. trabajos en upwork en fin de semana; golang, kotlin, kubernetes+terraform
+3. bug bounties
+4. portafolio

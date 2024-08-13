@@ -1,3 +1,52 @@
+
+Groovy
+
+MILESTONE 1: JUNIOR DEVELOPER
+
+1. Architecture: MVC, TDD, Monolith, TS, interact with any 3rd pary API, SOLID
+2. FrontEnd:  React.JS -> Tailwind, Redux, SPA, React Router
+3. BackEnd: Node.JS, JSB, Go -> Express, Spring Boot, Gin/Gorm
+4. Authentication: JWT
+5. Testing: Unit Test using Jest, JUnit
+6. DevOps: CI/CD running on Jenkins and deployed in K8S locally
+7. Data Layer: MongoDB, MySQL, Postgres
+8. Years of continue experience: up to 2 years
+9. Jobs: small teams, start-ups, self portfolio
+10. Portfolio applications: 
+
+
+MILESTONE 2: SEMI SENIOR DEVELOPER
+
+1. Architecture:  Microservices, MicroFrontend, Kafka, rabbitMQ, TS, API Gateway Arch,  DRY, concurrency, multi-threading, interact with 3rd party API for: payments, auth, core review, functional programming, get things done
+2. FrontEnd: Next.JS, 
+3. BackEnd: GraphQL
+4. Authentication: OAuth
+5. Testing: Integration tests, E2E using Playwright
+6. DevOps: Terraform, EKS, Prometeus, Grafana, CloudWatch, AWS X-Ray, serverless using Lambdas, Hashicorp Vault
+7. Data Layer: DynamoDB, Redis
+8. Years of continue experience: up to 5 years
+9. Jobs: 
+10. portoflio applications: 
+
+
+MILESTONE 3: SENIOR DEVELOPER
+1. Architecture: DDD, System Integration pattern: Pub/Sub, Distributed Systems, Hexagonal Architecture
+2. FrontEnd:
+3. BackEnd: Federated GraphQL
+4. authentication
+5. Testing
+6. DevOps: AWS CDK, AWS Cloud Formation
+7. Data Layer:
+8. Years of continue experience: more than 5 years
+9. Jobs: 
+10. portfolio applications:
+
+MILESTONE 4: ESPECIALIZATION
+1. Areas of specialization: mobile, devsecops, software architecture
+
+
+
+
 BACKEND
 =
 ==Java Spring Boot
@@ -39,48 +88,7 @@ BACKEND
 - Experience in a fast-paced, growth-oriented environment is a plus.
 
 
-==AWS Typescript developer
-## About the job
 
-Main Responsibilities:
-
-The Developer Engineer is responsible for developing and creating technical solutions using, as a
-
-principal tool, Typescript and AWS. Also, the Developer Engineer is responsible and accountable for
-
-following the software architecture and design patterns that the project has already defined.
-
-Requirements:
-
-● Candidates should have development experience in AWS Lambda, TypeScript, Javascript, and
-
-backend technologies like NodeJS and Java/J2EE.
-
-● Experience knowledge of system design (software architecture, design patterns, API Design and
-
-Development and good practices).
-
-● Experience in Microservice technology and development experience of RESTFUL.
-
-● Experience in Docker and Unit Testing.
-
-● Experience with monitoring tools like Cloud Watch and AWS X-Ray.
-
-● Experience in deployment and troubleshooting issues.
-
-● Knowledge of CI/CD tools likJobe AWS Cloud Development Kit or AWS Cloud Formation.
-
-● Familiarity with No-SQL databases like DynamoDB and System Integration Patterns (PubSub).
-
-● Experience using Agile/Scrum software development methodologies using tools such as Jira,
-
-Confluence, BitBucket.
-
-● Experience with GIT or similar source control tools.
-
-● Experience in working in an Offshore/Onsite model.
-
-● Good communication skills.
 
 
 ==Golang
