@@ -5,7 +5,7 @@ MILESTONE 1: JUNIOR DEVELOPER
 
 1. Architecture: MVC, TDD, Monolith, TS, interact with any 3rd pary API, SOLID
 2. FrontEnd:  React.JS -> Tailwind, Redux, SPA, React Router
-3. BackEnd: Node.JS, JSB, Go -> Express, Spring Boot, Gin/Gorm
+3. BackEnd: Node.JS, JSB, Go -> Express, Spring Boot, Gin/Gorm, caching, load balancing, async processing, pagination, connection pooling
 4. Authentication: JWT
 5. Testing: Unit Test using Jest, JUnit
 6. DevOps: CI/CD running on Jenkins and deployed in K8S locally

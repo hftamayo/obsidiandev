@@ -56,12 +56,24 @@
             }
           },
           {
-            "id": "2a551ee337fc22c4",
+            "id": "8ad9f5441f0ff3cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "devops/02_cloud_providers/aws/01_lambda.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a551ee337fc22c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
                 "mode": "source",
                 "source": false
               }
@@ -230,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -247,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -270,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md"
+                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md"
               }
             }
           }
@@ -291,16 +303,30 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce9b5f8fb7862bc1",
+  "active": "2a551ee337fc22c4",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
-    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
+    "Pasted image 20240711100926.png",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240816151045.png",
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240816153748.png",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240816152420.png",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240816152153.png",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240816151707.png",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240816151416.png",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240815122938.png",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240815145110.png",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240815144634.png",
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/02_managament de favoritos.md",
+    "devops/02_cloud_providers/aws/01_lambda.md",
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03",
+    "devops/02_cloud_providers/aws/Untitled.md",
     "devops/100_certificaciones.md",
     "devops/99_devops_bestpractices.md",
-    "devops/02_cloud_providers/aws/01_lambda.md",
     "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
+    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "devops/03_comandos/01_kubernetes.md",
     "devops/01_bootcamp_roxross/edicion2023/03_respuesta a ejercicios y retos.md",
     "devops/01_bootcamp_roxross/edicion2024/img",
@@ -317,27 +343,12 @@
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/24_configurando jenkins en minikube.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/23_conectandome al servicio deployado en minikube.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/22_el pod no funciona_depurando parte 3.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/21_el pod no funciona_depurandolo parte 2.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/20_desplegando jenkinsvit en el cluster de minikube.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/19_eliminando microk8s e instalando minikube.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/18_serviceAccount y roleBinding manifesto.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023",
     "devops/02_cloud_providers/gcp",
     "devops/03_comandos",
     "devops/01_bootcamp_roxross/terraform/Untitled",
     "devops/02_cloud_providers",
-    "devsecops.gif",
-    "Pasted image 20240611140454.png",
-    "Pasted image 20240611140803.png",
-    "Pasted image 20240711100926.png",
-    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240711131751.png",
-    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240717123638.png",
-    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240731131655.png",
-    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240731132846.png",
-    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240731132814.png",
-    "devops/01_bootcamp_roxross/edicion2023/img/Pasted image 20240731131907.png",
-    "fullstack/devdays/01_ejercicios/graphql_api/architecture",
-    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/images"
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture"
   ]
 }
