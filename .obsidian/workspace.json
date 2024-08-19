@@ -174,9 +174,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7f3d4a06b031c38d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "454d74af0b2317fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/03_services behind proxy/13_ssh y entorno bash.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -226,7 +250,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 314.5
+    "width": 301.5
   },
   "right": {
     "id": "5da3876508e8e1d2",
@@ -242,7 +266,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
+                "file": "fullstack/devdays/03_services behind proxy/13_ssh y entorno bash.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +283,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
+                "file": "fullstack/devdays/03_services behind proxy/13_ssh y entorno bash.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,7 +306,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md"
+                "file": "fullstack/devdays/03_services behind proxy/13_ssh y entorno bash.md"
               }
             }
           }
@@ -303,21 +327,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2a551ee337fc22c4",
+  "active": "454d74af0b2317fe",
   "lastOpenFiles": [
-    "Pasted image 20240711100926.png",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240816151045.png",
+    "fullstack/devdays/03_services behind proxy/01_npm, git, maven, intellij, gradle, node.md",
+    "fullstack/devdays/03_services behind proxy/13_ssh y entorno bash.md",
+    "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
+    "Pasted image 20240819131428.png",
+    "Pasted image 20240819131346.png",
+    "Pasted image 20240819131120.png",
+    "Pasted image 20240819130833.png",
+    "Pasted image 20240819130353.png",
+    "Pasted image 20240819125918.png",
+    "Pasted image 20240819125712.png",
+    "Pasted image 20240819125527.png",
+    "Pasted image 20240819125043.png",
+    "Pasted image 20240819123111.png",
+    "fullstack/devdays/03_services behind proxy/04_ instalacion locales de mysql y pg por docker containers.md",
+    "fullstack/devdays/03_services behind proxy/05_uso de env en lugar de secrets.md",
+    "fullstack/devdays/03_services behind proxy/12_vscode.md",
     "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240816153748.png",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240816152420.png",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240816152153.png",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240816151707.png",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240816151416.png",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240815122938.png",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240815145110.png",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240815144634.png",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/02_managament de favoritos.md",
     "devops/02_cloud_providers/aws/01_lambda.md",
+    "devsetup_enviro/02_llave privada para conectarse a un server SSH.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/02_managament de favoritos.md",
     "devops/02_cloud_providers/aws/02_deploy_rox_exer03",
     "devops/02_cloud_providers/aws/Untitled.md",
     "devops/100_certificaciones.md",
@@ -335,14 +367,6 @@
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/33_depurar un pod que no puedo conectarme.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/32_no puedo conectarme a Jenkins.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/31_como gestionar credenciales en Jenkins.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/30_Haciendo funcionar el Docker In Docker.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/28_ alternativa al metodo de Rossana.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/27_Running el CICD usando el plugin docker.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/26_ DiD y riesgo de seguridad del approach de Rossana.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/25_corriendo la pipeline del ejercicio 3 Rossana Suarez.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/24_configurando jenkins en minikube.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/23_conectandome al servicio deployado en minikube.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/22_el pod no funciona_depurando parte 3.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023",
     "devops/02_cloud_providers/gcp",

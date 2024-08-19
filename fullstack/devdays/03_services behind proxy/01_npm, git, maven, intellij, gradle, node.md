@@ -6,7 +6,7 @@ proxychains.conf y proxychains4.conf, la diferencia es que la version 4 es una m
 
 En PopOS uso proxychains.conf y tengo el siguiente agregado al final:
 
-#socks4 	127.0.0.1 9050
+#socks4 	127.0.0.1 9050|
 socks4		127.0.0.1 8080
 
 En Kali usaré proxychains4.conf asi:
@@ -17,13 +17,13 @@ En Kali usaré proxychains4.conf asi:
 
 recordemos que proxychains va a salir via la conexion SSH que establezco en el OJ por medio del server 10.0.0.65 a través del puerto 8080
 
-01 - Setting up git behind a proxy:
+==01 - Setting up git behind a proxy:
 
 ![[Pasted image 20230606090025.png]]
 
 ![[Pasted image 20230606090057.png]]
 
-02 - maven e intellij:
+==02 - maven e intellij:
 
 sudo apt install maven
 
@@ -34,7 +34,7 @@ revisando la version de maven:
 
 ![[Pasted image 20230818101402.png]]
 
-Maven:
+==Maven:
 
 en el HOME de Maven 3.x se encuentra el settings.xml:
 
@@ -160,7 +160,7 @@ a pesar de todas esas config no pude descargar los paquetes deseados, ni idea qu
 
 
 
-03 -  npm
+==03 -  npm
 
 ![[Pasted image 20230606105347.png]]
 
@@ -169,7 +169,7 @@ Para usar nvm con proxy:
 ![[Pasted image 20230606110251.png]]
 
 
-04 - yarn
+==04 - yarn
 
 yarn es el unico que no tiene archivo de configuracion, sin embargo se me ocurrió usar el comando get de yarn para ver que salia y mi sorpresa es esta:
 
@@ -179,7 +179,7 @@ probando si la configuracion funciona:
 
 ![[Pasted image 20230606115601.png]]
 
-05 - ejecutar una aplicacion node:
+==05 - ejecutar una aplicacion node:
 
 por muy pelado que se escucha aun y cuando puedo replicar hacia repos npm al ejecutar la linea : npm run devdays no podia conectarme a mongodb; despues de intentar de tantas maneras logre siguiendo este camino:
 
@@ -192,7 +192,7 @@ por muy pelado que se escucha aun y cuando puedo replicar hacia repos npm al eje
 ![[Pasted image 20230612132848.png]]
 
 
-06 - apt:
+==06 - apt:
 
 ![[Pasted image 20230609151926.png]]
 
@@ -222,7 +222,7 @@ cuando aparece que la conexion esta OK es que efectivamente hay navegacion.
 
 ![[Pasted image 20230815120731.png]]
 
-09 - proxychains (tunneling), navegador y Burp Suite
+==09 - proxychains (tunneling), navegador y Burp Suite
 
 La siguiente es una transcripcion del Discord de Burp sobre esta duda:
 
@@ -261,7 +261,7 @@ antes de depurar este error voy a instalar el certificado de BurpSuite pensando 
 10. go get: se puede configurar un proxy con go env pero actualmente solo pueden pasarse credenciales si el proxy es HTTPS, en el caso del OJ por tanto no podré conectarme por este medio por aspectos de seguridad del mismo proyecto.
 
 
-11.  conectarse a un servicio en linea por medio del proxychains
+==11.  conectarse a un servicio en linea por medio del proxychains
 
 ![[Pasted image 20230907082520.png]]
 

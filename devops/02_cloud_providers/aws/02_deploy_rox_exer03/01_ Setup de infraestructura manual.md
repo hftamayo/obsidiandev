@@ -1,4 +1,4 @@
-
+****
 ==la idea será montar una EC2 que me servirá de estacion de trabajo y desde ahi voy a controlar mi Infraestructura, esto con el objetivo de no cargar mi estacion de trabajo dev, pero parece que el equipo DevOps si debería tener estaciones de trabajo para estas operaciones
 
 1. instalar paquetes indispensables en mi equipo:
@@ -111,7 +111,7 @@ Puesto que es más seguro usar IAM Roles para ciertos servicios pues no se requi
 
 ![[Pasted image 20240815132806.png]]
 
-# ETAPA 4:  CREANDO UNA ALTERA DE BILLING
+# ETAPA 4:  CREANDO UNA ALERTA DE BILLING
 
 ![[Pasted image 20240815141247.png]]
 
@@ -156,6 +156,29 @@ agregando los permisos al pem file:
 
 ![[Pasted image 20240816153748.png]]
 
-# ETAPA 8: 
+==por contingencia he agregado un usuario con privilegios estandar:
+
+htues@ devopstest
+
+![[Pasted image 20240819080933.png]]
+
+==ahora bien, intentando conectarme a la VM usando htues encontré esto:
+
+![[Pasted image 20240819082511.png]]
+
+y tiene logica pues esta key esta reservada para el admin de la cuenta
+
+# ETAPA 8:  USANDO AWS SESSION MANAGER PARA GESTION DE CONEXIONES DE MANERA CENTRALIZADA
+
+==agregando el repo:
+
+![[Pasted image 20240819083430.png]]
+
+![[Pasted image 20240819083537.png]]
+
+![[Pasted image 20240819083946.png]]
+
+aca es bien interesante porque parece que el repo no lo encuentra, ==estuve leyendo y parece que toda esa paqueteria si ya esta previamente instalada en los Amazon Linux VM, entonces para evitarme futuros malestares voy a eliminar esta VM y pasarme a un Amazon Linux. Aca tiene total razon el uso de IaC.
+
 
 # ETAPA 9:
