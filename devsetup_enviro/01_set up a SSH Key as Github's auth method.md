@@ -1,4 +1,20 @@
 
+# RESUMEN DEL PROCESO - agosto 2024-:
+
+```
+ssh-keygen -t ed25519 -C "herbert.fernandez@ues.edu.sv"
+eval "$(ssh-agent -s)"
+   ssh-add ~/.ssh/id_ed25519
+   ssh-add -l
+   
+   git remote -v
+   git remote set-url origin <git link>
+   git remote -v
+   
+   ir al settings de github, el avatar, dar de alta una nueva key con la llave publica y depues de eso probar con un git push
+```
+
+****
 ==ssh-keygen -t ed25519 -C "hftamayo@gmail.com"==
 
 establecí un nombre personalizado a la llave y tambien agregué un passphrase, ésta la utilizaré cuando el gestor de cuentas del sistema operativo la cache y activo el boton "recordar esta contraseña..."

@@ -62,3 +62,4 @@ aunque me dio error pero pude ejecutar el comando
 
 ==5.  probando replicar a un server github via SSH
 
+![[Pasted image 20240819140647.png]]

@@ -46,17 +46,23 @@ MILESTONE 4: ESPECIALIZATION
 
 
 
-
+# REQS DE PERFILES DE JOB OFFERS EN LINKEDIN
 BACKEND
 =
 ==Java Spring Boot
 - Restful APIs
+- Spring Boot, PostgreSQL, Kafka, Redis, Datadog, snowflake, Argo CI/CD (and more). Exposure to Kafka, PostgreSQL, Redis is preferable.
+- 
 - Data Layer: PostgreSQL, MySQL, MongoDB, Cassandra, DynamoDB, Redis
 - Best practices: design patterns, clean code, SOLID, git, concurrency, multi threading
 - DevOps: containers, k8s, monitoring, CI/CD pipelines
 - Microservices architecture async event-based communication:  Kafka, rabbitMQ, springCloud
 - sync | async REST and GraphQL  APIs, gRPC protocol
 - authentication: Basic auth, JWT, OAuth 2.0
+- Exposure to building and shipping highly available, fault tolerant, production ready distributed backend systems
+- Previous experience around monitoring and observability, potentially security knowledge (Checkmarx, SonarQube & Wiz) – a big plus
+- Understanding of data structures, databases and large-scale distributed systems.
+
 
 ==Node.JS
 - Federated GraphQL 
@@ -67,6 +73,7 @@ BACKEND
 - Responsibilities:  
 - Develop and maintain scalable web and mobile applications using React Native and Next.js.  
 - Write clean, maintainable, and efficient code in TypeScript.  
+- - Ability to create clean, modern, testable, well-documented code
 - Collaborate closely with stakeholders to gather and understand requirements, and translate them into technical specifications.  
 - Participate in the entire application lifecycle, focusing on coding, debugging, and testing.  
 - Work with cross-functional teams to ensure high-quality product delivery.  
@@ -78,9 +85,12 @@ BACKEND
 - Experience with Node.js and building RESTful APIs.  
 - Solid understanding of modern front-end technologies and frameworks.  
 - Familiarity with Git and version control systems.  
+- - Knowledge of development principles such as OOP and Single Responsibility.
+- xperience with CI / CD platforms such as CircleCI, Travis, GitHub Actions or Azure Pipelines.
 - Excellent problem-solving skills and attention to detail.  
 - Strong communication and collaboration skills.  
 - Ability to work independently and take ownership of projects.
+- Serverless experience with AWS lambda or Azure functions- Advanced English fluency, verbal and written
 
 - Experience with FastApi is a plus
 
@@ -108,13 +118,49 @@ FRONTEND
 
 ==Kotlin
 
+1️⃣ Dominio de los fundamentos: Kotlin, Java, patrones de diseño  
+2️⃣ Comprensión profunda del framework Android y su evolución  
+3️⃣ Habilidad para diseñar arquitecturas escalables y mantenibles  
+4️⃣ Experiencia en testing y CI/CD  
+5️⃣ Capacidad para optimizar rendimiento y UX
+
+
+
+# FULLSTACH DEVELOPER
+
+* Front End – Javascript, Typescript, React.js  
+* Back End – Node.js , Typescript and some PHP 
+* - Experience with some of the following technologies: Golang, PHP (7+), MySQL, CouchDB, Redis, Apache Kafka
+* Strong Experience developing within REACT using Redux-Saga and Axios
+* Understanding of MVC, MVVM pattern
+* - Expertise in diverse software development principles, dependency injection, inversion of control, concurrency design patterns, performance profiling, debugging and optimization;
+* 
+* - Experience developing Frontend with Bootstrap/Material.- Experience with GIT (GitFlow).
+* Other – MySQL, Elasticsearch, CouchDB, RabbitMQ, Redis and Kafka
+* - Experience with test automation using JEST/ Mocha , Jenkins, Selenium or other testing framework would be advantageous.
+* Work independently in a tribe and deliver high-quality code in a timely manner
+* - Do code reviews and provide feedback to your peers
+* - Write automated tests
+* - Deploy to production and maintain monitoring
+* - Be on call when it’s your turn, react to alerts and resolve production incidents
+* - Continuously improve your stack and pay off technical debt
+* Think multi-regional, highly available and scalable
+* - Ability to work in areas outside of your comfort zone and to get things done quickly
+* - Good understanding of security threats
+* - Interest in and past contributions to the open-source community is a huge plus
+* Experience with multi-regional cloud-based services is a huge plus
+
 
 INGENIERO DEVOPS
 =
 - Hashicorp Vault
 - Openshift o Kubernetes
 - Stack: Azure, Terraform, Azure Cloud Services, Azure DevOps, Docker, Python/Powershell/Bash
-
+- Dominio de Google Cloud Platform, incluyendo Compute Engine, *Kubernetes Engine, Cloud Functions, Cloud Storage, Cloud IAM, entre otros servicios.  
+- Conocimientos sólidos en herramientas de automatización y aprovisionamiento, como Terraform, Ansible o Puppet.  
+- Experiencia en la implementación de pipelines de CI/CD utilizando herramientas como Jenkins, GitLab CI/CD, o similares.  
+- CI/CD, IaC, Azure, AWS, Terraform, GitLab, GitHub, Ansible, Docker
+- Modalidad: Remoto
 
 AWS DEVELOPER
 =

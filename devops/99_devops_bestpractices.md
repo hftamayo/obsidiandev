@@ -8,6 +8,12 @@
 ![[Pasted image 20240711131751.png]]
 
 
+![[microservices_workflow.gif]]
+
+
+
+![[auth_best_practices.gif]]
+
 
 ![[2024_devops_roadmap.gif]]
 
