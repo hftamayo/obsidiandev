@@ -176,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -242,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md"
+                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md"
               }
             }
           }
@@ -303,39 +303,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07591d285ff0e52e",
+  "active": "2a551ee337fc22c4",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
     "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
+    "Pasted image 20240822151258.png",
+    "Pasted image 20240821133553.png",
+    "Pasted image 20240821133353.png",
+    "Pasted image 20240821132946.png",
+    "Pasted image 20240821132909.png",
+    "Pasted image 20240821132253.png",
+    "Pasted image 20240821132225.png",
+    "Pasted image 20240821131826.png",
+    "Pasted image 20240821131425.png",
+    "Pasted image 20240820155110.png",
+    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "devops/02_cloud_providers/aws/01_lambda.md",
     "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
     "devops/99_devops_bestpractices.md",
-    "auth_best_practices.gif",
-    "microservices_workflow.gif",
     "devops/100_certificaciones.md",
     "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
     "fullstack/devdays/03_services behind proxy/12_vscode.md",
-    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
     "devops/02_cloud_providers/github",
     "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
     "fullstack/devdays/03_services behind proxy/13_ssh y entorno bash.md",
-    "Pasted image 20240819140647.png",
     "fullstack/devdays/03_services behind proxy/01_npm, git, maven, intellij, gradle, node.md",
-    "Pasted image 20240819131428.png",
-    "Pasted image 20240819131346.png",
-    "Pasted image 20240819131120.png",
-    "Pasted image 20240819130833.png",
-    "Pasted image 20240819130353.png",
-    "Pasted image 20240819125918.png",
-    "Pasted image 20240819125712.png",
     "fullstack/devdays/03_services behind proxy/04_ instalacion locales de mysql y pg por docker containers.md",
     "fullstack/devdays/03_services behind proxy/05_uso de env en lugar de secrets.md",
     "devsetup_enviro/02_llave privada para conectarse a un server SSH.md",
     "devops/02_cloud_providers/aws/02_deploy_rox_exer03/02_managament de favoritos.md",
     "devops/02_cloud_providers/aws/02_deploy_rox_exer03",
     "devops/02_cloud_providers/aws/Untitled.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
     "devops/03_comandos/01_kubernetes.md",
     "devops/01_bootcamp_roxross/edicion2023/03_respuesta a ejercicios y retos.md",
     "devops/01_bootcamp_roxross/edicion2024/img",
@@ -343,7 +344,6 @@
     "devops/01_bootcamp_roxross/05_guidelines para un cluster on premise de k8s.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/33_depurar un pod que no puedo conectarme.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/32_no puedo conectarme a Jenkins.md",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube/31_como gestionar credenciales en Jenkins.md",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023",
     "devops/02_cloud_providers/gcp",
