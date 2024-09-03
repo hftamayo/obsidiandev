@@ -28,7 +28,6 @@ MILESTONE 2: SEMI SENIOR DEVELOPER
 9. Jobs: 
 10. portoflio applications: 
 
-
 MILESTONE 3: SENIOR DEVELOPER
 1. Architecture: DDD, System Integration pattern: Pub/Sub, Distributed Systems, Hexagonal Architecture
 2. FrontEnd:
@@ -43,6 +42,40 @@ MILESTONE 3: SENIOR DEVELOPER
 
 MILESTONE 4: ESPECIALIZATION
 1. Areas of specialization: mobile, devsecops, software architecture
+
+
+==Conceptos de especializacion en Java Security:
+
+- OAuth 2.0 
+- JWT (JSON Web Tokens) 
+- OpenID Connect 
+- Role-Based Access Control (RBAC) 
+- Spring Security integration 
+- SSL/TLS implementation 
+- HTTPS 
+- Key management and rotation 
+- SQL Injection prevention 
+- Cross-Site Scripting (XSS) protection
+- Cross-Site Request Forgery (CSRF) protection 
+- Use of frameworks like Hibernate Validator for input validation 
+- API Gateway integration (e.g., Spring Cloud Gateway) -
+- Rate limiting to prevent DDoS attacks 
+- Throttling and circuit breaker patterns 
+- CORS (Cross-Origin Resource Sharing) 
+- HSTS (HTTP Strict Transport Security) 
+- Mutual TLS (mTLS) for client-server authentication 
+- Audit logging 
+- Security incident and event monitoring (SIEM) 
+- Secure session management 
+- Token expiration and renewal strategies 
+- Session fixation prevention 
+- Use of RESTful principles and HTTP methods securely 
+- Minimizing data exposure (e.g., fields and endpoints) 
+- Secure versioning of APIs
+- Avoiding detailed error messages in production. 
+- Security considerations in exception handling. 
+- Understanding GDPR, PCI DSS, HIPAA requirements. 
+- Adherence to industry standards like OWASP Top 10 ( boring but do read about them )
 
 
 

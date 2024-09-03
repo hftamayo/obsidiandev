@@ -308,6 +308,94 @@ puesto que estoy usando AWS Session Manager no necesito configurar una key para 
 
 ![[Pasted image 20240822151258.png]]
 
+tambien tuve que crear la siguientes permisos usando un inline json command:
+==EKSListClusters:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "eks:ListClusters"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+==EKSTamayoPolicies:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "eks:CreateCluster",
+                "eks:DescribeCluster",
+                "eks:ListClusters",
+                "eks:DeleteCluster",
+                "eks:TagResource",
+                "eks:DescribeAddon",
+                "eks:ListAddons",
+                "eks:CreateAddon",
+                "eks:UpdateAddon",
+                "eks:DeleteAddon",
+                "eks:DescribeAddonVersions",
+                "eks:DescribeAddonConfiguration",
+                "eks:CreateNodegroup",
+                "eks:DescribeNodegroup",
+                "eks:ListNodegroups",
+                "eks:DeleteNodegroup",
+                "ec2:CreateVpc",
+                "ec2:CreateSubnet",
+                "ec2:CreateRouteTable",
+                "ec2:CreateNatGateway",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeNatGateways",
+                "ec2:DescribeSecurityGroups",
+                "ec2:CreateSecurityGroup",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:DescribeInternetGateways",
+                "ec2:CreateInternetGateway",
+                "ec2:AttachInternetGateway",
+                "iam:CreateRole",
+                "iam:AttachRolePolicy",
+                "iam:PassRole"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+
+==verificando que el rol tiene acceso a crear recursos AWS tal y como se espera:
+
+![[Pasted image 20240823132305.png]]
+
+
+![[Pasted image 20240823132454.png]]
+
+* puesto que recibí un error 401 es señal que falta algo que ajustar, chequeando nuevamente si etngo asociado debidamente el rol:
+
+aws ec2 describe-instances --instance-ids i-09a68d356cacff4bf --query "Reservations[].Instances[].IamInstanceProfile"
+
+![[Pasted image 20240823132904.png]]
+
+- probando si puedo crear un recursos bien simple, por ejemplo un bucket S3:
+
+![[Pasted image 20240823133206.png]]
+
+==aparentemenet la operacion pudo ejecutarse, borrando el bucket:
+
+![[Pasted image 20240823133409.png]]
+
 En esta etapa surge esta consulta:
 ==debería desplegar Jenkins en el mismo EKS Cluster que la App del Cliente?, debería desplegarlo en uno paralelo?, debería hacer el despliegue de mi jenkins de manera local? Aca las consideraciones de la IA:
 
@@ -366,10 +454,31 @@ The decision to run Jenkins in the same cluster, a separate cluster, or on a sep
 ==Cluster para devops y despliegue de Jenkins:
 
 ```
-eksctl create cluster --name tamayodevops-cluster --region us-west-2 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+
+listado si existe algun cluster previamente:
+aws eks list-clusters --region us-west-2
+
+eksctl create cluster --name tamayoeksdevops04 --region us-west-2 --nodegroup-name standard-workers --node-type t3.medium --nodes 3 --nodes-min 1 --nodes-max 4 --managed --verbose 4
+
+si en algun momento necesito borrar un cluster debido a algun error en el proceso uso este comando:
+
+eksctl delete cluster --region us-west-2 --name tamayoeksdevops03
+
+-Comando para forzar la eliminacion de un eks cluster:
+aws eks delete-cluster --name tamayoeksdevops03 --region us-west-2
+
+si hay workers relacionados con algun deploy de cluster truncada:
+aws cloudformation delete-stack --stack-name eksctl-tamayoeksdevops03-nodegroup-standard-workers
+
+si todo sale bien debería ver una salida enorme en formato json, tambien el cluster debe tener asociados VPC, secGroups, subnets y EC2 instancias asociadas
+
+activando cloudwatch para este cluster:
+
+ksctl utils update-cluster-logging --enable-types={SPECIFY-YOUR-LOG-TYPES-HERE (e.g. all)} --region=us-west-2 --cluster=tamayodevops04
 
 configurar kubectl para usar el cluster de trabajo:
-aws eks --region us-west-2 update-kubeconfig --name votingapp-cluster
+aws eks --region us-west-2 update-kubeconfig --name tamayodevops-cluster
 
 kubectl create namespace jenkins
 
@@ -377,7 +486,21 @@ helm repo add jenkins https://charts.jenkins.io
 helm repo update
 helm install jenkins jenkins/jenkins --namespace jenkins
 
+```
 
+
+==comandos para listar recursos relacionados a un cluster EKS creado satisfactoriamente:
+
+```
+aws eks describe-cluster --name tamayoeksdevops04 --region us-west-2
+
+aws ec2 describe-vpcs --filters "Name=tag:eksctl.cluster.k8s.io/v1alpha1/cluster-name,Values=tamayoeksdevops04"
+
+aws ec2 describe-subnets --filters "Name=tag:eksctl.cluster.k8s.io/v1alpha1/cluster-name,Values=tamayoeksdevops04"
+
+aws ec2 describe-security-groups --filters "Name=tag:eksctl.cluster.k8s.io/v1alpha1/cluster-name,Values=tamayoeksdevops04"
+
+aws ec2 describe-instances --filters "Name=tag:eksctl.cluster.k8s.io/v1alpha1/cluster-name,Values=tamayoeksdevops04"
 
 ```
 
