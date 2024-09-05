@@ -56,24 +56,12 @@
             }
           },
           {
-            "id": "8ad9f5441f0ff3cb",
+            "id": "9851e725056d8cee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/02_cloud_providers/aws/01_lambda.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2a551ee337fc22c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
+                "file": "devops/02_cloud_providers/aws/02_billing.md",
                 "mode": "source",
                 "source": false
               }
@@ -176,18 +164,6 @@
             }
           },
           {
-            "id": "45f3acf4202db60f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/01_ejercicios/frontend/ts/vanilla-ts todo.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "755ca35bba3724eb",
             "type": "leaf",
             "state": {
@@ -200,7 +176,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -266,7 +242,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -283,7 +259,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -306,7 +282,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md"
+                "file": "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md"
               }
             }
           }
@@ -327,45 +303,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "07591d285ff0e52e",
+  "active": "755ca35bba3724eb",
   "lastOpenFiles": [
+    "fullstack/devdays/04_github/01_git rebase para resolver diferencias locales y remotas.md",
+    "Pasted image 20240711100926.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240905144152.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240905152342.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240905152308.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240905152221.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240905152122.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240905151304.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240905145747.png",
+    "fullstack/devdays/04_github/images/Pasted image 20240905145325.png",
+    "fullstack/devdays/04_github/05_ solve merge conflicts.md",
+    "fullstack/devdays/04_github/06_merge de una rama de otro en otro.md",
+    "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
+    "fullstack/devdays/01_ejercicios/frontend/ts/vanilla-ts todo.md",
+    "devops/02_cloud_providers/aws/02_billing.md",
+    "devops/02_cloud_providers/aws/img/Pasted image 20240905084150.png",
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/02_infra_manual parte 2.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
+    "devops/02_cloud_providers/aws/00_IAM profiles.md",
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/00_managament de favoritos.md",
+    "devops/99_devops_bestpractices.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
     "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
     "fullstack/devdays/02_portoflio/testing.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
-    "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240829133046.png",
-    "Pasted image 20240823133427.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240829134203.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240829133127.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240829080412.png",
     "fullstack/devdays/02_portoflio/proyectos/img",
     "fullstack/devdays/01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
     "fullstack/devdays/02_portoflio/proyectos",
-    "fullstack/devdays/01_ejercicios/frontend/ts/vanilla-ts todo.md",
     "fullstack/devdays/01_ejercicios/frontend/pnpm.md",
     "fullstack/devdays/01_ejercicios/frontend/ts/yarn_todo/01_instalacion y codificacion.md",
     "fullstack/devdays/01_ejercicios/frontend/ts/yarn_todo/Untitled.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
     "fullstack/devdays/01_ejercicios/frontend/firebase/todo/01_instalacion.md",
     "fullstack/devdays/01_ejercicios/frontend/boilerplates/01_mern_startingenterprise.md",
     "fullstack/devdays/01_ejercicios/frontend/boilerplates/02_Authorization.md",
     "fullstack/devdays/01_ejercicios/frontend/boilerplates/03_landing Entreprise 01.md",
-    "fullstack/devdays/01_ejercicios/frontend/boilerplates/04_mern_dashboard.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/reactjs/01_vitetodo.md",
-    "Pasted image 20240823133409.png",
-    "Pasted image 20240823133206.png",
-    "Pasted image 20240823132904.png",
-    "Pasted image 20240823132454.png",
-    "Pasted image 20240823132305.png",
-    "fullstack/devdays/02_portoflio/planificacion/arquitecturas.md",
-    "fullstack/devdays/02_portoflio/design patterns.md",
-    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
-    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
-    "devops/02_cloud_providers/aws/01_lambda.md",
-    "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
     "devops/02_cloud_providers/github",
     "devops/02_cloud_providers/aws/02_deploy_rox_exer03",
     "devops/01_bootcamp_roxross/edicion2024/img",
