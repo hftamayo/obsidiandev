@@ -1,4 +1,8 @@
 
+==negocios de ejemplo:
+
+https://morningsave.com/deals/hakol-mesh-magnetic-mosquito-door-net
+
 
 # PROYECTO 3 : monorepo backend
 
@@ -176,3 +180,26 @@ StartBackend();
 
 By following this approach, you can efficiently manage your database connections with Prisma in a monorepo setup.
 
+
+# SUBIR LAS IMAGENES ESTABLES AL DOCKER HUB
+
+```
+docker login --username <username> --password <docker pat>
+docker push <usuario>/<imagen>:<tag>
+
+```
+
+# OPERACIONES CON CONTAINERS:
+
+- conectarse al container de la base de datos:  psql -h localhost -U $POSTGRES_USER -d $POSTGRES_DB
+
+
+# DEPLOY EN BARE METAL:
+
+- si el monorepo esta fuera de contenedor todos los endpoints deben hacer referencia a localhost
+- si la app ya esta en contenedor el requisito clave es que éste y el container de la BD esten en la misma red
+- 
+
+
+
+# DEPLOY EN AZURE

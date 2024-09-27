@@ -49,6 +49,23 @@ este servicio pertenece a EC2, cuando se crea un cluster se asigna una IP Elasti
 ![[Pasted image 20240905093836.png]]
 
 
+==tabla de costos a las 20:32 del dia 05-09-2024
+
+![[Pasted image 20240905203312.png]]
+
+aca ya puedo ver que la diferencia son 0.50 y esta en el rubro de EC2-other
+
+En Billing and Cost Management -> Bills abajo hay un detalle por cada serbicio:
+
+![[Pasted image 20240905214913.png]]
+
+
+![[Pasted image 20240905214933.png]]
+
+==reporte a las 7:58 del 06-09:
+
+![[Pasted image 20240906075858.png]]
+
 
 
 

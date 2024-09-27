@@ -1,4 +1,10 @@
 
+==finalidad de las Lambdas: ==
+
+- Event Driven Processing: auto scale with incoming events, pay only for execution times
+- serverless ops
+
+
 EJERCICIOS:
 =
 

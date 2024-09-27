@@ -68,36 +68,12 @@
             }
           },
           {
-            "id": "ce9b5f8fb7862bc1",
+            "id": "755ca35bba3724eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc2e1a07b5a4daca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "07591d285ff0e52e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev.md",
+                "file": "devops/02_cloud_providers/azure/02_ deploy del shopping cart con ACI y Github Actions.md",
                 "mode": "source",
                 "source": false
               }
@@ -140,18 +116,6 @@
             }
           },
           {
-            "id": "332ca40f2de320ac",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_tecnologias, trends y sample projects.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "eacae91e7645dde4",
             "type": "leaf",
             "state": {
@@ -164,19 +128,91 @@
             }
           },
           {
-            "id": "755ca35bba3724eb",
+            "id": "8c9bdf3ed616f5eb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "db9745f5f69fd73f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0ee9e1c77775f5a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "dc2e1a07b5a4daca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "07591d285ff0e52e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96f889da2d7a1daf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/proyectos/03_backend_ boilerplate_setup.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cbd906a1d7f2dde8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/proyectos/04_gestion de actualizaciones de los boilerplates.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -242,7 +278,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md",
+                "file": "fullstack/devdays/02_portoflio/proyectos/04_gestion de actualizaciones de los boilerplates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +295,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md",
+                "file": "fullstack/devdays/02_portoflio/proyectos/04_gestion de actualizaciones de los boilerplates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -282,7 +318,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md"
+                "file": "fullstack/devdays/02_portoflio/proyectos/04_gestion de actualizaciones de los boilerplates.md"
               }
             }
           }
@@ -303,52 +339,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "755ca35bba3724eb",
+  "active": "cbd906a1d7f2dde8",
   "lastOpenFiles": [
-    "fullstack/devdays/04_github/01_git rebase para resolver diferencias locales y remotas.md",
     "Pasted image 20240711100926.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240905144152.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240905152342.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240905152308.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240905152221.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240905152122.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240905151304.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240905145747.png",
-    "fullstack/devdays/04_github/images/Pasted image 20240905145325.png",
-    "fullstack/devdays/04_github/05_ solve merge conflicts.md",
-    "fullstack/devdays/04_github/06_merge de una rama de otro en otro.md",
-    "fullstack/devdays/02_portoflio/proyectos/dev101_laserants_bootcamp.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
-    "fullstack/devdays/01_ejercicios/frontend/ts/vanilla-ts todo.md",
-    "devops/02_cloud_providers/aws/02_billing.md",
-    "devops/02_cloud_providers/aws/img/Pasted image 20240905084150.png",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/02_infra_manual parte 2.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_agenda.md",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
-    "devops/02_cloud_providers/aws/00_IAM profiles.md",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/00_managament de favoritos.md",
-    "devops/99_devops_bestpractices.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
-    "fullstack/devdays/02_portoflio/testing.md",
+    "Pasted image 20240905203312.png",
+    "Pasted image 20240905214913.png",
+    "Pasted image 20240905214933.png",
+    "Pasted image 20240906075858.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240920103400.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240920112748.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240920114616.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240920114822.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240920114939.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20240920145451.png",
+    "fullstack/devdays/02_portoflio/proyectos/04_gestion de actualizaciones de los boilerplates.md",
+    "fullstack/devdays/02_portoflio/proyectos/02_frontend_ boilerplate_setup.md",
+    "fullstack/devdays/02_portoflio/proyectos/03_backend_ boilerplate_setup.md",
+    "devops/02_cloud_providers/azure/02_ deploy del shopping cart con ACI y Github Actions.md",
+    "devops/02_cloud_providers/azure/01_deploy del shopping cart en laserants bootcamp.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
+    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
+    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/02_rrhh_carmen elena tejada.md",
+    "fullstack/devdays/02_portoflio/testing.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
+    "fullstack/devdays/02_portoflio/proyectos/01_dev101_laserants_bootcamp.md",
+    "fullstack/devdays/02_portoflio/reqs_proyectos_dev/01_reqs encontradas para proyectos devs.md",
+    "fullstack/devdays/02_portoflio/04_revision clutch.co.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
+    "fullstack/devdays/01_ejercicios/testing/04_ e2e con playwright.md",
+    "fullstack/devdays/01_ejercicios/frontend/ts/react-18.md",
+    "fullstack/devdays/01_ejercicios/frontend/ts/vanilla-ts todo.md",
+    "fullstack/devdays/01_ejercicios/testing/03_frontend.md",
+    "fullstack/devdays/02_portoflio/reclutadores target.md",
+    "fullstack/devdays/02_portoflio/free apis.md",
+    "devops/02_cloud_providers/azure/images",
+    "devops/02_cloud_providers/azure",
     "fullstack/devdays/02_portoflio/proyectos/img",
-    "fullstack/devdays/01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
     "fullstack/devdays/02_portoflio/proyectos",
-    "fullstack/devdays/01_ejercicios/frontend/pnpm.md",
-    "fullstack/devdays/01_ejercicios/frontend/ts/yarn_todo/01_instalacion y codificacion.md",
-    "fullstack/devdays/01_ejercicios/frontend/ts/yarn_todo/Untitled.md",
-    "fullstack/devdays/01_ejercicios/frontend/firebase/todo/01_instalacion.md",
-    "fullstack/devdays/01_ejercicios/frontend/boilerplates/01_mern_startingenterprise.md",
-    "fullstack/devdays/01_ejercicios/frontend/boilerplates/02_Authorization.md",
-    "fullstack/devdays/01_ejercicios/frontend/boilerplates/03_landing Entreprise 01.md",
     "devops/02_cloud_providers/github",
     "devops/02_cloud_providers/aws/02_deploy_rox_exer03",
     "devops/01_bootcamp_roxross/edicion2024/img",
     "devops/01_bootcamp_roxross/edicion2024",
     "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023/minikube",
-    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023",
-    "devops/02_cloud_providers/gcp",
-    "devops/03_comandos"
+    "devops/03_comandos/03_roadmap_k8s_jenkins_roxs2023"
   ]
 }

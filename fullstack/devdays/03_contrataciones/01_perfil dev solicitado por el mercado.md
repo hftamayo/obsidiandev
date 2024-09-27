@@ -77,7 +77,53 @@ MILESTONE 4: ESPECIALIZATION
 - Understanding GDPR, PCI DSS, HIPAA requirements. 
 - Adherence to industry standards like OWASP Top 10 ( boring but do read about them )
 
+# BUENAS PRACTICAS DE PERFILES LINKEDIN
 
+==tomado de la descripcion de una senor dev:
+
+```
+Software Developer with 8+ years of experience developing applications using Java, Spring framework, Dropwizard framework, databases, micro-services and REST, orientated to design patterns. Knowledge of Scrum methodology and fintechs. I consider myself continuous learner, team player, problem solver and great collaborator.
+
+
+Senior Software EngineerSenior Software Engineer
+
+Encora Inc. · Full-timeEncora Inc. · Full-timeJun 2024 - Present · 4 mosJun 2024 to Present · 4 mosArizona, United States · RemoteArizona, United States · Remote
+
+- - Client Uber: Developing and deploying robust backend microservices using Java, adhering to microservice architecture principles for enhanced scalability and maintainability.  
+          
+        - Contibuting to the logistics and freight industry by integrating innovative solutions that streamlined operations and improved service delivery.```
+
+
+-----
+Lead Software EngineerLead Software Engineer
+
+TELUS International Digital Solutions · Full-timeTELUS International Digital Solutions · Full-timeJun 2023 - Jun 2024 · 1 yr 1 moJun 2023 to Jun 2024 · 1 yr 1 moRemoteRemote
+
+- - Responsible for mentoring the team on the technical solution and creating technical leadership within the team. Responsible and accountable for technical decision-making for smart home project. Designing, developing, and deploying serverless applications using AWS Lambda and other AWS services, creating event-driven architectures that respond to changes in data or other events, implementing security best practices to ensure the safety of data and systems, Integrating AWS Lambda functions with other AWS services, such as Amazon S3, Amazon, DynamoDB, Amazon API Gateway, and AWS Step Functions, proficient with monitoring tools like Cloud Watch and AWS X-Ray, staying up to date with the latest AWS Lambda features and best practices, and incorporating them into application development.
+
+
+----
+Client Technisys. Build code to meet the requirements of a client, develop application based on a micro-services architecture complying with code standards and the required quality. Building, maintaining, and improving CI & CD and deployment technologies.
+
+
+-----
+Client BillGO. The payment and invoice management platform that allows the control of invoices and daily subscriptions, send and receive transactions, helping the user, financial institutions and fintechs.
+
+-----
+
+Client Benchmark: Planning and development to migrate a monolith application to a microservices architecture. Implementing event sourcing and patterns, improving application performance regarding user experience and reducing by 30% response time due to the fact that it was developed in an architecture based on microservices following all the necessary patterns to make it an optimal system.
+
+----
+
+Client Cuscatlán bank: Designed and developed a software with a microservices architecture and pattern design. The project consisted in creating an electronic gateway for a bank in which purchases can be made in any business that is affiliated with the bank and has a QR code, using different credit cards and the following technology. This system reduces 35% in time resources since the payment process has been automated.
+
+
+-----
+
+Client Treasury: Designed and developed an accounting software; in which I created new features, prior analyzing the company’s problems and proposing solutions. This system helped optimize the company’s processes by 30% reducing costs in human resources since now government accounting is handled in an automated manner.
+
+
+```
 
 # REQS DE PERFILES DE JOB OFFERS EN LINKEDIN
 BACKEND
@@ -131,13 +177,38 @@ BACKEND
 - Experience in a fast-paced, growth-oriented environment is a plus.
 
 
-
-
-
 ==Golang
+
+
+The engineering org as a whole is 40 people, spread out across the U.S. Their backend is essentially a set of go microservices that communicate with each other via grpc and protobuf and the backend engineering team is currently around ~30 engineers.
+
+They’re looking to add an additional 5 go devs across a handful of squads to help them increase feature velocity going into the end of the year.
+
+**About You**
+
+Roughly in order of importance:
+
+- You have backend engineering experience
+- You have go experience
+- You have experience with service oriented architecture
+- You have consulting experience
+
 
 ==Python
 * TDD y DDD
+
+==Rust:==
+
+Rust: WGPU graphics API  / WebGPU graphics Library , Understanding and experience with WebAssembly in Javascript, Strong knowledge of graphics and rendering technologies (OpenGL, Vulkan, DirectX, etc.) 
+
+Knowledge of cross-platform development and mobile graphics optimization.
+
+Experience using Swift and or Kotlin or bridging to native applications
+
+Experience with Apple’s Metal Framework
+
+Experience with other programming languages such as C++ or Python. 
+
 
 FRONTEND
 =
