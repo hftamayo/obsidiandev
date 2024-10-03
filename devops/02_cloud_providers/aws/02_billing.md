@@ -66,7 +66,83 @@ En Billing and Cost Management -> Bills abajo hay un detalle por cada serbicio:
 
 ![[Pasted image 20240906075858.png]]
 
+## Setting up de un budget alert
 
 
+Setting up a budget alert is the best option to monitor and control your AWS spending. AWS Budgets allows you to create custom cost and usage budgets, and you can set up alerts to notify you when your usage exceeds your specified thresholds.
 
-3. 
+### Steps to Set Up a Budget Alert
+
+1. **Go to AWS Budgets**:
+   - Open the [AWS Budgets Console](https://console.aws.amazon.com/billing/home#/budgets).
+
+2. **Create a Budget**:
+   - Click on "Create budget".
+   - Choose "Cost budget" and click "Next".
+
+3. **Configure Budget Details**:
+   - Enter a name for your budget.
+   - Set the period (e.g., monthly).
+   - Specify the start date and, optionally, an end date.
+   - Set the budgeted amount (e.g., $50).
+
+4. **Set Up Alerts**:
+   - Under "Configure alerts", set up notifications for when your actual or forecasted costs exceed a certain percentage of your budget.
+   - For example, you can set an alert at 80% and 100% of your budget.
+   - Enter the email addresses to receive the alerts.
+
+5. **Review and Create**:
+   - Review your budget settings and click "Create budget".
+
+### Example: Setting Up a Budget Alert
+
+1. **Navigate to AWS Budgets**:
+   - Open the AWS Budgets Console.
+
+2. **Create a Budget**:
+   - Click "Create budget".
+   - Select "Cost budget" and click "Next".
+
+3. **Configure Budget**:
+   - Name: `MyLambdaBudget`
+   - Period: `Monthly`
+   - Start Date: `Today`
+   - Budgeted Amount: `$50`
+
+4. **Set Up Alerts**:
+   - Alert 1: 80% of budget
+     - Threshold: `80%`
+     - Notification Type: `Actual`
+     - Email: `your-email@example.com`
+   - Alert 2: 100% of budget
+     - Threshold: `100%`
+     - Notification Type: `Actual`
+     - Email: `your-email@example.com`
+
+5. **Review and Create**:
+   - Review the settings and click "Create budget".
+
+### Additional Tips
+
+- **Enable Billing Alerts**: Ensure that billing alerts are enabled in your AWS account.
+  - Go to the [Billing and Cost Management Dashboard](https://console.aws.amazon.com/billing/home#/).
+  - Click on "Billing preferences" and enable "Receive Billing Alerts".
+
+- **Monitor Usage**: Regularly monitor your AWS usage and costs through the AWS Management Console.
+
+By setting up a budget alert, you can effectively monitor and control your AWS spending, ensuring that you stay within your budget and avoid unexpected charges.
+
+
+![[Pasted image 20241001155339.png]]
+
+![[Pasted image 20241001155437.png]]
+
+![[Pasted image 20241001155548.png]]
+
+![[Pasted image 20241001155646.png]]
+
+![[Pasted image 20241001155708.png]]
+
+![[Pasted image 20241001155907.png]]
+
+![[Pasted image 20241001160007.png]]

@@ -155,3 +155,6 @@ Use code [with caution.](/faq#coding)
 - **Spring Data JPA:** If you're using Spring Data JPA for your data access layer, leverage its features to simplify data retrieval.
 
 By following these guidelines and refactoring your code, you should be able to resolve the circular dependency and create a more maintainable application.
+
+
+![[cuando usar react hooks.jpeg]]

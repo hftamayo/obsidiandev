@@ -45,3 +45,9 @@ DevOps metrics:
 ![[Pasted image 20240715124811.png]]
 
 ![[devsecops.gif]]
+
+
+![[devsecops 1.gif]]
+
+![[rest_vs_graphql.gif]]
+
