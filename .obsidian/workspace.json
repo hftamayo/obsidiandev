@@ -61,19 +61,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/02_cloud_providers/aws/01_lambda.md",
+                "file": "devops/02_cloud_providers/aws/03_automatizando lambda.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "fa0d2b9cff21db86",
+            "id": "e2d7d459bbb1fc04",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/02_cloud_providers/azure/01_deploy del shopping cart en laserants bootcamp.md",
+                "file": "devops/02_cloud_providers/azure/03_ tasks pending to automate before running the yaml.md",
                 "mode": "source",
                 "source": false
               }
@@ -128,30 +128,6 @@
             }
           },
           {
-            "id": "8c9bdf3ed616f5eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "db9745f5f69fd73f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "0ee9e1c77775f5a1",
             "type": "leaf",
             "state": {
@@ -164,12 +140,12 @@
             }
           },
           {
-            "id": "dc2e1a07b5a4daca",
+            "id": "a1dae4760d41abee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
                 "mode": "source",
                 "source": false
               }
@@ -193,7 +169,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/proyectos/03_backend_ boilerplate_setup.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5b0f85019789d8a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
                 "mode": "source",
                 "source": false
               }
@@ -212,7 +200,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -278,7 +266,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops/02_cloud_providers/azure/01_deploy del shopping cart en laserants bootcamp.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -295,7 +283,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops/02_cloud_providers/azure/01_deploy del shopping cart en laserants bootcamp.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -318,7 +306,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops/02_cloud_providers/azure/01_deploy del shopping cart en laserants bootcamp.md"
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md"
               }
             }
           }
@@ -339,52 +327,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fa0d2b9cff21db86",
+  "active": "96f889da2d7a1daf",
   "lastOpenFiles": [
-    "devops/02_cloud_providers/azure/04_costos de tener servicios corriendo.md",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241002104512.png",
-    "Pasted image 20240711100926.png",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241003142326.png",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241003142231.png",
-    "devops/02_cloud_providers/azure/02_ deploy del shopping cart con ACI y Github Actions.md",
-    "devops/02_cloud_providers/azure/02_deploy del shopping usando ACI parte2.md",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241003072501.png",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241003072416.png",
-    "devops/02_cloud_providers/azure/05_budget.md",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241002120904.png",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241002120844.png",
-    "devops/02_cloud_providers/aws/01_lambda.md",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241002120314.png",
-    "devops/02_cloud_providers/azure/images/Pasted image 20241002115833.png",
-    "devops/02_cloud_providers/azure/01_deploy del shopping cart en laserants bootcamp.md",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
     "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+    "devops/02_cloud_providers/azure/03_ tasks pending to automate before running the yaml.md",
+    "fullstack/devdays/02_portoflio/planificacion/img/Pasted image 20241010100254.png",
+    "fullstack/devdays/02_portoflio/proyectos/04_gestion de actualizaciones de los boilerplates.md",
+    "Pasted image 20241010091210.png",
+    "Pasted image 20241010090817.png",
+    "Pasted image 20241010090709.png",
+    "fullstack/devdays/02_portoflio/reclutadores target.md",
+    "fullstack/devdays/02_portoflio/proyectos/02_frontend_ boilerplate_setup.md",
+    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+    "fullstack/devdays/02_microservices/01_teoria.md",
+    "fullstack/devdays/02_microservices/img/Pasted image 20241009101132.png",
+    "fullstack/devdays/02_microservices/img/Pasted image 20241009101103.png",
+    "fullstack/devdays/02_microservices/img/Pasted image 20241009101036.png",
+    "Pasted image 20241007131134.png",
+    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
+    "fullstack/devdays/02_microservices/img",
+    "fullstack/devdays/02_microservices",
+    "fullstack/devdays/02_portoflio/proyectos/03_backend_ boilerplate_setup.md",
+    "devops/02_cloud_providers/azure/02_ deploy del shopping cart con ACI y Github Actions.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
+    "devops/02_cloud_providers/azure/02_deploy del shopping usando ACI parte2.md",
+    "devops/02_cloud_providers/azure/04_costos de tener servicios corriendo.md",
+    "Pasted image 20241007131104.png",
+    "devops/02_cloud_providers/aws/03_automatizando lambda.md",
+    "devops/02_cloud_providers/azure/05_budget.md",
+    "devops/02_cloud_providers/aws/04_ejecutando la automatizacion.md",
+    "devops/02_cloud_providers/azure/01_deploy del shopping cart en laserants bootcamp.md",
+    "Pasted image 20241004093058.png",
+    "devops/02_cloud_providers/aws/01_lambda.md",
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
     "devops/02_cloud_providers/aws/02_billing.md",
     "devops/02_cloud_providers/aws/02_deploy_rox_exer03/02_infra_manual parte 2.md",
-    "devops/02_cloud_providers/azure/03_ tasks pending to automate before running the yaml.md",
     "devops/04_services_onpremise/02_docker creds y autenticacion.md",
-    "devops/04_services_onpremise/01_hashicorp vault.md",
     "devops/04_services_onpremise/img",
     "devops/04_services_onpremise",
-    "devops/02_cloud_providers/aws/00_IAM profiles.md",
-    "devops/99_devops_bestpractices.md",
-    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
-    "fullstack/devdays/02_portoflio/proyectos/04_gestion de actualizaciones de los boilerplates.md",
-    "fullstack/devdays/02_portoflio/proyectos/03_backend_ boilerplate_setup.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
-    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
     "devops/02_cloud_providers/azure/images",
     "devops/02_cloud_providers/azure",
     "fullstack/devdays/02_portoflio/proyectos/img",
     "fullstack/devdays/02_portoflio/proyectos",
     "devops/02_cloud_providers/github",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03",
-    "devops/01_bootcamp_roxross/edicion2024/img",
-    "devops/01_bootcamp_roxross/edicion2024"
+    "devops/02_cloud_providers/aws/02_deploy_rox_exer03"
   ]
 }

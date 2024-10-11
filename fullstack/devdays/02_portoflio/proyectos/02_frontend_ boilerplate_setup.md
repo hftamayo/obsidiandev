@@ -908,6 +908,26 @@ module.exports = {
 
 By following these steps, you can ensure that your project is prepared for the transition from a monolith to a micro frontend architecture. This setup will allow you to develop, build, and deploy each micro frontend independently while maintaining a cohesive user experience.
 
+### ==what about if I'm using Vite for building tool
+
+No, you do not need to install Webpack if you are already using Vite. Vite is a modern build tool that serves a similar purpose to Webpack but is designed to be faster and more efficient, especially for development.
+
+### Key Points:
+
+- **Vite vs. Webpack**: Both Vite and Webpack are build tools, but Vite is optimized for speed and simplicity, particularly in development environments. Vite uses native ES modules in the browser during development and bundles the code for production using Rollup.
+  
+- **Module Federation**: While Webpack's Module Federation is a powerful feature for micro frontends, Vite has its own ecosystem and plugins that can achieve similar goals. You can look into Vite's plugin ecosystem for solutions tailored to Vite.
+
+### Recommendations:
+
+1. **Stick with Vite**: Since you are already using Vite, continue to leverage its features and plugins. Vite is designed to be fast and efficient, and switching to Webpack would add unnecessary complexity.
+
+2. **Explore Vite Plugins**: Look into Vite plugins that can help you achieve similar functionality to Webpack's Module Federation. The Vite ecosystem is growing, and there are many plugins available for various use cases.
+
+3. **Micro Frontends with Vite**: If you are specifically interested in micro frontends, research how to implement them using Vite. There are community resources and examples available that demonstrate how to achieve micro frontend architectures with Vite.
+
+By sticking with Vite and exploring its ecosystem, you can maintain a simpler and more efficient build process without the need to introduce Webpack.
+
 ### ==tips for writing a modular codebase
 
 A modular codebase is organized in a way that promotes separation of concerns, reusability, and maintainability. Here are the key characteristics and tips for writing a modular codebase:
@@ -1045,325 +1065,509 @@ By following these tips and characteristics, you can create a modular codebase t
 
 https://github.com/hftamayo/tb_fe_react_boilerplate
 
+### ==Usando Vite para el setup de microfrontends
+
+For achieving micro frontend architectures with Vite, you can leverage several plugins and techniques. Here are some popular Vite plugins and approaches that can help you implement micro frontends:
+
+### 1. `vite-plugin-federation`
+This plugin brings Module Federation to Vite, allowing you to share modules between different Vite applications at runtime.
+
+- **Repository**: [vite-plugin-federation](https://github.com/originjs/vite-plugin-federation)
+- **Installation**:
+  ```sh
+  npm install @originjs/vite-plugin-federation --save-dev
+  ```
+
+### 2. `vite-plugin-micro-frontend`
+This plugin helps you to create micro frontends with Vite by providing tools to manage and load remote modules.
+
+- **Repository**: [vite-plugin-micro-frontend](https://github.com/umijs/vite-plugin-micro-frontend)
+- **Installation**:
+  ```sh
+  npm install vite-plugin-micro-frontend --save-dev -> recibi un 404
+  ```
+
+### 3. `vite-plugin-remote-modules`
+This plugin allows you to load remote modules dynamically, which is useful for micro frontend architectures.
+
+- **Repository**: [vite-plugin-remote-modules](https://github.com/alloc/vite-plugin-remote-modules)
+- **Installation**:
+  ```sh
+  npm install vite-plugin-remote-modules --save-dev -> recibi un 404
+  ```
+
+### 4. `vite-plugin-single-spa`
+This plugin integrates Vite with the Single-SPA framework, which is a popular choice for building micro frontends.
+
+- **Repository**: [vite-plugin-single-spa](https://github.com/single-spa/single-spa-vite)
+- **Installation**:
+  ```sh
+  npm install vite-plugin-single-spa --save-dev
+  ```
+
+### 5. `vite-plugin-module-federation`
+Another plugin that brings Webpack's Module Federation capabilities to Vite.
+
+- **Repository**: [vite-plugin-module-federation](https://github.com/modern-js-dev/vite-plugin-module-federation)
+- **Installation**:
+  ```sh
+  npm install vite-plugin-module-federation --save-dev
+  ```
+
+### Example Usage
+
+Here is a basic example of how you might configure `vite-plugin-federation` in your `vite.config.js`:
+
+```javascript
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import federation from '@originjs/vite-plugin-federation';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    federation({
+      name: 'app',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Button': './src/components/Button',
+      },
+      remotes: {
+        remoteApp: 'remoteApp@http://localhost:3001/remoteEntry.js',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+});
+```
+
+### Steps to Implement:
+
+1. **Install the Plugin**:
+   ```sh
+   npm install @originjs/vite-plugin-federation --save-dev
+   ```
+
+2. **Update `vite.config.js`**:
+   Configure the plugin in your Vite configuration file as shown in the example above.
+
+3. **Run the Development Server**:
+   ```sh
+   npm run dev
+   ```
+
+By using these plugins, you can effectively implement micro frontend architectures with Vite, leveraging its modern build capabilities and ecosystem.
 
 ___
-## Fase 3: setup del backend
 
-### Deps basicas y requeridas para el TDD
+## Explicacion de este code snippet:
 
-Sure, let's go through the steps to set up your project and discuss the ORM tool for MongoDB.
+```
+export default defineConfig({
+plugins: [
+react(),
+federation({
+name: 'app',
+filename: 'remoteEntry.js',
+exposes: {
+'./Button': './src/shared/components/Button',
+},
 
-### 1. Walkthrough to Install and Setup the Project
+remotes: {
+remoteApp: 'http://localhost:5174/remoteEntry.js',
+},
 
-#### Step 1: Initialize the Project
-1. Create a new directory for your project and navigate into it.
-   ```sh
-   mkdir my-restful-api
-   cd my-restful-api
-   ```
+shared: ['react', 'react-dom'],
+}),
+],
 
-2. Initialize a new Node.js project.
-   ```sh
-   npm init -y
-   ```
+```
 
-#### Step 2: Install Dependencies
-1. Install TypeScript and necessary development dependencies.
-   ```sh
-   npm install typescript ts-node @types/node --save-dev
-   ```
+### Explanation of the Code Snippet:
 
-2. Install Express and its TypeScript types.
-   ```sh
-   npm install express @types/express
-   ```
+#### [`filename: 'remoteEntry.js'`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A9%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition")
+- **Purpose**: This specifies the name of the file that will be generated by the module federation plugin. This file will contain the metadata and the code necessary for other applications to consume the exposed modules.
+- **Arbitrary**: Yes, the filename is arbitrary. You can name it anything you like, but `remoteEntry.js` is a common convention.
 
-3. Install Jest and its TypeScript types for testing.
-   ```sh
-   npm install jest ts-jest @types/jest --save-dev
-   ```
+#### [`exposes: { './Button': './src/shared/components/Button' }`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A10%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition")
+- **Purpose**: This configuration exposes the [`Button`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A11%2C%22character%22%3A11%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition") component so that it can be consumed by other applications. The key (`'./Button'`) is the name under which the component will be exposed, and the value (`'./src/shared/components/Button'`) is the path to the component in your codebase.
+- **For Testing**: In this example, exposing the [`Button`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A11%2C%22character%22%3A11%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition") component is likely for demonstration or testing purposes. In a real-world scenario, you would expose the components or modules that you want to share across different applications.
 
-4. Install TypeORM and MongoDB driver.
-   ```sh
-   npm install typeorm reflect-metadata mongodb
-   ```
+#### [`remotes: { remoteApp: 'http://localhost:5174/remoteEntry.js' }`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A13%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition")
+- **Purpose**: This configuration specifies the remote applications that this application can consume. The key (`'remoteApp'`) is the name under which the remote application will be referenced, and the value (`'http://localhost:5174/remoteEntry.js'`) is the URL where the remote entry file is hosted.
 
-5. Install other necessary dependencies.
-   ```sh
-   npm install dotenv
-   ```
+### When Your Codebase is Ready:
 
-#### Step 3: Configure TypeScript
-1. Create a `tsconfig.json` file in the root of your project.
-   ```json
-   {
-     "compilerOptions": {
-       "target": "ES6",
-       "module": "commonjs",
-       "outDir": "./dist",
-       "rootDir": "./src",
-       "strict": true,
-       "esModuleInterop": true,
-       "skipLibCheck": true,
-       "forceConsistentCasingInFileNames": true
-     },
-     "include": ["src"],
-     "exclude": ["node_modules", "**/*.test.ts"]
-   }
-   ```
+When your codebase is ready, you should update the [`exposes`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A10%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition") and [`remotes`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A13%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition") configurations to reflect the actual modules and components you want to share and consume.
 
-#### Step 4: Set Up Express Server
-1. Create a `src` directory and inside it, create an `index.ts` file.
+#### Example Configuration for a Ready Codebase:
+
+1. **Expose Multiple Components**:
    ```typescript
-   import express from 'express';
-
-   const app = express();
-   const port = process.env.PORT || 3000;
-
-   app.get('/', (req, res) => {
-     res.send('Hello World!');
-   });
-
-   app.listen(port, () => {
-     console.log(`Server is running on port ${port}`);
-   });
+   exposes: {
+     './Header': './src/components/Header',
+     './Footer': './src/components/Footer',
+     './Sidebar': './src/components/Sidebar',
+   },
    ```
 
-#### Step 5: Set Up TypeORM
-1. Create a `ormconfig.json` file in the root of your project.
-   ```json
-   {
-     "type": "mongodb",
-     "host": "localhost",
-     "port": 27017,
-     "database": "mydatabase",
-     "synchronize": true,
-     "logging": false,
-     "entities": ["src/entity/**/*.ts"]
-   }
+2. **Consume Multiple Remote Applications**:
+   ```typescript
+   remotes: {
+     authApp: 'http://localhost:5175/remoteEntry.js',
+     dashboardApp: 'http://localhost:5176/remoteEntry.js',
+   },
    ```
 
-2. Create an `entity` directory inside `src` and add your entities there.
+### Updated [`vite.config.ts`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "/home/hftamayo/sourcecode/reactjs/myprojects/tb_fe_react_boilerplate/vite.config.ts") Example:
 
-#### Step 6: Set Up Jest for Testing
-1. Create a `jest.config.js` file in the root of your project.
-   ```javascript
-   module.exports = {
-     preset: 'ts-jest',
-     testEnvironment: 'node',
-     testMatch: ['**/?(*.)+(spec|test).[tj]s?(x)'],
-   };
-   ```
-
-2. Create a `tests` directory inside `src` and add your test files there.
-
-### 2. ORM Tool for MongoDB
-
-TypeORM is a popular choice and works well with MongoDB. However, if you are looking for alternatives, you might consider:
-
-- **Mongoose**: A MongoDB object modeling tool designed to work in an asynchronous environment. It is more mature and widely used for MongoDB.
-- **Prisma**: A modern ORM that supports MongoDB and provides a type-safe database client.
-
-For simplicity and given your stack, TypeORM is a good choice, but if you need more advanced MongoDB features, Mongoose might be worth considering.
-
-### Summary
-
-1. Initialize the project and install dependencies.
-2. Configure TypeScript.
-3. Set up an Express server.
-4. Configure TypeORM for MongoDB.
-5. Set up Jest for testing.
-
-Would you like to proceed with TypeORM, or do you want to explore Mongoose or Prisma further?
-
-
-### Configuracion estandar de typeORM
-
-Great! Let's continue with setting up TypeORM for MongoDB.
-
-### Step-by-Step Setup for TypeORM with MongoDB
-
-#### Step 1: Install TypeORM and MongoDB Driver
-You've already installed these, but for completeness:
-```sh
-npm install typeorm reflect-metadata mongodb
-```
-
-#### Step 2: Create TypeORM Configuration
-Create a [`ormconfig.json`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_buddyman%2Formconfig.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%5D "/home/hftamayo/sourcecode/nodejs/myprojects/tb_be_buddyman/ormconfig.json") file in the root of your project:
-```json
-{
-  "type": "mongodb",
-  "host": "localhost",
-  "port": 27017,
-  "database": "mydatabase",
-  "synchronize": true,
-  "logging": false,
-  "entities": ["src/entity/**/*.ts"]
-}
-```
-
-#### Step 3: Create an Entity
-Create an `entity` directory inside `src` and add your entities there. For example, create a `User` entity.
-
-`src/entity/User.ts`:
 ```typescript
-import { Entity, ObjectIdColumn, ObjectID, Column } from 'typeorm';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import federation from '@originjs/vite-plugin-federation';
 
-@Entity()
-export class User {
-  @ObjectIdColumn()
-  id: ObjectID;
-
-  @Column()
-  name: string;
-
-  @Column()
-  email: string;
-}
-```
-
-#### Step 4: Set Up Database Connection
-Create a `src/database.ts` file to set up the database connection:
-```typescript
-import { createConnection } from 'typeorm';
-
-export const connectDatabase = async () => {
-  await createConnection();
-};
-```
-
-#### Step 5: Integrate Database Connection with Express
-Update your `src/index.ts` to include the database connection:
-```typescript
-import express from 'express';
-import 'reflect-metadata';
-import { connectDatabase } from './database';
-
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.use(express.json());
-
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-connectDatabase().then(() => {
-  app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
-}).catch(error => console.log(error));
-```
-
-#### Step 6: Create a Repository and Controller
-Create a repository and controller for the `User` entity.
-
-`src/repository/UserRepository.ts`:
-```typescript
-import { getMongoRepository } from 'typeorm';
-import { User } from '../entity/User';
-
-export const userRepository = getMongoRepository(User);
-```
-
-`src/controller/UserController.ts`:
-```typescript
-import { Request, Response } from 'express';
-import { userRepository } from '../repository/UserRepository';
-
-export const createUser = async (req: Request, res: Response) => {
-  const user = userRepository.create(req.body);
-  await userRepository.save(user);
-  res.status(201).send(user);
-};
-
-export const getUsers = async (req: Request, res: Response) => {
-  const users = await userRepository.find();
-  res.status(200).send(users);
-};
-```
-
-#### Step 7: Set Up Routes
-Create a `src/routes.ts` file to define your routes:
-```typescript
-import { Router } from 'express';
-import { createUser, getUsers } from './controller/UserController';
-
-const router = Router();
-
-router.post('/users', createUser);
-router.get('/users', getUsers);
-
-export default router;
-```
-
-Update `src/index.ts` to use the routes:
-```typescript
-import express from 'express';
-import 'reflect-metadata';
-import { connectDatabase } from './database';
-import routes from './routes';
-
-const app = express();
-const port = process.env.PORT || 3000;
-
-app.use(express.json());
-app.use('/api', routes);
-
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-connectDatabase().then(() => {
-  app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
-  });
-}).catch(error => console.log(error));
-```
-
-### Step 8: Set Up Jest for Testing
-Create a test for the `User` entity.
-
-`src/tests/User.test.ts`:
-```typescript
-import { createConnection, getMongoRepository } from 'typeorm';
-import { User } from '../entity/User';
-
-describe('User Entity', () => {
-  beforeAll(async () => {
-    await createConnection();
-  });
-
-  afterAll(async () => {
-    const connection = getMongoRepository(User).manager.connection;
-    await connection.close();
-  });
-
-  it('should create and save a user', async () => {
-    const userRepository = getMongoRepository(User);
-    const user = userRepository.create({ name: 'John Doe', email: 'john@example.com' });
-    await userRepository.save(user);
-
-    const savedUser = await userRepository.findOne({ email: 'john@example.com' });
-    expect(savedUser).toBeDefined();
-    expect(savedUser?.name).toBe('John Doe');
-  });
+export default defineConfig({
+  plugins: [
+    react(),
+    federation({
+      name: 'mainApp',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Header': './src/components/Header',
+        './Footer': './src/components/Footer',
+        './Sidebar': './src/components/Sidebar',
+      },
+      remotes: {
+        authApp: 'http://localhost:5175/remoteEntry.js',
+        dashboardApp: 'http://localhost:5176/remoteEntry.js',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+  server: {
+    port: 5173,
+    open: true,
+    host: '0.0.0.0',
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
 });
 ```
 
-### Summary
-1. Set up TypeORM configuration.
-2. Create an entity.
-3. Set up the database connection.
-4. Integrate the database connection with Express.
-5. Create a repository and controller.
-6. Set up routes.
-7. Set up Jest for testing.
+### Key Points:
 
-You now have a basic setup for a RESTful API using Node.js, Express, TypeScript, TypeORM, MongoDB, and Jest.
+- **[`filename`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A9%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition")**: The name of the generated file containing the module federation metadata. It can be any name you choose.
+- **[`exposes`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A10%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition")**: List the components or modules you want to share with other applications.
+- **[`remotes`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A13%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition")**: List the remote applications you want to consume, specifying their URLs.
 
-==adding the rest of packages:
+By configuring the [`exposes`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A10%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition") and [`remotes`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A13%2C%22character%22%3A6%7D%7D%5D%2C%22d94a949c-522b-475e-934c-b1b6791ce70e%22%5D "Go to definition") fields appropriately, you can set up a robust micro frontend architecture that allows different parts of your application to be developed and deployed independently.
 
-npm install faker body-parser cookie-parser cors decimal.js supertest jsonwebtoken
-npm install @types/jsonwebtoken --save-dev
+---
+### ==entonces como debería manejar la parte del remoteEntry en el early stage de este repo
+
+Not quite. The [`remoteApp`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A14%2C%22character%22%3A8%7D%7D%5D%2C%22cf863bfa-18d7-48da-80c8-0bceaae6d610%22%5D "Go to definition") configuration should point to the URL of the `remoteEntry.js` file generated by the remote application. This file contains the metadata and code necessary for module federation to work. It is not meant to point directly to a component file like `App.tsx`.
+
+### Correct Configuration:
+
+- **[`remoteApp`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A14%2C%22character%22%3A8%7D%7D%5D%2C%22cf863bfa-18d7-48da-80c8-0bceaae6d610%22%5D "Go to definition")**: This should point to the URL where the `remoteEntry.js` file is hosted by the remote application.
+
+### Example:
+
+If you have a remote application running on `http://localhost:5174` and it generates a `remoteEntry.js` file, your configuration should look like this:
+
+```typescript
+remotes: {
+  remoteApp: 'http://localhost:5174/remoteEntry.js',
+},
+```
+
+### Steps to Set Up a Remote Application:
+
+1. **Create a Remote Application**:
+   - Set up a new Vite project for the remote application.
+   - Configure it to expose the necessary components.
+
+2. **Generate `remoteEntry.js`**:
+   - Ensure the remote application is configured to generate the `remoteEntry.js` file using the `vite-plugin-federation`.
+
+### Example Configuration for Remote Application:
+
+**File: [`remote-app/vite.config.ts`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22cf863bfa-18d7-48da-80c8-0bceaae6d610%22%5D "/home/hftamayo/sourcecode/reactjs/myprojects/tb_fe_react_boilerplate/vite.config.ts")**:
+```typescript
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import federation from '@originjs/vite-plugin-federation';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    federation({
+      name: 'remoteApp',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Button': './src/components/Button',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+  server: {
+    port: 5174,
+    open: true,
+    host: '0.0.0.0',
+  },
+});
+```
+
+### Example Component in Remote Application:
+
+**File: `remote-app/src/components/Button.tsx`**:
+```typescript
+import React from 'react';
+
+const Button: React.FC = () => {
+  return <button>Remote Button</button>;
+};
+
+export default Button;
+```
+
+### Main Application Configuration:
+
+**File: [`vite.config.ts`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22cf863bfa-18d7-48da-80c8-0bceaae6d610%22%5D "/home/hftamayo/sourcecode/reactjs/myprojects/tb_fe_react_boilerplate/vite.config.ts")**:
+```typescript
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import federation from '@originjs/vite-plugin-federation';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    federation({
+      name: 'mainApp',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Header': './src/components/Header',
+        './Footer': './src/components/Footer',
+        './Sidebar': './src/components/Sidebar',
+      },
+      remotes: {
+        remoteApp: 'http://localhost:5174/remoteEntry.js',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+  server: {
+    port: 5173,
+    open: true,
+    host: '0.0.0.0',
+  },
+  resolve: {
+    alias: {
+      '@': '/src',
+    },
+  },
+});
+```
+
+### Summary:
+
+- **[`remoteApp`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A14%2C%22character%22%3A8%7D%7D%5D%2C%22cf863bfa-18d7-48da-80c8-0bceaae6d610%22%5D "Go to definition")** should point to the URL of the `remoteEntry.js` file generated by the remote application.
+- Each remote application should be configured to expose the necessary components and generate a `remoteEntry.js` file.
+- The main application should consume the remote applications by referencing their `remoteEntry.js` files.
+
+By following these steps, you can set up a micro frontend architecture where different groups of components run as separate projects and are integrated using module federation.
+
+==Yes, you need another application (e.g., Authentication) that will expose its components via `remoteEntry.js` for the current application to consume.
+
+
+## Next step:
+
+Given your vision and requirements, the best decision is to:
+
+1. **Leave the Template as It Is**: Ensure the template includes the necessary configuration for module federation (`remoteEntry.js`, `exposes`, `remotes`).
+2. **Use the Template to Build Microfrontends**: Start new projects using this template to create individual microfrontends.
+3. **Avoid Building a Monolith**: Focus on developing each microfrontend independently from the start, rather than building a monolith and splitting it later.
+
+This approach aligns with your goal of building microfrontends from the beginning and ensures that each project can be developed and deployed independently.
+
+___
+## what about shared components:
+
+For shared components, you have two main options:
+
+### Option 1: Include in the Template
+- **Pros**:
+  - Simplifies initial setup for each microfrontend.
+  - Ensures consistency across all microfrontends.
+- **Cons**:
+  - Any updates to shared components require updating the template and all microfrontends.
+
+### Option 2: Create a Separate Microfrontend for Shared Components
+- **Pros**:
+  - Centralized management of shared components.
+  - Easier to update and maintain shared components.
+  - Reduces duplication and ensures consistency.
+- **Cons**:
+  - Adds complexity in setting up and managing dependencies.
+
+### Recommendation:
+Given your goal of building microfrontends, the best approach is to **create a separate microfrontend for shared components**. This allows you to manage and update shared components centrally, ensuring consistency and reducing duplication.
+
+### Steps to Implement:
+1. **Create a Shared Components Microfrontend**:
+   - Set up a new Vite project for shared components.
+   - Configure it to expose the necessary components using module federation.
+
+2. **Expose Shared Components**:
+   - Expose UI components, Header, Footer, Dashboard, Dialogs, Layout components, and string messages.
+
+3. **Consume Shared Components in Other Microfrontends**:
+   - Configure other microfrontends to consume the shared components from the shared components microfrontend.
+
+### Example Configuration for Shared Components Microfrontend:
+
+**File: [`shared-components/vite.config.ts`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22120ec256-fec8-44e4-bc1f-453e3b79fbb9%22%5D "/home/hftamayo/sourcecode/reactjs/myprojects/tb_fe_react_boilerplate/vite.config.ts")**:
+```typescript
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import federation from '@originjs/vite-plugin-federation';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    federation({
+      name: 'sharedComponents',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Button': './src/components/Button',
+        './Header': './src/components/Header',
+        './Footer': './src/components/Footer',
+        './Dashboard': './src/components/Dashboard',
+        './Dialog': './src/components/Dialog',
+        './Layout': './src/components/Layout',
+        './i18n': './src/i18n',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+  server: {
+    port: 5175,
+    open: true,
+    host: '0.0.0.0',
+  },
+});
+```
+
+### Example Configuration for Consuming Microfrontend:
+
+**File: [`another-microfrontend/vite.config.ts`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22120ec256-fec8-44e4-bc1f-453e3b79fbb9%22%5D "/home/hftamayo/sourcecode/reactjs/myprojects/tb_fe_react_boilerplate/vite.config.ts")**:
+```typescript
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import federation from '@originjs/vite-plugin-federation';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    federation({
+      name: 'anotherMicrofrontend',
+      filename: 'remoteEntry.js',
+      remotes: {
+        sharedComponents: 'http://localhost:5175/remoteEntry.js',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+  server: {
+    port: 5176,
+    open: true,
+    host: '0.0.0.0',
+  },
+});
+```
+
+By following this approach, you can manage shared components centrally and ensure that all microfrontends have access to the latest versions of these components.
+
+___
+### should the first microfrontend to code is the one in charge to handle shared components?
+
+Yes, you are correct. The first microfrontend to code should be the one that handles the shared components. This will serve as the foundation for other microfrontends to consume common UI elements, layouts, and utilities.
+
+### Steps to Implement:
+
+1. **Create the Shared Components Microfrontend**:
+   - Set up a new Vite project for shared components.
+   - Configure it to expose the necessary components using module federation.
+
+2. **Expose Shared Components**:
+   - Expose UI components, Header, Footer, Dashboard, Dialogs, Layout components, and string messages.
+
+3. **Consume Shared Components in Other Microfrontends**:
+   - Configure other microfrontends to consume the shared components from the shared components microfrontend.
+
+### Example Configuration for Shared Components Microfrontend:
+
+**File: [`shared-components/vite.config.ts`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%223952a055-cfdb-4648-b3ae-9cee1008d0ac%22%5D "/home/hftamayo/sourcecode/reactjs/myprojects/tb_fe_react_boilerplate/vite.config.ts")**:
+```typescript
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import federation from '@originjs/vite-plugin-federation';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    federation({
+      name: 'sharedComponents',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Button': './src/components/Button',
+        './Header': './src/components/Header',
+        './Footer': './src/components/Footer',
+        './Dashboard': './src/components/Dashboard',
+        './Dialog': './src/components/Dialog',
+        './Layout': './src/components/Layout',
+        './i18n': './src/i18n',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+  server: {
+    port: 5175,
+    open: true,
+    host: '0.0.0.0',
+  },
+});
+```
+
+### Example Configuration for Consuming Microfrontend:
+
+**File: [`another-microfrontend/vite.config.ts`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Freactjs%2Fmyprojects%2Ftb_fe_react_boilerplate%2Fvite.config.ts%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%223952a055-cfdb-4648-b3ae-9cee1008d0ac%22%5D "/home/hftamayo/sourcecode/reactjs/myprojects/tb_fe_react_boilerplate/vite.config.ts")**:
+```typescript
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import federation from '@originjs/vite-plugin-federation';
+
+export default defineConfig({
+  plugins: [
+    react(),
+    federation({
+      name: 'anotherMicrofrontend',
+      filename: 'remoteEntry.js',
+      remotes: {
+        sharedComponents: 'http://localhost:5175/remoteEntry.js',
+      },
+      shared: ['react', 'react-dom'],
+    }),
+  ],
+  server: {
+    port: 5176,
+    open: true,
+    host: '0.0.0.0',
+  },
+});
+```
+
+By starting with the shared components microfrontend, you ensure that all other microfrontends can easily consume and utilize these common components, leading to a more modular and maintainable architecture.

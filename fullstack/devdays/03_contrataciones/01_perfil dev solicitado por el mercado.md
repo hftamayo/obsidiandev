@@ -286,4 +286,7 @@ CERTIFICATIONS:
 
 - CKAD = Certified Kubernets Application Developer
 - Hashicorp Terraform Associate Certification
-- 
+- Team Kanban Practitioner
+- Scrum Alliance CSD
+- OpenJS Node.JS Services Developer
+- OpenJS Node.JS Application Developer

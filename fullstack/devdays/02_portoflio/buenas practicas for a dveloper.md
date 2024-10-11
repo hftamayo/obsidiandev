@@ -158,3 +158,80 @@ By following these guidelines and refactoring your code, you should be able to r
 
 
 ![[cuando usar react hooks.jpeg]]
+
+## ==Uso de Arrow functions o de function declaration
+
+Both approaches are valid and have their own use cases. Here are some considerations to help you decide which one to use:
+
+### Function Declaration
+```tsx
+function TableRow() {
+  return (
+    <div>TableRow</div>
+  );
+}
+```
+
+**Pros:**
+1. **Hoisting:** Function declarations are hoisted, meaning they can be used before they are defined in the code.
+2. **Named Function:** Easier to debug because the function name appears in stack traces.
+
+**Cons:**
+1. **Consistency:** If you are using arrow functions for most of your components, this might be inconsistent.
+
+### Arrow Function
+```tsx
+const TableRow = () => {
+  return (
+    <div>TableRow</div>
+  );
+}
+```
+
+**Pros:**
+1. **Consistency:** If you are using arrow functions for most of your components, this keeps the codebase consistent.
+2. **Lexical `this`:** Arrow functions do not have their own `this` context, which can be beneficial in some cases.
+
+**Cons:**
+1. **No Hoisting:** Arrow functions are not hoisted, so they must be defined before they are used.
+
+### Recommendation
+
+If you are working in a codebase where arrow functions are predominantly used for defining components, it is better to stick with the arrow function approach for consistency:
+
+```tsx
+const TableRow = () => {
+  return (
+    <div>TableRow</div>
+  );
+}
+```
+
+However, if you prefer function declarations for their hoisting properties and named functions for easier debugging, you can use the function declaration approach:
+
+```tsx
+function TableRow() {
+  return (
+    <div>TableRow</div>
+  );
+}
+```
+
+Ultimately, the choice depends on your team's coding standards and the specific requirements of your project.
+
+---
+
+Using arrow functions for defining React components is a common practice in modern React development, but it is not the only way to write components. Both function declarations and arrow functions are valid and widely used. The choice between them often comes down to personal or team preference, consistency, and specific use cases.
+
+### Reasons for Using Arrow Functions
+1. **Consistency:** Many developers prefer arrow functions for consistency, especially if they are already using them for other purposes like event handlers or callbacks.
+2. **Lexical `this`:** Arrow functions do not have their own `this` context, which can simplify the handling of `this` in certain situations.
+3. **Conciseness:** Arrow functions can be more concise, especially when used with implicit returns.
+
+### Reasons for Using Function Declarations
+1. **Hoisting:** Function declarations are hoisted, meaning they can be used before they are defined in the code.
+2. **Named Functions:** Function declarations provide named functions, which can be helpful for debugging as the function name appears in stack traces.
+3. **Readability:** Some developers find function declarations to be more readable and easier to understand, especially for those coming from a traditional JavaScript background.
+
+### Conclusion
+Both approaches are acceptable in modern React development. The key is to maintain consistency within your codebase and follow the conventions agreed upon by your team. Whether you choose arrow functions or function declarations, both are supported and will work effectively in your React applications.

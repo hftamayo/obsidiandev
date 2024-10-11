@@ -838,3 +838,95 @@ StartBackend()
 4. **Test Setup**: Use the returned instances in your test setup.
 
 By following these steps, you should be able to properly initialize and use the server and database instances in your functional tests.
+
+### How to handle nodemon for monolith at first stage and then for microservices
+
+`nodemon` is a utility that helps with the development of Node.js applications by automatically restarting the application when file changes in the directory are detected. It is particularly useful for development environments where you need to see the effects of your changes immediately without manually restarting the server.
+
+### Key Features of `nodemon`:
+
+1. **Automatic Restart**: Automatically restarts the Node.js application when files change.
+2. **File Watching**: Watches specified files or directories for changes.
+3. **Customizable**: Allows customization of the files to watch, the extensions to monitor, and the command to execute on changes.
+4. **Ease of Use**: Simple to set up and use, making it a popular choice for Node.js developers.
+
+### Example [`nodemon.json`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_node_boilerplate%2Fnodemon.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22413ac3c8-989e-4438-8347-95201ae179c2%22%5D "/home/hftamayo/sourcecode/nodejs/myprojects/tb_be_node_boilerplate/nodemon.json") Configuration:
+
+The [`nodemon.json`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_node_boilerplate%2Fnodemon.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22413ac3c8-989e-4438-8347-95201ae179c2%22%5D "/home/hftamayo/sourcecode/nodejs/myprojects/tb_be_node_boilerplate/nodemon.json") file you provided is a configuration file for `nodemon`. Here’s what each part of the configuration does:
+
+```json
+{
+    "watch": ["src"],          // Directories or files to watch for changes
+    "ext": "ts",               // File extensions to watch
+    "exec": "ts-node src/server.ts"  // Command to execute when a change is detected
+}
+```
+
+### Explanation:
+
+- **[`watch`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_node_boilerplate%2Fnodemon.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A5%7D%7D%5D%2C%22413ac3c8-989e-4438-8347-95201ae179c2%22%5D "Go to definition")**: Specifies the directories or files that `nodemon` should watch for changes. In this case, it is watching the [`src`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_node_boilerplate%2Fnodemon.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A15%7D%7D%5D%2C%22413ac3c8-989e-4438-8347-95201ae179c2%22%5D "Go to definition") directory.
+- **[`ext`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_node_boilerplate%2Fnodemon.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A5%7D%7D%5D%2C%22413ac3c8-989e-4438-8347-95201ae179c2%22%5D "Go to definition")**: Specifies the file extensions that `nodemon` should watch. Here, it is set to watch `.ts` (TypeScript) files.
+- **[`exec`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_node_boilerplate%2Fnodemon.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A3%2C%22character%22%3A5%7D%7D%5D%2C%22413ac3c8-989e-4438-8347-95201ae179c2%22%5D "Go to definition")**: Specifies the command to execute when a change is detected. In this case, it runs `ts-node src/server.ts`, which starts the server using `ts-node` (a TypeScript execution engine for Node.js).
+
+### Usage:
+
+To use `nodemon` with the provided configuration, you would typically run the following command in your terminal:
+
+```sh
+npx nodemon
+```
+
+Or, if you have `nodemon` installed globally:
+
+```sh
+nodemon
+```
+
+### Summary:
+
+`nodemon` is a valuable tool for Node.js development that automates the process of restarting your application when changes are detected. The provided [`nodemon.json`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_node_boilerplate%2Fnodemon.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22413ac3c8-989e-4438-8347-95201ae179c2%22%5D "/home/hftamayo/sourcecode/nodejs/myprojects/tb_be_node_boilerplate/nodemon.json") configuration watches the [`src`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Ftb_be_node_boilerplate%2Fnodemon.json%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A15%7D%7D%5D%2C%22413ac3c8-989e-4438-8347-95201ae179c2%22%5D "Go to definition") directory for changes to `.ts` files and executes `ts-node src/server.ts` to restart the server. This setup is particularly useful for a smooth and efficient development workflow.
+
+---
+
+Given your scenario, where you are starting with a monolithic backend but planning for a future microservices architecture, here are two approaches you can consider:
+
+### Option 1: Single `nodemon` Configuration for Monolith
+
+**Pros:**
+- Simplicity: Easier to manage a single configuration file.
+- Quick Setup: Faster to get started with development.
+
+**Cons:**
+- Limited Scalability: As you transition to microservices, you will need to refactor the `nodemon` setup.
+
+### Option 2: Separate `nodemon` Configurations for Each Service
+
+**Pros:**
+- Scalability: Easier to transition to microservices in the future.
+- Isolation: Each service can be developed and tested independently.
+
+**Cons:**
+- Complexity: More configuration files to manage.
+- Initial Overhead: Slightly more setup time required initially.
+
+### Recommendation:
+
+**Start with Option 1 (Single `nodemon` Configuration for Monolith)**
+
+Since you are initially building a monolithic backend, it makes sense to keep things simple. You can start with a single `nodemon` configuration that watches the entire project. As you transition to a microservices architecture, you can then split the configuration into separate `nodemon` files for each service.
+
+### Transition Plan:
+
+1. **Start with a Single `nodemon` Configuration**:
+   - Use a single `nodemon` configuration to watch the entire project directory.
+
+2. **Refactor to Microservices**:
+   - As you break down the monolith into microservices, create separate `nodemon` configurations for each service.
+   - Update your development workflow to run multiple `nodemon` instances, one for each service.
+
+### Summary:
+
+- **Initial Stage**: Use a single `nodemon` configuration for simplicity.
+- **Future Stage**: Transition to separate `nodemon` configurations for each microservice as you break down the monolith.
+
+This approach allows you to start development quickly and efficiently while keeping the future transition to microservices in mind.

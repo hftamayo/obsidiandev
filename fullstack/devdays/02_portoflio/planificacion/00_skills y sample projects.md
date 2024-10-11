@@ -106,7 +106,7 @@ features de Scala mas usado: Enums, extension methods, given instances, union
 ### Node.JS:
 - typeORM o PrismaORM
 - Express
-- 
+- - Experience with Node.js development: our usual stack is based on Node.js, Express/Nest.js, MongoDB/Mongoose or TypeORM/PostgreSQL.
 
 ## SAMPLE PROJECTS:
 

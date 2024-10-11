@@ -1,4 +1,10 @@
 
+### Que separa a un junior de un semi senior: 
+- el numero de proyectos que ha codeado (sin importar si fueron proyectos de paga)
+- la habilidad para trabajar sin supervision y resolver sus dudas
+
+![[Pasted image 20241010100254.png]]
+
 ## Caja de herramientas:
 
 ==directivas generales:;
@@ -309,6 +315,10 @@ Backend:
 - Loan Calculator
 - flashcards
 - Simple chat bot
+
+### Rust:
+- Whatsapp lite client
+- youtube playlist manager
 
 
 

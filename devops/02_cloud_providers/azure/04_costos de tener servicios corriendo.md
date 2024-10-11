@@ -38,3 +38,18 @@
 
 ==en estos momentos decido borrar todo el appliance pues quiero probar otro approach pero el costo de casi 2 días de ejecucion fue de: $22.60
 
+## costos al 04/10 al 09:32
+
+![[Pasted image 20241004093058.png]]
+
+
+## costos al 07/10 a las 13:10
+
+![[Pasted image 20241007131104.png]]
+
+![[Pasted image 20241007131134.png]]
+
+
+
+
+
