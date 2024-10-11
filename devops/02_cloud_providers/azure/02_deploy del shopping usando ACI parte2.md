@@ -152,7 +152,7 @@ az ad sp credential reset --id <sp object id>
 ```bash
 {
   "appId": "dc542e2a-af9c-47d4-8bc8-fcb1f54dddce",
-  "password buffo": "",
+  "buffo": "",
   "tenant": "de44d3c8-30dc-416f-b26c-4e533c37353f"
 }
 ```
@@ -207,12 +207,12 @@ Azure CLI does not have a direct equivalent to the `su` command in Linux for swi
 
 {
   "appId": "dc542e2a-af9c-47d4-8bc8-fcb1f54dddce",
-  "password buffo": "XXXX",
+  "buffo": "XXXX",
   "tenant": "de44d3c8-30dc-416f-b26c-4e533c37353f"
 }
 
 - export AZURE_CONFIG_DIR=~/.azure/laserants-sp-profile
-- az login --service-principal --username dc542e2a-af9c-47d4-8bc8-fcb1f54dddce --passwordbuffo XXX --tenant de44d3c8-30dc-416f-b26c-4e533c37353f
+- az login --service-principal --username dc542e2a-af9c-47d4-8bc8-fcb1f54dddce --buffo XXX --tenant de44d3c8-30dc-416f-b26c-4e533c37353f
 
 [
   {
