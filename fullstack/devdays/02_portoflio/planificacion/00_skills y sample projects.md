@@ -115,3 +115,12 @@ features de Scala mas usado: Enums, extension methods, given instances, union
 - demo de un carrito de compra: https://www.linkedin.com/feed/update/urn:li:activity:7238197683927085056/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7238197683927085056%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29
 - App de recetas: https://www.linkedin.com/posts/moises-prado_openia-typescript-nestjs-activity-7236491513344512000-8wOV?utm_source=share&utm_medium=member_desktop
 - 
+
+## Proyectos sugeridos para codear:
+
+- Design a Parking Lot
+- Design an elevator system
+- Design API rate limiter
+- Design a logging system
+- Design a hotel management system
+- Design a movie ticket booking system

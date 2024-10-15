@@ -193,14 +193,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+                "file": "fullstack/devdays/08_intentos de contratacion/02_ Raven (ravn).md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -266,7 +266,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "devops/02_cloud_providers/azure/02_deploy del shopping usando ACI parte2.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -283,7 +283,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "devops/02_cloud_providers/azure/02_deploy del shopping usando ACI parte2.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -306,7 +306,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "devops/02_cloud_providers/azure/02_deploy del shopping usando ACI parte2.md"
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md"
               }
             }
           }
@@ -327,14 +327,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2d7d459bbb1fc04",
+  "active": "a1dae4760d41abee",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+    "fullstack/devdays/08_intentos de contratacion/02_ Raven (ravn).md",
+    "fullstack/devdays/08_intentos de contratacion/01_relato de intentos antes del 2024.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+    "fullstack/devdays/08_intentos de contratacion",
+    "fullstack/devdays/02_microservices/buddyman/backend/01_planning y seguimiento.md",
+    "fullstack/devdays/02_microservices/buddyman/frontend/01_planning y seguimiento.md",
+    "fullstack/devdays/02_microservices/01_teoria.md",
+    "fullstack/devdays/02_microservices/buddyman/img",
+    "fullstack/devdays/02_microservices/buddyman/backend",
+    "fullstack/devdays/02_microservices/buddyman/frontend",
+    "fullstack/devdays/02_microservices/buddyman",
+    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
+    "devops/02_cloud_providers/azure/02_deploy del shopping usando ACI parte2.md",
     "devops/02_cloud_providers/azure/03_ tasks pending to automate before running the yaml.md",
     "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
     "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "fullstack/devdays/02_portoflio/planificacion/img/Pasted image 20241010100254.png",
     "fullstack/devdays/02_portoflio/proyectos/04_gestion de actualizaciones de los boilerplates.md",
     "Pasted image 20241010091210.png",
@@ -342,8 +354,6 @@
     "Pasted image 20241010090709.png",
     "fullstack/devdays/02_portoflio/reclutadores target.md",
     "fullstack/devdays/02_portoflio/proyectos/02_frontend_ boilerplate_setup.md",
-    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
-    "fullstack/devdays/02_microservices/01_teoria.md",
     "fullstack/devdays/02_microservices/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_microservices/img/Pasted image 20241009101103.png",
     "fullstack/devdays/02_microservices/img/Pasted image 20241009101036.png",
@@ -354,7 +364,6 @@
     "fullstack/devdays/02_portoflio/proyectos/03_backend_ boilerplate_setup.md",
     "devops/02_cloud_providers/azure/02_ deploy del shopping cart con ACI y Github Actions.md",
     "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
-    "devops/02_cloud_providers/azure/02_deploy del shopping usando ACI parte2.md",
     "devops/02_cloud_providers/azure/04_costos de tener servicios corriendo.md",
     "Pasted image 20241007131104.png",
     "devops/02_cloud_providers/aws/03_automatizando lambda.md",
@@ -363,17 +372,8 @@
     "devops/02_cloud_providers/azure/01_deploy del shopping cart en laserants bootcamp.md",
     "Pasted image 20241004093058.png",
     "devops/02_cloud_providers/aws/01_lambda.md",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/01_ Setup de infraestructura manual.md",
-    "devops/02_cloud_providers/aws/02_billing.md",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03/02_infra_manual parte 2.md",
-    "devops/04_services_onpremise/02_docker creds y autenticacion.md",
     "devops/04_services_onpremise/img",
     "devops/04_services_onpremise",
-    "devops/02_cloud_providers/azure/images",
-    "devops/02_cloud_providers/azure",
-    "fullstack/devdays/02_portoflio/proyectos/img",
-    "fullstack/devdays/02_portoflio/proyectos",
-    "devops/02_cloud_providers/github",
-    "devops/02_cloud_providers/aws/02_deploy_rox_exer03"
+    "devops/02_cloud_providers/azure/images"
   ]
 }
