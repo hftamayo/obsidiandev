@@ -543,3 +543,20 @@ jobs:
 - **Deploy [`ecommerce-monorepo`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Flaserants_tsbc_hw03%2F.github%2Fworkflows%2Fdeploy-to-aci.yml%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A79%2C%22character%22%3A17%7D%7D%5D%2C%22d8c04750-92fb-4d3c-9b0e-e32846da52ba%22%5D "Go to definition")**: Deploy the [`ecommerce-monorepo`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Flaserants_tsbc_hw03%2F.github%2Fworkflows%2Fdeploy-to-aci.yml%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A79%2C%22character%22%3A17%7D%7D%5D%2C%22d8c04750-92fb-4d3c-9b0e-e32846da52ba%22%5D "Go to definition") container with the updated environment variables.
 
 This approach ensures that [`ecommerce-monorepo`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fhome%2Fhftamayo%2Fsourcecode%2Fnodejs%2Fmyprojects%2Flaserants_tsbc_hw03%2F.github%2Fworkflows%2Fdeploy-to-aci.yml%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A79%2C%22character%22%3A17%7D%7D%5D%2C%22d8c04750-92fb-4d3c-9b0e-e32846da52ba%22%5D "Go to definition") can connect to `pgecommerce` using its private IP address. Let me know if you need further assistance.
+
+
+SUBSCRIPTION_ID=$(az account list --query "[?isDefault].id" -o tsv)
+az group create --name vanillatstodogroup --location westus
+
+az ad sp create-for-rbac --name vanillatstodosp --role contributor --scopes /subscriptions/$SUBSCRIPTION_ID/resourceGroups/vanillatstodogroup --sdk-auth
+
+az aks delete --name vanillatstodocluster --resource-group vanillatstodogroup --yes --no-wait
+
+az aks show --name vanillatstodocluster --resource-group vanillatstodogroup
+
+az ad sp list --display-name vanillatstodosp --query "[].{id:appId, name:displayName}"
+
+az role assignment list --assignee fab62c18-fdc3-4140-a059-02392afe7a7f --scope /subscriptions/$SUBSCRIPTION_ID/resourceGroups/vanill
+atstodogroup
+
+az group delete --name vanillatstodogroup --yes --no-wait

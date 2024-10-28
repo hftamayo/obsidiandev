@@ -126,8 +126,30 @@ Client Treasury: Designed and developed an accounting software; in which I creat
 ```
 
 # REQS DE PERFILES DE JOB OFFERS EN LINKEDIN
+
+
+
 BACKEND
 =
+==Arquitecto backend:
+
+1. Microservices Design Service decomposition, Bounded contexts, Resilience (Circuit Breaker, Bulkheads) 2. Distributed Systems Fundamentals CAP Theorem, Event sourcing, CQRS, Data consistency models (ACID vs. BASE) 3. High-Performance Data Management Database partitioning, Index optimization, NoSQL data modeling 4. Advanced API Design gRPC, GraphQL, API Gateways, Asynchronous APIs 5. Event-Driven Architecture Kafka, Message queues, Pub/Sub patterns, Saga pattern 6. Cloud-Native Patterns Container orchestration (Kubernetes), Serverless, Multi-cloud strategies 7. Observability Distributed tracing (OpenTelemetry), Centralized logging (ELK), Real-time monitoring 8. Infrastructure as Code Terraform, Helm, Configuration management best practices 9. Advanced Security Zero Trust, OAuth2, JWT, Data encryption in transit and at rest 10. Scaling Strategies Load balancing, Sharding, Horizontal vs. vertical scaling
+
+[  
+](https://x.com/SumitM_X/status/1850208339507937604)
+
+___
+
+==Backend Engineer
+
+- System Design (scalability, microservices) -APIs (REST, GraphQL, gRPC) -Database Systems (SQL, NoSQL) -Distributed Systems (consistency, replication) -Caching (Redis, Memcached) -Security (OAuth2, JWT, encryption) -DevOps (CI/CD, Docker, Kubernetes) -Performance Optimization (profiling, load balancing) -Cloud Services (AWS, GCP, Azure) -Monitoring (Prometheus, Grafana) Pick up a language.. Stop jumping from one language to the other
+
+[  
+](https://x.com/SumitM_X/status/1847956807907430655)
+
+___
+
+
 ==Java Spring Boot
 - Restful APIs
 - Spring Boot, PostgreSQL, Kafka, Redis, Datadog, snowflake, Argo CI/CD (and more). Exposure to Kafka, PostgreSQL, Redis is preferable.
@@ -141,6 +163,43 @@ BACKEND
 - Exposure to building and shipping highly available, fault tolerant, production ready distributed backend systems
 - Previous experience around monitoring and observability, potentially security knowledge (Checkmarx, SonarQube & Wiz) – a big plus
 - Understanding of data structures, databases and large-scale distributed systems.
+
+___
+
+1. Core skills - Spring Boot Basics: Autoconfiguration, annotations, embedded servers. - Dependency Injection: Using
+
+[@Autowired](https://x.com/Autowired)
+
+,
+
+[@Component](https://x.com/Component)
+
+, etc. 2. Application Configuration - Properties & Profiles: Configuring [http://application.properties/yml](https://t.co/AypgpUv1j9) and profiles. - Spring Boot Actuator: Health checks, metrics, monitoring endpoints. 3. Web Development - Spring MVC: Develop RESTful web services using Spring MVC, and work with annotations like
+
+[@GetMapping](https://x.com/GetMapping)
+
+,
+
+[@PostMapping](https://x.com/PostMapping)
+
+, etc. - Exception Handling: Use @ControllerAdvice and @ExceptionHandler for global exception handling. - Validation: Validate inputs with
+
+[@Valid](https://x.com/Valid)
+
+and
+
+[@RequestBody](https://x.com/RequestBody)
+
+, and custom validators when needed. 4. Database Management - Spring Data JPA: CRUD operations, relationships. - Transactions: Using
+
+[@Transactional](https://x.com/Transactional)
+
+. - Database Migrations: Flyway or Liquibase for migrations. 5. Security - Spring Security: Implement authentication and authorization with Spring Security, including JWT-based authentication and role-based access. Integrate OAuth2 for secure authentication and support single sign-on (SSO) if needed. 6. Microservices - Spring Cloud: Use Spring Cloud components like Eureka (service discovery), Zuul or Gateway (API Gateway), and Config Server. - Resilience: Implement resilience patterns such as Circuit Breaker (using Resilience4j or Hystrix), Retry, and Rate Limiting. 7. Testing - Unit & Integration Tests: JUnit, Mockito. - Mocking & TestContainers: For isolated and integration tests. 8. Advanced Topics - AOP: Cross-cutting concerns. - Spring Boot Packaging: Package applications as JARs or WARs for deployment. - Logging: Use logging frameworks like Logback, and configure structured logging. - Distributed Tracing: Implement distributed tracing with tools like Zipkin or OpenTelemetry to track requests across services.
+
+
+https://x.com/SumitM_X/status/1849837841364255100
+___
+
 
 
 ==Node.JS
@@ -215,7 +274,18 @@ FRONTEND
 
 ==React.JS
 * micro frontends
-* 
+
+As a Reactjs developer, Please learn : 1. Advanced State Management - Redux & Redux Toolkit - Context API - Recoil or Zustand 2. React Performance Optimization - Memoization (React.memo, useMemo, useCallback) - Code Splitting - React Profiler 3. Component Design Patterns - Higher-Order Components (HOCs) - Render Props - Custom Hooks 4. Server-Side Rendering (SSR) - Next.js - Hydration 5. TypeScript with React - Type Safety - Advanced Types and Generics 6. Testing - React Testing Library - End-to-End Testing (Cypress, Playwright) - Mocking and Stubbing 7. React Ecosystem and Tooling - Webpack and Babel - ESLint and Prettier 8. API Integration - GraphQL (Apollo Client, Relay) - SWR and React Query - WebSockets and Real-Time Updates 9. Authentication and Authorization - OAuth and JWT - Role-Based Access Control (RBAC) 10. Code Architecture - Monorepos (Nx, Lerna) - Micro-Frontends - Atomic Design 11. Web Performance Optimization - Lazy Loading - Progressive Web Apps (PWA) - Service Workers
+
+[  
+](https://x.com/SumitM_X/status/1849031117564743961)
+
+==Frontend engineer:
+
+As a frontend engineer. Please learn: - JavaScript/TypeScript - Responsive Design (CSS, Flexbox, Grid) - Performance Optimization (lazy loading, code splitting, tree shaking, memoization) - Web Security (CORS, XSS, CSRF,Content Security Policy, Secure Cookies) - Testing (Jest, Cypress, Enzyme) - Build Tools (Webpack, Vite, Babel) - Version Control (Git) - Browser DevTools & Debugging - Accessibility (WCAG standards) - Progressive Web Apps (PWA) - Component Architecture (Atomic Design, Higher-Order Components) - Micro Frontends - API Integration (REST, GraphQL, WebSockets) - Testing Strategies (Unit, Integration, End-to-End) - CI/CD for Frontend (automated builds, deployments) - Browser Rendering & DOM Optimization - WebAssembly (Wasm) - UX/UI Design Collaboration - Accessibility Audits (ARIA, screen readers) - State Management (Redux, MobX) - Frontend Framework Internals (eg: React Fiber for React, Angular Ivy for Angular) Pick up a framework/library.. Stop jumping from one framework to the other
+
+https://x.com/SumitM_X/status/1848662523072921719
+
 
 ==Next.JS
 

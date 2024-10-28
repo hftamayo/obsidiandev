@@ -1,3 +1,6 @@
+![[Pasted image 20241015155606.png]]
+
+
 ==1. entrevistas con vietnamitas:==
 fue una entrevista para una posición Python+React, los evaluadores fueron 3 vietnamitas jovenes y de una vez te abren codigo fuente con ejercicios y te piden codearlos, a los 10 minutos sali corriendo
 
