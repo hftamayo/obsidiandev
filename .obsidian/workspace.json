@@ -232,7 +232,7 @@
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -373,10 +373,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96f889da2d7a1daf",
+  "active": "07591d285ff0e52e",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
     "fullstack/devdays/03_contrataciones/03_fullstack job offers.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
     "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
