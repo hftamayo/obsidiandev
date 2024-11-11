@@ -223,12 +223,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/04_ejemplo de portafolios.md",
+                "file": "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_ejemplo de portafolios"
+              "title": "00_horario"
             }
           }
         ],
@@ -375,8 +375,9 @@
   },
   "active": "21ba9cdcc0c9bdd7",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
     "fullstack/devdays/02_portoflio/planificacion/04_ejemplo de portafolios.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
     "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
     "devops/02_cloud_providers/azure/05_budget.md",
     "devops/02_cloud_providers/azure/02_deploy del shopping usando ACI parte2.md",
@@ -386,7 +387,6 @@
     "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
     "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
     "devops/02_cloud_providers/azure/06_quota increasing.md",
     "devops/02_cloud_providers/azure/03_ tasks pending to automate before running the yaml.md",
     "Pasted image 20241019073211.png",

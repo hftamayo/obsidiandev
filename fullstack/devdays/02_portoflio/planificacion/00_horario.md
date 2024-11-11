@@ -1,3 +1,13 @@
+### metas 31 diciembre 2024:
+
+* nodetodo: test unitarios y de integracion finalizados
+* micro data layer: micro pg y micro mongo en experimental
+* jsbtodo: que corra y conecte sin problemas
+* reactsotiria: crud finalizado e integrado
+* reacttodo: funcional y con tests de integracion y con e2e
+* android: tutorial finalizado y app depurada
+
+
 ### Lunes a Viernes: 
 
 1. BuddyMan:
