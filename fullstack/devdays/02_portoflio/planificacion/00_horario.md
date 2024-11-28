@@ -36,9 +36,13 @@ Sabado:
 
 - Serverless y Lambda:  5 - 6:00
 - Cracking the interview: 17 - 18:45
-- Blue team: 18:45-19:30
+- web pentesting: 18:45-19:30
 
 Domingo:
 - Serverless: 4:30 - 5:30
 - Cracking the interview: 5:45-6:30
-- Blue team: 6:45- 7:45
+- web pentesting: 6:45- 7:45
+
+Pendientes:
+* scala, RoR
+* blue team

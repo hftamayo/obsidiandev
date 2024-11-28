@@ -1,5 +1,5 @@
 
-Groovy
+Groovy, IaC con Terraform, Azure Defender, Azure FrontDoor
 
 MILESTONE 1: JUNIOR DEVELOPER
 

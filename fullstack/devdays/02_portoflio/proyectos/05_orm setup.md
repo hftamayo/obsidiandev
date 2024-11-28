@@ -1,8 +1,23 @@
 ### Prisma
 
+==Paso 1:
+
+El comando se ejecuta en el ROOTDIR del proyecto:
 npx prisma init
 
---agregas los models en el schema.prisma
+Si quiero usar el datasource provider mysql:
+npx prisma init --datasource-provider mysql
+
+![[Pasted image 20241120102531.png]]
+
+Es mejor no mover la carpeta PRISMA adentro de SRC.
+
+==Paso 2:
+
+agregas los models en el schema.prisma
+
+==Paso 3:
+
 npx prisma migrate dev --name init_models_version  <- este nombre puede ir cambiando
 npx prisma generate
 

@@ -96,7 +96,7 @@ features de Scala mas usado: Enums, extension methods, given instances, union
 	- modales -> react aria modal
 	- componentes UI -> shadcn UI
 	- animaciones -> framer motion
-	- formularios -> react hook form
+	- formularios -> react hook form o tanstack form
 	- data fetching -> tanstack query
 	- internacionalizacion -> react-i18next
 	- 
@@ -107,6 +107,13 @@ features de Scala mas usado: Enums, extension methods, given instances, union
 - typeORM o PrismaORM
 - Express
 - - Experience with Node.js development: our usual stack is based on Node.js, Express/Nest.js, MongoDB/Mongoose or TypeORM/PostgreSQL.
+
+
+## ==Devops
+
+### DevOps Engineer:
+* Terraform: para beginners
+* Pulumi: el siguiente nivel de terraform pues soporta python, go, etc
 
 ## SAMPLE PROJECTS:
 
