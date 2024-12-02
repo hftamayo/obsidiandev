@@ -44,5 +44,5 @@ Domingo:
 - web pentesting: 6:45- 7:45
 
 Pendientes:
-* scala, RoR
+* scala, RoR, golang, DevOps cloud
 * blue team
