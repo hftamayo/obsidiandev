@@ -21,6 +21,40 @@ agregas los models en el schema.prisma
 npx prisma migrate dev --name init_models_version  <- este nombre puede ir cambiando
 npx prisma generate
 
+==Paso 4:
+
+
+prisma requiere un usuario con privilegios de root, darle semejante acceso al usuario de la apluicacion seria lo peor, entonces puedo hacer un .env-migrate donde desnudo la cadena de conexion y utilizo un usuario de alto nivel:
+
+![[Pasted image 20241203095744.png]]
+
+
+Tambien para correr la creacion de las migraciones con un env personalizado necesito tener instalado el dotenv-cli:
+
+![[Pasted image 20241203101443.png]]
+
+una vez hecho eso, si la carpeta prisma pertenece al ROOTDIR, ejecuto el siguiente comando:
+
+![[Pasted image 20241203101529.png]]
+
+se generarán al menos 2 archivos y éstos debo incluirlos en el codebase y replicarlo al repo:
+
+![[Pasted image 20241203101620.png]]
+
+==Paso 5:
+
+ejecutar prisma generate:
+
+![[Pasted image 20241203102210.png]]
+
+### Setup de la capa de datos usando mis sistemas de información:
+
+==este es el approach a diciembre 2024:
+
+1. el dev a mano debe haber generado a pie al menos 1 migracion inicial que incluye los esquemas de las tablas, esta migración es parte del codebase
+2. en el package.json hay un script denominado "setup" que permite generar en forma manual el esquema de las tablas a un data layer ya sea local o remoto (inclusive dockerizado), esto es por medio de un script en el codebase que se llama dataLayerSetup.ts
+3. dataLayerSetup levanta las enviro vars, genera migraciones, las aplica en el datalayer y ejecuta el seeding de la data inicial, finaliza la ejecución regresando al prompt
+4. al ejecutar el server verifica si hay necesidad de hacer un seeding, en caso positivo ejecuta las tareas y sigue con el proceso de loading del server hasta dejarlo en escucha
 
 ## TypeORM
 

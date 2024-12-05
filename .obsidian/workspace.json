@@ -223,12 +223,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+                "file": "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_horario"
+              "title": "05_orm setup"
             }
           }
         ],
@@ -375,24 +375,24 @@
   },
   "active": "21ba9cdcc0c9bdd7",
   "lastOpenFiles": [
-    "Pasted image 20240711100926.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203095744.png",
     "Pasted image 20241015155606.png",
+    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203102210.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203101620.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203101529.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203101443.png",
+    "fullstack/devdays/02_portoflio/proyectos/07_planification del testing en el frontend.md",
+    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+    "Pasted image 20240711100926.png",
     "Pasted image 20240611140454.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241010090709.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241010091210.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241010090817.png",
-    "Pasted image 20240611140803.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241114090628.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241114090708.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241114091956.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241120102531.png",
     "README.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
     "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
     "fullstack/devdays/03_contrataciones/03_fullstack job offers.md",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
     "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
     "fullstack/devdays/02_portoflio/proyectos/06_ui_setup.md",
     "fullstack/devdays/02_portoflio/free apis.md",
@@ -411,7 +411,6 @@
     "fullstack/devdays/08_intentos de contratacion",
     "fullstack/devdays/02_microservices/buddyman/backend/01_planning y seguimiento.md",
     "fullstack/devdays/02_microservices/buddyman/frontend/01_planning y seguimiento.md",
-    "fullstack/devdays/02_microservices/01_teoria.md",
     "fullstack/devdays/02_microservices/buddyman/img",
     "fullstack/devdays/02_microservices/buddyman/backend",
     "fullstack/devdays/02_microservices/buddyman/frontend",
