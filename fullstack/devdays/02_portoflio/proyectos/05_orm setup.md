@@ -52,9 +52,27 @@ ejecutar prisma generate:
 ==este es el approach a diciembre 2024:
 
 1. el dev a mano debe haber generado a pie al menos 1 migracion inicial que incluye los esquemas de las tablas, esta migración es parte del codebase
-2. en el package.json hay un script denominado "setup" que permite generar en forma manual el esquema de las tablas a un data layer ya sea local o remoto (inclusive dockerizado), esto es por medio de un script en el codebase que se llama dataLayerSetup.ts
+2. en el package.json hay un script denominado "setup" que permite generar en forma manual el esquema de las tablas a un data layer ya sea local o remoto (inclusive dockerizado), esto es por medio de un script en el codebase que se llama dataLayerSetup.ts. Para ejecutar el proceso de migracion se requiere un usuario administrador, cada sistema tiene un env-migrate con la cadena de conexion
 3. dataLayerSetup levanta las enviro vars, genera migraciones, las aplica en el datalayer y ejecuta el seeding de la data inicial, finaliza la ejecución regresando al prompt
-4. al ejecutar el server verifica si hay necesidad de hacer un seeding, en caso positivo ejecuta las tareas y sigue con el proceso de loading del server hasta dejarlo en escucha
+4. Demo de la ejecucion manual de la migracion:
+
+```
+px dotenv -e .env-migrate -- npx prisma migrate dev --name init_models_version
+
+npx prisma migrate
+```
+
+
+Ejecutando el backend con la bandera de data seeding en true:
+
+
+
+
+
+5. Demo de la ejecución del script setup (requiere usuario con permisos de root):
+
+
+6. al ejecutar el server verifica si hay necesidad de hacer un seeding, en caso positivo ejecuta las tareas y sigue con el proceso de loading del server hasta dejarlo en escucha
 
 ## TypeORM
 
