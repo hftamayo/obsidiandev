@@ -221,12 +221,14 @@
             "id": "21ba9cdcc0c9bdd7",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241206151114.png"
+                "file": "fullstack/devdays/02_portoflio/proyectos/08_graphql.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241206151114"
+              "icon": "lucide-file",
+              "title": "08_graphql"
             }
           }
         ],
@@ -371,10 +373,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2409bcabe9880884",
+  "active": "21ba9cdcc0c9bdd7",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241206151114.png",
+    "fullstack/devdays/02_portoflio/proyectos/08_graphql.md",
+    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203095744.png",
     "Pasted image 20241015155606.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203102210.png",
@@ -408,7 +411,6 @@
     "fullstack/devdays/02_portoflio/testing.md",
     "fullstack/devdays/08_intentos de contratacion",
     "fullstack/devdays/02_microservices/buddyman/backend/01_planning y seguimiento.md",
-    "fullstack/devdays/02_microservices/buddyman/frontend/01_planning y seguimiento.md",
     "fullstack/devdays/02_microservices/buddyman/img",
     "fullstack/devdays/02_microservices/buddyman/backend",
     "fullstack/devdays/02_microservices/buddyman/frontend",
