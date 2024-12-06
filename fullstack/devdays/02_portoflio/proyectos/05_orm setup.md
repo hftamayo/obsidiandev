@@ -65,6 +65,13 @@ npx prisma migrate
 
 Ejecutando el backend con la bandera de data seeding en true:
 
+generando las migrations a mano:
+
+![[Pasted image 20241206151114.png]]
+
+corriendo el sistema con la bandera de seeding en true:
+
+
 
 
 

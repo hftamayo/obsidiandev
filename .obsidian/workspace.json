@@ -221,14 +221,12 @@
             "id": "21ba9cdcc0c9bdd7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
-                "mode": "source",
-                "source": false
+                "file": "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241206151114.png"
               },
-              "icon": "lucide-file",
-              "title": "05_orm setup"
+              "icon": "lucide-image",
+              "title": "Pasted image 20241206151114"
             }
           }
         ],
@@ -373,11 +371,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21ba9cdcc0c9bdd7",
+  "active": "2409bcabe9880884",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241206151114.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203095744.png",
     "Pasted image 20241015155606.png",
-    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203102210.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203101620.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203101529.png",
@@ -387,7 +386,6 @@
     "Pasted image 20240711100926.png",
     "Pasted image 20240611140454.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241010090709.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241010091210.png",
     "README.md",
     "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
