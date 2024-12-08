@@ -223,12 +223,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/proyectos/08_graphql.md",
+                "file": "devops/05_bootcamps/az400/01_microsoft az-400 challenges.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08_graphql"
+              "title": "01_microsoft az-400 challenges"
             }
           }
         ],
@@ -375,20 +375,25 @@
   },
   "active": "21ba9cdcc0c9bdd7",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241206151114.png",
+    "devops/05_bootcamps/img/Pasted image 20241208064851.png",
+    "Pasted image 20241015155606.png",
+    "devops/05_bootcamps/az400/01_microsoft az-400 challenges.md",
+    "devops/05_bootcamps/img",
+    "devops/05_bootcamps/Untitled.md",
+    "devops/05_bootcamps/img/Pasted image 20241208070954.png",
+    "devops/05_bootcamps/img/Pasted image 20241208070931.png",
+    "devops/05_bootcamps/img/Pasted image 20241208070435.png",
     "fullstack/devdays/02_portoflio/proyectos/08_graphql.md",
+    "devops/05_bootcamps/az400",
+    "devops/05_bootcamps",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241206151114.png",
     "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203095744.png",
-    "Pasted image 20241015155606.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203102210.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203101620.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203101529.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241203101443.png",
     "fullstack/devdays/02_portoflio/proyectos/07_planification del testing en el frontend.md",
     "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
-    "Pasted image 20240711100926.png",
-    "Pasted image 20240611140454.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241010090709.png",
     "README.md",
     "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
@@ -408,17 +413,12 @@
     "devops/02_cloud_providers/azure/02_ deploy del shopping cart con ACI y Github Actions.md",
     "fullstack/devdays/08_intentos de contratacion/01_relato de intentos antes del 2024.md",
     "fullstack/devdays/08_intentos de contratacion/02_ Raven (ravn).md",
-    "fullstack/devdays/02_portoflio/testing.md",
     "fullstack/devdays/08_intentos de contratacion",
-    "fullstack/devdays/02_microservices/buddyman/backend/01_planning y seguimiento.md",
     "fullstack/devdays/02_microservices/buddyman/img",
     "fullstack/devdays/02_microservices/buddyman/backend",
     "fullstack/devdays/02_microservices/buddyman/frontend",
     "fullstack/devdays/02_microservices/buddyman",
     "fullstack/devdays/02_microservices/img",
-    "fullstack/devdays/02_microservices",
-    "devops/04_services_onpremise/img",
-    "devops/04_services_onpremise",
-    "devops/02_cloud_providers/azure/images"
+    "fullstack/devdays/02_microservices"
   ]
 }
