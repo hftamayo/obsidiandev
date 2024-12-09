@@ -1375,3 +1375,1047 @@ https://learn.microsoft.com/en-us/azure/azure-sql/database/threat-detection-over
 
 https://azure.microsoft.com/en-us/solutions/devsecops
 
+___
+
+# Implement pipeline security
+
+It's fundamental to protect your code protecting credentials, and secrets. Phishing is becoming ever more sophisticated. The following list is several operational practices that a team ought to apply to protect itself:
+
+- Authentication and authorization. Use multifactor authentication (MFA), even across internal domains, and just-in-time administration tools such as Azure PowerShell [Just Enough Administration (JEA)](https://aka.ms/jea), to protect against privilege escalations. Using different passwords for different user accounts will limit the damage if a set of access credentials is stolen.
+- The CI/CD Release Pipeline. If the release pipeline and cadence are damaged, use this pipeline to rebuild infrastructure. Manage Infrastructure as Code (IaC) with Azure Resource Manager or use the Azure platform as a service (PaaS) or a similar service. Your pipeline will automatically create new instances and then destroy them. It limits the places where attackers can hide malicious code inside your infrastructure. Azure DevOps will encrypt the secrets in your pipeline. As a best practice, rotate the passwords just as you would with other credentials.
+- Permissions management. You can manage permissions to secure the pipeline with role-based access control (RBAC), just as you would for your source code. It keeps you in control of editing the build and releases definitions that you use for production.
+- Dynamic scanning. It's the process of testing the running application with known attack patterns. You could implement penetration testing as part of your release. You also could keep up to date on security projects such as the Open Web Application Security Project ([OWASP](https://www.owasp.org)) Foundation, then adopt these projects into your processes.
+- Production monitoring. It's a critical DevOps practice. The specialized services for detecting anomalies related to intrusion are known as _Security Information and Event Management_. [Microsoft Defender for Cloud](https://azure.microsoft.com/services/defender-for-cloud) focuses on the security incidents related to the Azure cloud.
+
+# Configure GitHub Advanced Security for GitHub and Azure DevOps
+
+GitHub Advanced Security is a suite of security features and capabilities offered by GitHub to help organizations identify and mitigate security vulnerabilities, secure their code, and protect their software supply chain. It consists of the following key components:
+
+- **Code Scanning** automatically scans code in repositories for security vulnerabilities and coding errors by using static analysis techniques provided by CodeQL or third party tools. It identifies potential security vulnerabilities, including those related to out-of-date dependencies and weak ciphers.
+- **Secret Scanning** detects and helps remediate the presence of secrets, such as API tokens and cryptographic keys in repositories and commits. It automatically scans the content of repositories and generates alerts based on its discoveries.
+- **Dependency reviews** assists with identifying and managing dependencies in software projects, based on direct and transitive dependencies retrieved from package manifests and other configuration files. They allow you to assess the full impact of changes to dependencies including details of any vulnerable versions before merging a pull request.
+- **Custom auto-triage rules** help you manage Dependabot alerts at scale. With custom auto-triage rules you control which alerts could be ignored and which require applying a security update.
+- **Security advisories** provides curated security advisories and alerts about vulnerabilities discovered in open-source dependencies.
+
+GitHub Advanced Security integrates natively with both GitHub and Azure DevOps.
+
+## GitHub
+
+GitHub makes its Advanced Security features available in private repositories based on the Advanced Security licensing. Once you purchased GitHub Advanced Security licensing for your organization, you can enable and disable these features at the organization or repository level. These features are also permanently enabled in public repositories on GitHub.com without any licensing prerequisites and can only be disabled if you change the project visibility.
+
+To configure GitHub Advanced Security for your organization, in the upper-right corner of GitHub.com, select your profile icon and then select Your organizations. Next, select Settings and, in the Security section of the sidebar, select Code security and analysis. This will display the page that allows you to enable or disable all security and analysis features for the repositories in your organization.
+
+The impact of configuration changes is determined by the visibility of repositories in your organization:
+
+- Private vulnerability reporting - public repositories only.
+- Dependency graph - only private repositories because the feature is always enabled for public repositories.
+- Dependabot alerts - all repositories.
+- Dependabot security updates - all repositories.
+- GitHub Advanced Security - only private repositories because GitHub Advanced Security and the related features are always enabled for public repositories.
+- Secret scanning - public and private repositories where GitHub Advanced Security is enabled. This option controls whether or not secret scanning alerts for users are enabled.
+- Code scanning - public and private repositories where GitHub Advanced Security is enabled.
+
+You can also manage the security and analysis features for individual private repositories. To do so, from GitHub.com, navigate to the main page of the repository and select Settings. In the Security section of the sidebar, select Code security and analysis. In the Code security and analysis pane, disable or enable individual features. The control for GitHub Advanced Security is disabled if your enterprise has not purchased required licenses.
+
+Note that if you disable GitHub Advanced Security, dependency review, secret scanning alerts for users and code scanning are effectively disabled. As the result, any workflows that include code scanning will fail.
+
+Once enabled, the security features are integrated directly into the GitHub platform, providing continuous security monitoring and alerts directly within the GitHub interface. Repository administrators and developers can access security insights, recommendations, and actionable steps to address identified security vulnerabilities and strengthen the overall security posture of their software projects. Additionally, organizations can customize security policies, configure automated workflows, and integrate GitHub Advanced Security with other security tools and services to meet their specific security requirements and compliance needs.
+
+## Azure DevOps
+
+GitHub Advanced Security for Azure DevOps target Azure Repos and includes:
+
+- **Secret Scanning push protection** checks if code pushes include commits that expose secrets.
+- **Secret Scanning repo scanning** searches repositories for exposed secrets.
+- **Dependency Scanning** identifies direct and transitive vulnerabilities in open source dependencies.
+- **Code Scanning** uses CodeQL static analysis to identify code-level application vulnerabilities such as SQL injection and authentication bypass.
+
+Advanced Security can be turned on the organization, project, or repository level. This automatically enables secret scanning push protection and repository scanning. Effectively, any future pushes containing secrets are automatically blocked while secret scanning runs in the background.
+
+Dependency scanning is a pipeline-based scanning tool. Results are aggregated per repository. It's recommended that you add the dependency scanning task to all the pipelines you'd like to be scanned. For the most accurate scanning results, be sure to add the dependency scanning task following the build steps of a pipeline that builds the code you wish to scan. You can add the Advanced Security Dependency Scanning task (AdvancedSecurity-Dependency-Scanning@1) directly to your YAML pipeline file or select it from the task assistant.
+
+Code scanning is also a pipeline-based scanning tool where results are aggregated per repository. It tends to be a time-consuming build task, so consider adding the code scanning task to a separate, cloned pipeline of your main production pipeline or create a new pipeline. Within the pipeline, add the tasks in the following order:
+
+- Advanced Security Initialize CodeQL (AdvancedSecurity-Codeql-Init@1)
+- Your custom build steps
+- Advanced Security Perform CodeQL Analysis (AdvancedSecurity-Codeql-Analyze@1)
+
+Additionally, you'll need to include a comma separated list of the languages you're analyzing by using the Advanced Security Initialize CodeQL task. The supported languages include csharp, cpp, go, java, JavaScript, python, ruby, and swift.
+
+# Explore hybrid management
+
+The Hybrid Runbook Worker feature of Azure Automation allows you to run runbooks that manage local resources in your private data center on machines located in your data center.
+
+Azure Automation stores and manages the runbooks and then delivers them to one or more on-premises machines.
+
+The Hybrid Runbook Worker functionality is presented in the following graphic:
+
+![[Pasted image 20241209083733.png]]
+
+## Hybrid Runbook Worker workflow and characteristics
+
+The following list is characteristics of the Hybrid Runbook Worker workflow:
+
+- You can select one or more computers in your data center to act as a Hybrid Runbook Worker and then run runbooks from Azure Automation.
+- Each Hybrid Runbook Worker is a member of a Hybrid Runbook Worker group, which you specify when you install the agent.
+- A group can include a single agent, but you can install multiple agents in a group for high availability.
+- There are no inbound firewall requirements to support Hybrid Runbook Workers, only Transmission Control Protocol (TCP) 443 is required for outbound internet access.
+- The agent on the local computer starts all communication with Azure Automation in the cloud.
+- When a runbook is started, Azure Automation creates an instruction that the agent retrieves. The agent then pulls down the runbook and any parameters before running it.
+
+To configure your on-premises servers that support the Hybrid Runbook Worker role with DSC, you must add them as DSC nodes.
+
+For more information about onboarding them for management with DSC, see [Onboarding machines for management by Azure Automation State Configuration](https://learn.microsoft.com/en-us/azure/automation/automation-dsc-onboarding).
+
+For more information on installing and removing Hybrid Runbook Workers and groups, see:
+
+- [Automate resources in your datacenter or cloud by using Hybrid Runbook Worker.](https://learn.microsoft.com/en-us/azure/automation/automation-hybrid-runbook-worker#installing-hybrid-runbook-worker)
+- [Hybrid Management in Azure Automation](https://azure.microsoft.com/blog/hybrid-management-in-azure-automation/)
+
+___
+
+# Describe best practices for creating actions
+
+It's essential to follow best practices when creating actions:
+
+- Create chainable actions. Don't create large monolithic actions. Instead, create smaller functional actions that can be chained together.
+- Version your actions like other code. Others might take dependencies on various versions of your actions. Allow them to specify versions.
+- Provide the **latest** label. If others are happy to use the latest version of your action, make sure you provide the **latest** label that they can specify to get it.
+- Add appropriate documentation. As with other codes, documentation helps others use your actions and can help avoid surprises about how they function.
+- Add details **action.yml** metadata. At the root of your action, you'll have an **action.yml** file. Ensure it has been populated with author, icon, expected inputs, and outputs.
+- Consider contributing to the marketplace. It's easier for us to work with actions when we all contribute to the marketplace. Help to avoid people needing to relearn the same issues endlessly.
+# Mark releases with Git tags
+
+Releases are software iterations that can be packed for release.
+
+In Git, releases are based on Git tags. These tags mark a point in the history of the repository. Tags are commonly assigned as releases are created.
+
+![Screenshot of Git Release Tag creation page.](https://learn.microsoft.com/en-us/training/wwl-azure/learn-continuous-integration-github-actions/media/git-release-tag-28ff3ca4.png)
+
+Often these tags will contain version numbers, but they can have other values.
+
+Tags can then be viewed in the history of a repository.
+
+![Screenshot of the Git release tag page showing the tag information.](https://learn.microsoft.com/en-us/training/wwl-azure/learn-continuous-integration-github-actions/media/tag-history-ed9cbbd4.png)
+
+For more information on tags and releases, see: [About releases](https://docs.github.com/repositories/releasing-projects-on-github/about-releases)
+
+# Create encrypted secrets
+
+Actions often can use secrets within pipelines. Common examples are passwords or keys.
+
+In GitHub actions, It's called **Secrets**.
+
+## Secrets
+
+Secrets are similar to environment variables but encrypted. They can be created at two levels:
+
+- Repository
+- Organization
+
+If secrets are created at the organization level, access policies can limit the repositories that can use them.
+
+## Creating secrets for a repository
+
+To create secrets for a repository, you must be the repository's owner. From the repository **Settings**, choose **Secrets**, then **New Secret**.
+
+![Screenshot of new secret creation from settings.](https://learn.microsoft.com/en-us/training/wwl-azure/learn-continuous-integration-github-actions/media/new-secret-5ba1255e.png)
+
+For more information on creating secrets, see [Encrypted secrets](https://docs.github.com/actions/security-guides/encrypted-secrets).
+
+# Examine multi-stage dockerfiles
+
+What are multi-stage Dockerfiles? Multi-stage builds give the benefits of the builder pattern without the hassle of maintaining three separate files.
+
+Let us look at a multi-stage Dockerfile.
+
+docker
+
+```
+FROM mcr.microsoft.com/dotnet/core/aspnetcore:3.1 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+WORKDIR /src
+COPY ["WebApplication1.csproj", ""]
+RUN dotnet restore "./WebApplication1.csproj"
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "WebApplication1.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "WebApplication1.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebApplication1.dll"]
+
+```
+
+At first, it simply looks like several dockerfiles stitched together. Multi-stage Dockerfiles can be layered or inherited.
+
+When you look closer, there are a couple of key things to realize.
+
+Notice the third stage.
+
+`FROM build AS publish`
+
+build isn't an image pulled from a registry. It's the image we defined in stage 2, where we named the result of our-build (SDK) image "builder." `Docker build` will create a named image we can later reference.
+
+We can also copy the output from one image to another. It's the real power to compile our code with one base SDK image (`mcr.microsoft.com/dotnet/core/sdk:3.1`) while creating a production image based on an optimized runtime image (`mcr.microsoft.com/dotnet/core/aspnet:3.1`). Notice the line.
+
+`COPY --from=publish /app/publish .`
+
+It takes the /app/publish directory from the published image and copies it to the working directory of the production image.
+
+## Breakdown of stages
+
+The first stage provides the base of our optimized runtime image. Notice it derives from `mcr.microsoft.com/dotnet/core/aspnet:3.1`.
+
+We would specify extra production configurations, such as registry configurations, MSIexec of other components. You would hand off any of those environment configurations to your ops folks to prepare the VM.
+
+The second stage is our build environment. `mcr.microsoft.com/dotnet/core/sdk:3.1` This includes everything we need to compile our code. From here, we have compiled binaries we can publish or test—more on testing in a moment.
+
+The third stage derives from our build stage. It takes the compiled output and "publishes" them in .NET terms.
+
+Publish means taking all the output required to deploy your "app/publish/service/component" and placing it in a single directory. It would include your compiled binaries, graphics (images), JavaScript, and so on.
+
+The fourth stage takes the published output and places it in the optimized image we defined in the first stage.
+
+## Why is publish separate from the build?
+
+You'll likely want to run unit tests to verify your compiled code. Or the aggregate of the compiled code from multiple developers being merged continues to function as expected.
+
+You could place the following stage between builder and publish to run unit tests.
+
+docker
+
+```
+FROM build AS test
+WORKDIR /src/Web.test
+RUN dotnet test
+
+```
+
+If your tests fail, the build will stop to continue.
+
+## Why is base first?
+
+You could argue it's simply the logical flow. We first define the base runtime image. Get the compiled output ready, and place it in the base image.
+
+However, it's more practical. While debugging your applications under Visual Studio Container Tools, VS will debug your code directly in the base image.
+
+When you hit F5, Visual Studio will compile the code on your dev machine. The first stage then volume mounts the output to the built runtime image.
+
+You can test any configurations you have made to your production image, such as registry configurations or otherwise.
+
+When the `docker build --target base` is executed, docker starts processing the dockerfile from the beginning through the stage (target) defined.
+
+Since the base is the first stage, we take the shortest path, making the F5 experience as fast as possible.
+
+If the base were after compilation (builder), you would have to wait for all the next steps to complete.
+
+One of the perf optimizations we make with VS Container Tools is to take advantage of the Visual Studio compilations on your dev machine.
+
+# Examine considerations for multiple stage builds
+
+## Adopt container modularity
+
+Try to avoid creating overly complex container images that couple together several applications.
+
+Instead, use multiple containers and try to keep each container to a single purpose.
+
+The website and the database for a web application should likely be in separate containers.
+
+There are always exceptions to any rule but breaking up application components into separate containers increases the chances of reusing containers.
+
+It also makes it more likely that you could scale the application.
+
+For example, in the web application mentioned, you might want to add replicas of the website container but not for the database container.
+
+## Avoid unnecessary packages
+
+To help minimize image sizes, it's also essential to avoid including packages that you suspect might be needed but aren't yet sure if they're required.
+
+Only include them when they're required.
+
+## Choose an appropriate base
+
+While optimizing the contents of your Dockerfiles is essential, it's also crucial to choose the appropriate parent (base) image. Start with an image that only contains packages that are required.
+
+## Avoid including application data
+
+While application data can be stored in the container, it will make your images more prominent.
+
+It would be best to consider using **docker volume** support to maintain the isolation of your application and its data. Volumes are persistent storage mechanisms that exist outside the lifespan of a container.
+
+For more information, see [Use multiple-stage builds](https://docs.docker.com/develop/develop-images/multistage-build/).
+
+# Explore Azure container-related services
+
+Azure provides a wide range of services that help you work with containers.
+
+Here are the essential services that are involved:
+
+[Azure Container Instances (ACI)](https://azure.microsoft.com/services/container-instances/)
+
+Running your workloads in Azure Container Instances (ACI) allows you to create your applications rather than provisioning and managing the infrastructure that will run the applications.
+
+ACIs are simple and fast to deploy, and when you're using them, you gain the security of hypervisor isolation for each container group. It ensures that your containers aren't sharing an operating system kernel with other containers.
+
+[Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service/)
+
+Kubernetes has quickly become the de-facto standard for container orchestration. This service lets you quickly deploy and manage Kubernetes, to scale and run applications while maintaining overall solid security.
+
+This service started life as Azure Container Services (ACS) and supported Docker Swarm and Mesos/Mesosphere DC/OS at release to manage orchestrations. These original ACS workloads are still supported in Azure, but Kubernetes support was added.
+
+It quickly became so popular that Microsoft changed the acronym for Azure Container Services to AKS and later changed the name of the service to Azure Kubernetes Service (also AKS).
+
+[Azure Container Registry (ACR)](https://azure.microsoft.com/services/container-registry/)
+
+This service lets you store and manage container images in a central registry. It provides you with a Docker private registry as a first-class Azure resource.
+
+All container deployments, including DC/OS, Docker Swarm, and Kubernetes, are supported. The registry is integrated with other Azure services such as the App Service, Batch, Service Fabric, and others.
+
+Importantly, it allows your DevOps team to manage the configuration of apps without being tied to the configuration of the target-hosting environment.
+
+[Azure Container Apps](https://azure.microsoft.com/services/container-apps/)
+
+Azure Container Apps allows you to build and deploy modern apps and microservices using serverless containers. It deploys containerized apps without managing complex infrastructure.
+
+You can write code using your preferred programming language or framework and build microservices with full support for [Distributed Application Runtime (Dapr)](https://dapr.io/). Scale dynamically based on HTTP traffic or events powered by [Kubernetes Event-Driven Autoscaling (KEDA)](https://keda.sh/).
+
+[Azure App Service](https://azure.microsoft.com/services/app-service/)
+
+Azure Web Apps provides a managed service for both Windows and Linux-based web applications and provides the ability to deploy and run containerized applications for both platforms. It provides autoscaling and load balancing options and is easy to integrate with Azure DevOps.
+
+# Create a release pipeline
+
+Azure DevOps has extended support for pipelines as code (also called YAML pipelines) for continuous deployment and started introducing various release management capabilities into pipelines as code.
+
+The existing UI-based release management solution in Azure DevOps is referred to as classic release.
+
+You'll find a list of capabilities and availability in YAML pipelines vs. classic build and release pipelines in the following table.
+
+![[Pasted image 20241209130705.png]]
+
+Let us quickly walk through all the components step by step.
+
+The first component in a release pipeline is an artifact:
+
+- Artifacts can come from different sources.
+- The most common source is a package from a build pipeline.
+- Another commonly seen artifact source is, for example, source control.
+
+Furthermore, a release pipeline has a trigger: the mechanism that starts a new release.
+
+A trigger can be:
+
+- A manual trigger, where people start to release by hand.
+- A scheduled trigger, where a release is triggered based on a specific time.
+- A continuous deployment trigger, where another event triggers a release. For example, a completed build.
+
+Another vital component of a release pipeline is stages or sometimes called environments. It's where the artifact will be eventually installed. For example, the artifact contains the compiled website installed on the webserver or somewhere in the cloud. You can have many stages (environments); part of the release strategy is finding the appropriate combination of stages.
+
+Another component of a release pipeline is approval.
+
+People often want to sign a release before installing it in the environment.
+
+In more mature organizations, this manual approval process can be replaced by an automatic process that checks the quality before the components move on to the next stage.
+
+Finally, we have the tasks within the various stages. The tasks are the steps that need to be executed to install, configure, and validate the installed artifact.
+
+In this part of the module, we'll detail all the release pipeline components and talk about what to consider for each element.
+
+The components that make up the release pipeline or process are used to create a release. There's a difference between a release and the release pipeline or process. The release pipeline is the blueprint through which releases are done. We'll cover more of it when discussing the quality of releases and releases processes.
+
+See also [Release pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release).
+
+What is an artifact? An artifact is a deployable component of your application. These components can then be deployed to one or more environments.
+
+In general, the idea about build and release pipelines and Continuous Delivery is to build once and deploy many times.
+
+It means that an artifact will be deployed to multiple environments. The artifact should be a stable package if you want to achieve it.
+
+The configuration is the only thing you want to change when deploying an artifact to a new environment.
+
+The contents of the package should never change. It's what we call [immutability](https://learn.microsoft.com/en-us/azure/devops/artifacts/artifacts-key-concepts). We should be 100% sure that the package that we build, the artifact, remains unchanged.
+
+How do we get an artifact? There are different ways to create and retrieve artifacts, and not every method is appropriate for every situation.
+
+# Examine considerations for deployment to stages
+
+When you have a clear view of the different stages you'll deploy, you need to think about when you want to deploy to these stages.
+
+As we mentioned in the introduction, Continuous Delivery is about deploying multiple times a day and can deploy on-demand.
+
+When we define our cadence, questions that we should ask ourselves are:
+
+- Do we want to deploy our application?
+- Do we want to deploy multiple times a day?
+- Can we deploy to a stage? Is it used?
+
+For example, a tester testing an application during the day might not want to deploy a new version of the app during the test phase.
+
+Another example is when your application incurs downtime, you don't want to deploy when users use the application.
+
+The frequency of deployment, or cadence, differs from stage to stage.
+
+A typical scenario we often see is continuous deployment during the development stage.
+
+Every new change ends up there once it's completed and builds.
+
+Deploying to the next phase doesn't always occur multiple times but only at night.
+
+When designing your release strategy, choose your triggers carefully and consider the required release cadence.
+
+Some things we need to take into consideration are:
+
+- What is your target environment?
+- Does one team use it, or do multiple teams use it?
+    - If a single team uses it, you can deploy it frequently. Otherwise, it would be best if you were a bit more careful.
+- Who are the users? Do they want a new version multiple times a day?
+- How long does it take to deploy?
+- Is there downtime? What happens to performance? Are users affected?
+
+Instead of using out-of-the-box tasks, a command line, or a shell script, you can also use your custom build and release task.
+
+By creating your tasks, the tasks are available publicly or privately to everyone you share them with.
+
+Creating your task has significant advantages.
+
+- You get access to variables that are otherwise not accessible.
+- You can use and reuse a secure endpoint to a target server.
+- You can safely and efficiently distribute across your whole organization.
+- Users don't see implementation details.
+
+# Explore release jobs
+
+You can organize your build or release pipeline into jobs. Every build or deployment pipeline has at least one job.
+
+A job is a series of tasks that run sequentially on the same target. It can be a Windows server, a Linux server, a container, or a deployment group.
+
+A release job is executed by a build/release agent. This agent can only run one job at the same time.
+
+You specify a series of tasks you want to run on the same agent during your job design.
+
+When the build or release pipeline is triggered at runtime, each job is dispatched to its target as one or more.
+
+A scenario that speaks to the imagination, where Jobs plays an essential role, is the following.
+
+Assume that you built an application with a backend in .NET, a front end in Angular, and a native IOS mobile App. It might be developed in three different source control repositories triggering three other builds and delivering three other artifacts.
+
+The release pipeline brings the artifacts together and wants to deploy the backend, frontend, and Mobile App all together as part of one release.
+
+The deployment needs to take place on different agents.
+
+If an IOS app needs to be built and distributed from a Mac, the angular app is hosted on Linux, so best deployed from a Linux machine.
+
+The backend might be deployed from a Windows machine.
+
+Because you want all three deployments to be part of one pipeline, you can define multiple Release Jobs targeting the different agents, servers, or deployment groups.
+
+By default, jobs run on the host machine where the agent is installed.
+
+It's convenient and typically well suited for projects just beginning to adopt continuous integration (CI).
+
+Over time, you may want more control over the stage where your tasks run.
+
+# Understand database deployment task
+
+Integrating database deployment tasks into CI/CD Azure Pipelines and GitHub Actions workflows is meant to automate provisioning and updating of databases alongside applications which data they host. This integration facilitates seamless coordination between application and database lifecycles, reducing the risk of errors and inconsistencies that may result from manual deployments. Automating database provisioning facilitates faster release cycles, reduces the possibility of human errors, and improves collaboration between development, operations, and database teams.
+
+## Considerations
+
+Including data components in automated software deployment introduces additional considerations regarding maintaining data integrity and preventing potential data loss. To address and mitigate these risks, take into account the following provisions:
+
+- Data separation: Maintain a clear separation between database schema changes and data manipulation operations. Database schema changes, such as table modifications or schema updates, should be managed separately from data manipulation operations, such as seeding initial data or importing and exporting datasets.
+- Data preservation: Implement strategies to preserve existing data during pipeline or workflow redeployment. This may involve backing up critical data before deploying changes or using data migration scripts to transfer data between environments without overwriting existing data.
+- Idempotent operations: Ensure that database deployment operations are idempotent, which means that they can be safely rerun multiple times resulting always in the same outcome. Idempotency should eliminate the possibility of creating duplicate schema objects and or records.
+- Versioning and rollback: Maintain version control over database schema changes, data migrations, and deployment scripts to track changes and facilitate rollback procedures. Use source control repositories to manage database scripts, apply version tags or labels to database changes, and implement rollback strategies that revert database changes.
+- Testing and validation: Perform thorough testing and validation of database changes in a staging or testing environment before deploying to production. Use automated testing frameworks, database unit tests, and integration tests to verify the database deployments and ensure compatibility with existing data.
+- Monitoring and alerting: Implement monitoring and alerting mechanisms to detect anomalies, errors, or performance issues during database deployments. Monitor database health metrics, track audit logs, and configure alerts triggered by any unexpected behavior or failures.
+
+The fundamental concepts and activities are similar between Azure Pipelines and GitHub Actions workflows. At a high level, incorporating deployment of databases into Azure Pipelines involves several implementation tasks:
+
+- Creating database deployment scripts to define the database schema, seed data, and apply any additional configurations. The scripts should reside in the source control repository to facilitate change tracking and versioning.
+- Creating database connection strings and storing them securely by as secret variables or Azure key vault secrets. This also requires granting pipelines access to the secrets.
+- Using Azure DevOps tasks or third-party extensions to execute database deployment scripts as part of the pipeline.
+- Configuring the pipeline to deploy any necessary dependencies, such as SQL Server instances, along with required tools and utilities.
+- Including database testing tasks in the pipeline to validate database changes and ensure that deployments are successful. This typically involves running database unit tests, integration tests, or data validation checks.
+- Implementing rollback and recovery mechanisms in the pipeline to handle deployment failures or unexpected errors. This may include creating database snapshots, backups, or transactional rollback scripts to revert changes in case of issues.
+
+The specific of these implementation tasks vary considerably depending on the target database technology. The following section examines these specifics in the context of deploying Azure SQL services.
+
+# Explore release approvals
+
+As we've described in the introduction, Continuous Delivery is all about delivering on-demand.
+
+But, as we discussed in the differences between release and deployment, delivery, or deployment, it's only the technical part of the Continuous Delivery process.
+
+It's all about how you can technically install the software on an environment, but it doesn't say anything about the process that needs to be in place for a release.
+
+Release approvals don't control _how_ but control _if_ you want to deliver multiple times a day.
+
+Manual approvals also suit a significant need. Organizations that start with Continuous Delivery often lack a certain amount of trust.
+
+They don't dare to release without manual approval. After a while, when they find that the approval doesn't add value and the release always succeeds, the manual approval is often replaced by an automatic check.
+
+Things to consider when you're setting up a release approval are:
+
+- What do we want to achieve with the approval? Is it an approval that we need for compliance reasons? For example, we need to adhere to the four-eyes principle to get out SOX compliance. Or Is it an approval that we need to manage our dependencies? Or is it an approval that needs to be in place purely because we need a sign-out from an authority like Security Officers or Product Owners.
+- Who needs to approve? We need to know who needs to approve the release. Is it a product owner, Security officer, or just someone that isn't the one that wrote the code? It's essential because the approver is part of the process. They're the ones that can delay the process if not available. So be aware of it.
+- When do you want to approve? Another essential thing to consider is when to approve. It's a direct relationship with what happens after approval. Can you continue without approval? Or is everything on hold until approval is given. By using scheduled deployments, you can separate approval from deployment.
+
+Although manual approval is a great mechanism to control the release, it isn't always helpful.
+
+On many occasions, the check can be done at an earlier stage.
+
+For example, it's approving a change that has been made in Source Control.
+
+Scheduled deployments have already solved the dependency issue.
+
+You don't have to wait for a person in the middle of the night. But there's still a manual action involved.
+
+If you want to eliminate manual activities but still want control, you start talking about automatic approvals or release gates.
+
+# Explore release gates
+
+Release gates in Azure DevOps provide enhanced control over the initiation and completion of deployment pipelines, incorporating aspects of security and governance into the process. They designate conditions which must be satisfied in order for the deployment to either continue (pre-deployment gates) or to be considered successful (post-deployment gates).
+
+One of the important benefits of release gates is streamlining processes such as, for example, deploying a new version of an API, which would traditionally require manual intervention or dependency meetings. This way, instead of convening meetings, the gate mechanism allows stakeholders to indicate their approval to proceed with the click of a button, considerably reducing time and effort.
+
+In addition, gates can leverage scripts and APIs to automate the approval process and provide objective, data-driven assessments, extending beyond manual approvals. These automatic approvals facilitate a wide range of other scenarios, including:
+
+- **Incident and issues management**: Gate mechanisms ensure that deployment proceeds only if the required status for work items, incidents, and issues is met. For instance, deployment may be contingent on the absence of software bugs.
+- **Approval integration with collaboration systems**: Integration with platforms like Microsoft Teams or Slack promotes communication with stakeholders for deployment approval, awaiting their response before proceeding.
+- **Quality validation**: Gates can query metrics from tests on build artifacts, such as pass rate or code coverage, and deploy within specified thresholds to maintain quality standards.
+- **Security scan on artifacts**: Gate mechanisms verify completion of security scans, such as anti-virus checks, code signing, and policy validation for build artifacts, ensuring compliance with security requirements before deployment.
+- **User experience monitoring**: Leveraging product telemetry, gates validate that the user experience remains consistent with baseline standards, preventing deployment if regression is detected.
+- **Change management integration**: Gates wait for change management procedures in systems like ServiceNow to conclude before proceeding with deployment.
+- **Infrastructure health checks**: Post-deployment, gates execute monitoring processes and validate infrastructure compliance against predefined rules, ensuring resource utilization and security standards are met.
+
+Effectively, approvals and gates offer granular control over deployment pipelines, accommodating both manual and automated verification processes. Automation expedites deployments while, at the same time, helps incorporate security measures, governance protocols, and stakeholder approvals into software delivery processes. Support for manual approvals accommodates pausing deployments in environments that require additional scrutiny before resuming or rejecting the deployment process.
+
+# Use release gates to protect quality
+
+A quality gate is the best way to enforce a quality policy in your organization. It's there to answer one question: can I deliver my application to production or not?
+
+A quality gate is located before a stage that is dependent on the outcome of a previous stage. A quality gate was typically something that a QA department monitored in the past.
+
+They had several documents or guidelines, and they verified if the software was of a good enough quality to move on to the next stage.
+
+When we think about Continuous Delivery, all manual processes are a potential bottleneck.
+
+We need to reconsider the notion of quality gates and see how we can automate these checks as part of our release pipeline.
+
+By using automatic approval with a release gate, you can automate the approval and validate your company's policy before moving on.
+
+Many quality gates can be considered.
+
+- No new blocker issues.
+- Code coverage on new code greater than 80%.
+- No license violations.
+- No vulnerabilities in dependencies.
+- No further technical debt was introduced.
+- Is the performance not affected after a new release?
+- Compliance checks
+    - Are there work items linked to the release?
+    - Is the release started by someone else as the one who commits the code?
+
+Defining quality gates improves the release process, and you should always consider adding them
+
+# Explore GitOps release strategy and recommendations
+
+GitOps is a modern software delivery approach that leverages Git repositories as the single source of truth for defining and managing infrastructure, configuration, and application code. In a GitOps release strategy, all changes to the system, including infrastructure provisioning, configuration updates, and application deployments, are made through Git commits and pull requests. The core principles of GitOps include declarative configuration, version control, automation, and continuous delivery.
+
+## Defining a comprehensive GitOps release strategy
+
+When defining a comprehensive GitOps strategy, you should take into account the following considerations:
+
+- **Declarative configuration**: Express the desired system state in a declarative manner using configuration files by using tools such as PowerShell Desired State Configuration (DSC) or Ansible. Configuration files define how the system should behave, including environment variables, application settings, and service configurations.
+- **Infrastructure as Code (IaC)**: Use the declarative configuration approach to define infrastructure components as code by using tools such as Bicep and Azure Resource Manager templates.  
+    Version control: Store all configuration files, infrastructure definitions, and application code, in Git repositories, enabling versioning, change tracking, and collaboration among team members. Use branching strategies and pull requests for managing changes and enforcing code review processes.
+- **Continuous Deployment (CD)**: Implement continuous deployment pipelines that automatically deploy changes to the system based on Git commits and pull requests. CI/CD services such as Azure Pipelines or GitHub Actions trigger pipeline executions in response to Git events, such as code merges or branch updates.
+- **Automated synchronization**: Deployments are triggered automatically whenever changes are pushed to the Git repository. GitOps tools such as Flux or Argo CD continuously monitor Git repositories for changes and synchronize the desired state of the system with the configuration stored in Git.
+- **Immutable infrastructure**: Adopt an immutable infrastructure approach where infrastructure components and application containers are treated as disposable artifacts. Each deployment creates a new immutable instance of the system, reducing configuration drift and ensuring consistency across environments.
+- **Rollback and recovery**: Use Git-based workflows to manage rollbacks and recovery procedures in case of deployment failures or unexpected issues. As a result, reverting changes in Git repositories should trigger automatic rollback actions in the CI/CD pipeline, restoring the system to a previous known good state.
+- **Observability and Monitoring**: Implement monitoring, logging, and observability practices to track system health, performance metrics, and deployment status. Integrate monitoring tools such as Azure Monitor, Prometheus, or Grafana with GitOps workflows to gain visibility into system behavior and detect anomalies in real-time.
+
+# Provision and test environments
+
+The release pipeline deploys software to a target environment. But it isn't only the software that will be deployed with the release pipeline.
+
+If you focus on Continuous Delivery, Infrastructure as Code and spinning up Infrastructure as part of your release pipeline is essential.
+
+When we focus on the deployment of the Infrastructure, we should first consider the differences between the target environments that we can deploy to:
+
+- On-Premises servers.
+- Cloud servers or Infrastructure as a Service (IaaS). For example, Virtual machines or networks.
+- Platform as a Service (PaaS) and Functions as a Service (FaaS). For example, Azure SQL Database in both PaaS and serverless options.
+- Clusters.
+- Service Connections.
+
+Let us dive a bit further into these different target environments and connections.
+
+## On-premises servers
+
+In most cases, when you deploy to an on-premises server, the hardware and the operating system are already in place. The server is already there and ready.
+
+In some cases, empty, but most of the time not. In this case, the release pipeline can only focus on deploying the application.
+
+You might want to start or stop a virtual machine (Hyper-V or VMware).
+
+The scripts you use to start or stop the on-premises servers should be part of your source control and delivered to your release pipeline as a build artifact.
+
+Using a task in the release pipeline, you can run the script that starts or stops the servers.
+
+To take it one step further and configure the server, you should look at technologies like PowerShell Desired State Configuration(DSC).
+
+The product will maintain your server and keep it in a particular state. When the server changes its state, you can recover the changed configuration to the original configuration.
+
+Integrating a tool like PowerShell DSC into the release pipeline is no different from any other task you add.
+
+## Infrastructure as a service
+
+When you use the cloud as your target environment, things change slightly. Some organizations lift and shift from their on-premises servers to cloud servers.
+
+Then your deployment works the same as an on-premises server. But when you use the cloud to provide you with Infrastructure as a Service (IaaS), you can use the power of the cloud to start and create servers when needed.
+
+It's where Infrastructure as Code (IaC) starts playing a significant role.
+
+Creating a script or template can make a server or other infrastructural components like a SQL server, a network, or an IP address.
+
+By defining a template or using a command line and saving it in a script file, you can use that file in your release pipeline tasks to execute it on your target cloud.
+
+The server (or another component) will be created as part of your pipeline. After that, you can run the steps to deploy the software.
+
+Technologies like Azure Resource Manager are great for creating Infrastructure on demand.
+
+## Platform as a Service
+
+When you move from Infrastructure as a Service (IaaS) to Platform as a Service (PaaS), you'll get the Infrastructure from the cloud you're running on.
+
+For example: In Azure, you can create a Web application. The cloud arranges the server, the hardware, the network, the public IP address, the storage account, and even the web server.
+
+The user only needs to take care of the web application on this Platform.
+
+You only need to provide the templates instructing the cloud to create a WebApp. Functions as a Service(FaaS) or Serverless technologies are the same.
+
+In Azure, it's called Azure Functions. You only deploy your application, and the cloud takes care of the rest. However, you must instruct the Platform (the cloud) to create a placeholder where your application can be hosted.
+
+You can define this template in Azure Resource Manager. You can use the Azure CLI or command-line tools.
+
+In all cases, the Infrastructure is defined in a script file and lives alongside the application code in source control.
+
+## Clusters
+
+Finally, you can deploy your software to a cluster. A cluster is a group of servers that host high-scale applications.
+
+When you run an Infrastructure as a Service cluster, you must create and maintain the cluster. It means that you need to provide the templates to create a cluster.
+
+You must also ensure you roll out updates, bug fixes, and patches to your cluster. It's comparable with Infrastructure as a Service.
+
+When you use a hosted cluster, you should consider it a Platform as a Service. You instruct the cloud to create the cluster, and you deploy your software to the cluster.
+
+When you run a container cluster, you can use the container cluster technologies like AKS.
+
+## Service connections
+
+When a pipeline needs resource access, you must often create service connections.
+
+## Summary
+
+Whatever the technology you choose to host your application, your Infrastructure's creation or configuration should be part of your release pipeline and source control repository.
+
+Infrastructure as Code is a fundamental part of Continuous Delivery, allowing you to create servers and environments on demand.
+
+# Configure automated integration and functional test automation
+
+The first thing that comes to mind about Continuous Delivery is that everything needs to be automated.
+
+Otherwise, you can't deploy multiple times a day. But how to deal with testing, then?
+
+Many companies still have a broad suite of manual tests to be run before delivering to production. Somehow these tests need to run every time a new release is created.
+
+Instead of automating all your manual tests into automated UI tests, you need to rethink your testing strategy.
+
+Lisa Crispin describes in her book Agile Testing that you can divide your tests into multiple categories.
+
+![[Pasted image 20241209153754.png]]
+
+We can make four quadrants where each side of the square defines our targets with our tests.
+
+- Business facing - the tests are more functional and often executed by end users of the system or by specialized testers that know the problem domain well.
+- Supporting the Team - it helps a development team get constant feedback on the product to find bugs quickly and deliver a quality build-in product.
+- Technology facing - the tests are rather technical and non-meaningful to business people. They're typical tests written and executed by the developers in a development team.
+- Critique Product - tests that validate a product's workings on its functional and non-functional requirements.
+
+Now we can place different test types we see in the other quadrants. For example, we can put Unit tests, Component tests, and System or integration tests in the first quadrant.
+
+We can place functional tests, Story tests, prototypes, and simulations in quadrant two. These tests support the team in delivering the correct functionality and are business-facing since they're more functional.
+
+In quadrant three, we can place tests like exploratory, usability, acceptance, etc.
+
+We place performance, load, security, and other non-functional requirements tests in quadrant four.
+
+Looking at these quadrants, specific tests are easy to automate or automated by nature. These tests are in quadrants 1 and 4. Tests that are automatable but mostly not automated by nature are the tests in quadrant 2. Tests that are the hardest to automate are in quadrant 3.
+
+We also see that the tests that can't be automated or are hard to automate are tests that can be executed in an earlier phase and not after release.
+
+We call shift-left, where we move the testing process towards the development cycle.
+
+We need to automate as many tests as possible and test them.
+
+A few of the principles we can use are:
+
+- Tests should be written at the lowest level possible.
+- Write once, and run anywhere, including the production system.
+- The product is designed for testability.
+- Test code is product code; only reliable tests survive.
+- Test ownership follows product ownership.
+
+By testing at the lowest level possible, you'll find many tests that don't require infrastructure or applications to be deployed.
+
+We can use the pipeline to execute the tests that need an app or infrastructure. We can run scripts or use specific test tools to perform tests within the pipeline.
+
+On many occasions, you execute these external tools from the pipeline, like Owasp ZAP, SpecFlow, or Selenium.
+
+You can use test functionality from a platform like Azure on other occasions. For example, Availability or Load Tests executed from within the cloud platform.
+
+When you want to write your automated tests, choose the language that resembles the language from your code.
+
+In most cases, the application developers should also write the test, so it makes sense to use the same language. For example, write tests for your .NET application in .NET and your Angular application in Angular.
+
+The build and release agent can handle it to execute Unit Tests or other low-level tests that don't need a deployed application or infrastructure.
+
+When you need to do tests with a UI or other specialized functionality, you need a Test agent to run the test and report the results. Installation of the test agent then needs to be done upfront or as part of the execution of your pipeline.
+
+---
+
+# Understand Shift-left
+
+The goal for shifting left is to move quality upstream by performing tests early in the pipeline. It represents the phrase "fail fast, fail often" combining test and process improvements reduces the time it takes for tests to be run and the impact of failures later on.
+
+The idea is to ensure that most of the testing is complete before merging a change into the main branch.
+
+![Screenshot of the shift-left representation image showing Unit Tests and Functional Tests during the pipeline lifecycle.](https://learn.microsoft.com/en-us/training/wwl-azure/configure-provision-environments/media/shift-left-cba6e08e.png)
+
+Many teams find their test takes too long to run during the development lifecycle.
+
+As projects scale, the number and nature of tests will grow substantially, taking hours or days to run the complete test.
+
+They get pushed further until they're run at the last possible moment, and the benefits intended to be gained from building those tests aren't realized until long after the code has been committed.
+
+There are several essential principles that DevOps teams should adhere to in implementing any quality vision.
+
+![Screenshot of the quality vision principles current and future test portfolio.](https://learn.microsoft.com/en-us/training/wwl-azure/configure-provision-environments/media/shift-left-quality-vision-fe308ed2.png)
+
+Other important characteristics to take into consideration:
+
+- **Unit tests:** These tests need to be fast and reliable.
+    - One team at Microsoft runs over 60,000 unit tests in parallel in less than 6 minutes, intending to get down to less than a minute.
+- **Functional tests:** Must be independent.
+- **Defining a test taxonomy** is an essential aspect of DevOps. The developers should understand the suitable types of tests in different scenarios.
+    - **L0** tests are a broad class of fast in-memory unit tests. It's a test that depends on code in the assembly under test and nothing else.
+    - **L1** tests might require assembly plus SQL or the file system.
+    - **L2** tests are functional tests run against testable service deployments. It's a functional test category requiring a service deployment but may have critical service dependencies stubbed out.
+    - **L3** tests are a restricted class of integration tests that run against production. They require a complete product deployment.
+
+# Set up and run availability tests
+
+After you've deployed your web app or website to any server, you can set up tests to monitor its availability and responsiveness.
+
+It's helpful to check if your application is still running and gives a healthy response.
+
+Some applications have specific Health endpoints that an automated process can check. The Health endpoint can be an HTTP status or a complex computation that uses and consumes crucial parts of your application.
+
+For example, you can create a Health endpoint that queries the database. This way, you can check that your application is still accessible, but also the database connection is verified.
+
+You can create your framework to create availability tests (ping test) or use a platform that can do it for you.
+
+Azure has the functionality to develop Availability tests. You can use these tests in the pipeline and as release gates.
+
+In Azure, you can set up availability tests for any HTTP or HTTPS endpoint accessible from the public internet.
+
+You don't have to add anything to the website you're testing. It doesn't even have to be your site: you could try a REST API service you depend on.
+
+There are two types of availability tests:
+
+- URL ping test: a simple test that you can create in the Azure portal. You can check the URL and check the response and status code of the response.
+- Multi-step web test: Several HTTP calls that are executed in sequence.
+
+# Explore Azure Load Testing
+
+Azure Load Testing Preview is a fully managed load-testing service that enables you to generate a high-scale load.
+
+The service simulates your applications' traffic, helping you optimize application performance, scalability, or capacity.
+
+You can create a load test using existing test scripts based on Apache JMeter. Azure Load Testing abstracts the infrastructure to run your JMeter script and load test your application.
+
+Azure Load Testing collects detailed resource metrics for Azure-based applications to help you [identify performance bottlenecks](https://learn.microsoft.com/en-us/azure/load-testing/overview-what-is-azure-load-testing) across your Azure application components.
+
+You can [automate regression testing](https://learn.microsoft.com/en-us/azure/load-testing/overview-what-is-azure-load-testing) by running load tests as part of your continuous integration and continuous deployment (CI/CD) workflow.
+
+![[Pasted image 20241209153940.png]]
+
+# Understand package management
+
+## What is a package?
+
+A package is a formalized way of creating a distributable unit of software artifacts that can be consumed from another software solution.
+
+The package describes the content it contains and usually provides extra metadata, and the information uniquely identifies the individual packages and is self-descriptive.
+
+It helps to better store packages in centralized locations and consume the contents of the package predictably.
+
+Also, it enables tooling to manage the packages in the software solution.
+
+## Types of packages
+
+Packages can be used for different kinds of components.
+
+The type of components you want to use in your codebase differ for the different parts and layers of the solution you're creating.
+
+The range from frontend components, such as JavaScript code files, to backend components like .NET assemblies or Java components, complete self-contained solutions, or reusable files in general.
+
+Over the past years, the packaging formats have changed and evolved. Now there are a couple of de facto standard formats for packages.
+
+- **NuGet** packages (pronounced "new get") are a standard used for .NET code artifacts. It includes .NET assemblies and related files, tooling, and sometimes only metadata. NuGet defines the way packages are created, stored, and consumed. A NuGet package is essentially a compressed folder structure with files in ZIP format and has the `.nupkg` extension. See also [An introduction to NuGet](https://learn.microsoft.com/en-us/nuget/what-is-nuget).
+- **npm** package is used for JavaScript development. It originates from node.js development, where it's the default packaging format. An npm package is a file or folder containing JavaScript files and a `package.json` file describing the package's metadata. For node.js, the package usually includes one or more modules that can be loaded once the package is consumed. See also [About packages and modules](https://docs.npmjs.com/about-packages-and-modules).
+- **Maven** is used for Java-based projects. Each package has a Project Object Model file describing the project's metadata and is the basic unit for defining a package and working with it.
+- **PyPi** The Python Package Index, abbreviated as PyPI and known as the Cheese Shop, is the official third-party software repository for Python.
+- **Docker** packages are called images and contain complete and self-contained deployments of components. A Docker image commonly represents a software component that can be hosted and executed by itself without any dependencies on other images. Docker images are layered and might be dependent on other images as their basis. Such images are referred to as base images.
+
+
+# Introduction to continuous monitoring
+
+![[Pasted image 20241209154722.png]]
+
+Continuous monitoring refers to the process and technology required to incorporate monitoring across each DevOps and IT operations lifecycles phase.
+
+It helps to continuously ensure your application's health, performance, reliability, and infrastructure as it moves from development to production.
+
+Continuous monitoring builds on the concepts of Continuous Integration and Continuous Deployment (CI/CD), which help you develop and deliver software faster and more reliably to provide continuous value to your users.
+
+[Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/overview) is the unified monitoring solution in Azure that provides full-stack observability across applications and infrastructure in the cloud and on-premises.
+
+It works seamlessly with [Visual Studio and Visual Studio Code](https://visualstudio.microsoft.com/) during development and testing and integrates with [Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/user-guide/index) for release management and work item management during deployment and operations.
+
+It even integrates across your ITSM and SIEM tools to help track issues and incidents within your existing IT processes.
+
+This article describes specific steps for using Azure Monitor to enable continuous monitoring throughout your workflows.
+
+It includes links to other documentation that provides details on implementing different features.
+
+## Enable monitoring for all your applications
+
+To gain observability across your entire environment, you need to enable monitoring on all your web applications and services.
+
+It will allow you to visualize end-to-end transactions and connections across all the components easily.
+
+- [Azure DevOps Projects gives you a simplified experience with your existing code and Git repository or choose](https://learn.microsoft.com/en-us/azure/devops-project/overview) from one of the sample applications to create a Continuous Integration (CI) and Continuous Delivery (CD) pipeline to Azure.
+- [Continuous monitoring in your DevOps release pipeline](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-vsts-continuous-monitoring) allows you to gate or roll back your deployment based on monitoring data.
+- [Status Monitor](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-monitor-performance-live-website-now) allows you to instrument a live .NET app on Windows with Azure Application Insights without modifying or redeploying your code.
+- If you have access to the code for your application, then enable complete monitoring with [Application Insights](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-overview) by installing the Azure Monitor Application Insights SDK for [.NET](https://learn.microsoft.com/en-us/azure/application-insights/quick-monitor-portal), [Java](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-java-quick-start), [Node.js](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-nodejs-quick-start), or [any other programming language](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-platforms). It lets you specify custom events, metrics, or page views relevant to your application and business.
+
+## Enable monitoring for your entire infrastructure
+
+Applications are only as reliable as their underlying infrastructure.
+
+Monitoring enabled across your entire infrastructure will help you achieve full observability and make discovering a potential root cause easier when something fails.
+
+Azure Monitor helps you track the health and performance of your entire hybrid infrastructure, including resources such as VMs, containers, storage, and network.
+
+- You automatically get [platform metrics, activity logs, and diagnostics logs](https://learn.microsoft.com/en-us/azure/azure-monitor/data-sources) from most of your Azure resources with no configuration.
+- Enable deeper monitoring for VMs with [Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/insights/vminsights-overview).
+- Enable deeper monitoring for AKS clusters with [Azure Monitor for containers](https://learn.microsoft.com/en-us/azure/azure-monitor/insights/container-insights-overview).
+- Add [monitoring solutions](https://learn.microsoft.com/en-us/azure/azure-monitor/insights/solutions-inventory) for different applications and services in your environment.
+
+[Infrastructure as code](https://learn.microsoft.com/en-us/azure/devops/learn/what-is-infrastructure-as-code) manages infrastructure in a descriptive model, using the same versioning as DevOps teams use for source code.
+
+It adds reliability and scalability to your environment and allows you to apply similar processes to manage your applications.
+
+- Use [Resource Manager templates](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/template-workspace-configuration) to enable monitoring and configure alerts over a large set of resources.
+- Use [Azure Policy](https://learn.microsoft.com/en-us/azure/governance/policy/overview) to enforce different rules over your resources. It ensures those resources comply with your corporate standards and service level agreements.
+
+## Combine resources in Azure Resource Groups
+
+Today, a typical application on Azure includes multiple resources such as VMs and App Services or microservices hosted on Cloud Services, AKS clusters, or Service Fabric.
+
+These applications frequently use dependencies like Event Hubs, Storage, SQL, and Service Bus.
+
+- Combine resources in Azure Resource Groups to get complete visibility of all the resources that make up your different applications. [Azure Monitor for Resource Groups](https://learn.microsoft.com/en-us/azure/azure-monitor/insights/resource-group-insights) provides a simple way to keep track of the health and performance of your entire full-stack application and enables drilling down into respective components for any investigations or debugging.
+
+## Ensure quality through continuous deployment
+
+Continuous Integration / Continuous Deployment allows you to automatically integrate and deploy code changes to your application based on automated testing results.
+
+It streamlines the deployment process and ensures the quality of any changes before they move into production.
+
+- Use [Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines) to implement Continuous Deployment and automate your entire process from code commit to production based on your CI/CD tests.
+- Use Quality Gates to integrate monitoring into your pre-deployment or post-deployment. It ensures that you meet the key health/performance metrics (KPIs) as your applications move from dev to production. Any differences in the infrastructure environment or scale aren't negatively impacting your KPIs.
+- [Maintain separate monitoring instances](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-separate-resources) between your different deployment environments, such as Dev, Test, Canary, and Prod. It ensures that collected data is relevant across the associated applications and infrastructure. If you need to correlate data across environments, use [multi-resource charts in Metrics Explorer](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/metrics-charts) or create [cross-resource queries in Log Analytics](https://learn.microsoft.com/en-us/azure/azure-monitor/log-query/cross-workspace-query).
+
+## Create actionable alerts with actions
+
+A critical monitoring aspect is proactively notifying administrators of current and predicted issues.
+
+- Create [alerts in Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/alerts-overview) based on logs and metrics to identify predictable failure states. It would be best if you had a goal of making all alerts actionable, meaning that they represent actual critical conditions and seek to reduce false positives. Use [dynamic thresholds](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/alerts-dynamic-thresholds) to automatically calculate baselines on metric data rather than defining your static thresholds.
+- Define actions for alerts to use the most effective means of notifying your administrators. Available [actions for notification](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/action-groups#create-an-action-group-by-using-the-azure-portal) are SMS, e-mails, push notifications or voice calls.
+- Use more advanced actions to [connect to your ITSM tool](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/itsmc-overview) or other alert management systems through [webhooks](https://learn.microsoft.com/en-us/azure/azure-monitor/platform/activity-log-alerts-webhook).
+- Remediate situations identified in alerts with [Azure Automation runbooks](https://learn.microsoft.com/en-us/azure/automation/automation-webhooks) or [Logic Apps](https://learn.microsoft.com/en-us/connectors/custom-connectors/create-webhook-trigger) that can be launched from an alert using webhooks.
+- Use [autoscaling](https://learn.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-autoscale-performance-schedule) to dynamically increase and decrease your compute resources based on collected metrics.
+
+## Prepare dashboards and workbooks
+
+Ensuring that your development and operations have access to the same telemetry and tools allows them to view patterns across your entire environment and minimize your Mean Time To Detect (MTTD) and Mean Time To Restore (MTTR).
+
+- Prepare [custom dashboards](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-tutorial-dashboards) based on standard metrics and logs for the different roles in your organization. Dashboards can combine data from all Azure resources.
+- Prepare [Workbooks](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-usage-workbooks) to ensure knowledge sharing between development and operations. It could be prepared as dynamic reports with metric charts and log queries or as troubleshooting guides designed by developers to help customer support or operations handle fundamental problems.
+
+## Continuously optimize
+
+Monitoring is one of the fundamental aspects of the popular Build-Measure-Learn philosophy, which recommends continuously tracking your KPIs and user behavior metrics and optimizing them through planning iterations.
+
+Azure Monitor helps you collect metrics and logs relevant to your business and add new data points in the following deployment.
+
+- Use tools in Application Insights to [track end-user behavior and engagement](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-tutorial-users).
+- Use [Impact Analysis](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-usage-impact) to help you prioritize which areas to focus on to drive to important KPIs.
+
+---
+
+![[Pasted image 20241209154817.png]]
+
+# Explore Application Insights
+
+You install a small instrumentation package in your application and set up an Application Insights resource in the Microsoft Azure portal.
+
+The instrumentation monitors your app and sends telemetry data to the portal. (The application can run anywhere - it doesn't have to be hosted in Azure.)
+
+You can instrument the web service application, background components, and JavaScript in the web pages.
+
+![Diagram showing the Application Insights and telemetry for alerts, Power BI, Visual Studio, Rest API and Continuous Export.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/application-insights-a2f02f4e.png)
+
+Also, you can pull in telemetry from the host environments such as performance counters, Azure diagnostics, or Docker logs.
+
+You can also set up web tests periodically, sending synthetic requests to your web service.
+
+All these telemetry streams are integrated into the Azure portal, where you can apply powerful analytic and search tools to the raw data.
+
+## What's the overhead?
+
+The impact on your app's performance is minimal. Tracking calls are non-blocking and are batched and sent in a separate thread.
+
+## What do Application Insights monitor?
+
+Application Insights is aimed at the development team to help you understand how your app is doing and being used. It monitors:
+
+- Request rates, response times, and failure rates - Find out which pages are most popular, at what times of day, and where your users are. See which pages do best. If your response times and failure rates increase with more requests, perhaps you have a resourcing problem.
+- Dependency rates, response times, and failure rates - Find out whether external services are slowing you down.
+- Exceptions - Analyze the aggregated statistics, pick specific instances, and drill into the stack trace and related requests. Both server and browser exceptions are reported.
+- Pageviews and load performance - reported by your users' browsers.
+- AJAX calls from web pages - rates, response times, and failure rates.
+- User and session count.
+- Performance counters from your Windows or Linux server machines include CPU, memory, and network usage.
+- Host diagnostics from Docker or Azure.
+- Diagnostic trace logs from your app - so you can correlate trace events with requests.
+- Custom events and metrics that you write yourself in the client or server code to track business events such as items sold or games won.
+
+## Where do I see my telemetry?
+
+There are plenty of ways to explore your data. Check out this article for more information - [Smart detection and manual alerts](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-proactive-diagnostics).
+
+Automatic alerts adapt to your app's usual patterns of telemetry and trigger when there's something outside the usual pattern. You can also [set alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/app/alerts) on levels of custom or standard metrics.
+
+![Screenshot of set alerts showing an abnormal rise in failed request rate in the app fabrikamprod.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/set-alerts-52c42e8d.png)
+
+## Application map
+
+The components of your app, with key metrics and alerts.
+
+![Screenshot of the application map with the components of the app, key metrics, and alerts.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/application-map-2e670a1b.png)
+
+## Profiler
+
+Inspect the execution profiles of sampled requests.
+
+![Screenshot of the Profiler. Inspect the execution profiles of sampled requests.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/profiler-3aa6ca54.png)
+
+## Usage analysis
+
+Analyze user segmentation and retention.
+
+![Screenshot of usage analysis with user segmentation and retention.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/usage-analysis-f7bcbb7e.png)
+
+## Diagnostic search, for instance, data.
+
+Search and filter events such as requests, exceptions, dependency calls, log traces, and page views.
+
+![Screenshot of the search and filter events such as requests, exceptions, dependency calls, log traces, and page views.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/search-filter-7cc4a795.png)
+
+## Metrics Explorer for aggregated data
+
+Explore, filter, and segment aggregated data such as rates of requests, failures, exceptions, response times, and page load times.
+
+![Screenshot of the metrics and segment aggregated data such as rates of requests, failures, and exceptions, response times, and page load times.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/metrics-24659a11.png)
+
+## Dashboards
+
+Mash up data from multiple resources and share it with others. Great for multi-component applications and continuous display in the team room.
+
+![Screenshot of Dashboards from multiple resources great for multi-component applications and continuous display in the team room.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/dashboards-e8b9e1b6.png)
+
+## Live Metrics Stream
+
+When you deploy a new build, watch these near-real-time performance indicators to ensure everything works as expected.
+
+![Screenshot of Live Metrics Stream with near-real-time performance indicators.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/live-metrics-stream-3e84bf0a.png)
+
+## Analytics
+
+Answer challenging questions about your app's performance and usage by using this powerful query language.
+
+![Screenshot of Analytics showing the answer challenging questions about app's performance and usage by using this powerful query language.](https://learn.microsoft.com/en-us/training/wwl-azure/implement-tools-track-usage-flow/media/analytics-3ad60c81.png)
+
+# Implement Application Insights
+
+## Monitor
+
+Install Application Insights in your app, set up [availability web tests](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-monitor-web-app-availability), and:
+
+- Set up a [dashboard](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-dashboards) for your team room to keep an eye on load, responsiveness, and the performance of your dependencies, page loads, and AJAX calls.
+- Discover which are the slowest and most-failing requests.
+- Watch [Live Stream](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-live-stream) when you deploy a new release to know immediately about any degradation.
+
+## Detect, Diagnose
+
+If you receive an alert or discover a problem:
+
+- Assess how many users are affected.
+- Correlate failures with exceptions, dependency calls, and traces.
+- Examine profiler, snapshots, stack dumps, and trace logs.
+
+## Build, Measure, Learn
+
+[Measure the effectiveness](https://learn.microsoft.com/en-us/azure/application-insights/app-insights-usage-overview) of each new feature that you deploy.
+
+- Plan to measure how customers use new UX or business features.
+- Write custom telemetry into your code.
+- Base the next development cycle on hard evidence from your telemetry.
+
+## Get started
+
+Application Insights is one of the many services hosted within Microsoft Azure, and telemetry is sent there for analysis and presentation.
+
+So, before you do anything else, you'll need a subscription to [Microsoft Azure](https://azure.com/).
+
+It's free to sign up, and if you choose the basic [pricing plan](https://azure.microsoft.com/pricing/details/application-insights/) of Application Insights, there's no charge until your application has grown to have large usage.
+
+If your organization already has a subscription, they could add your Microsoft account to it.
+
+There are several ways to get started. Begin with whichever works best for you. You can add the others later
+
