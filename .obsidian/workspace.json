@@ -246,7 +246,7 @@
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 14
       }
     ],
     "direction": "vertical"
@@ -387,17 +387,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "21ba9cdcc0c9bdd7",
+  "active": "5b0f85019789d8a6",
   "lastOpenFiles": [
+    "fullstack/devdays/00_temarios por tecnologia.md",
+    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
+    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
+    "devops/05_bootcamps/az400/01_microsoft az-400 challenges.md",
     "devops/img/Pasted image 20241209083733.png",
     "Pasted image 20241015155606.png",
-    "devops/05_bootcamps/az400/01_microsoft az-400 challenges.md",
     "devops/img/Pasted image 20241209154817.png",
     "devops/img/Pasted image 20241209154722.png",
     "devops/img/Pasted image 20241209153940.png",
     "devops/img/Pasted image 20241209153754.png",
     "devops/img/Pasted image 20241209130705.png",
-    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
     "devops/img/Pasted image 20241209114757.png",
     "devops/img/Pasted image 20241209114551.png",
     "devops/img/Pasted image 20241209114434.png",
@@ -412,7 +414,6 @@
     "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
     "fullstack/devdays/03_contrataciones/03_fullstack job offers.md",
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
     "fullstack/devdays/02_portoflio/proyectos/06_ui_setup.md",
     "fullstack/devdays/02_portoflio/free apis.md",

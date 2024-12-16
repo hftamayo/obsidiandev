@@ -274,6 +274,27 @@ Backend:
 ## proyectos generales:
 ## junior :
 
+==actualizado a diciembre 2024: 
+
+### FrontEnd
+
+Beginner: Create a counter app, to-do list, or a simple weather app.
+
+Intermediate: Build a movie search app or a blog with API integration.
+
+Advanced: Develop an e-commerce app or a social media dashboard
+
+### BackEnd
+
+Beginner: Build a to-do list API.
+
+Intermediate: Develop a blog backend with user authentication.
+
+Advanced: Create a real-time chat application using Express and WebSockets.
+
+==/actualizado a diciembre 2024
+
+
 - countdown timer -> virtual DOM
 - Quiz App -> frontend
 - recipe App, notes, Todo y contactos, movies -> fullstack 101
