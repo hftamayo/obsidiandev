@@ -1,4 +1,30 @@
 
+Lenguajes mejores pagados: Scala, Go, Kotlin y Rust
+
+![[Pasted image 20241216095625.png]]
+
+![[Pasted image 20241216095847.png]]
+
+![[Pasted image 20241216095918.png]]
+
+![[Pasted image 20241216095959.png]]
+
+![[Pasted image 20241216100139.png]]
+
+
+![[Pasted image 20241216100211.png]]
+
+![[Pasted image 20241216100307.png]]
+
+![[Pasted image 20241216100333.png]]
+
+![[Pasted image 20241216100409.png]]
+
+
+
+Tipos de Tests: Unit, Integration, End to End, Performance
+
+
 ### Que separa a un junior de un semi senior: 
 - el numero de proyectos que ha codeado (sin importar si fueron proyectos de paga)
 - la habilidad para trabajar sin supervision y resolver sus dudas
