@@ -387,12 +387,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2409bcabe9880884",
+  "active": "835380a2075e5546",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/proyectos/08_graphql.md",
+    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
+    "fullstack/devdays/02_portoflio/01_beginners/01_reacttodo.md",
     "fullstack/devdays/02_portoflio/00_recursos",
     "Pasted image 20241216154239.png",
     "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
-    "fullstack/devdays/02_portoflio/01_beginners/01_reacttodo.md",
     "fullstack/devdays/02_portoflio/01_beginners",
     "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
     "Pasted image 20241216100409.png",
@@ -409,7 +411,6 @@
     "devops/05_bootcamps/az400/01_microsoft az-400 challenges.md",
     "devops/05_bootcamps/img",
     "devops/05_bootcamps/Untitled.md",
-    "fullstack/devdays/02_portoflio/proyectos/08_graphql.md",
     "devops/05_bootcamps/az400",
     "devops/05_bootcamps",
     "fullstack/devdays/02_portoflio/proyectos/07_planification del testing en el frontend.md",
@@ -433,7 +434,6 @@
     "fullstack/devdays/02_microservices/buddyman/img",
     "fullstack/devdays/02_microservices/buddyman/backend",
     "fullstack/devdays/02_microservices/buddyman/frontend",
-    "fullstack/devdays/02_microservices/buddyman",
-    "fullstack/devdays/02_microservices/img"
+    "fullstack/devdays/02_microservices/buddyman"
   ]
 }

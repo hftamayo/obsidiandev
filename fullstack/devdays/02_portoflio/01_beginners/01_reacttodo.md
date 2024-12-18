@@ -27,6 +27,8 @@
 * internacionalizacion
 * mejorar el menu contextual del usuario e incluir un avatar
 * aplicacion de Patrones de diseño
+* skeleton loading component para mientras diseño el dashboard
+* verificar si necesito tener algun patron previo a implementar dark mode
 
 
 ### DevOps:
