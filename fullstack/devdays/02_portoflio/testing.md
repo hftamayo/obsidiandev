@@ -1,3 +1,8 @@
+
+
+![[tipos de testing.gif]]
+
+
 ## Roadmap de testing:
 Una vez finalizada la fase de unit testing Copilot recomienda:
 

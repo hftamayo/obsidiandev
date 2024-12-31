@@ -57,7 +57,7 @@ ejecutar prisma generate:
 4. Demo de la ejecucion manual de la migracion:
 
 ```
-px dotenv -e .env-migrate -- npx prisma migrate dev --name init_models_version
+npx dotenv -e .env-migrate -- npx prisma migrate dev --name init_models_version
 
 npx prisma migrate
 ```
