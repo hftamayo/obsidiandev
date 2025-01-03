@@ -27,17 +27,17 @@
 ### metas 31 diciembre 2024:
 
 
-| #   | Proyecto            | 2024                                           | 2024                                         | 1Q 2025                                                     | 1Q 2025   | 2Q 2025 | 2Q2025    |
-| --- | ------------------- | ---------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------- | --------- | ------- | --------- |
-|     |                     | Meta                                           | Resultado                                    | Meta                                                        | Resultado | Meta    | Resultado |
-| 1   | Nodetodo            | test unitarios y de integracion finalizados    | Test unitarios finalizados, algunos con bugs |                                                             |           |         |           |
-| 2   | micro data layer    | pg y micro mongo en experimental               | pg finalizado                                |                                                             |           |         |           |
-| 3   | jsbtodo             | que corra y conecte sin problemas              |                                              |                                                             |           |         |           |
-| 4   | reactsotiria        | crud finalizado e integrado                    |                                              |                                                             |           |         |           |
-| 5   | reacttodo           | funcional y con tests de integracion y con e2e |                                              |                                                             |           |         |           |
-| 6   | android             | tutorial finalizado y app depurada             |                                              |                                                             |           |         |           |
-| 7   | laserants-ecommerce | deployar en el EKS                             |                                              |                                                             |           |         |           |
-| 8   | Bug Bounty          | Seleccionar 3 vulnerabilidades backend         |                                              | Desarrollar habilidades teoricas y practicas en XX, YY y ZZ |           |         |           |
+| #   | Proyecto            | 2024                                           | 2024                                                                                    | 1Q 2025                                                     | 1Q 2025   | 2Q 2025 | 2Q2025    |
+| --- | ------------------- | ---------------------------------------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------- | --------- | ------- | --------- |
+|     |                     | Meta                                           | Resultado                                                                               | Meta                                                        | Resultado | Meta    | Resultado |
+| 1   | Nodetodo            | test unitarios y de integracion finalizados    | Test unitarios finalizados, algunos con bugs                                            |                                                             |           |         |           |
+| 2   | micro data layer    | pg y micro mongo en experimental               | pg finalizado                                                                           |                                                             |           |         |           |
+| 3   | jsbtodo             | que corra y conecte sin problemas              | depurando login                                                                         |                                                             |           |         |           |
+| 4   | reactsotiria        | crud finalizado e integrado                    | working on navButtons which are parts of the crud footer                                |                                                             |           |         |           |
+| 5   | reacttodo           | funcional y con tests de integracion y con e2e | 0.1.0 en pre-release lista para expandirse en experimental y unstable                   |                                                             |           |         |           |
+| 6   | android             | tutorial finalizado y app depurada             |                                                                                         |                                                             |           |         |           |
+| 7   | laserants-ecommerce | deployar en el EKS                             | proceso delimitado y clarificado en bare metal, hay 2 pasos que se ejecutan manualmente |                                                             |           |         |           |
+| 8   | Bug Bounty          | Seleccionar 3 vulnerabilidades backend         | command injection,                                                                      | Desarrollar habilidades teoricas y practicas en XX, YY y ZZ |           |         |           |
 
 * Todos los proyectos de desarrollo deben contar con: CI/CD pipeline para implementacion on premise y en cloud
 
