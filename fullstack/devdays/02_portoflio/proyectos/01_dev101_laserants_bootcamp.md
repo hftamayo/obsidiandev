@@ -200,6 +200,36 @@ docker push <usuario>/<imagen>:<tag>
 - si la app ya esta en contenedor el requisito clave es que éste y el container de la BD esten en la misma red
 - 
 
+# DEPLOY DE CONTAINERS ON PREMISE:
+
+* descargar las imagenes de mi docker hub
+* pgecommerce si necesita el archivo .env para leer propiedades
+* en la version 0.0.1 el archivo .env va incluido en el codebase por tanto no necesita pasarle este parametro en el proceso de creacion de los contenedores
+* ambos contenedores deben estar en la misma red:
+
+![[Pasted image 20250103110724.png]]
+
+*  antes de correr el container ecomonorepo deben ejecutarse las migraciones y el data seeding, hay 2 scripts encargados de este en el package.json del apps/server:
+![[Pasted image 20250103111400.png]]
+
+==ejecutando el script migrate:
+
+![[Pasted image 20250103111510.png]]
+
+==ejecutando el script setup:
+
+- el container de pgecommerce debe estar ejecutandose
+- en el env file la variable DATALAYER_NAME debe estar en "localhost"
+![[Pasted image 20250103111728.png]]
+
+![[Pasted image 20250103111814.png]]
+
+- ==probando conectarme:
 
 
-# DEPLOY EN AZURE
+![[Pasted image 20250103111945.png]]
+
+
+# DEPLOY EN LA NUBE:
+
+siempre debe tenerse en cuenta que el data layer necesita la ejecucion de la migracion y el data seeding

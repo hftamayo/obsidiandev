@@ -237,12 +237,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/00_recursos/02_podcasts y blogs.md",
+                "file": "fullstack/devdays/02_portoflio/proyectos/01_dev101_laserants_bootcamp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_podcasts y blogs"
+              "title": "01_dev101_laserants_bootcamp"
             }
           }
         ],
@@ -389,21 +389,22 @@
   },
   "active": "835380a2075e5546",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/00_recursos/01_tools.md",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103110724.png",
     "Pasted image 20241015155606.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111400.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111510.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111728.png",
+    "fullstack/devdays/02_portoflio/proyectos/01_dev101_laserants_bootcamp.md",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111945.png",
+    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111814.png",
+    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+    "fullstack/devdays/02_portoflio/00_recursos/02_podcasts y blogs.md",
+    "fullstack/devdays/02_portoflio/00_recursos/01_tools.md",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216095625.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216095847.png",
     "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216095918.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216095959.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216100139.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216100211.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216100307.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216100333.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216100409.png",
     "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
     "fullstack/devdays/02_portoflio/reclutadores target.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
-    "fullstack/devdays/02_portoflio/00_recursos/02_podcasts y blogs.md",
     "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
     "fullstack/devdays/servicios, subscripciones y cursos.md",
     "fullstack/devdays/02_portoflio/microservices.md",
@@ -415,7 +416,6 @@
     "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
     "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
     "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
-    "fullstack/devdays/02_portoflio/proyectos/01_dev101_laserants_bootcamp.md",
     "fullstack/devdays/02_portoflio/proyectos/08_graphql.md",
     "fullstack/devdays/02_portoflio/01_beginners/01_reacttodo.md",
     "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
