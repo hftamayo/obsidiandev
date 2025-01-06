@@ -92,48 +92,6 @@
             }
           },
           {
-            "id": "92beff450f148d50",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/testing.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "testing"
-            }
-          },
-          {
-            "id": "35789288f25b0592",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_instalacion"
-            }
-          },
-          {
-            "id": "19dfb5078ff41766",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02_nodegraphqltodo"
-            }
-          },
-          {
             "id": "eacae91e7645dde4",
             "type": "leaf",
             "state": {
@@ -148,96 +106,12 @@
             }
           },
           {
-            "id": "0ee9e1c77775f5a1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00_portafolio profesional"
-            }
-          },
-          {
-            "id": "a1dae4760d41abee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00_skills y sample projects"
-            }
-          },
-          {
             "id": "07591d285ff0e52e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_perfil dev solicitado por el mercado"
-            }
-          },
-          {
-            "id": "96f889da2d7a1daf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/03_contrataciones/03_fullstack job offers.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03_fullstack job offers"
-            }
-          },
-          {
-            "id": "5b0f85019789d8a6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_roster de proyectos"
-            }
-          },
-          {
-            "id": "21ba9cdcc0c9bdd7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "devops/05_bootcamps/az400/01_microsoft az-400 challenges.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_microsoft az-400 challenges"
-            }
-          },
-          {
-            "id": "835380a2075e5546",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
+                "file": "fullstack/devdays/00_planificacion/00_horario.md",
                 "mode": "source",
                 "source": false
               },
@@ -246,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -387,52 +261,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "835380a2075e5546",
+  "active": "07591d285ff0e52e",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/proyectos/01_dev101_laserants_bootcamp.md",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103110724.png",
-    "Pasted image 20241015155606.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111400.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111510.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111728.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111945.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20250103111814.png",
-    "fullstack/devdays/02_portoflio/planificacion/00_horario.md",
-    "fullstack/devdays/02_portoflio/00_recursos/02_podcasts y blogs.md",
-    "fullstack/devdays/02_portoflio/00_recursos/01_tools.md",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216095625.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216095847.png",
-    "fullstack/devdays/02_portoflio/proyectos/img/Pasted image 20241216095918.png",
-    "fullstack/devdays/02_portoflio/planificacion/00_skills y sample projects.md",
-    "fullstack/devdays/02_portoflio/reclutadores target.md",
-    "fullstack/devdays/02_portoflio/buenas practicas for a dveloper.md",
-    "fullstack/devdays/servicios, subscripciones y cursos.md",
-    "fullstack/devdays/02_portoflio/microservices.md",
-    "fullstack/devdays/02_portoflio/planificacion/arquitecturas.md",
-    "fullstack/devdays/02_portoflio/testing.md",
-    "fullstack/devdays/07_despliegue/05_setting up de una llave SSH para conexion con mi server on premise.md",
-    "fullstack/devdays/00_temarios por tecnologia.md",
-    "fullstack/devdays/02_portoflio/planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_roadmaps.md",
-    "fullstack/devdays/02_portoflio/planificacion/00_portafolio profesional.md",
-    "fullstack/devdays/02_portoflio/proyectos/05_orm setup.md",
-    "fullstack/devdays/02_portoflio/proyectos/08_graphql.md",
-    "fullstack/devdays/02_portoflio/01_beginners/01_reacttodo.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
     "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
-    "fullstack/devdays/02_portoflio/00_recursos",
-    "fullstack/devdays/02_portoflio/01_beginners",
-    "fullstack/devdays/05_software/dev.md",
-    "devops/05_bootcamps/az400/01_microsoft az-400 challenges.md",
-    "devops/05_bootcamps/img",
-    "devops/05_bootcamps/Untitled.md",
-    "devops/05_bootcamps/az400",
-    "devops/05_bootcamps",
-    "fullstack/devdays/02_portoflio/proyectos/07_planification del testing en el frontend.md",
+    "devops/100_certificaciones.md",
+    "devops/99_devops_bestpractices.md",
+    "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
+    "devops/02_cloud_providers/azure/05_budget.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/golang/todo/01_instalacion.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/nodejs/02_nodegraphqltodo.md",
+    "fullstack/devdays/01_ejercicios/graphql_api/architecture/01_guidelines.md",
+    "fullstack/devdays/02_portoflio/00_recursos/03_backend_templates/01_backend_ boilerplate_setup.md",
+    "fullstack/devdays/00_planificacion/00_portafolio profesional.md",
+    "fullstack/devdays/00_planificacion/00_roadmaps.md",
+    "fullstack/devdays/02_portoflio/00_recursos/08_design patterns.md",
+    "fullstack/devdays/02_portoflio/00_recursos/03_backend_templates/03_orm setup.md",
+    "fullstack/devdays/02_portoflio/00_recursos/03_backend_templates/02_gestion de actualizaciones de los boilerplates.md",
+    "devsetup_enviro/07_backup del entorno.md",
+    "fullstack/devdays/Pasted image 20231127092753.png",
+    "fullstack/devdays/03_contrataciones/03_fullstack job offers.md",
+    "goprojects/5. chapter 2.md",
+    "goprojects/02_api_postgres_docker/02_ run a project.md",
+    "goprojects/02_api_postgres_docker/01_instalacion y setup.md",
+    "goprojects/6. neovim config.md",
+    "goprojects/7. kickstart neovim.md",
+    "goprojects/8_instalar el plugin de copilot en neovim.md",
     "README.md",
-    "fullstack/devdays/08_intentos de contratacion",
-    "fullstack/devdays/02_microservices/buddyman/img",
-    "fullstack/devdays/02_microservices/buddyman/backend",
-    "fullstack/devdays/02_microservices/buddyman/frontend",
-    "fullstack/devdays/02_microservices/buddyman"
+    "nodejs/10_cors en operaciones put y delete.md",
+    "nodejs/01_ setup de un api.md",
+    "fullstack/devdays/02_portoflio/00_recursos/kb",
+    "fullstack/devdays/02_portoflio/01_backend/portfolio/proyectos/01_beginner",
+    "fullstack/devdays/02_portoflio/01_backend/portfolio/proyectos",
+    "fullstack/devdays/02_portoflio/01_backend/portfolio",
+    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos",
+    "fullstack/devdays/02_portoflio/02_frontend/portfolio",
+    "fullstack/devdays/02_portoflio/00_recursos/04_frontend_templates",
+    "fullstack/devdays/02_portoflio/00_recursos/03_backend_templates",
+    "fullstack/devdays/02_portoflio/02_frontend",
+    "fullstack/devdays/02_portoflio/01_backend",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20250103110724.png",
+    "Pasted image 20241015155606.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20250103111400.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20250103111510.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20250103111728.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20250103111945.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20250103111814.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20241216095625.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20241216095847.png"
   ]
 }
