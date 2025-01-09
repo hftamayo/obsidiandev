@@ -11,3 +11,5 @@ TARGETS
 https://talently.tech/match
 https://www.smbssolutions.com/careers
 https://jobs.telusdigital.com/en_US/careers
+https://work.withforward.com/
+Empleos en Tec para industria automovil: https://www.hashlist.com/candidate

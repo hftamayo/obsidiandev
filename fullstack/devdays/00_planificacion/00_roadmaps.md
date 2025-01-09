@@ -301,3 +301,12 @@
 	- **Centralized Logging**: Implement centralized logging using tools like ELK Stack (Elasticsearch, Logstash, Kibana) or Prometheus.
 	- **Application Monitoring**: Use monitoring tools like Grafana, New Relic, or Datadog to track application performance and health.
 	
+
+## Golang backend engineer
+
+### Perfil competitivo
+- microservices communicated each other through grpc or protobuf
+- Trabajar con Go workspaces
+- implementar Service Oriented Architecture (SOA) usando GRPC and HTTP Layers
+- 
+- 

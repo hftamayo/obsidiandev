@@ -37,6 +37,8 @@
 | 6   | android                          | tutorial finalizado y app depurada             | proyecto restrasado                                                                     | aplicacion finalizada, funcionando y comprendida                                                                               |           |         |           |
 | 7   | laserants-ecommerce              | deployar en el EKS                             | proceso delimitado y clarificado en bare metal, hay 2 pasos que se ejecutan manualmente |                                                                                                                                |           |         |           |
 | 8   | Bug Bounty                       | Seleccionar 3 vulnerabilidades backend         | command injection, race conditions, business logic, sqli, nosqli                        | Desarrollar habilidades teoricas y practicas en command injection, race conditions, business logic, sqli, nosqli               |           |         |           |
+| 9   | goresttodo                       |                                                |                                                                                         | version graphql                                                                                                                |           |         |           |
+| 10  | nodegraphqltodo                  |                                                |                                                                                         | basado en la funcionalidad de nodetodo                                                                                         |           |         |           |
 
 * Todos los proyectos de desarrollo deben contar con: CI/CD pipeline para implementacion on premise y en cloud
 
@@ -46,7 +48,6 @@
 - jsbtodo: debuggear el proceso de signup y login
 - kotlintodo: finalizar el tutorial
 - laserants-ecommerce: deployar en EKS+github actions
-
 
 - Influencers infosec: farah hawa, john hammond, james kettle, jason haddix, lupin y su grupo, infosecau (shubs)
 
@@ -73,7 +74,6 @@
 ### Fines de Semana:
 
 Sabado:
-
 - Serverless y Lambda:  5 - 6:00
 - Golang API: 6:00 - 7:00
 - Cracking the interview: 17 - 18:45

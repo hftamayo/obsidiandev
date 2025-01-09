@@ -1,6 +1,11 @@
 
-lector e json para asegurarse de rutas por elemento: https://jsonpathfinder.com/
-sitio para generar svgs para personalizar el public.html: https://www.svgrepo.com/svg/530185/penguin
+- lector e json para asegurarse de rutas por elemento: https://jsonpathfinder.com/
+- sitio para generar svgs para personalizar el public.html: https://www.svgrepo.com/svg/530185/penguin
+
+
+### Backend repos y buenas practicas:
+- Node.JS best practices: https://github.com/goldbergyoni/nodebestpractices/blob/spanish-translation/README.spanish.md
+- 
 
 
 ## Mi entorno de trabajo como dev:
