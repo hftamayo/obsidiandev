@@ -24,6 +24,36 @@ Lenguajes mejores pagados: Scala, Go, Kotlin y Rust
 
 Tipos de Tests: Unit, Integration, End to End, Performance
 
+## Proyectos 2025
+
+### Enero - junio
+	- TODO: 
+		- modulos: signup, login, autorizacion cuentas de usuario, RBAC, dashboard, todos, indicadores de productividad, historico, reportes, utilerias (backup, restore, settings, healthcheck)
+	
+	- ReactTodo:
+		- Arquitectura: monolito
+		- Patron de diseño:  + monolito+ restful
+		- Testing: E2E
+		- Stack técnico: Redux toolkit, tailwind, react query
+		- Funciones: internacionalizacion, dark mode, health check
+	- NodeTodo
+		-
+		
+	- SOTIRIA:
+		- modulos: signup, login, autorizacion cuentas de usuario, RBAC, dashboard, categorias de recursos, enlaces, influencers, ubicacion, indicadores de productividad, historico, reportes, utilerias (backup, restore, settings, healthcheck, bitacora, rutina de errores)
+	- ReactSotiria:
+		- patron de diseño:
+		- stack tecnico: Redux toolkit, tailwind, react query, 
+	- NodeSotiria
+		- arquitectura: monolito
+		- Patron de diseño: + monolito + restful
+		- stack tecnico: prisma ORM+postgreSQL
+	- JsbTodo
+	- GoTodo:
+		- patro de diseño: + monolito + graphQL
+
+
+
 
 ### Que separa a un junior de un semi senior: 
 - el numero de proyectos que ha codeado (sin importar si fueron proyectos de paga)

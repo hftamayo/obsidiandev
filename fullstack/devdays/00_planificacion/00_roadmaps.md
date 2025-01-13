@@ -103,6 +103,18 @@
 ### ==Perfil competitivo:
 
 
+## Roadmap generico para backend:
+- Foundations
+- Advanced
+- logging and caching
+- building Rest APIs
+- GraphQL API
+- Testing
+- dockerize
+- deploy
+- best practices
+
+
 ## Node.JS
 
 ### ==Perfil minimo:

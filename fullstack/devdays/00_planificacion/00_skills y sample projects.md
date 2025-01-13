@@ -30,6 +30,7 @@
 - Scala: data engineering
 - RoR: back office
 - Go: back office, facturacion electronica, cualquier cosa escalable (core de microservicios)
+- ejercicios en general para backend: https://projects.masteringbackend.com/projects
 
 
 ## ==Perfiles de lenguajes de programacion targets segun Jetbrains Ecosystem

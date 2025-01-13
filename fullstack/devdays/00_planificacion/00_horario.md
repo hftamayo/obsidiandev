@@ -1,6 +1,27 @@
 
 ## 2025:
 
+### Enero:
+- examen github foundations
+- curso de open tofu: https://trainingportal.linuxfoundation.org/learn/course/getting-started-with-opentofu-lfel1009/course-introduction/course-information
+- bootcamp azure codigo facilito
+- bootcamp consiti
+- curso free de go con goland: https://www.bytesizego.com/mastering-go-with-goland?subscriber=4dd04721d38a3f1e88672bee7f606f0d967e6af54efe6280642eefd78afb7228
+- 
+
+==Pendiente de leer Enero:
+- https://geovannycode.com/en/hexagonal-architecture-flexible-software/
+- https://geovannycode.com/integracion-de-stripe-con-spring-boot-y-vaadin/
+- https://dev.to/1shubham7/step-by-step-guide-to-implementing-jwt-authentication-in-go-golang-2e24
+- https://vladmihalcea.com/the-best-way-to-lazy-load-entity-attributes-using-jpa-and-hibernate/
+- https://vladmihalcea.com/spring-jpa-dto-projection/
+- https://konradreiche.com/blog/two-common-go-interface-misuses/
+- https://curiosum.com/blog/bringing-solid-to-elixir
+- https://dev.to/indrayyana/building-a-restful-api-with-go-fiber-an-express-inspired-boilerplate-3713
+- 
+
+
+
 ### entrenar al algoritmo de linkedin para mostrar preferencias en las siguientes tecnologías:
 
 - scala
