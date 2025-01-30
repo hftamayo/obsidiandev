@@ -48,12 +48,24 @@ Tipos de Tests: Unit, Integration, End to End, Performance
 		- arquitectura: monolito
 		- Patron de diseño: + monolito + restful
 		- stack tecnico: prisma ORM+postgreSQL
+		- patrones: decorator+CQRS+
+		- features: caching, load balancing, profiling, monitoring, logging (en esto aplica los patrones antes descritos)
 	- JsbTodo
 	- GoTodo:
 		- patro de diseño: + monolito + graphQL
-
-
-
+	- DEGALLADITAS.COM (NOMBRE POR DEFINIR):
+		- Servicios a prestar: paseo de perros, baño de perros, llevarlos a la veterinaria, lavado de carros a domicilio, ir al mercado, jardineria, fontaneria, pintura, fletes a emprendedores, compañia a ancianos
+		- Componentes del proyecto:
+			- Aplicacion movil (React Native)
+			- Interfaz web para clientes (Microfrontend+React.JS)
+			- Microservicios que gestionan los servicios de clientes (Go, Node.JS )
+			- BackOffice (JSB)
+	- YOOP.COM:
+		- Servicios a prestar: encuestas, sondeos, opiniones de productos y servicios: medicos, farmacias, restaurantes
+		- Donde comer basados a un presupuesto
+		- Componentes del proyecto:
+			- Aplicacion movil nativa: Kotlin, IOS
+			- 
 
 ### Que separa a un junior de un semi senior: 
 - el numero de proyectos que ha codeado (sin importar si fueron proyectos de paga)
@@ -367,6 +379,19 @@ Advanced: Create a real-time chat application using Express and WebSockets.
 - chatbot
 - App de fidelidad de clientes tipo puntos leal o de las gasolineras puma -> Kotlin
 - App del super selectos -> kotlin
+- E-commerce con Pasarela de pago: comision por transaccion, facilidad de integracion con plataformas de comercio electronico, preferencias de los clientes, velocidad en el procesamiento de pagos, seguridad, transacciones de manera directa (con tarjetas bancarias) e indirecta con XPay (a traves de plataformas como Google Pay, Amazon Pay, Apple Pay)
+
+![[Pasted image 20250130153915.png]]
+
+![[Pasted image 20250130153957.png]]
+
+![[Pasted image 20250130154037.png]]
+
+Referencias:
+https://compartiendoconocimiento.elmundo.es/soluciones-digitales-mas-alla-del-carrito-de-la-compra-para-impulsar-el-exito-de-tu-empresa
+
+https://compartiendoconocimiento.elmundo.es/1-de-cada-3-consumidores-se-ha-sentido-frustrado-durante-su-proceso-de-compra-online
+
 
 ## proyectos java:
 

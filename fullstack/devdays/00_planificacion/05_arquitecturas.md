@@ -134,3 +134,13 @@ By following these steps and concepts, you can align your project with Domain-Dr
 ==ejecutar un proyecto End to End:
 
 ![[ship_to_prod01.png]]![[ship_to_prod02.png]]
+
+==principales arquitecturas de microservicios:
+
+
+![[microservices.gif]]
+
+principal devops tools:
+
+![[most popular devops tools.gif]]
+

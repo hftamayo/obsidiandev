@@ -2,7 +2,7 @@
 ## 2025:
 
 ### Enero:
-- examen github foundations
+- ~~examen github foundations
 - curso de open tofu: https://trainingportal.linuxfoundation.org/learn/course/getting-started-with-opentofu-lfel1009/course-introduction/course-information
 - bootcamp azure codigo facilito
 - bootcamp consiti
