@@ -57,3 +57,48 @@ por cada repo existente debo hacer los siguientes cambios:
 
 ![[Pasted image 20240516082655.png]]
 
+
+## ===AGREGANDO UNA PUBLICA A MI GITHUB
+
+![[Pasted image 20250205150611.png]]
+
+![[Pasted image 20250205150639.png]]
+
+
+## ==SETUP DE 2 GITHUB IDENTITIES EN EL MISMO OS
+
+==PASO 1: Crear un archivo config en el directorio .ssh
+
+![[Pasted image 20250205151449.png]]
+
+==PASO 2: Clonando un repo usando la segunda identidad:
+
+![[Pasted image 20250205152110.png]]
+
+==PASO 3: setup del repo con la identidad a utilizar
+
+![[Pasted image 20250205152308.png]]
+
+![[Pasted image 20250205152600.png]]
+
+==PASO 3: dosificando el $HOME/.gitconfig para manejar 2 identidades:
+
+cuando tengo una identidad:
+
+![[Pasted image 20250205152954.png]]
+
+teniendo dos identidades:
+
+![[Pasted image 20250205153051.png]]
+
+==ahora, en cada repo debe setear que identidad necesito gestionar, este es un ejemplo:
+
+`cd /path/to/your/repository; git config user.name "Herbert Fernandez Tamayo"; git config user.email "herbert.fernandez@ues.edu.sv"`
+   
+ ==asi mismo, para clonar un repo ==:
+
+Esto esta determinado por el archivo .ssh/config
+
+`git clone git@github.com-htues:<repository-name>.git
+cd <repository-name>`
+
