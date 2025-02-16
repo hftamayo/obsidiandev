@@ -139,12 +139,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
+                "file": "fullstack/devdays/00_planificacion/03_sotiria.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_set up a SSH Key as Github's auth method"
+              "title": "03_sotiria"
             }
           }
         ],
@@ -292,9 +292,11 @@
   },
   "active": "ca82070b72098610",
   "lastOpenFiles": [
+    "fullstack/devdays/00_planificacion/01_roster de proyectos.md",
+    "fullstack/devdays/00_planificacion/03_sotiria.md",
+    "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
     "devsetup_enviro/images/Pasted image 20250205151449.png",
     "Pasted image 20250124160355.png",
-    "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
     "devsetup_enviro/images/Pasted image 20250205153051.png",
     "devsetup_enviro/images/Pasted image 20250205152954.png",
     "devsetup_enviro/images/Pasted image 20250205152600.png",
@@ -302,7 +304,6 @@
     "devsetup_enviro/images/Pasted image 20250205152110.png",
     "devsetup_enviro/images/Pasted image 20250205150611.png",
     "devsetup_enviro/images/Pasted image 20250205150639.png",
-    "fullstack/devdays/00_planificacion/01_roster de proyectos.md",
     "devops/03_comandos/03_terraform.md",
     "devops/03_comandos/02_Docker.md",
     "devops/03_comandos/01_kubernetes.md",
