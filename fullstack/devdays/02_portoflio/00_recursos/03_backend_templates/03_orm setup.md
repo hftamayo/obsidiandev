@@ -10,11 +10,21 @@ npx prisma init --datasource-provider mysql
 
 ![[Pasted image 20241120102531.png]]
 
+Si quiero usar como data source postgres:
+
+![[Pasted image 20250220150632.png]]
+
+![[Pasted image 20250220150810.png]]
+
+
 Es mejor no mover la carpeta PRISMA adentro de SRC.
 
 ==Paso 2:
 
 agregas los models en el schema.prisma
+
+
+
 
 ==Paso 3:
 
