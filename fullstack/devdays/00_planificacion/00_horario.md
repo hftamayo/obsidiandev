@@ -91,9 +91,9 @@
 7. Infosec:
 	1. Lunes a Jueves: 
 		1. 18:15 - 18:35 -> APISec UNi
-		2. 18:45-19:30 -> Offensive
+		2. 18:45-19:30 -> Offensive / defensive
 	2. 
-	3. Viernes: maldev: tutoriales de ricardo narvaja
+	3. Viernes: maldev: tutoriales de ricardo narvaja ode cerberus
 
 ### Fines de Semana:
 
