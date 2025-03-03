@@ -4,8 +4,6 @@
 ### Enero:
 - ~~examen github foundations
 - curso de open tofu: https://trainingportal.linuxfoundation.org/learn/course/getting-started-with-opentofu-lfel1009/course-introduction/course-information
-- bootcamp azure codigo facilito
-- bootcamp consiti
 - curso free de go con goland: https://www.bytesizego.com/mastering-go-with-goland?subscriber=4dd04721d38a3f1e88672bee7f606f0d967e6af54efe6280642eefd78afb7228
 - 
 
@@ -74,38 +72,43 @@
 
 ### Lunes a Viernes: 
 
-1. Todo (monolito):
-	1. FrontEnd: 7:30-8:20
-	2. BackEnd: 8:30-9:20
-2. ReactSotiria (microservicios):
-	1. FrontEnd: 9:30-10:20
-	2. BackEnd:10:30-11:20
-3. Java:
-	1. JsbTodo: 11:30-12:20
+1. Todo (monolito+Rest):
+	1. FrontEnd: 7:45-8:30
+	2. BackEnd: 8:40-9:25
+2. JsbTodo (monolito+Rest):
+	1. BackEnd: 9:35 - 10:20
+3. ReactSotiria (monolito+Rest):
+	1. FrontEnd: 10:40-11:25
+	2. BackEnd:11:35-12:20
 4. DevOps:
-	1. 12:30-13:20
-	2. 14:00-14:50
-5. Kotlin:
-	1. 15:00-16:00
+	1. AZ-400: 12:30-13:15
+	2. almuerzo
+	3. practica: 13:45-14:30
+5. DFIR: tryhackme path: 14:35-15:35
+6. Kotlin:
+	1. 15:45-16:00
 
-6. Infosec:
-	1. Lunes a Jueves: 18:45 - 19:30 -> web pentesting
-	2. Viernes: maldev: tutoriales de ricardo narvaja
+7. Infosec:
+	1. Lunes a Jueves: 
+		1. 18:15 - 18:35 -> APISec UNi
+		2. 18:45-19:30 -> Offensive
+	2. 
+	3. Viernes: maldev: tutoriales de ricardo narvaja
 
 ### Fines de Semana:
 
 Sabado:
+- Golang: 4:15-5:00
 - Serverless y Lambda:  5 - 6:00
-- Golang API: 6:00 - 7:00
+
 - Cracking the interview: 17 - 18:45
-- web pentesting: 18:45-19:45
+- DFIR tryhackme path: 18:45-19:45
 
 Domingo:
-- Serverless: 4:30 - 5:30
-- Golang API: 6:00 - 7:00
-- Cracking the interview: 5:45-6:30
-- web pentesting: 18:45- 19:45
+- Golang: 4:15 - 5:00
+- Lectura libre: despues del almuerzo
+- Serverless: y Lambda: 17:45 - 18:30
+- APISec Uni: 18:45 - 19:30
 
 Pendientes:
 * scala, RoR, 
-* blue team
