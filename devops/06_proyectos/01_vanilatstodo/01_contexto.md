@@ -105,3 +105,70 @@ You don't need to create a Terraform container locally. GitHub Actions will:
 - unstable: testing life cycle
 - staging: CI/CD y DevSecOps
 - production: stable version
+
+## Estableciendo terraform state management:
+* agregue 2 archivos: output y backend.tf
+
+## Sinergia entre las cuentas hftamayo y htues:
+- en la fase de escritura del codigo y archivos devops todos son creados desde hftamayo/vanillatstodo.git
+- la ejecucion del workflow devops será desde htues debido a que tiene la vinculacion con el student pack
+- si hay necesidad de cambios se mantendrá ese flujo para tener sincronizados ambos
+
+## Actualizar htues/vanillatstodo con cambios desde hftamayo/vanillatstodo
+
+* cambios en fase de desarrollo son desde experimental siempre:
+
+![[Pasted image 20250313134746.png]]
+
+![[Pasted image 20250313134902.png]]
+
+==borrando los cambios locales en favor del repo actualizado:
+
+![[Pasted image 20250313135546.png]]
+
+==verificando si tengo los commit más recientes:
+
+![[Pasted image 20250313135712.png]]
+
+![[Pasted image 20250313140012.png]]
+
+verificando en la interface web:
+
+![[Pasted image 20250313140055.png]]
+
+en efecto este es el ultimo cambio desde hftamayo
+
+resumen de los comandos:
+```
+ 2010  git remote add upstream git@github.com:hftamayo/vanillatstodo.git
+ 2011  git fetch upstream 
+ 
+ git remote -v
+
+2025  git checkout main
+ 2026  git branch -D experimental
+ 2027  git checkout -b experimental upstream/experimental
+ 2028  git checkout -vv
+ 2029  clear
+ 2030  git branch -vv
+ 2031  git status
+ 2032  git push -u origin experimental
+
+```
+
+
+para futuras actualizaciones ya me qyueda sincronizado el hftamayo/vanillatstodo:
+
+![[Pasted image 20250313140427.png]]
+
+## descargar actualizaciones de upstream
+
+```
+git checkout experimental
+git branch -vv
+git fetch upstream
+git branch
+git merge upstream/experimental
+git push -u origin experimental
+```
+
