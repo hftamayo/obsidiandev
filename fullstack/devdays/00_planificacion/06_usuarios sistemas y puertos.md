@@ -27,3 +27,13 @@
 - administrator
 - supervisor
 - finaluser
+
+## Puertos:
+containers:
+- 8001-8010: golang
+- 8011-8020: jsbtodo
+- 8021-8030: node
+- 8031-8040: django
+- 8041-8050: react
+- 3300 - 3310: mysql
+- 5400 - 5410: postgres

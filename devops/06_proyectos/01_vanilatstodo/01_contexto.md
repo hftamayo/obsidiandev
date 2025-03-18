@@ -169,6 +169,6 @@ git branch -vv
 git fetch upstream
 git branch
 git merge upstream/experimental
-git push -u origin experimental
+git push origin experimental
 ```
 
