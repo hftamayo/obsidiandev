@@ -1,4 +1,6 @@
 
+###  ==Node.JS + MVC project:
+
 ==1. **High Priority Testing**
 
 - **Services**: Business logic
@@ -116,3 +118,84 @@ afterAll(async () => {
 });
 ```
 
+
+###  ==JSB + multilayer architecture
+
+#### Highest priority:
+- serviceimpl
+- controller
+- security/auth flow
+
+#### Medium:
+- repositoy classes
+
+#### low priority:
+- mapper classes
+
+#### skip testing:
+- entities
+- dtos
+- constants/enums
+
+## ==Integrationg testing
+
+En este punto la idea es usar escenarios lo más cercanos a produccion, si estoy trabajando en bare metal esto puede ser complicado de lograr
+
+### 3. Docker for Testing
+Yes, using Docker for testing is excellent because:
+- Consistent environment across all developers
+- Matches CI/CD pipeline environment
+- Isolates dependencies
+- Easy to specify exact versions needed
+
+Example Docker test setup:
+
+````dockerfile
+FROM node:20.11-alpine
+
+WORKDIR /app
+
+# Install required dependencies including OpenSSL 3
+RUN apk add --no-cache openssl3 openssl3-dev
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+CMD ["npm", "test"]
+````
+
+Add script to package.json:
+````json
+{
+  "scripts": {
+    "test:docker": "docker build -t nodetodo-test -f Dockerfile.test . && docker run nodetodo-test"
+  }
+}
+````
+
+### 4. Real-World Development Environments
+Common development setups include:
+1. Local development with Docker
+   - Consistent environments
+   - Easy dependency management
+   - Matches production
+
+2. Development containers in VS Code
+   - Full development environment in container
+   - Extensions and tools included
+   - Perfect for team standardization
+
+3. Remote development
+   - Cloud-based development environments
+   - GitHub Codespaces
+   - GitPod
+
+For your current situation, I recommend:
+1. Start with unit tests that don't need MongoDB Memory Server
+2. Use Docker for integration tests that need MongoDB
+3. Plan the OpenSSL upgrade for later
+4. Set up CI/CD pipeline with Docker to ensure consistent testing
+
+Would you like me to show specific examples of unit tests you can start with or Docker configuration for your integration tests?
