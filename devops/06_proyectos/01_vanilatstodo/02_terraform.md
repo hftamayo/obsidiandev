@@ -5,6 +5,39 @@
 4. informacion sobre estos elementos estan en mi repo de devopssources
 5. detalle sobre los comandos de terraform:
 
+
+## Validar codigo terraform:
+
+1. tengo una imagen de terraform en mi sistema
+
+![[Pasted image 20250326133259.png]]
+
+2.  en el codebase donde tenga mis terraform, especificamente en el ROOTDIR, debo levantar el container pues tiene un punto de montaje:
+
+```
+docker run -d --name tfdev -v $(pwd):/workspace -v ~/.aws:/root/.aws:ro hftamayo/terraformdev:0.1.0
+```
+
+![[Pasted image 20250326134025.png]]
+
+3.  leer el contenido del dir workspace montado en el contenedor
+
+```
+docker exec tfdev ls -la /workspace
+```
+
+![[Pasted image 20250326134209.png]]
+
+4. Desde el repo de devops ejecuto el script para formatear el codigo:
+
+![[Pasted image 20250326134626.png]]
+
+5. el codigo es actualizado en bare metal y listo para hacer un commit
+
+![[Pasted image 20250326134718.png]]
+
+6. Despues de esto el contenedor puede ser destruido
+
 # Understanding Terraform Command Purposes
 
 Let's clarify what each command does:

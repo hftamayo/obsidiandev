@@ -161,7 +161,7 @@ para futuras actualizaciones ya me qyueda sincronizado el hftamayo/vanillatstodo
 
 ![[Pasted image 20250313140427.png]]
 
-## descargar actualizaciones de upstream
+## descargar actualizaciones de upstream:
 
 ```
 git checkout experimental
@@ -170,5 +170,24 @@ git fetch upstream
 git branch
 git merge upstream/experimental
 git push origin experimental
+```
+
+### metodo alternativo:
+
+```
+git fetch upstream experimental
+git rebase upstream/experimental
+git status
+git push origin experimental
+```
+
+## por si la riego con algun procedimiento y necesito hacer rebase con remote:
+
+```
+git checkout main
+git fetch origin
+git checkout experimental
+git reset --hard origin/experimental
+git status
 ```
 
