@@ -191,3 +191,34 @@ git reset --hard origin/experimental
 git status
 ```
 
+## por si necesito sincronizar las ramas de mi repo
+
+el flujo de actualizacion es el siguiente:
+
+- upstream/experimental -> experimental
+- experimental -> unstable
+- unstable -> staging
+
+por algun error puedo toparme con esto:
+
+![[Pasted image 20250327115500.png]]
+
+==lo mejor es sincronizar local y luego subir los cambios:
+
+```
+- git checkout unstable
+- git merge experimental
+- corrigo los conflictos
+- git status
+- git add .
+- git commit -m "merging from experimental"
+- git push origin unstable
+```
+
+
+![[Pasted image 20250327115655.png]]
+
+![[Pasted image 20250327120158.png]]
+
+![[Pasted image 20250327120241.png]]
+
