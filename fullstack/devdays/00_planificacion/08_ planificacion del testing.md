@@ -199,3 +199,116 @@ For your current situation, I recommend:
 4. Set up CI/CD pipeline with Docker to ensure consistent testing
 
 Would you like me to show specific examples of unit tests you can start with or Docker configuration for your integration tests?
+
+## ==GoRestTodo + Hexagonal Architecture
+
+Here's a recommended testing priority structure for your Go REST API project:
+
+### Highest Priority
+1. **Repository Implementations** (Critical business logic)
+```
+api/v1/task/task_repoimpl.go
+api/v1/user/user_repoimpl.go
+```
+
+2. **Handlers** (Request/Response handling)
+```
+api/v1/task/task_handler.go
+api/v1/user/user_handler.go
+```
+
+3. **Middleware** (Cross-cutting concerns)
+```
+pkg/middleware/rate_limiter.go
+pkg/middleware/auth.go
+pkg/middleware/logging.go
+```
+
+### Medium Priority
+1. **Configuration** (Infrastructure setup)
+```
+pkg/config/db.go
+pkg/config/env.go
+pkg/config/errorlog.go
+pkg/config/cache.go
+```
+
+2. **Repository Interfaces** (Contracts)
+```
+api/v1/task/task_repository.go
+api/v1/user/user_repository.go
+```
+
+### Additional Components to Test (Missing from your list)
+
+1. **Services** (High Priority - Business Logic)
+```
+api/v1/task/task_service.go
+api/v1/user/user_service.go
+```
+
+2. **Models** (Medium Priority - Data Structures)
+```
+api/v1/models/task.go
+api/v1/models/user.go
+```
+
+3. **Utils** (Medium Priority - Shared Functions)
+```
+pkg/utils/cache.go
+pkg/utils/constants.go
+pkg/utils/rate_limiter.go
+```
+
+### Testing Strategy Recommendations:
+
+1. **Unit Tests**
+- Repository implementations
+- Handlers
+- Services
+- Middleware
+- Utils
+
+2. **Integration Tests**
+- Database connections
+- Redis operations
+- API endpoints
+
+3. **End-to-End Tests**
+- Complete API workflows
+- Rate limiting behavior
+- Error logging functionality
+
+4. **Performance Tests**
+- Rate limiter behavior
+- Cache performance
+- Database query performance
+
+### Test File Structure:
+```
+├── api
+│   └── v1
+│       ├── task
+│       │   ├── task_repoimpl_test.go
+│       │   ├── task_handler_test.go
+│       │   └── task_service_test.go
+│       └── user
+│           ├── user_repoimpl_test.go
+│           ├── user_handler_test.go
+│           └── user_service_test.go
+├── pkg
+│   ├── middleware
+│   │   ├── rate_limiter_test.go
+│   │   └── auth_test.go
+│   └── config
+│       ├── db_test.go
+│       └── env_test.go
+```
+
+### Tools to Consider:
+- `testing` package for unit tests
+- `testify` for assertions and mocking
+- `go-sqlmock` for database testing
+- `miniredis` for Redis testing
+- `httptest` for HTTP handler testing
+- 

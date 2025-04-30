@@ -1,4 +1,17 @@
 
+## Mayo 2025:
+### Backend:
+* JSB y NodeJS: Testing, puesta a punto y migrar hacia graphQL
+* Golang: testing, reporte a PDF y XLS, microservicio de autenticacion 
+
+### Frontend:
+* Testing, terminar el settings
+* microfrontend de autenticacion
+
+## Abril 2025:
+- backend: unit testing + graphql
+- frontend: finalizar integracion
+
 ## 2025:
 
 ### Enero:
@@ -114,43 +127,3 @@ Pendientes:
 * scala, RoR, 
 
 
-# Checking for Resources to Clean Up
-
-Let's verify what resources were created and clean them up:
-
-1. **Check EKS Resources**
-```bash
-# Check EKS clusters
-aws eks list-clusters --region us-east-2
-
-# If cluster exists, delete it
-aws eks delete-cluster --name vanillatstodo-cluster --region us-east-2
-```
-
-2. **Check VPC Resources**
-```bash
-# List VPCs with vanillatstodo tag
-aws ec2 describe-vpcs --filters "Name=tag:Project,Values=vanillatstodo" --region us-east-2
-
-# Get subnet IDs
-aws ec2 describe-subnets --filters "Name=vpc-id,Values=<vpc-id>" --region us-east-2
-```
-
-3. **Check State Management Resources**
-```bash
-# List S3 buckets
-aws s3 ls | grep vanillatstodo
-
-# Check DynamoDB tables
-aws dynamodb list-tables --region us-east-2 | grep vanillatstodo
-```
-
-4. **Clean Up Using Infrastructure Manager**
-```bash
-# Run cleanup script
-./devops/scripts/infra-manager.sh clean
-```
-
-Since the EKS node group creation was completed before the error, we should ensure all associated resources are properly cleaned up before trying again.
-
-Would you like me to show you a verification script to check if all resources are properly cleaned up?

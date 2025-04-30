@@ -95,3 +95,37 @@ aws iam delete-user --user-name hftamayodevops
 
 ## Policies:
 vanillatstodo_terraform: contiene los permisos iam necesarios para infra que terraform requiere para funcionar
+
+
+Este fue el costo de la primera prueba:
+![[Pasted image 20250407111952.png]]
+
+### Expected infra:
+
+### Expected Resources:
+
+1. **State Layer**:
+	- S3 Bucket for state
+    - DynamoDB table for locking
+    
+2. **Network Layer**:
+    - VPC
+    - 2 Public Subnets
+    - Internet Gateway
+    - Route Tables
+    - Security Groups
+    -
+3. **EKS Layer**:
+    - EKS Cluster
+    - IAM Roles and Policies
+    - Node Groups
+    - CloudWatch Logging
+
+
+==comentarios:
+
+- asegurarse que el script de destroy elimina toda la infra creada
+- haber creado el primer deploy existoso en viernes me genero cargos de 3$ ern el fin de semana pues no tuve tiempo de verificar que todo hubiese quedado destruido
+- levantar un deploy y en el mismo dia destruirlo
+- generé casi 4$ entre descuido de monitoreo y objetos que olvide borrarlos
+- antes de hacer un deploy planificar qué y cuantos objetos espero deployar para borrarlos de manera efectiva
