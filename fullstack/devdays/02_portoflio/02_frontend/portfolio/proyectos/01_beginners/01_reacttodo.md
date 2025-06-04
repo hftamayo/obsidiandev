@@ -2,7 +2,24 @@
 ![[Pasted image 20241216154239.png]]
 
 ## Ficha Técnica:
-* Version: 0.1.0
+### Version 0.1.1
+- fecha: 06-04-2025
+- caracteristicas:
+	- rate limiting
+	- cache validation/invalidation
+	- pagination
+	- race conditions monitoring and error handling
+	- Component optimization
+	- improve in api request
+	- prefetching
+	- edge cases but needs more details
+- Future improvements:
+	1. **Monitoring**: Add telemetry to track how often rate limits are hit in production
+	2. **Optimistic Updates**: Once your foundation is stable, add optimistic UI updates
+	3. **Backend Enhancements**: Further optimize your backend caching strategy
+	4. **Progressive Enhancement**: Add offline support with Service Workers
+	
+### Version: 0.0.1
 * fecha: 12-16-2024
 * Stack técnico:
 
