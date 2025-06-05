@@ -1,6 +1,32 @@
 
 ## Backend:
 
+Objetivo de los proyectos backend:
+
+- good security
+- it’s maintainable 
+- it’s scalable 
+- it’s deployable 
+
+Race conditions: restablecer password y cuentas, OTP y login workflow
+
+hacer un endpoint para activarUsuario y para bloquearlo
+
+- agregar un captcha durante login
+- activacion de cuentas usando correo electronico y loggeo enviando codigo al correo
+- aplicar el uso de strype
+
+Error Handling:
+Implement exception handling to gracefully handle potential errors during authentication or registration.
+Return appropriate error responses with informative messages (e.g., 400 for invalid input, 401 for authentication failure, 500 for server-side errors).
+Input Validation:
+Validate user input data in both login and register methods to prevent invalid data from entering your system.
+Use Spring's validation framework or manual validation techniques.
+Security Considerations:
+Ensure proper password hashing and storage mechanisms in your AuthService.
+Consider input sanitization and additional security measures to mitigate vulnerabilities.
+CSRF Protection:
+If applicable, implement CSRF protection for the /register endpoint, especially if accepting form-based submissions.
 ## 1. Pagination Support
 
 - **Offset-Based Pagination**: Support for `page` and `limit` parameters

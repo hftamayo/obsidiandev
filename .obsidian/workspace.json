@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/00_caracteristicas.md",
+                "file": "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/02_goresttodo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_caracteristicas"
+              "title": "02_goresttodo"
             }
           }
         ],
@@ -264,13 +264,15 @@
   },
   "active": "8f416dd85119d770",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/03_nodesotiria.md",
+    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/04_nodetodo.md",
     "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/02_goresttodo.md",
     "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/00_caracteristicas.md",
+    "fullstack/devdays/00_planificacion/00_horario.md",
     "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/01_reacttodo.md",
     "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/03_tanstack query vs redux.md",
     "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/02_healthCheck routine.md",
     "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/01_optimizacion y memorizacion.md",
-    "fullstack/devdays/00_planificacion/00_horario.md",
     "fullstack/devdays/02_portoflio/00_aplicaciones.md",
     "fullstack/devdays/01_architectura/backend/01_restful.md",
     "fullstack/devdays/01_ejercicios/backend_rest/nodejs/microrpt/01_setup and first steps.md",
@@ -290,8 +292,6 @@
     "fullstack/devdays/01_ejercicios/frontend/ts/yarn_todo/01_instalacion y codificacion.md",
     "fullstack/devdays/01_ejercicios/frontend/ts/react-18.md",
     "fullstack/devdays/01_ejercicios/frontend/ts/vanilla-ts todo.md",
-    "fullstack/devdays/01_ejercicios/frontend/APIs de prueba.md",
-    "fullstack/devdays/01_ejercicios/frontend/zustand/code testing.md",
     "Pasted image 20250407111952.png",
     "Pasted image 20250327151102.png",
     "Pasted image 20250327150529.png",

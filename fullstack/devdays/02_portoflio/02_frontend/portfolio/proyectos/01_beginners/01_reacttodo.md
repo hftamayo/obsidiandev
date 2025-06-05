@@ -2,7 +2,7 @@
 ![[Pasted image 20241216154239.png]]
 
 ## Ficha Técnica:
-### Version 0.1.1
+### Version 0.1.2
 - fecha: 06-04-2025
 - caracteristicas:
 	- rate limiting

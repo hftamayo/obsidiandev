@@ -1,66 +1,55 @@
 
 ## Ordernar
 
-nodetodo: MVC arch, ready for testing
+
 nodesotiria: decorators+CQRS pattern, early development stage
 
-reactodo: features arch, ready for testing
 reactsotiria: crud para soportar de manera generica cualquier domain, necesita cliean architecture
 
-javaspringtodo: multi layer arch, ready for testing
-
-
-Objetivo de los proyectos backend:
-
-- good security
-- it’s maintainable 
-- it’s scalable 
-- it’s deployable 
-
-Race conditions: restablecer password y cuentas, OTP y login workflow
-
-hacer un endpoint para activarUsuario y para bloquearlo
-
-- agregar un captcha durante login
-- activacion de cuentas usando correo electronico y loggeo enviando codigo al correo
-- aplicar el uso de strype
-
-Recommendations:
-
-Error Handling:
-Implement exception handling to gracefully handle potential errors during authentication or registration.
-Return appropriate error responses with informative messages (e.g., 400 for invalid input, 401 for authentication failure, 500 for server-side errors).
-Input Validation:
-Validate user input data in both login and register methods to prevent invalid data from entering your system.
-Use Spring's validation framework or manual validation techniques.
-Security Considerations:
-Ensure proper password hashing and storage mechanisms in your AuthService.
-Consider input sanitization and additional security measures to mitigate vulnerabilities.
-CSRF Protection:
-If applicable, implement CSRF protection for the /register endpoint, especially if accepting form-based submissions.
-Testing:
-Write comprehensive unit tests to verify the controller's behavior under various scenarios, including both successful and unsuccessful login and registration attempts.
-Additional Considerations:
-
 Logging: Consider logging essential events (successful logins, registration attempts, errors) for auditing and troubleshooting purposes.
-Documentation: Clearly document the expected request and response formats for each endpoint to guide API consumers.
 
 
+## Junio 2025:
+### ==Backend==:
+
+### JsbTodo:
+- correr los test para publicar el release
+- integrar todas las funcionalidades de goresttodo 0.3.6
+
+### NodeTodo:
+- idem
+
+### Nodesotiria:
+
+
+### GoRestTodo:
+- Clean code
+- Create dedicated error logging service
+- integration testing
+- Add graceful shutdown
+- Implement proper connection pooling
+- Set up monitoring
+
+
+## ==Frontend==:
+
+### Todo:
+- cleaning code
+- Testing de la release 0.1.1
+
+### Sotiria:
+- release de la version 0.1.0
+
+_______
 ## Mayo 2025:
 ### ==Backend:
 - jsbtodo y nodetodo: unit testing, puesta a punto, graphql version, aun monolitos
 
 - goresttodo:
-1. **Unit Testing**
-    
-    - Start with core task functionality
-    - Test middleware (especially CORS)
-    - Test error handling
-    - Mock dependencies
-2. **Decoupling Services**
+
+1. **Decoupling Services**
     
     - Move health check to separate package
-    - Create dedicated error logging service
     - Isolate seeding functionality
     - Define clear interfaces
 
@@ -69,33 +58,15 @@ Documentation: Clearly document the expected request and response formats for ea
 3. **Infrastructure Improvements**
     
     - Implement configuration management
-    - Enhance logging system
-	- Add metrics collection
-    - Improve error handling patterns
-    - Document API endpoints
+    - Add metrics collection
+    
 4. **Quality Assurance**
     
     - Add integration tests
     - Implement CI/CD pipeline
-    - Add code coverage reporting
-    - Set up linting rules
-    - Add API documentation (Swagger/OpenAPI)
+
 5. **Production Readiness**
     
-    - Add graceful shutdown
-    - Implement proper connection pooling
-    - Add rate limiting
-    - Improve caching strategy
-    - Set up monitoring
-
-### Priority Order
-
-1. Unit tests first - ensures reliability
-2. Decoupling - improves maintainability
-3. Infrastructure - strengthens foundation
-4. QA - ensures quality
-5. Production readiness - prepares for deployment
-
 ### nodesotiria:
 
 1. **Current Stage - Infrastructure and Basic Setup**:
