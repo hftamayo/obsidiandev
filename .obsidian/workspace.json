@@ -62,79 +62,9 @@
               "icon": "lucide-file",
               "title": "03_automatizando lambda"
             }
-          },
-          {
-            "id": "fe8201dc9f0f1b44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "devops/06_proyectos/01_vanilatstodo/01_contexto.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_contexto"
-            }
-          },
-          {
-            "id": "07591d285ff0e52e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/00_planificacion/00_roadmaps.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00_roadmaps"
-            }
-          },
-          {
-            "id": "b88003e27832db06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/03_tanstack query vs redux.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03_tanstack query vs redux"
-            }
-          },
-          {
-            "id": "8f416dd85119d770",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle/01_portfolio site.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_portfolio site"
-            }
-          },
-          {
-            "id": "ff667c05ec5c7575",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/00_planificacion/07_evolucion de mis apis.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "07_evolucion de mis apis"
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -276,47 +206,47 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ff667c05ec5c7575",
+  "active": "2409bcabe9880884",
   "lastOpenFiles": [
-    "fullstack/devdays/00_planificacion/04_ejemplo de portafolios.md",
-    "fullstack/devdays/00_planificacion/03_sotiria.md",
-    "fullstack/devdays/00_planificacion/01_roster de proyectos.md",
-    "fullstack/devdays/00_planificacion/00_skills y sample projects.md",
-    "fullstack/devdays/00_planificacion/00_roadmaps.md",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle/01_portfolio site.md",
-    "fullstack/devdays/00_planificacion/00_portafolio profesional.md",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle/00_the roadmap.md",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/04_nodetodo.md",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/05_jsbtodo.md",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/01_reacttodo.md",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/02_goresttodo.md",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/03_nodesotiria.md",
-    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/01_beginners/00_caracteristicas.md",
-    "fullstack/devdays/00_planificacion/00_horario.md",
+    "fullstack/devdays/03_contrataciones/05_relato de intentos antes del 2024.md",
+    "fullstack/devdays/03_contrataciones/04_contactos linkedin.md",
+    "fullstack/devdays/03_contrataciones/02_tendencias EU.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
+    "devops/06_proyectos/01_vanilatstodo/01_contexto.md",
+    "fullstack/devdays/Pasted image 20231211111126.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211120322.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211120127.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211120008.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211115640.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211115510.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211115116.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211113225.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211112727.png",
+    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211112702.png",
+    "fullstack/devdays/02_portoflio/00_recursos/kb/08_security concerns.md",
+    "devsetup_enviro/05_setting up de una llave SSH para conexion con mi server on premise.md",
+    "devsetup_enviro/07_backup del entorno.md",
+    "fullstack/devdays/07_despliegue/04_GCP GKE MicroServices App.md",
+    "devsetup_enviro/06_automatizacion del entorno dev.md",
+    "devsetup_enviro/05_web browsers.md",
+    "devsetup_enviro/04_xpad.md",
+    "devsetup_enviro/03_agregando un gestor de contraseñas.md",
+    "devsetup_enviro/02_llave privada para conectarse a un server SSH.md",
+    "devsetup_enviro/01_set up a SSH Key as Github's auth method.md",
+    "devsetup_enviro/services behind proxy/00_wifi del OJ.md",
+    "devsetup_enviro/services behind proxy/00_instalacion dual boot.md",
+    "devsetup_enviro/services behind proxy/07_resolver los nombres de los containers.md",
+    "devsetup_enviro/services behind proxy/05_uso de env en lugar de secrets.md",
+    "devsetup_enviro/services behind proxy/04_ instalacion locales de mysql y pg por docker containers.md",
+    "devsetup_enviro/services behind proxy/02_docker.md",
+    "devsetup_enviro/services behind proxy/01_npm, git, maven, intellij, gradle, node.md",
     "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/03_tanstack query vs redux.md",
     "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/02_healthCheck routine.md",
     "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/01_optimizacion y memorizacion.md",
-    "fullstack/devdays/02_portoflio/00_aplicaciones.md",
-    "fullstack/devdays/01_architectura/backend/01_restful.md",
-    "fullstack/devdays/01_ejercicios/backend_rest/nodejs/microrpt/01_setup and first steps.md",
+    "fullstack/devdays/02_portoflio/01_backend/portfolio/proyectos/02_ssr/01_teoria.md",
+    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle",
     "fullstack/devdays/01_architectura/backend",
     "fullstack/devdays/01_architectura",
-    "fullstack/devdays/01_ejercicios/backend_rest/django/01_first steps.md",
-    "fullstack/devdays/01_ejercicios/cors/03_ reverse proxy con nginx para gestion cross site de cookies.md",
-    "fullstack/devdays/01_ejercicios/cors/02_arquitectura de autenticacion.md",
-    "fullstack/devdays/01_ejercicios/cors/01_Node.JS + JWT -> Frontend (cookie).md",
-    "fullstack/devdays/01_ejercicios/frontend/boilerplates/00_signup_login_pnpm_webpack_redux_tailwind.md",
-    "Pasted image 20250407111952.png",
-    "Pasted image 20250327151102.png",
-    "Pasted image 20250327150529.png",
-    "Pasted image 20250327150441.png",
-    "Pasted image 20250327150122.png",
-    "Pasted image 20250327123801.png",
-    "devops/06_proyectos/img/Pasted image 20250327120241.png",
-    "devops/06_proyectos/img/Pasted image 20250327120158.png",
-    "devops/06_proyectos/img/Pasted image 20250327115655.png",
-    "devops/06_proyectos/img/Pasted image 20250327115500.png",
     "devops/00_recursos",
     "devops/06_proyectos/01_vanilatstodo",
     "devops/06_proyectos/img",

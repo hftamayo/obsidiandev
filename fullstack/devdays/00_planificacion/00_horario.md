@@ -1,14 +1,3 @@
-
-## Ordernar
-
-
-nodesotiria: decorators+CQRS pattern, early development stage
-
-reactsotiria: crud para soportar de manera generica cualquier domain, necesita cliean architecture
-
-Logging: Consider logging essential events (successful logins, registration attempts, errors) for auditing and troubleshooting purposes.
-
-
 ## Junio 2025:
 ### ==Backend==:
 
