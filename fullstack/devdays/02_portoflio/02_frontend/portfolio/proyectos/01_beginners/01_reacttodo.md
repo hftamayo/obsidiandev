@@ -1,7 +1,116 @@
 
 ![[Pasted image 20241216154239.png]]
 
-## Ficha Técnica:
+# React Todo Application: Technical Overview
+
+## Core Architecture
+
+| **Aspect** | **Implementation** |
+|------------|-------------------|
+| **Architecture Pattern** | **Container-Presenter (Smart/Dumb Components)** |
+| **State Management** | React Query + Local React State |
+| **API Pattern** | RESTful with pagination support |
+| **Error Handling** | Global error boundary + contextual notifications |
+| **UI Pattern** | Component composition with memoization |
+| **Data Fetching** | React Query with customized hooks |
+
+## Design Patterns
+
+| **Pattern** | **Implementation Details** |
+|-------------|----------------------------|
+| **Container-Presenter** | TaskBoardContainer (logic) + TaskBoardPresenter (UI) |
+| **Custom Hooks** | Domain-specific hooks for tasks (useTaskBoard, useTaskMutations) |
+| **Composition** | Features composed from smaller, reusable components |
+| **Adapter** | API client abstracts backend communication details |
+| **Strategy** | Different strategies for handling mutations vs. queries |
+| **Observer** | React Query for observing and reacting to data changes |
+
+## Technical Features
+
+| **Feature** | **Implementation** |
+|-------------|-------------------|
+| **Pagination** | Offset-based with prefetching of adjacent pages |
+| **Caching** | Multi-level: React Query + Client-side memory cache |
+| **Cache Invalidation** | Post-mutation with controlled refetching |
+| **Rate Limiting** | Graceful handling with fallback to cached data |
+| **Race Condition Handling** | Delayed operations with cache busting |
+| **Optimistic Updates** | Planned but postponed for stability first |
+| **Error Management** | Contextual error handling with user notifications |
+
+## Performance Optimizations
+
+| **Optimization** | **Implementation** |
+|------------------|-------------------|
+| **Memoization** | useMemo for task lists and expensive calculations |
+| **Debouncing** | Prefetch requests debounced to reduce API calls |
+| **Conditional Fetching** | Only fetch data not already in cache |
+| **Cache TTL** | 60-second client-side cache to reduce requests |
+| **Request Deduplication** | React Query automatic request deduplication |
+
+## Data Flow
+
+| **Operation** | **Implementation** |
+|---------------|-------------------|
+| **Read** | React Query hooks → API client → Backend |
+| **Create** | Form submission → Mutation hook → Cache invalidation → Refetch |
+| **Update** | Modal form → Mutation hook → Cache invalidation → Refetch |
+| **Delete** | Row action → Mutation hook → Cache invalidation → Refetch |
+| **Toggle Status** | Row action → Specialized mutation → Cache invalidation → Refetch |
+
+## Key Components
+
+| **Component** | **Responsibility** |
+|---------------|-------------------|
+| **TaskBoardContainer** | Orchestration and data management |
+| **TaskBoardPresenter** | UI rendering and composition |
+| **TaskRowContainer** | Individual task item management |
+| **AddTaskForm** | Task creation with validation |
+| **UpdateTaskCard** | Task editing with validation |
+| **OffsetPagination** | Page navigation UI and logic |
+
+## Custom Hooks
+
+| **Hook** | **Responsibility** |
+|----------|-------------------|
+| **useTaskBoard** | Main data fetching for tasks |
+| **useTaskMutations** | CRUD operations with cache management |
+| **useTaskPagination** | Page management with smart prefetching |
+| **useTaskPrefetching** | Adjacent page prefetching logic |
+
+## Future Improvements
+
+| **Area**             | **Potential Improvement**                                          |
+| -------------------- | ------------------------------------------------------------------ |
+| **Architecture**     | **Migrate to feature-based module system with clear boundaries**   |
+| **Architecture**     | **Implement Command pattern for mutations to improve testability** |
+| **Architecture**     | **Add Repository pattern layer between API and hooks**             |
+| **Architecture**     | **Implement proper Domain-Driven Design with aggregate roots**     |
+| **Performance**      | Implement virtualized lists for handling large datasets            |
+| **State Management** | Consider zustand/jotai for global UI state                         |
+| **API Design**       | Implement GraphQL for more efficient data fetching                 |
+| **Offline Support**  | Add service workers and offline capabilities                       |
+| **Optimistic UI**    | Implement optimistic updates after core stability                  |
+| **Microservices**    | Prepare architecture for microservices frontend (micro-frontends)  |
+| **Testing**          | Implement comprehensive test coverage with MSW for API mocking     |
+|                      | GraphQL integration pending                                        |
+|                      | Real-time features not implemented                                 |
+|                      | Testing coverage needs improvement                                 |
+|                      | Offline support missing                                            |
+
+## Architectural Vision
+
+The application should evolve toward a **Domain-Driven Hexagonal Architecture** with:
+
+1. **Core Domain Layer**: Pure business logic independent of UI/infrastructure
+2. **Application Service Layer**: Use cases and application flow coordination
+3. **Adapters Layer**: UI components and API clients as adapters to core
+4. **Clear Boundaries**: Well-defined interfaces between layers
+5. **Ports**: Abstract interfaces for external services (API, storage)
+6. **Event-Driven Communication**: Between bounded contexts
+7. **Micro-Frontends**: For scalable team organization by domain
+
+This architecture would support the planned microservices backend while maintaining clean separation of concerns.
+
 ### Version 0.1.2
 - fecha: 06-04-2025
 - caracteristicas:
