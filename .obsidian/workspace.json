@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/02_cloud_providers/aws/03_automatizando lambda.md",
+                "file": "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle/02_horario.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_automatizando lambda"
+              "title": "02_horario"
             }
           }
         ],
@@ -206,8 +206,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2409bcabe9880884",
+  "active": "f3d92ebacb46b99d",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle/00_the roadmap.md",
+    "fullstack/devdays/02_portoflio/01_backend/portfolio/proyectos/02_ssr/01_teoria.md",
+    "fullstack/devdays/02_portoflio/01_backend/portfolio/proyectos/01_beginner/01_dev101_laserants_bootcamp.md",
+    "fullstack/devdays/01_architectura/backend/01_restful.md",
+    "devops/02_cloud_providers/aws/03_automatizando lambda.md",
     "fullstack/devdays/03_contrataciones/05_relato de intentos antes del 2024.md",
     "fullstack/devdays/03_contrataciones/04_contactos linkedin.md",
     "fullstack/devdays/03_contrataciones/02_tendencias EU.md",
@@ -238,12 +244,6 @@
     "devsetup_enviro/services behind proxy/07_resolver los nombres de los containers.md",
     "devsetup_enviro/services behind proxy/05_uso de env en lugar de secrets.md",
     "devsetup_enviro/services behind proxy/04_ instalacion locales de mysql y pg por docker containers.md",
-    "devsetup_enviro/services behind proxy/02_docker.md",
-    "devsetup_enviro/services behind proxy/01_npm, git, maven, intellij, gradle, node.md",
-    "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/03_tanstack query vs redux.md",
-    "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/02_healthCheck routine.md",
-    "fullstack/devdays/02_portoflio/02_frontend/buenas_practicas/01_optimizacion y memorizacion.md",
-    "fullstack/devdays/02_portoflio/01_backend/portfolio/proyectos/02_ssr/01_teoria.md",
     "fullstack/devdays/02_portoflio/02_frontend/portfolio/proyectos/02_middle",
     "fullstack/devdays/01_architectura/backend",
     "fullstack/devdays/01_architectura",

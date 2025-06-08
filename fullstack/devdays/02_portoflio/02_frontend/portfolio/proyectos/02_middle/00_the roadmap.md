@@ -1,5 +1,5 @@
 
-Esta es la recomendacion de claude.ai a partir de mostrarle mis avances hasta mayo 2025 de jsbtodo, nodetodo, goresttodo and reacttodo
+==Esta es la recomendacion de claude.ai a partir de mostrarle mis avances hasta mayo 2025 de jsbtodo, nodetodo, goresttodo and reacttodo
 
 Looking at your impressive project portfolio, you've built a solid foundation across multiple languages and architectural patterns. Your focus on clean architecture (especially the hexagonal architecture in your Go project) shows mature engineering thinking. Here's my strategic roadmap for reaching senior backend developer level:
 
