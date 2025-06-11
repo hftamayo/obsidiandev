@@ -1,32 +1,12 @@
 
-## Backend:
-
-Objetivo de los proyectos backend:
-
+==caracteristicas generales:
 - good security
 - it’s maintainable 
 - it’s scalable 
 - it’s deployable 
 
-Race conditions: restablecer password y cuentas, OTP y login workflow
+### Caching, headers and Error loging
 
-hacer un endpoint para activarUsuario y para bloquearlo
-
-- agregar un captcha durante login
-- activacion de cuentas usando correo electronico y loggeo enviando codigo al correo
-- aplicar el uso de strype
-
-Error Handling:
-Implement exception handling to gracefully handle potential errors during authentication or registration.
-Return appropriate error responses with informative messages (e.g., 400 for invalid input, 401 for authentication failure, 500 for server-side errors).
-Input Validation:
-Validate user input data in both login and register methods to prevent invalid data from entering your system.
-Use Spring's validation framework or manual validation techniques.
-Security Considerations:
-Ensure proper password hashing and storage mechanisms in your AuthService.
-Consider input sanitization and additional security measures to mitigate vulnerabilities.
-CSRF Protection:
-If applicable, implement CSRF protection for the /register endpoint, especially if accepting form-based submissions.
 ## 1. Pagination Support
 
 - **Offset-Based Pagination**: Support for `page` and `limit` parameters
@@ -107,6 +87,55 @@ If applicable, implement CSRF protection for the /register endpoint, especially 
 
 - **Appropriate Status Codes**: 400, 401, 403, 404, 429, 500
 
+
+### ==Detalles:
+
+1. **Type Safety for Cache Operations**
+   - Added proper type assertions with error handling
+   - Protected against runtime panics from invalid cached data
+
+2. **Error Logging for Cache Operations**
+   - Added error logging for all cache set/delete operations
+   - Maintained consistent log naming conventions
+
+3. **Support for Weak ETags**
+   - Added support for both strong and weak ETags
+   - Improved compatibility with different clients and proxies
+
+4. **Consistent Headers**
+   - Unified approach to setting cache headers
+   - Helper functions for setting ETag and cache control headers
+
+5. **Proper Cache Invalidation**
+   - Invalidating all relevant cache keys on write operations
+   - Ensuring data consistency across endpoints
+
+6. **Consistent Error Handling**: Well-structured error responses with appropriate HTTP status codes
+
+7. **Robust Validation**: Input validation with useful error messages
+
+8. **Efficient Caching**: Optimized cache strategy including TTL and invalidation
+
+9. **Clean Headers**: Proper HTTP headers for caching, ETags, and Last-Modified
+
+10.  **Maintainable Structure**: Consistent handler structure across all endpoints
+
+11. Content negotiation
+
+12. Conditional requests (If-None-Match)
+
+13. - Proper caching
+
+14. - Pagination (both cursor and page-based)
+
+
+
+### Race Conditions
+
+1. escenarios donde se explota race conditions: restablecer password y cuentas, OTP y login workflow
+
+2. 
+
 ## 7. Performance Considerations
 
 - **Query Optimization**: Efficient database queries for pagination
@@ -120,22 +149,3 @@ If applicable, implement CSRF protection for the /register endpoint, especially 
 - **Search**: Text search across task titles and descriptions
 - **Batch Operations**: Endpoints for batch updates/deletes
 - **Websocket Notifications**: Real-time updates for collaborative features
-
-## Implementation Notes
-
-1. **Database Layer**:
-    
-    - Include proper indexing for pagination and sorting
-    - Use transactions for data consistency
-2. **Caching Layer**:
-    
-    - Implement cache invalidation after mutations
-    - Use short-lived caches (10-60s) during development
-    - Consider Redis or similar for distributed caching
-3. **Rate Limiting**:
-    
-    - Implement token bucket algorithm for limiting
-    - Higher limits for read operations (~100/min)
-    - Lower limits for write operations (~30/min)
-
-This backend implementation would complement your frontend perfectly, providing a solid foundation for scaling while maintaining the great user experience you've built on the client side.

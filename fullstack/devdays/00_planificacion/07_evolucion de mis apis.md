@@ -27,7 +27,6 @@ This migration path is logical because:
 4. Existing security can be adapted for service-to-service auth
 5. Test infrastructure can be reused per microservice
 
-The transition can be gradual, starting with GraphQL implementation while still monolithic, then breaking into microservices.
 
 ==For microservices evolution:
 - Split your current monolith into domains

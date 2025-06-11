@@ -12,14 +12,6 @@
 
 # ==tech skills:
 
-## ==arquitectura y otros skills que aplican a cualquier tecnologia:==
-
-- TDD y BDD
-- microservices, graphql, federated graphql, restful
-- code best practices: SOLID, code smells, refactoring
-- aplicar el OWASP Top 10
-- Scaling applications
-- frontend: microfrontend, dashboards
 
 ## ==areas de aplicacion de los backend==:
 
@@ -77,12 +69,9 @@ features de Scala mas usado: Enums, extension methods, given instances, union
 
 ## ==FrontEnd:
 - React JS: Redux + Express, Shadcn, Zod, React Query, Zustand (para proyectos pequeños)
-- Kotlin:
-- React Native:
 - CSS Frameworks: Tailwind, Material UI
 - Build pipeline and tools: Vite, Babel
 - Testing: Jest, React Testing library, vite-test
-- Next.JS?
 - Librerias recomendadas por Midu:
 	- Slider -> flicking
 	- Router -> wouter
@@ -110,11 +99,6 @@ features de Scala mas usado: Enums, extension methods, given instances, union
 - - Experience with Node.js development: our usual stack is based on Node.js, Express/Nest.js, MongoDB/Mongoose or TypeORM/PostgreSQL.
 
 
-## ==Devops
-
-### DevOps Engineer:
-* Terraform: para beginners
-* Pulumi: el siguiente nivel de terraform pues soporta python, go, etc
 
 ## SAMPLE PROJECTS:
 
@@ -139,6 +123,8 @@ features de Scala mas usado: Enums, extension methods, given instances, union
 - Autotrader clon
 - App para encargar pupusas por adelantado
 - app para reservar citas en peluqueria, fisioterapia, medica, verificar doctoralia mx
+- sotiria: llevar un control de las subscripciones activas y cuanto es el impactio en el presupuesto mensual y anual
+- 
 
 ___
 	
@@ -231,17 +217,6 @@ ___
 	- **Caching**: Implement caching strategies (e.g., Redis, Memcached) to improve performance.
 	- **Load Balancing**: Learn about load balancing techniques to distribute traffic across multiple servers.
 	
-	### 6. **DevOps and CI/CD**:
-	
-	- **Continuous Integration/Continuous Deployment (CI/CD)**: Set up CI/CD pipelines using tools like Jenkins, GitHub Actions, or GitLab CI.
-	- **Containerization**: Use Docker to containerize your applications for consistent environments.
-	- **Orchestration**: Learn Kubernetes for managing containerized applications at scale.
-	
-	### 7. **Cloud Services**:
-	
-	- **Cloud Platforms**: Gain experience with cloud platforms like AWS, Azure, or Google Cloud.
-	- **Serverless Architecture**: Explore serverless computing with AWS Lambda, Azure Functions, or Google Cloud Functions.
-	- **Infrastructure as Code (IaC)**: Use tools like Terraform or AWS CloudFormation to manage infrastructure.
 	
 	### 8. **Microservices Architecture**:
 	

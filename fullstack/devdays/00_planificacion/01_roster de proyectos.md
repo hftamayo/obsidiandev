@@ -28,31 +28,13 @@ Tipos de Tests: Unit, Integration, End to End, Performance
 
 ### Enero - junio
 	- TODO: 
-		- modulos: signup, login, autorizacion cuentas de usuario, RBAC, dashboard, todos, indicadores de productividad, historico, reportes, utilerias (backup, restore, settings, healthcheck)
-	
-	- ReactTodo:
-		- Arquitectura: monolito
-		- Patron de diseño:  + monolito+ restful
-		- Testing: E2E
-		- Stack técnico: Redux toolkit, tailwind, react query
-		- Funciones: internacionalizacion, dark mode, health check
-	- NodeTodo
-		-
+		- modulos: signup, login, autorizacion cuentas de usuario, RBAC, dashboard, todos, indicadores de productividad, historico, reportes, utilerias (backup, restore, settings, healthcheck), internacionalizacion, dark mode, health check
 		
 	- SOTIRIA:
 		- modulos: signup, login, autorizacion cuentas de usuario, RBAC, dashboard, categorias de recursos, enlaces, influencers, ubicacion, indicadores de productividad, historico, reportes, utilerias (backup, restore, settings, healthcheck, bitacora, rutina de errores)
-	- ReactSotiria:
-		- patron de diseño:
-		- stack tecnico: Redux toolkit, tailwind, react query, 
-	- NodeSotiria
-		- arquitectura: monolito
-		- Patron de diseño: + monolito + restful
-		- stack tecnico: prisma ORM+postgreSQL
-		- patrones: decorator+CQRS+
+
 		- features: caching, load balancing, profiling, monitoring, logging (en esto aplica los patrones antes descritos)
-	- JsbTodo
-	- GoTodo:
-		- patro de diseño: + monolito + graphQL
+
 	- DEGALLADITAS.COM (NOMBRE POR DEFINIR):
 		- Servicios a prestar: paseo de perros, baño de perros, llevarlos a la veterinaria, lavado de carros a domicilio, ir al mercado, jardineria, fontaneria, pintura, fletes a emprendedores, compañia a ancianos
 		- Componentes del proyecto:
@@ -75,12 +57,8 @@ Tipos de Tests: Unit, Integration, End to End, Performance
 
 ## Caja de herramientas:
 
-==directivas generales:;
-- todos los micros poseen testing
-- cumplen con principios SOLID y Clean Code
-- TDD
+
 - Los repos son privados e inician con el prefijo: tb_   (tb = toolbox)
-- Codigo Javascript: Typescript
 
 - Microservicio de Autenticacion:
 	- Arquitectura Rest
@@ -124,19 +102,6 @@ Tipos de Tests: Unit, Integration, End to End, Performance
 - tb_buddyman_fe
 - tb_buddyman_be
 
-==stack:==
-- FrontEnd: 
-	- React.JS
-	- Tailwind
-	- React Router
-	- Redux
-- BackEnd:
-	- Node.JS
-	- Express
-	- RestfulAPI
-
-
-
 0. todo:
 	1. Backend:
 		1. Node.JS
@@ -172,27 +137,23 @@ Tipos de Tests: Unit, Integration, End to End, Performance
 			2. PoC #2: monolito usando Next.JS
 			3. PoC #3: microfrontends
 			4. Para todos los PoC: SPAs, unit testing, customer acceptance testing, typescript, integracion de APIs del clima, dark theme, switch to diff languages, uso de Partials para New y Edit forms, no bugs en la consola, Landing page al estilo del landing de Discord, Direct messages entre usuarios, dashboard basicos, one to many CRUD, lookAndFeel tipo glossy de Windows, 
-	3. Mobile:
-		1. Kotlin:
-			1. finalizar el tutorial de MVVN
-			2. hacer una version adaptada y que se conecte a una API propia
-	4. Api de Reportes:
+	3. Api de Reportes:
 		1. Lenguaje: golang
 		2. exporta a PDF y XLS
 		3. containerized
-	5. Cloud:
+	4. Cloud:
 		1. AWS
 			1. Servicios que un dev tiene que conocer: EC2, S3, RDS, API Gateway, Lambda, IAM, CloudWatch, 
 		2. migrar de on premise a cloud
 		3. Terraform
-	6. Certificaciones:
+	5. Certificaciones:
 		1. Cloud: AWS Certified Developer Associate, AWS Solution Architect Associate, Azure Developer Associate
 		2. Dev:  JSNAD, JSNSD
 		3. DevOps: Certified Kubernetes Developer CKAD
 
 
 
-2. Sotiria
+1. Sotiria
 	1. BackEnd:
 		1. Rest:
 			1. Java: Spring Boot, Rabbit MQ
@@ -208,90 +169,27 @@ Tipos de Tests: Unit, Integration, End to End, Performance
 		1. React: babel, webpack, Tailwind, Redux (vA) y Zustand (vB), funciones async/await, TypeScript, Jest para Unit Testing
 	3. Mobiles:
 		1. Kotlin: MVVN, Amplify, JetPack Compose para la UI
-	4. DevOps:
-		1. Docker
-		2. Kubernete?
-		3. GCP:
-		4. AWS: Lambda, AWS API Gateway, IAM, KMS
-			1. Deploys: NodeJS
-		5. Azure:
-		6. CI/CD:
-	5. Microservices
-	6. Architecture:
-		1. TDD
-		2. SOLID
-3. Netflix Clon
+
+2. Netflix Clon
 	1. Pagos: Stripe
-4. Youtube Clon / RealState Clon
+3. Youtube Clon / RealState Clon
 	1. Pagos: Stripe, Crypto
-5. Weather App:
+4. Weather App:
 	1. Web: microclimas
 	2. Mobile: weather
-6. Fitness / Recomendaciones de lugares y comidas, ofertas:
-7. LetsOrder para emprendedores
-8. ChatBot Con Rust
-9. AkiPago para pagos e intercambio de dinero
-10. Aplicacion para hacer encuesta y obtener datos (predictive)
-11. applicacion movil para insitucion educativa:  horarios, grupos, inscripciones, comunidad, job posting, mensajes privados, alertas, cuadro academico
+5. Fitness / Recomendaciones de lugares y comidas, ofertas:
+6. LetsOrder para emprendedores
+7. ChatBot Con Rust
+8. AkiPago para pagos e intercambio de dinero
+9. Aplicacion para hacer encuesta y obtener datos (predictive)
+10. applicacion movil para insitucion educativa:  horarios, grupos, inscripciones, comunidad, job posting, mensajes privados, alertas, cuadro academico
 
-
-
-1. Sotiria: (React.JS + Node.JS)
-Frontend: 
-- dockerizar y hacer pruebas con el backend en el entorno dev
 
 Backend: 
 - verificar los outputs de los endpoints tanto en curl como en Postman por posible data expose
-- homologar y unir las interfaces ubicadas en middleware/types con types/user.interface.ts
-- METAS JUNIO - AGOSTO:
-  * Unit Testing and Integration Testing con Jest
-- METAS SEPTIEMBRE - NOVIEMBRE:
-  * GraphQL Version
-- PROYECTOS EN COLA:
-  * Microservicio de Reportes
-  * Microservicio de autenticacion
-  * Microservicio de dashboard y acceso basado en roles
-  * Microservicio de DataTable, Delete Record, Busqueda y Ordenamiento
-  * Microservicio de Agregar/Actualizar data
-    
+  
 
-1. Todo: (JavaSpringBoot)
-
-Backend:
-  - log de todas las operaciones, ejemplo: el usuario ADMIN123 activo a la cuenta de usuario 4, rafamurillo en datetime
-  - function para verificar si hay conexion con el backend y decidir el mejor camino para finalizar la aplicacion e informar al usuario
- 
-
-
-  
-2. YooP Encuestador:  
-  Movil:
-   - Operaciones del encuestador
-   
-  YooP BackOffice: (HTMX + Golang)
-  Backend:
-  
-    
-3. LetsOrder Cliente:
-  Movil
-  
-  FrontEnd
-  
-  BackEnd
-  
-  
-4. LetsOrder BackOffice:
-  FrontEnd
-  
-  BackEnd
-  
-  
-5. Business Mate: (micorservicios)
-  FrontEnd
-  
-  BackEnd
-  
-6. PomodoroDev (golang o rust client con websocket)
+2. PomodoroDev (golang o rust client con websocket)
    - medir productividad diaria del dev
    - registrar commits id por proyecto
    - verificar dias más y menos productivo para tomar medidas de apoyo al equipo
@@ -339,8 +237,6 @@ Backend:
 
 # 02 : listado de proyectos para practicar:
 
-## proyectos generales:
-## junior :
 
 ==actualizado a diciembre 2024: 
 
