@@ -1,4 +1,58 @@
 
+## Caracteristicas para que una API sea considerada en el nivel ==middle:
+
+![[Pasted image 20250624155237.png]]
+
+
+
+==Result Pagination:==  
+This method is used to optimize large result sets by streaming them back to the client, enhancing service responsiveness and user experience.  
+  
+==Asynchronous Logging: ==
+This approach involves sending logs to a lock-free buffer and returning immediately, rather than dealing with the disk on every call. Logs are periodically flushed to the disk, significantly reducing I/O overhead.  
+  
+==Data Caching:== 
+Frequently accessed data can be stored in a cache to speed up retrieval. Clients check the cache before querying the database, with data storage solutions like Redis offering faster access due to in-memory storage.  
+  
+==Payload Compression:==  
+To reduce data transmission time, requests and responses can be compressed (e.g., using gzip), making the upload and download processes quicker.  
+  
+==Connection Pooling:==  
+This technique involves using a pool of open connections to manage database interaction, which reduces the overhead associated with opening and closing connections each time data needs to be loaded. The pool manages the lifecycle of connections for efficient resource use.
+
+==Rate Limiting & Encryption:==
+
+HTTP: Protocol used for APIs.  
+HTTP Versions: Different versions of the protocol.  
+Cookies: Data stored on client side.  
+HTTP Methods: GET, POST, PUT, DELETE, etc.  
+CORS: Cross Origin Resource Sharing, security feature.  
+HTTP Status Code: Responses from server.  
+HTTP Caching: How responses are cached.  
+HTTP Headers: Metadata in requests/responses.
+
+Basic Auth and Token Based Auth  
+JWT (JSON Web Token)  
+OAuth 2.0: Standard for access delegation.  
+Session Based Auth
+
+Role Based Access Control (RBAC)  
+Attribute Based Access Control (ABAC)
+
+8. API Performance  
+Ensuring good performance:  
+  
+Metrics collection and analysis.  
+Caching strategies.  
+Load balancing.  
+Load balancing.  
+Rate limiting and throttling.  
+Profiling & Monitoring.  
+Performance testing.  
+Error handling and retrie
+
+
+
 ==Esta es la recomendacion de claude.ai a partir de mostrarle mis avances hasta mayo 2025 de jsbtodo, nodetodo, goresttodo and reacttodo
 
 Looking at your impressive project portfolio, you've built a solid foundation across multiple languages and architectural patterns. Your focus on clean architecture (especially the hexagonal architecture in your Go project) shows mature engineering thinking. Here's my strategic roadmap for reaching senior backend developer level:
