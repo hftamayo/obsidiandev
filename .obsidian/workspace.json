@@ -83,16 +83,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_observaciones_0.1.5-experimental"
+              "title": "00_the roadmap"
+            }
+          },
+          {
+            "id": "7e20c5291df5cda5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_gestion de actualizaciones.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_gestion de actualizaciones"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -234,9 +248,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5458851d0ab01b9c",
+  "active": "7e20c5291df5cda5",
   "lastOpenFiles": [
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_gestion de actualizaciones.md",
+    "fullstack/devdays/01_ejercicios/frontend/reactjs/03_sotiria.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
     "Pasted image 20250624160501.png",
@@ -244,7 +260,6 @@
     "fullstack/devdays/02_portoflio/img/Pasted image 20250624160314.png",
     "fullstack/devdays/02_portoflio/img/Pasted image 20250624155237.png",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/09_free apis.md",
-    "fullstack/devdays/01_ejercicios/frontend/reactjs/03_sotiria.md",
     "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
     "devops/99_devops_bestpractices.md",
     "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
@@ -265,7 +280,6 @@
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/13_servicios, subscripciones y cursos.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/12_revision clutch.co.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/11_reclutadores y buros de empleo.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_backend",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend",
