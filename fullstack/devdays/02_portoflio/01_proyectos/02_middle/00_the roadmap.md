@@ -36,7 +36,10 @@ JWT (JSON Web Token)
 OAuth 2.0: Standard for access delegation.  
 Session Based Auth
 
-Role Based Access Control (RBAC)  
+==Load balancing==:
+Distribuye las solicitudes entre múltiples servidores
+
+==Role Based Access Control (RBAC)  ==
 Attribute Based Access Control (ABAC)
 
 8. API Performance  

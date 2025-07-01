@@ -34,3 +34,14 @@
 ## Domingos:
 1. 5:00 - 5:45 : bounties
 2. 6:00-6:45 : bounties
+
+## Programacion julio
+
+| #   | Meta                    | Periodo de ejecucion | Status |
+| --- | ----------------------- | -------------------- | ------ |
+| 1   | ReactTodo+JSB           | 01-07/07             |        |
+| 2   | ReactTodo+NodeTodo      | 08-14/07             |        |
+| 3   | ReactSotiria+GoRestTodo | 15-21/07             |        |
+| 4   | ReactSotiria+           | 22-28/07             |        |
+|     |                         |                      |        |
+
