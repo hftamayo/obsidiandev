@@ -54,6 +54,37 @@ Profiling & Monitoring.
 Performance testing.  
 Error handling and retrie
 
+## Orden de implementacion sugerida:
+1. Centralized error handling
+2. Pagination
+3. Caching
+4. Rate Limiting
+
+## Test cases:
+
+### Error handling:
+- Test Cases: Test different exception types, validation errors, authentication failures, etc.
+- Coverage: Ensures all error paths are handled consistently
+
+### Pagination:
+- Test Cases: Test edge cases like empty pages, invalid page numbers, different page sizes
+- Coverage: Ensures pagination logic works correctly for all scenarios
+
+### Caching:
+- Test Cases: Verify data is cached, retrieved from cache, and properly invalidated
+- Coverage: Ensures caching doesn't break existing functionality
+
+### Rate Limiting:
+- Test Cases: Test within limits, at limits, exceeding limits, different time windows
+- Coverage: Ensures rate limiting works without breaking legitimate requests
+
+### Recomendaciones generales para TDD:
+For each feature, we should create:
+
+- Unit tests for the core logic
+- Integration tests for the complete flow
+- Performance tests where applicable (caching, pagination)
+- Security tests for rate limiting
 
 
 ==Esta es la recomendacion de claude.ai a partir de mostrarle mis avances hasta mayo 2025 de jsbtodo, nodetodo, goresttodo and reacttodo

@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_the roadmap"
+              "title": "00_frontend_performance"
             }
           },
           {
@@ -250,9 +250,12 @@
   },
   "active": "7e20c5291df5cda5",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/04_autenticacion/01_ node.js+jwt+cookies.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_api_security_design.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_bitacora.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_gestion de actualizaciones.md",
@@ -277,9 +280,6 @@
     "fullstack/devdays/00_planificacion/01_roster de proyectos.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/04_ejemplo de portafolios.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/10_microservices.md",
-    "fullstack/devdays/00_planificacion/05_arquitecturas.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/08_ planificacion del testing.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/05_planification del testing en el frontend.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_backend",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend",
