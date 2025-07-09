@@ -59,6 +59,10 @@ Error handling and retrie
 2. Pagination
 3. Caching
 4. Rate Limiting
+5. Logging and monitoring
+6. Single entry point
+7. Load balancing
+8. SSRF
 
 ## Test cases:
 
