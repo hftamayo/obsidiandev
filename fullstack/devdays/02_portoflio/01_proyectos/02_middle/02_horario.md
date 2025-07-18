@@ -37,11 +37,16 @@
 
 ## Programacion julio
 
-| #   | Meta                    | Periodo de ejecucion | Status |
-| --- | ----------------------- | -------------------- | ------ |
-| 1   | ReactTodo+JSB           | 01-07/07             |        |
-| 2   | ReactTodo+NodeTodo      | 08-14/07             |        |
-| 3   | ReactSotiria+GoRestTodo | 15-21/07             |        |
-| 4   | ReactSotiria+           | 22-28/07             |        |
-|     |                         |                      |        |
+Proyectos:
+goRestTodo  -> vanillaTsTodo
+jsbTodo -> reactTodo
+nodeTodo -> kotlinTodo
+
+| #   | Meta                                 | Periodo de ejecucion | Status                                                                                                  |
+| --- | ------------------------------------ | -------------------- | ------------------------------------------------------------------------------------------------------- |
+| 1   | ReactTodo+JSB                        | 01-07/07             | jsbtodo: deployado en container para probar la respuesta el 15/07                                       |
+| 2   | ReactTodo+NodeTodo                   | 08-14/07             | React Todo: deployado<br>en container hasta la ver<br>0.1.3-experimental, referirse<br>al PR #47        |
+| 3   | ReactSotiria+GoRestTodo<br>ReactTodo | 15-21/07             | 16/07 -> se decide pivotear de <br>ReactSotiria a ReactTodo para poder<br>dar continuidad a un proyecto |
+| 4   | ReactSotiria+                        | 22-28/07             |                                                                                                         |
+|     |                                      |                      |                                                                                                         |
 
