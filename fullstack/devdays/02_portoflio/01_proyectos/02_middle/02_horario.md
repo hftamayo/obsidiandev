@@ -1,3 +1,8 @@
+
+Horario especial de vacaciones:
+1. depurar mis bookmarks de linkedin y x.com
+2. trabajar en el servicio de logging y el auth de reacttodo
+
 ## Lunes, Miercoles, Viernes
 
 1. 7:45 - 8:30 am: ReactSotiria
