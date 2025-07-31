@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/03_rate limiting.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/02_junior to senior.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_rate limiting"
+              "title": "02_junior to senior"
             }
           },
           {
@@ -264,13 +264,14 @@
   },
   "active": "7e20c5291df5cda5",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/03_rate limiting.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/02_junior to senior.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/01_docker.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/01_dto.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/04_caching.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/03_rate limiting.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/02_log service.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints/00_health.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints/01_tasks.md",
@@ -296,7 +297,6 @@
     "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
     "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
     "Pasted image 20250612111700.png",
-    "devops/06_proyectos/01_vanilatstodo/03_aws.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_backend",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend",
