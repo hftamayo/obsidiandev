@@ -111,12 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/01_docker.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_docker"
+              "title": "02_horario"
             }
           }
         ],
@@ -264,8 +264,8 @@
   },
   "active": "ed4d2192af1d5fe9",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/01_docker.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/01_dto.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/04_caching.md",
