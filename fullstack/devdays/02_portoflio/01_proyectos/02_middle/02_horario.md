@@ -1,7 +1,67 @@
 
-Horario especial de vacaciones:
-1. depurar mis bookmarks de linkedin y x.com
-2. trabajar en el servicio de logging y landing de reacttodo
+## Features:
+### Backend:
+
+| Feature                    | Jsbtodo | Nodetodo | Gotodo |
+| -------------------------- | ------- | -------- | ------ |
+| input validation           |         |          |        |
+| rate-limiting              |         |          | X      |
+| caching                    |         |          | X      |
+| logging                    |         |          |        |
+| versioning                 |         |          |        |
+| centralized error handling | X       |          |        |
+| grace failure              |         |          |        |
+| RBAC                       |         |          |        |
+| pagination                 | X       | X        | X      |
+| payload compression        |         |          |        |
+| encryption                 |         |          |        |
+| Single Entry point         |         |          |        |
+| SSRF                       |         |          |        |
+| Unit Testing               | X       | X        |        |
+| Integration Testing        |         |          |        |
+| Injection dependency       | X       | X        |        |
+| HTTPS                      |         |          |        |
+| HealthCheck socket         |         |          |        |
+| Optimistic updates         |         |          |        |
+
+### Frontend:
+
+
+| Feature                                                                           | ReactTodo | MobileTodo |
+| --------------------------------------------------------------------------------- | --------- | ---------- |
+| CORS policies                                                                     |           |            |
+| Auth+author(JWT handling, <br>token refresh, role based UI)                       |           |            |
+| Error handling                                                                    |           |            |
+| Security headers                                                                  |           |            |
+| Performance optimization                                                          |           |            |
+| State management                                                                  |           |            |
+| form validation                                                                   |           |            |
+| loading states (skeleton, spinners)                                               |           |            |
+| Optimistic updates                                                                |           |            |
+| Offline support <br>(service workers, cached data, <br>sync when online)          |           |            |
+| Responsive (mobile first, <br>breakpoints, touch interaction)                     |           |            |
+| accessibility (ARIA labels, <br>keyboard navigation, screen readers)              |           |            |
+| code splitting (lazy loading, <br>dynamic imports, bundle opt)                    |           |            |
+| API integration (request/response<br>interceptors, retry logic, caching)          |           |            |
+| Realtime features (websockets, <br>polling, live updates)                         |           |            |
+| File upload/download (drag/drop, <br>progress indicators, file validation)        |           |            |
+| search & filtering (debounced search, <br>advanced filters, sorting)              |           |            |
+| pagination & virtualization (<br>infinite scroll, virtual lists, performance<br>) |           |            |
+| Theme & dark mode                                                                 |           |            |
+| SEO optimization (meta tags, <br>structured data, SSR/SSG)                        |           |            |
+| Security (XSS, CSRF, input sanitization)                                          |           |            |
+| Unit Testing                                                                      |           |            |
+| E2E testing                                                                       |           |            |
+| Data visualization (<br>charts, graphs, interactive dashboards )                  |           |            |
+
+### Status:
+
+| #   | Proyecto  | Done                                |
+| --- | --------- | ----------------------------------- |
+| 1   | nodetodo  | pagination y error catching         |
+| 2   | jsbtodo   | rate limiting on hcController       |
+| 3   | gotodo    | refactor services for dep injection |
+| 4   | reacttodo | basic login                         |
 
 ## Lunes, Miercoles, Viernes
 

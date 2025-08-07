@@ -1,8 +1,21 @@
 
+### Combinaciones:
+1. nodetodo+mobiletodo
+2. jsbtodo+reacttodo
+3. gotodo+vitetodo
+
 ## Caracteristicas para que una API sea considerada en el nivel ==middle:
 
 ![[Pasted image 20250624155237.png]]
 
+
+```
+A good API doesn’t just return data.
+It handles rate-limiting, caching, auth, validation, logging, versioning, and graceful failure.
+If you only return JSON then you're not building an API, you're just exposing a database.
+
+An API should do aggregation and access control based on a use-case. The rest (rate-limiting, caching, logging, graceful failure) is best done by a gateway, but can be implemented manually if you want it to be more portable and less standardized.
+```
 
 
 ==Result Pagination:==  

@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/02_junior to senior.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_junior to senior"
+              "title": "00_the roadmap"
             }
           },
           {
@@ -120,7 +120,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -262,12 +262,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7e20c5291df5cda5",
+  "active": "ed4d2192af1d5fe9",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/03_rate limiting.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/02_junior to senior.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/03_on_production.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/02_junior to senior.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/03_rate limiting.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/01_docker.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/01_dto.md",
@@ -284,7 +285,6 @@
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/04_autenticacion/01_ node.js+jwt+cookies.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_bitacora.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/03_on_production.md",
     "devops/06_proyectos/00_aws credits.md",
     "devops/06_proyectos/00_montar un enviro para dev y test.md",
     "devops/99_devops_bestpractices.md",
