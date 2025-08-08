@@ -5,7 +5,7 @@
 | 1   | nodetodo  | rate limiting implemented           |
 | 2   | jsbtodo   | rate limiting implemented           |
 | 3   | gotodo    | refactor services for dep injection |
-| 4   | reacttodo | footer and header for landing       |
+| 4   | reacttodo | HeaderLayout component              |
 
 ## Features:
 ### Backend:
