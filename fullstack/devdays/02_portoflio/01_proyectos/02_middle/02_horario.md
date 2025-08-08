@@ -1,3 +1,11 @@
+### Status:
+
+| #   | Proyecto  | Done                                |
+| --- | --------- | ----------------------------------- |
+| 1   | nodetodo  | rate limiting implemented           |
+| 2   | jsbtodo   | rate limiting implemented           |
+| 3   | gotodo    | refactor services for dep injection |
+| 4   | reacttodo | footer and header for landing       |
 
 ## Features:
 ### Backend:
@@ -5,13 +13,13 @@
 | Feature                    | Jsbtodo | Nodetodo | Gotodo |
 | -------------------------- | ------- | -------- | ------ |
 | input validation           |         |          |        |
-| rate-limiting              |         |          | X      |
+| rate-limiting              | X       | X        | X      |
 | caching                    |         |          | X      |
 | logging                    |         |          |        |
 | versioning                 |         |          |        |
 | centralized error handling | X       |          |        |
 | grace failure              |         |          |        |
-| RBAC                       |         |          |        |
+| RBAC                       |         | X        |        |
 | pagination                 | X       | X        | X      |
 | payload compression        |         |          |        |
 | encryption                 |         |          |        |
@@ -53,15 +61,7 @@
 | Unit Testing                                                                      |           |            |
 | E2E testing                                                                       |           |            |
 | Data visualization (<br>charts, graphs, interactive dashboards )                  |           |            |
-
-### Status:
-
-| #   | Proyecto  | Done                                |
-| --- | --------- | ----------------------------------- |
-| 1   | nodetodo  | pagination y error catching         |
-| 2   | jsbtodo   | rate limiting on hcController       |
-| 3   | gotodo    | refactor services for dep injection |
-| 4   | reacttodo | basic login                         |
+| PWA                                                                               |           |            |
 
 ## Lunes, Miercoles, Viernes
 
