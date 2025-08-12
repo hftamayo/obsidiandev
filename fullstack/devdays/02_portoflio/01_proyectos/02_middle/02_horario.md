@@ -2,35 +2,35 @@
 
 | #   | Proyecto  | Done                                |
 | --- | --------- | ----------------------------------- |
-| 1   | nodetodo  | rate limiting implemented           |
-| 2   | jsbtodo   | rate limiting implemented           |
+| 1   | nodetodo  | version 0.2.0 for testing           |
+| 2   | jsbtodo   | version 0.2.0 for testing           |
 | 3   | gotodo    | refactor services for dep injection |
 | 4   | reacttodo | HeaderLayout component              |
 
 ## Features:
 ### Backend:
 
-| Feature                    | Jsbtodo | Nodetodo | Gotodo |
-| -------------------------- | ------- | -------- | ------ |
-| input validation           |         |          |        |
-| rate-limiting              | X       | X        | X      |
-| caching                    |         |          | X      |
-| logging                    |         |          |        |
-| versioning                 |         |          |        |
-| centralized error handling | X       |          |        |
-| grace failure              |         |          |        |
-| RBAC                       |         | X        |        |
-| pagination                 | X       | X        | X      |
-| payload compression        |         |          |        |
-| encryption                 |         |          |        |
-| Single Entry point         |         |          |        |
-| SSRF                       |         |          |        |
-| Unit Testing               | X       | X        |        |
-| Integration Testing        |         |          |        |
-| Injection dependency       | X       | X        |        |
-| HTTPS                      |         |          |        |
-| HealthCheck socket         |         |          |        |
-| Optimistic updates         |         |          |        |
+| Feature                    | Jsbtodo         | Nodetodo    | Gotodo |
+| -------------------------- | --------------- | ----------- | ------ |
+| input validation           |                 |             |        |
+| rate-limiting              | X               | X           | X      |
+| caching                    |                 |             | X      |
+| Optimistic updates         |                 |             |        |
+| versioning                 | X               | X           | X      |
+| centralized error handling | X               | 75%         | 80%    |
+| grace failure              |                 |             |        |
+| RBAC                       | X (hierachical) | X (bitwise) |        |
+| pagination                 | X               | X           | X      |
+| payload compression        |                 |             |        |
+| encryption                 |                 |             |        |
+| Single Entry point         |                 |             |        |
+| SSRF                       |                 |             |        |
+| Unit Testing               | X               | X           |        |
+| Integration Testing        |                 |             |        |
+| Injection dependency       | X               | X           |        |
+| HTTPS                      |                 |             |        |
+| HealthCheck socket         |                 |             |        |
+| logging                    |                 |             |        |
 
 ### Frontend:
 
