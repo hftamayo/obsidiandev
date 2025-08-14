@@ -4,3 +4,5 @@
 
 ![[Pasted image 20241009101132.png]]
 
+
+![[microservices gotchas.jpeg]]

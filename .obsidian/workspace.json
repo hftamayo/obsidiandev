@@ -111,26 +111,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/00_frameworks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_horario"
-            }
-          },
-          {
-            "id": "469e8c8eadee6fa2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/07_RBAC.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "07_RBAC"
+              "title": "00_frameworks"
             }
           }
         ],
@@ -278,9 +264,30 @@
   },
   "active": "ed4d2192af1d5fe9",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/00_frameworks.md",
+    "fullstack/devdays/02_portoflio/img/design_paterns_junior2senior.jpeg",
+    "fullstack/devdays/02_portoflio/img/when_to_use_design_patterns.jpeg",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/00_design patterns.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/00_api_architecture.md",
+    "fullstack/devdays/02_portoflio/img/learn_apis_architecture.jpeg",
+    "fullstack/devdays/02_portoflio/01_proyectos/03_microservices/kb/01_arquitectura.md",
+    "fullstack/devdays/02_portoflio/img/microservices gotchas.jpeg",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/04_caching.md",
+    "fullstack/devdays/02_portoflio/img/database_caching_strategies.jpeg",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/10_scaling.md",
+    "fullstack/devdays/02_portoflio/img/stages_to_scale_anapplication.jpeg",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/09_api_performance.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/02_log service.md",
+    "fullstack/devdays/02_portoflio/img/api_performace_strat_part2.gif",
+    "fullstack/devdays/02_portoflio/img/api_performance_strat.gif",
+    "fullstack/devdays/02_portoflio/img/logging_guidelines.jpeg",
+    "fullstack/devdays/02_portoflio/01_proyectos/04_advanced/01_system design.md",
+    "fullstack/devdays/02_portoflio/img/caching strategies.jpeg",
+    "fullstack/devdays/02_portoflio/01_proyectos/04_advanced",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/08_modals.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/07_RBAC.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/06_centralized_error_handling.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/05_versioning.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/03_rate limiting.md",
@@ -290,8 +297,6 @@
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting/01_docker.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/01_dto.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/04_caching.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/02_log service.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints/00_health.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints/01_tasks.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints",
@@ -299,30 +304,11 @@
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_gestion de actualizaciones.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_api_security_design.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/04_autenticacion/01_ node.js+jwt+cookies.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_bitacora.md",
-    "devops/06_proyectos/00_aws credits.md",
-    "devops/06_proyectos/00_montar un enviro para dev y test.md",
-    "devops/99_devops_bestpractices.md",
-    "fullstack/devdays/01_ejercicios/frontend/reactjs/03_sotiria.md",
-    "Pasted image 20250624160501.png",
-    "fullstack/devdays/02_portoflio/img/Pasted image 20250624160314.png",
-    "fullstack/devdays/02_portoflio/img/Pasted image 20250624155237.png",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/09_free apis.md",
-    "Pasted image 20250612111700.png",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_backend",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend",
     "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs",
     "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/user_specs",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs/frontend",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_datasheet",
-    "fullstack/devdays/Pasted image 20231211111126.png",
-    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211120322.png",
-    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211120127.png",
-    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211120008.png",
-    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211115640.png",
-    "fullstack/devdays/02_portoflio/00_recursos/img/Pasted image 20231211115510.png"
+    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs/frontend"
   ]
 }

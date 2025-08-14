@@ -1,0 +1,3 @@
+
+![[logging_guidelines.jpeg]]
+
