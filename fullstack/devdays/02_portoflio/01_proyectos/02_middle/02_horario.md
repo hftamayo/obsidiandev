@@ -2,22 +2,23 @@
 ### Up next:
 ==ReactTodo:
 1. React Hook Form en login y signup, zod para validacion
-2. react tables
-3. trpc + react query -> data
-4. date-fns -< date utils
-5. nuqs -> search params
-6. 
+2. crear un mecanismo central de interaction handling (error, confirm, result)
+3. react tables
+4. trpc + react query -> data
+5. date-fns -< date utils
+6. nuqs -> search params
+7. 
 
 
 ### Status:
 
-| #   | Proyecto     | Done                                               | Comment                                            |
-| --- | ------------ | -------------------------------------------------- | -------------------------------------------------- |
-| 1   | nodetodo     | version 0.2.0 for testing                          |                                                    |
-| 2   | jsbtodo      | version 0.2.0 for testing                          |                                                    |
-| 3   | gotodo       | refactor services for dep injection                |                                                    |
-| 4   | reacttodo    | Landing flow in beta                               |                                                    |
-| 5   | reactsotiria | project assembled and ready<br>for test on runtime | tratar de acelerar el proyecto <br>usando AI Agent |
+| #   | Proyecto     | Done                                                       | Comment                                            |
+| --- | ------------ | ---------------------------------------------------------- | -------------------------------------------------- |
+| 1   | nodetodo     | version 0.2.0 for testing                                  |                                                    |
+| 2   | jsbtodo      | version 0.2.0 for testing                                  |                                                    |
+| 3   | gotodo       | version 0.1.5 for testing                                  |                                                    |
+| 4   | reacttodo    | Clean up input validation  and <br>buttons events          |                                                    |
+| 5   | reactsotiria | depurar el dashboard pero <br>interesa más evalaur el crud | tratar de acelerar el proyecto <br>usando AI Agent |
 
 ## Features:
 ### Backend:
