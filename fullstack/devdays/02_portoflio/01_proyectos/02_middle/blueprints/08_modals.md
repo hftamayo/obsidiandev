@@ -84,3 +84,7 @@
 4. **Phase 5**: Add when you scale up
 
 **Would you like to start with Phase 1 (Modal Slice creation)?**
+
+==Pero cuando ya hay varios routes definidos se puede usar este approach
+
+**About mixed routing approaches: the redux based modal system (GlobalModalContainer and useModalState) was useful for spin up modals, but it seem CustomOutlet is an even better approach, right now, I'm not sure to get rid off redux based modal, at some point it might be helpful**
