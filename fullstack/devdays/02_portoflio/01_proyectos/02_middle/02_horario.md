@@ -13,13 +13,13 @@
 
 ### Status:
 
-| #   | Proyecto     | Done                                                                | Comment                                            |
-| --- | ------------ | ------------------------------------------------------------------- | -------------------------------------------------- |
-| 1   | nodetodo     | version 0.2.0 for testing                                           |                                                    |
-| 2   | jsbtodo      | version 0.2.0 for testing<br>depurar los errores <br>de compilacion |                                                    |
-| 3   | gotodo       | version 0.1.5 for testing                                           |                                                    |
-| 4   | reacttodo    | probar el <br>handshaking de login                                  |                                                    |
-| 5   | reactsotiria | UI basico, depurar <br>el data fetching                             | tratar de acelerar el proyecto <br>usando AI Agent |
+| #   | Proyecto     | Done                                                          | Comment                                            |
+| --- | ------------ | ------------------------------------------------------------- | -------------------------------------------------- |
+| 1   | nodetodo     | version 0.2.0 for testing                                     |                                                    |
+| 2   | jsbtodo      | version 0.2.0 for testing                                     |                                                    |
+| 3   | gotodo       | version 0.1.5 for testing                                     |                                                    |
+| 4   | reacttodo    | login workflow complete, <br>waiting for token <br>management |                                                    |
+| 5   | reactsotiria | UI basico, depurar <br>el data fetching                       | tratar de acelerar el proyecto <br>usando AI Agent |
 
 ## Features:
 ### Backend:

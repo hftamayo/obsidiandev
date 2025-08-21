@@ -139,16 +139,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/08_modals.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/12_authentication.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08_modals"
+              "title": "12_authentication"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -291,11 +291,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4a459029b22a5e88",
+  "active": "4fcbcc4139c5e8d7",
   "lastOpenFiles": [
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/08_modals.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/14_proyectos de ejemplo.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/12_authentication.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/14_proyectos de ejemplo.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/11_login workflow.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
@@ -330,7 +331,6 @@
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/01_dto.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints/00_health.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints/01_tasks.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing",
