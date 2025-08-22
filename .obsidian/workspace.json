@@ -148,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -291,15 +291,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4fcbcc4139c5e8d7",
+  "active": "4a459029b22a5e88",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/08_modals.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/12_authentication.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/08_modals.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/14_proyectos de ejemplo.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/11_login workflow.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/blueprints/00_frameworks.md",
     "fullstack/devdays/02_portoflio/img/design_paterns_junior2senior.jpeg",
     "fullstack/devdays/02_portoflio/img/when_to_use_design_patterns.jpeg",

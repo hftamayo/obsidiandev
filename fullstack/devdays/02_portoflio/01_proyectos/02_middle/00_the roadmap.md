@@ -1,8 +1,8 @@
 
 ### Combinaciones:
-1. nodetodo+mobiletodo
-2. jsbtodo+reacttodo
-3. gotodo+vitetodo
+1. nodetodo+reacttodo
+2. jsbtodo+mobiletodo
+3. gotodo+vitetodo and reactsotiria
 
 ## Caracteristicas para que una API sea considerada en el nivel ==middle:
 

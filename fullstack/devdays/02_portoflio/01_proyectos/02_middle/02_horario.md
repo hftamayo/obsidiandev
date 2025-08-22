@@ -13,13 +13,13 @@
 
 ### Status:
 
-| #   | Proyecto     | Done                                                          | Comment                                            |
-| --- | ------------ | ------------------------------------------------------------- | -------------------------------------------------- |
-| 1   | nodetodo     | version 0.2.0 for testing                                     |                                                    |
-| 2   | jsbtodo      | version 0.2.0 for testing                                     |                                                    |
-| 3   | gotodo       | version 0.1.5 for testing                                     |                                                    |
-| 4   | reacttodo    | login workflow complete, <br>waiting for token <br>management |                                                    |
-| 5   | reactsotiria | UI basico, depurar <br>el data fetching                       | tratar de acelerar el proyecto <br>usando AI Agent |
+| #   | Proyecto     | Done                                                               | Comment                                            |
+| --- | ------------ | ------------------------------------------------------------------ | -------------------------------------------------- |
+| 1   | nodetodo     | version 0.2.0 for testing                                          |                                                    |
+| 2   | jsbtodo      | version 0.2.0 for testing                                          |                                                    |
+| 3   | gotodo       | version 0.1.5 for testing                                          |                                                    |
+| 4   | reacttodo    | debug login flow <br>interaction                                   |                                                    |
+| 5   | reactsotiria | en proceso de habilitar <br>el fetching de task con <br>goresttodo | tratar de acelerar el proyecto <br>usando AI Agent |
 
 ## Features:
 ### Backend:
@@ -51,13 +51,13 @@
 
 | Feature                                                                           | ReactTodo | MobileTodo |
 | --------------------------------------------------------------------------------- | --------- | ---------- |
-| CORS policies                                                                     |           |            |
+| CORS policies                                                                     | X         |            |
 | Auth+author(JWT handling, <br>token refresh, role based UI)                       |           |            |
 | Error handling                                                                    |           |            |
 | Security headers                                                                  |           |            |
 | Performance optimization                                                          |           |            |
-| State management                                                                  |           |            |
-| form validation                                                                   |           |            |
+| State management                                                                  | X         |            |
+| form validation                                                                   | X         |            |
 | loading states (skeleton, spinners)                                               |           |            |
 | Optimistic updates                                                                |           |            |
 | Offline support <br>(service workers, cached data, <br>sync when online)          |           |            |
