@@ -1,25 +1,22 @@
 
 ### Up next:
 ==ReactTodo:
-1. aplicar background gradient a los modales
-2. Aplicar theme en signup and login UI components
-3. crear un mecanismo central de interaction handling (error, confirm, result)
-4. react tables
-5. trpc + react query -> data
-6. date-fns -< date utils
-7. nuqs -> search params
-8. 
-
+1. Aplicar theme en signup and login UI components
+2. crear un mecanismo central de interaction handling (error, confirm, result)
+3. Tanstack tables, los crud requieren del adapter pattern para el parseo entre las entidades y el modelo de tablas
+4. trpc + react query -> data
+5. date-fns -< date utils
+6. nuqs -> search params
 
 ### Status:
 
-| #   | Proyecto     | Done                                                               | Comment                                            |
-| --- | ------------ | ------------------------------------------------------------------ | -------------------------------------------------- |
-| 1   | nodetodo     | version 0.2.0 for testing                                          |                                                    |
-| 2   | jsbtodo      | version 0.2.0 for testing                                          |                                                    |
-| 3   | gotodo       | version 0.1.5 for testing                                          |                                                    |
-| 4   | reacttodo    | debug login flow <br>interaction                                   |                                                    |
-| 5   | reactsotiria | en proceso de habilitar <br>el fetching de task con <br>goresttodo | tratar de acelerar el proyecto <br>usando AI Agent |
+| #   | Proyecto     | Done                                    | Comment                                         |
+| --- | ------------ | --------------------------------------- | ----------------------------------------------- |
+| 1   | nodetodo     | version 0.2.0 for testing               |                                                 |
+| 2   | jsbtodo      | version 0.2.0 for testing               |                                                 |
+| 3   | gotodo       | version 0.1.5 for testing               |                                                 |
+| 4   | reacttodo    | version 0.1.4 for testing               |                                                 |
+| 5   | reactsotiria | version  0.0.1-main, <br>project halted | please refer to <br>obsidiandev for <br>roadmap |
 
 ## Features:
 ### Backend:

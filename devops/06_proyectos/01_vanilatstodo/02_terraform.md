@@ -34,6 +34,12 @@ docker exec tfdev ls -la /workspace
 
 5. el codigo es actualizado en bare metal y listo para hacer un commit
 
+==6.  explicacion de este proceso:
+- el container tfdev debe estar en ejecución
+- este container monta automaticamente el repo /hftamayo/reactjs/myprojects/vanillatstodo
+- me tengo que mover al directorio del paso 4 para correr el script tf-codeformat.sh fmt y los archivos se actualizan
+- luego se debe replicar hacia el repo htues
+
 ![[Pasted image 20250326134718.png]]
 
 6. Despues de esto el contenedor puede ser destruido
