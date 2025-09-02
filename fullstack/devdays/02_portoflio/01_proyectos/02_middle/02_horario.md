@@ -1,5 +1,6 @@
 
 ### Up next:
+
 ==ReactTodo:
 1. Aplicar theme en signup and login UI components
 2. crear un mecanismo central de interaction handling (error, confirm, result)
@@ -10,13 +11,14 @@
 
 ### Status:
 
-| #   | Proyecto     | Done                                    | Comment                                         |
-| --- | ------------ | --------------------------------------- | ----------------------------------------------- |
-| 1   | nodetodo     | version 0.2.0 for testing               |                                                 |
-| 2   | jsbtodo      | version 0.2.0 for testing               |                                                 |
-| 3   | gotodo       | version 0.1.5 for testing               |                                                 |
-| 4   | reacttodo    | version 0.1.4 for testing               |                                                 |
-| 5   | reactsotiria | version  0.0.1-main, <br>project halted | please refer to <br>obsidiandev for <br>roadmap |
+| #   | Proyecto             | Done                                                  | Comment                                         |
+| --- | -------------------- | ----------------------------------------------------- | ----------------------------------------------- |
+| 1   | nodetodo             | version 0.2.0 for testing                             |                                                 |
+| 2   | jsbtodo              | unit testing full spec coverage                       |                                                 |
+| 3   | gotodo               | version 0.2.0 for testing                             |                                                 |
+| 4   | reacttodo            | version 0.1.4 for testing                             |                                                 |
+| 5   | reactsotiria         | version  0.0.1-main, <br>project halted               | please refer to <br>obsidiandev for <br>roadmap |
+| 6   | gologger<br>mservice | - comprender la version actual<br>- crear la metadata |                                                 |
 
 ## Features:
 ### Backend:
