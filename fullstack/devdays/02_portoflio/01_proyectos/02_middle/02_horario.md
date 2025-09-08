@@ -1,4 +1,10 @@
 
+### Roster:
+1. sistema de incapacidades focusITO -> graphQL (NodeJS + ReactJS, modular monolith)
+2. pulir el proyecto de Laserants junto con el Kodigo -> CQRS+Restful (Cliente: NodeJS, BackOffice: Golang + ReactJS)
+3. El challenge de applaudo sobre la personal agenda: golang+kotlin
+4. el challenge de applaudo del inventario: inicialmente solo la API en jsb+hibernate
+
 ### Up next:
 
 ==ReactTodo:
@@ -8,13 +14,19 @@
 4. trpc + react query -> data
 5. date-fns -< date utils
 6. nuqs -> search params
+7. one to many form
+8. probar otro design pattern para el frontend
+
+==Backend projects:
+1. integration tests
+2. 
 
 ### Status:
 
 | #   | Proyecto             | Done                                                  | Comment                                         |
 | --- | -------------------- | ----------------------------------------------------- | ----------------------------------------------- |
-| 1   | nodetodo             | version 0.2.0 for testing                             |                                                 |
-| 2   | jsbtodo              | unit testing full spec coverage                       |                                                 |
+| 1   | nodetodo             | version 0.2.0-stable ready                            |                                                 |
+| 2   | jsbtodo              | version 0.2.0-stable ready                            |                                                 |
 | 3   | gotodo               | version 0.2.0 for testing                             |                                                 |
 | 4   | reacttodo            | version 0.1.4 for testing                             |                                                 |
 | 5   | reactsotiria         | version  0.0.1-main, <br>project halted               | please refer to <br>obsidiandev for <br>roadmap |
