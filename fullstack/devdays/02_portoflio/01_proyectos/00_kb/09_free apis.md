@@ -25,3 +25,10 @@ Movie(omdbapi) API ![🦠]
 (VirusTotal API ![🎮](
 Pokemon (pokeapi) API ![🔭](
 NASA API
+
+https://restcountries.com
+
+https://github.com/public-apis/public-apis
+
+https://fakestoreapi.com/docs
+

@@ -1,8 +1,3 @@
-
-### output de los endpoints (via DTOs):
-
-========BUG
-
 ### getByID & newTask:
 
 - Return a single task object in data

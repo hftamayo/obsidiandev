@@ -5,9 +5,6 @@
 3. Database Indexes: Verify all necessary database indexes are created
 4. SSL/TLS: Set up HTTPS if deploying directly (not behind a reverse proxy)
 
-
-## Node.JS projects
-
 ## Jsb projects
 
 1. Imágenes Alpine: Uso de imágenes base Alpine para reducir el tamaño.

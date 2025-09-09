@@ -1,9 +1,10 @@
 
 ### Roster:
 1. sistema de incapacidades focusITO -> graphQL (NodeJS + ReactJS, modular monolith)
-2. pulir el proyecto de Laserants junto con el Kodigo -> CQRS+Restful (Cliente: NodeJS, BackOffice: Golang + ReactJS)
-3. El challenge de applaudo sobre la personal agenda: golang+kotlin
-4. el challenge de applaudo del inventario: inicialmente solo la API en jsb+hibernate
+2. pulir el proyecto de Laserants junto con el Kodigo -> CQRS+Restful (Cliente: NodeJS, BackOffice: Golang + ReactJS), Event Sourcing+web socket (logs y health check), saga pattern, circuit braker, event driven arch con solace y boomi, https, webhooks
+3. usar volumenes en los docker datalayer
+4. El challenge de applaudo sobre la personal agenda: golang+kotlin
+5. el challenge de applaudo del inventario: inicialmente solo la API en jsb+hibernate
 
 ### Up next:
 

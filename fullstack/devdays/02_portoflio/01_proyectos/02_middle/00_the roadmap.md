@@ -49,130 +49,6 @@ JWT (JSON Web Token)
 OAuth 2.0: Standard for access delegation.  
 Session Based Auth
 
-==Tipos de Rate Limiting
-
-Excellent question! Let me break down each rate limiting algorithm and recommend the best one for your use case:
-
-## **Rate Limiting Algorithms Comparison**
-
-### **1. Fixed Window Counter** 📊
-```java
-// Simple but has edge case issues
-if (requestsInCurrentMinute < limit) {
-    allow();
-} else {
-    reject();
-}
-```
-**Pros:** Simple, memory efficient
-**Cons:** Burst traffic at window boundaries, unfair distribution
-**Best for:** Simple use cases, low traffic
-
-### **2. Sliding Window Log** 📈
-```java
-// Stores timestamps, more accurate
-List<Long> requestTimes = getRequestTimes(userId);
-removeExpiredRequests(requestTimes, windowSize);
-if (requestTimes.size() < limit) {
-    allow();
-}
-```
-**Pros:** Accurate, smooth traffic distribution
-**Cons:** Memory intensive, complex implementation
-**Best for:** High accuracy requirements
-
-### **3. Leaky Bucket** 🪣
-```java
-// Fixed rate output, queue-based
-if (bucket.hasCapacity()) {
-    bucket.addRequest();
-    allow();
-} else {
-    reject();
-}
-```
-**Pros:** Smooth output rate, predictable
-**Cons:** Can drop requests, not suitable for real-time APIs
-**Best for:** Background processing, batch operations
-
-### **4. Token Bucket** ��
-```java
-// Refills tokens at fixed rate
-if (bucket.tryConsume(1)) {
-    allow();
-} else {
-    reject();
-}
-```
-**Pros:** Allows bursts, memory efficient, industry standard
-**Cons:** Slightly more complex than fixed window
-**Best for:** **Most API scenarios, including yours!**
-
-## **Recommendation: Token Bucket** 🎯
-
-### **Why Token Bucket for Your App?**
-
-1. **Allows Burst Traffic** - Users can make multiple requests quickly if they have tokens
-2. **Memory Efficient** - Only stores token count, not timestamps
-3. **Industry Standard** - Used by Google, AWS, Netflix
-4. **Flexible** - Easy to configure per endpoint/user
-5. **Fair** - Smooth rate limiting without edge cases
-
-### **Implementation Options:**
-
-#### **Option 1: Bucket4j (Recommended)**
-```java
-// Simple, battle-tested library
-Bucket bucket = Bucket.builder()
-    .addLimit(Bandwidth.classic(10, Refill.intervally(10, Duration.ofMinutes(1))))
-    .build();
-```
-
-#### **Option 2: Custom Token Bucket**
-```java
-// Full control, integrates with your envelope pattern
-@RateLimiter(name = "auth-endpoints")
-@PostMapping("/login")
-public ResponseEntity<EndpointResponseDto<?>> authenticate(...) { ... }
-```
-
-## **My Recommendation:**
-**Start with Bucket4j + Token Bucket algorithm** - it's the perfect balance of simplicity, performance, and industry best practices for your Spring Boot application.
-
-## **Rate Limiting Advantages** 🚀
-
-### **Security** 🛡️
-- **Prevents brute force attacks** on login/register
-- **Blocks DDoS attempts** and bot traffic
-- **Protects against credential stuffing**
-
-### **Performance** ⚡
-- **Reduces server load** during traffic spikes
-- **Prevents database overload** from excessive queries
-- **Maintains response times** for legitimate users
-
-### **Cost Control** 💰
-- **Reduces infrastructure costs** (CPU, memory, bandwidth)
-- **Prevents resource exhaustion** during attacks
-- **Optimizes API usage** for fair distribution
-
-### **User Experience** 👥
-- **Prevents accidental spam** from client bugs
-- **Ensures fair access** for all users
-- **Provides predictable API behavior**
-
-### **Monitoring** 📊
-- **Identifies abuse patterns** and suspicious activity
-- **Enables usage analytics** and billing
-- **Helps capacity planning** and scaling decisions
-
-### **Compliance** 📋
-- **Meets API standards** (REST, GraphQL best practices)
-- **Supports SLA requirements** and uptime guarantees
-- **Enables tiered access** (free vs premium users)
-
-**Bottom Line:** Rate limiting is essential for production APIs - it's like having a bouncer at your API door! 🎯
-
 ==Load balancing==:
 Distribuye las solicitudes entre múltiples servidores
 
@@ -240,7 +116,6 @@ Pick your **Go REST API** - it's your strongest architectural showcase. Focus on
 
 - Comprehensive test coverage (unit, integration, e2e)
 - Proper logging and monitoring
-- Docker deployment with docker-compose
 - CI/CD pipeline (GitHub Actions)
 - API documentation (OpenAPI/Swagger)
 - Performance benchmarking
@@ -327,10 +202,6 @@ Beyond coding, demonstrate:
 - **Operational awareness** (monitoring, alerting)
 - **Code review skills** (create PR templates, review guidelines)
 
-## Concrete 30-Day Action Plan
-
-**Week 1-2**: Complete testing suite for Go API (aim for 80%+ coverage) **Week 3**: Add comprehensive logging and basic metrics **Week 4**: Implement CI/CD pipeline and containerized deployment
-
 ## Why This Approach Works
 
 1. **Depth over breadth**: One production-quality project showcases senior skills better than multiple incomplete ones
@@ -341,17 +212,6 @@ Beyond coding, demonstrate:
 Your architectural thinking is already at senior level - now you need to demonstrate execution and operational maturity. The job market values developers who can ship reliable, maintainable systems, not just write clean code.
 
 ___
-## should I stick the next 6 months on gorresttodo+reacttodo?
-
-**Yes, exactly!** You understood perfectly. Focus the next 6 months on your **Go REST API + React frontend** combo. This gives you:
-
-## The Strategic Advantage
-
-**Two projects that complement each other** rather than four separate incomplete ones:
-
-- Go API showcases your backend architecture skills
-- React frontend demonstrates full-stack capability
-- Together they form a **complete platform** you can demo
 
 ## 6-Month Focused Plan
 
@@ -396,15 +256,6 @@ ___
 - Comprehensive monitoring
 
 ## Why This Beats the Alternative
-
-Instead of having:
-
-- 25% complete Go API
-- 25% complete Java API
-- 25% complete Node API
-- 25% complete React app
-
-You'll have:
 
 - **100% production-ready Go API** (your backend showcase)
 - **100% production-ready React app** (your frontend showcase)
