@@ -1,14 +1,88 @@
 
-### Roster:
-1. sistema de incapacidades focusITO -> graphQL (NodeJS + ReactJS, modular monolith)
-2. pulir el proyecto de Laserants junto con el Kodigo -> CQRS+Restful (Cliente: NodeJS, BackOffice: Golang + ReactJS), Event Sourcing+web socket (logs y health check), saga pattern, circuit braker, event driven arch con solace y boomi, https, webhooks
-3. usar volumenes en los docker datalayer
-4. El challenge de applaudo sobre la personal agenda: golang+kotlin
-5. el challenge de applaudo del inventario: inicialmente solo la API en jsb+hibernate
+### Roster de Core Business:
+1. sistema de incapacidades focusITO:
+	1. Back Office: Java Spring Boot
+	2. Front Office: Node JS
+	3. Data Layer: PostgreSQL
+	4. API Protocol: Restful
+
+
+2. el challenge de focusITO de frontend (consumir una API)
+
+3. El challenge de applaudo sobre la personal agenda: golang+kotlin+restful
+
+4. pulir el proyecto de Laserants junto e incorporar reqs del challenge de Kodigo -> CQRS+grapqhl (Cliente: NodeJS, BackOffice: Golang + ReactJS), Event Sourcing+web socket (logs y health check), saga pattern, circuit braker, event driven arch con solace y boomi, https, webhooks
+5. usar volumenes en los docker datalayer
+
+
+6. el challenge de applaudo del inventario: inicialmente solo la API en jsb+hibernate+restful
+
+7. generar QRs en los proyectos que sea competente
+8. plataforma de prestamos, cupones y descuentos
+9. one to many form, dataTable
+10. shorturl
+
+
+## Backend:
+
+1. integration tests
+ 
+### Status:
+
+| #   | Proyecto             | Done                                                  | Next                                                     |
+| --- | -------------------- | ----------------------------------------------------- | -------------------------------------------------------- |
+| 1   | nodetodo             | version 0.2.0-stable ready                            |                                                          |
+| 2   | jsbtodo              | version 0.2.0-stable ready                            |                                                          |
+| 3   | gotodo               | version 0.2.0 for testing                             |                                                          |
+| 4   | reacttodo            | version 0.1.4 for testing                             |                                                          |
+| 5   | reactsotiria         | version  0.0.1-main, <br>project halted               | please refer to <br>obsidiandev for <br>roadmap          |
+| 6   | gologger<br>mservice | - comprender la version actual<br>- crear la metadata |                                                          |
+| 7   | vanillatstodo        | k8s managed with Helm                                 | Github actions pipelines <br>still with hardcoded values |
+
+## Features:
+
+| Feature                                                     | Jsbtodo         | Nodetodo    | Gotodo |
+| ----------------------------------------------------------- | --------------- | ----------- | ------ |
+| input validation                                            |                 |             |        |
+| rate-limiting                                               | X               | X           | X      |
+| caching                                                     |                 |             | X      |
+| Optimistic updates                                          |                 |             |        |
+| versioning                                                  | X               | X           | X      |
+| centralized error handling                                  | X               | 75%         | 80%    |
+| grace failure                                               |                 |             |        |
+| RBAC                                                        | X (hierachical) | X (bitwise) |        |
+| pagination                                                  | X               | X           | X      |
+| payload compression                                         |                 |             |        |
+| encryption                                                  |                 |             |        |
+| Single Entry point <br>(REST API Gateway)                   |                 |             |        |
+| SSRF                                                        |                 |             |        |
+| Unit Testing                                                | X               | X           | X      |
+| Integration Testing                                         |                 |             |        |
+| Full spec coverage                                          |                 |             |        |
+| Injection dependency                                        | X               | X           | X      |
+| HTTPS                                                       |                 |             |        |
+| HealthCheck socket                                          |                 |             |        |
+| logging                                                     |                 |             |        |
+| Semantic paths                                              |                 |             |        |
+| query language on pagination, <br>sorting and filtering     |                 |             |        |
+| Enum de mensajes de error, <br>warning of success esperados |                 |             |        |
+| Goroutines y channels, <br>goscheduler                      |                 |             |        |
+| low latency, high availability                              |                 |             |        |
+| Avoid record duplication by title/name                      |                 |             |        |
+| 3rd party API integration                                   |                 |             |        |
+| API testing against BOLA, <br>missconfigured JWT            |                 |             |        |
+| Multifactor Auth, account lockout                           |                 |             |        |
+| asegurarse de usar prepared statement                       |                 |             |        |
+| payment processing                                          |                 |             |        |
+| Design patterns: factory, singleton, <br>observer           |                 |             |        |
+| Race conditions con giftcads y <br>transferencias de dinero |                 |             |        |
+| backup y restore de la base de datos                        |                 |             |        |
+| mongodb ip access list entry                                |                 |             |        |
+
+### Frontend:
 
 ### Up next:
 
-==ReactTodo:
 1. Aplicar theme en signup and login UI components
 2. crear un mecanismo central de interaction handling (error, confirm, result)
 3. Tanstack tables, los crud requieren del adapter pattern para el parseo entre las entidades y el modelo de tablas
@@ -17,49 +91,6 @@
 6. nuqs -> search params
 7. one to many form
 8. probar otro design pattern para el frontend
-
-==Backend projects:
-1. integration tests
-2. 
-
-### Status:
-
-| #   | Proyecto             | Done                                                  | Comment                                         |
-| --- | -------------------- | ----------------------------------------------------- | ----------------------------------------------- |
-| 1   | nodetodo             | version 0.2.0-stable ready                            |                                                 |
-| 2   | jsbtodo              | version 0.2.0-stable ready                            |                                                 |
-| 3   | gotodo               | version 0.2.0 for testing                             |                                                 |
-| 4   | reacttodo            | version 0.1.4 for testing                             |                                                 |
-| 5   | reactsotiria         | version  0.0.1-main, <br>project halted               | please refer to <br>obsidiandev for <br>roadmap |
-| 6   | gologger<br>mservice | - comprender la version actual<br>- crear la metadata |                                                 |
-
-## Features:
-### Backend:
-
-| Feature                    | Jsbtodo         | Nodetodo    | Gotodo |
-| -------------------------- | --------------- | ----------- | ------ |
-| input validation           |                 |             |        |
-| rate-limiting              | X               | X           | X      |
-| caching                    |                 |             | X      |
-| Optimistic updates         |                 |             |        |
-| versioning                 | X               | X           | X      |
-| centralized error handling | X               | 75%         | 80%    |
-| grace failure              |                 |             |        |
-| RBAC                       | X (hierachical) | X (bitwise) |        |
-| pagination                 | X               | X           | X      |
-| payload compression        |                 |             |        |
-| encryption                 |                 |             |        |
-| Single Entry point         |                 |             |        |
-| SSRF                       |                 |             |        |
-| Unit Testing               | X               | X           |        |
-| Integration Testing        |                 |             |        |
-| Injection dependency       | X               | X           |        |
-| HTTPS                      |                 |             |        |
-| HealthCheck socket         |                 |             |        |
-| logging                    |                 |             |        |
-
-### Frontend:
-
 
 | Feature                                                                           | ReactTodo | MobileTodo |
 | --------------------------------------------------------------------------------- | --------- | ---------- |
@@ -88,6 +119,29 @@
 | E2E testing                                                                       |           |            |
 | Data visualization (<br>charts, graphs, interactive dashboards )                  |           |            |
 | PWA                                                                               |           |            |
+| Enforce boundaries <br>(ESLint rules to prevent cross-features)                   |           |            |
+| Storybook for UI components                                                       |           |            |
+| Feature flags for gradual rollouts                                                |           |            |
+| Apollo client y URQL <br>(https://nearform.com/open-source/urql/docs/comparison/) |           |            |
+|                                                                                   |           |            |
+|                                                                                   |           |            |
+|                                                                                   |           |            |
+|                                                                                   |           |            |
+|                                                                                   |           |            |
+|                                                                                   |           |            |
+|                                                                                   |           |            |
+|                                                                                   |           |            |
+
+### DevOps
+
+
+| Feature                                                | Project |
+| ------------------------------------------------------ | ------- |
+| Blue-green                                             |         |
+| canary                                                 |         |
+| analisis estatico y dinamico <br>de codigo en pipeline |         |
+
+
 
 ## Lunes, Miercoles, Viernes
 

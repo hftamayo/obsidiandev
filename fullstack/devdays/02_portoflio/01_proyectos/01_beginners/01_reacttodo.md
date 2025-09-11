@@ -14,6 +14,12 @@
 | **UI Pattern** | Component composition with memoization |
 | **Data Fetching** | React Query with customized hooks |
 
+Otros pattern usados:
+Custom Hooks, Service Layer, Context pattern, compound component pattern, High Order component pattern (Auth Guard), Factory Pattern (Button and Card)
+
+Otros patrones a considerar:
+Repository Pattern para el data access, Observer pattern para real time updates, Stategy pattern for diff auth methods
+
 ## Design Patterns
 
 | **Pattern** | **Implementation Details** |
