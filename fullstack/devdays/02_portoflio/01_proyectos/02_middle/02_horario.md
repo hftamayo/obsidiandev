@@ -9,14 +9,17 @@
 Otros patrones a considerar:
 Repository Pattern para el data access, Observer pattern para real time updates, Stategy pattern for diff auth methods
 
+### DevOps:
+- incluir en el pipeline CI(DevSecOps): sonarqube (code quality), triby (image vuln scanner)
+- migrar el CD hacia gitOps: ArgoCD (automatizar deploys con k8s), Helm para versiones manifests & packaging, monitores (grafana: metrics y dashboard)
 
 ### Status:
 
-| #   | Proyecto         | Done | Next                                                              |
-| --- | ---------------- | ---- | ----------------------------------------------------------------- |
-| 1   | boabsenses jsb   |      | keep working on entities <br>y luego excepciones y dtos           |
-| 2   | boabsenses react |      | folder layout for DDD and config <br>to aling with DDD boundaries |
-| 3   |                  |      |                                                                   |
+| #   | Proyecto         | Done | Next                                                    |
+| --- | ---------------- | ---- | ------------------------------------------------------- |
+| 1   | boabsenses jsb   |      | keep working on entities <br>y luego excepciones y dtos |
+| 2   | boabsenses react |      | UI controls                                             |
+| 3   | reacttodo        |      | preparado para iniciar unit testing                     |
 
 
 ___
@@ -201,19 +204,4 @@ ___
 ## Domingos:
 1. 5:00 - 5:45 : bounties
 2. 6:00-6:45 : bounties
-
-## Programacion julio
-
-Proyectos:
-goRestTodo  -> vanillaTsTodo
-jsbTodo -> reactTodo
-nodeTodo -> kotlinTodo
-
-| #   | Meta                                 | Periodo de ejecucion | Status                                                                                                  |
-| --- | ------------------------------------ | -------------------- | ------------------------------------------------------------------------------------------------------- |
-| 1   | ReactTodo+JSB                        | 01-07/07             | jsbtodo: deployado en container para probar la respuesta el 15/07                                       |
-| 2   | ReactTodo+NodeTodo                   | 08-14/07             | React Todo: deployado<br>en container hasta la ver<br>0.1.3-experimental, referirse<br>al PR #47        |
-| 3   | ReactSotiria+GoRestTodo<br>ReactTodo | 15-21/07             | 16/07 -> se decide pivotear de <br>ReactSotiria a ReactTodo para poder<br>dar continuidad a un proyecto |
-| 4   | ReactSotiria+                        | 22-28/07             |                                                                                                         |
-|     |                                      |                      |                                                                                                         |
 

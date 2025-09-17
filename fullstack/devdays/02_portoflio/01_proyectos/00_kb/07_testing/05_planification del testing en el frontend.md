@@ -1,11 +1,54 @@
 
-### Recommended Order for Writing Test Suites
+### Recommended Order for Writing Test Suites en el proyecto React Todo
 
 1. **Unit Tests for Utility Functions and Services**: Start by writing unit tests for utility functions and services. These are usually the simplest and most isolated parts of your codebase.
 2. **Unit Tests for Redux Store**: Write unit tests for your Redux store, including actions, reducers, and selectors. This ensures that your state management logic works correctly.
 3. **Unit Tests for UI Components**: Write unit tests for your UI components. These tests should focus on rendering, user interactions, and component behavior.
 4. **Integration Tests**: Write integration tests to ensure that different parts of your application work together correctly. This includes testing how components interact with the Redux store and services.
 5. **End-to-End (E2E) Tests**: Write E2E tests to simulate real user interactions and verify that the entire application works as expected from the user's perspective
+
+
+## 🎯 Recommended Testing Priority
+
+### Tier 1 (Start Here)
+
+1. apiHelpers.ts - Pure functions, easy to test
+2. notificationService.ts - Simple utility functions
+3. modalSlice.ts - Redux slice with clear actions
+
+### Tier 2 (Next)
+
+1. useModalState.ts - Custom hook (needs Redux store mock)
+2. useLazyLoad.ts - Custom hook (needs IntersectionObserver mock)
+3. queryClient.ts - Configuration testing
+
+### Tier 3 (Advanced)
+
+1. apiClient.ts - API operations (needs fetch mocking)
+2. store.ts - Store configuration
+
+## 🛠️ Testing Setup You'll Need
+
+typescript
+
+// Mock setup for different services
+
+- fetch mocking (for API tests)
+- Redux store mocking (for hook tests)
+- IntersectionObserver mocking (for lazy loading)
+- Toast mocking (for notification tests)
+
+## �� Pro Tips
+
+1. Start with pure functions - they're the easiest and most valuable
+2. Mock external dependencies - fetch, toast, IntersectionObserver
+3. Test error scenarios - your error handling is complex and critical
+4. Focus on business logic - API operations, state management, caching
+
+This is a solid testing strategy! You'll get high coverage quickly and build confidence before tackling more complex UI component tests.
+
+___
+
 
 ![[tipos de testing.gif]]
 
