@@ -50,34 +50,6 @@
             }
           },
           {
-            "id": "7e20c5291df5cda5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00_the roadmap"
-            }
-          },
-          {
-            "id": "2dc106eb2521fad9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/00_planificacion/00_blueprints/cors/01_Node.JS + JWT -> Frontend (cookie).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_Node.JS + JWT -> Frontend (cookie)"
-            }
-          },
-          {
             "id": "8a52a5b1be4b84fa",
             "type": "leaf",
             "state": {
@@ -125,6 +97,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04_microservices_design patterns"
+            }
+          },
+          {
+            "id": "b10b071c9b44d908",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_incapacidades_medicas.md",
                 "mode": "source",
                 "source": false
@@ -134,21 +120,7 @@
             }
           },
           {
-            "id": "42ddfa05a6a6f953",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/01_reacttodo.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_reacttodo"
-            }
-          },
-          {
-            "id": "6b43506474356057",
+            "id": "28b57bcfcbf74e61",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -162,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -194,7 +166,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tenant",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -305,34 +277,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "52604a546128c3f2",
+  "active": "b10b071c9b44d908",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/01_reacttodo.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_leftovers.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_incapacidades_medicas.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
-    "fullstack/devdays/00_planificacion/00_blueprints/03_rate limiting.md",
-    "fullstack/devdays/00_planificacion/00_blueprints/cors/01_Node.JS + JWT -> Frontend (cookie).md",
-    "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
-    "devops/06_proyectos/01_vanilatstodo/06_helm_implementation.md",
-    "devops/06_proyectos/01_vanilatstodo/05_getting_in_production.md",
-    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/15_graphql y rest.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
     "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/mermaid.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/04_nodetodo.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/05_jsbtodo.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/01_reacttodo.md",
     "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/03_nodesotiria.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/02_goresttodo.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/04_nodetodo.md",
+    "fullstack/devdays/00_planificacion/00_blueprints/00_api_architecture.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/15_graphql y rest.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/03_on_production.md",
     "fullstack/devdays/02_portoflio/01_proyectos/04_advanced/01_system design.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_bitacora.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_portfolio site.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_gestion de actualizaciones.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/06_aserants_shoppingcart.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/03_microservices/kb/01_arquitectura.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_api_security_design.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints/01_tasks.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs/backend/01_restful.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs/frontend/02_mobile.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs/frontend/01_react.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs/backend/03_microservicios.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs/backend/02_graphql.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/10_microservices.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
+    "fullstack/devdays/00_planificacion/00_blueprints/cors/01_Node.JS + JWT -> Frontend (cookie).md",
+    "fullstack/devdays/00_planificacion/00_blueprints/00_design patterns.md",
+    "Untitled.base",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101036.png",
@@ -351,7 +324,6 @@
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_backend",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend",
     "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/user_specs",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/tech_specs/frontend"
+    "fullstack/devdays/02_portoflio/01_proyectos/00_requerimientos/user_specs"
   ]
 }

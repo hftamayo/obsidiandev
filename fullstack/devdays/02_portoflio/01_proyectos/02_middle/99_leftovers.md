@@ -1,5 +1,48 @@
 ## DEVELOPMENT:
 
+Monolith → Monorepo → Microservices/Microfrontends
+
+- Monolith: Everything coupled, hard to scale
+
+- Monorepo: Decoupled libraries, shared tooling, easy refactoring
+
+- Microservices/MF: Independent deployment, team autonomy
+
+Monorepo gives you:
+
+- Practice with domain boundaries
+
+- Shared tooling and standards
+
+- Easy to extract services later
+
+- Team can work independently
+
+- Single source of truth
+
+It's like training wheels for microservices - you get the benefits without the complexity of distributed systems.
+
+___
+
+## Desmitificando el uso de monorepo con tecnologia no homogeneo
+
+Yes—monorepos can be polyglot. You can keep Java or Rails backends alongside React in one repo.
+
+- How it works:
+  - Keep each service/app with its native build tool (Gradle/Maven for Java, Bundler/Rails, Node for React).
+  - Use a monorepo orchestrator for tasks/caching: Nx (with custom targets), Bazel, or Pants. Turborepo works too but is JS-focused.
+  - Structure example: `apps/web/` (React), `apps/api-java/` (Spring), `apps/api-rails/` (Rails), plus `libs/` for shared code/specs.
+
+- Tips:
+  - Contract-first via OpenAPI/GraphQL; generate client SDKs into `libs/`.
+  - Use Docker dev containers to normalize toolchains.
+  - CI: matrix per project, with “affected” detection to skip unrelated builds/tests.
+  - Enforce boundaries via code owners and directory-level linting.
+
+So yes—it’s a good fit even with Java/Rails; you just keep their native builds and orchestrate them at the repo level.
+
+___
+
 - MongoDB IP Access List Entry
 - Backup y restores de los datalayers
 - DataTable para el frontend

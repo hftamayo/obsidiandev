@@ -1,3 +1,25 @@
+## Projectos middle
+
+### ToDo:
+- UI reutilizable (theme)
+- cada MFE debe tener su propio SDK para host integration
+- healthcheck puede tener un cliente SDK para integracion con los hosts/remotes
+- Contracts first: treat each shared MFE + SDK as a versioned product with clear public API (routes, events, methods, styles, auth handshakes).
+  - Keep MFEs stable and backward compatible; evolve via semver and deprecation policies.
+Otros patrones a considerar:
+Repository Pattern para el data access, Observer pattern para real time updates, Stategy pattern for diff auth methods
+
+
+### Status:
+
+| #   | Proyecto         | Done | Next                                                              |
+| --- | ---------------- | ---- | ----------------------------------------------------------------- |
+| 1   | boabsenses jsb   |      | keep working on entities <br>y luego excepciones y dtos           |
+| 2   | boabsenses react |      | folder layout for DDD and config <br>to aling with DDD boundaries |
+| 3   |                  |      |                                                                   |
+
+
+___
 
 ### Roster de Core Business:
 1. sistema de incapacidades focusITO:
@@ -29,15 +51,15 @@
  
 ### Status:
 
-| #   | Proyecto             | Done                                                  | Next                                                     |
-| --- | -------------------- | ----------------------------------------------------- | -------------------------------------------------------- |
-| 1   | nodetodo             | version 0.2.0-stable ready                            |                                                          |
-| 2   | jsbtodo              | version 0.2.0-stable ready                            |                                                          |
-| 3   | gotodo               | version 0.2.0 for testing                             |                                                          |
-| 4   | reacttodo            | version 0.1.4 for testing                             |                                                          |
-| 5   | reactsotiria         | version  0.0.1-main, <br>project halted               | please refer to <br>obsidiandev for <br>roadmap          |
-| 6   | gologger<br>mservice | - comprender la version actual<br>- crear la metadata |                                                          |
-| 7   | vanillatstodo        | k8s managed with Helm                                 | Github actions pipelines <br>still with hardcoded values |
+| #   | Proyecto             | Done                                                  | Next                                                |
+| --- | -------------------- | ----------------------------------------------------- | --------------------------------------------------- |
+| 1   | nodetodo             | version 0.2.0-stable ready                            |                                                     |
+| 2   | jsbtodo              | version 0.2.0-stable ready                            |                                                     |
+| 3   | gotodo               | version 0.2.0 for testing                             |                                                     |
+| 4   | reacttodo            | version 0.1.4 for testing                             |                                                     |
+| 5   | reactsotiria         | version  0.0.1-main, <br>project halted               | please refer to <br>obsidiandev for <br>roadmap     |
+| 6   | gologger<br>mservice | - comprender la version actual<br>- crear la metadata |                                                     |
+| 7   | vanillatstodo        | GH pipelines no hardcoded <br>values                  | correr los actions <br>para saber que todo funciona |
 
 ## Features:
 
