@@ -1,4 +1,4 @@
-## Projectos middle
+lear## Projectos middle
 
 ### ToDo:
 - UI reutilizable (theme)
@@ -15,11 +15,12 @@ Repository Pattern para el data access, Observer pattern para real time updates,
 
 ### Status:
 
-| #   | Proyecto         | Done | Next                                                    |
-| --- | ---------------- | ---- | ------------------------------------------------------- |
-| 1   | boabsenses jsb   |      | keep working on entities <br>y luego excepciones y dtos |
-| 2   | boabsenses react |      | UI controls                                             |
-| 3   | reacttodo        |      | preparado para iniciar unit testing                     |
+| #   | Proyecto         | Done | Next                                                                                   |
+| --- | ---------------- | ---- | -------------------------------------------------------------------------------------- |
+| 1   | boabsenses jsb   |      | roles entities, set de la relacion: ous, roles, employees,<br>luego excepciones y dtos |
+| 2   | boabsenses react |      | probar si los UI controls <br>y tailwind funcionan                                     |
+| 3   | reacttodo        |      | preparado para iniciar unit testing                                                    |
+| 4   | vanillatstodo    |      | trabajar en el dashboard grafana                                                       |
 
 
 ___
