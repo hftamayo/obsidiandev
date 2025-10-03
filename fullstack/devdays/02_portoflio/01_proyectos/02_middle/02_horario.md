@@ -1,4 +1,4 @@
-lear## Projectos middle
+## Projectos middle
 
 ### ToDo:
 - UI reutilizable (theme)
@@ -12,16 +12,65 @@ Repository Pattern para el data access, Observer pattern para real time updates,
 ### DevOps:
 - incluir en el pipeline CI(DevSecOps): sonarqube (code quality), triby (image vuln scanner)
 - migrar el CD hacia gitOps: ArgoCD (automatizar deploys con k8s), Helm para versiones manifests & packaging, monitores (grafana: metrics y dashboard)
+- CloudWatch dboard update:
+
+ ```
+ Suggested expansions:
+
+- EKS control plane
+
+- API server 5xx, throttling, latency (via CloudWatch Container Insights if enabled)
+
+- Cluster status widget (link to EKS console)
+
+- Nodegroup/EC2
+
+- ASG desired/current/healthy capacity
+
+- Instance CPU/credit balance (if burstable)
+
+- Load balancers
+
+- ALB/NLB: request count, target 5xx/4xx, target response time (P95), unhealthy targets
+
+- VPC/network
+
+- NAT GW bytes, error count
+
+- VPC Flow Logs Insights link and top talkers query shortcut
+
+- Storage
+
+- EBS volume burst balance, throughput, queue length (for Prometheus storage if using EBS)
+
+- CloudWatch Logs
+
+- Links to /aws/eks/<cluster>/cluster and any app log groups
+
+- Logs Insights saved queries (errors in last 15m, 5xx by path)
+
+- Alarms overview
+
+- Alarm status panel listing critical alarms (EKS API, NLB unhealthy, ASG capacity, NAT errors)
+
+If you want, I can:
+
+- Add these widgets to the Terraform 03_monitoring module’s dashboard definition.
+
+- Enable Container Insights (if not already) to surface EKS metrics in CloudWatch.
+
+- Create Saved Queries for Logs Insights and link them from the dashboard.
+ 
+ ```
 
 ### Status:
 
-| #   | Proyecto         | Done | Next                                                                                   |
-| --- | ---------------- | ---- | -------------------------------------------------------------------------------------- |
-| 1   | boabsenses jsb   |      | roles entities, set de la relacion: ous, roles, employees,<br>luego excepciones y dtos |
-| 2   | boabsenses react |      | probar si los UI controls <br>y tailwind funcionan                                     |
-| 3   | reacttodo        |      | preparado para iniciar unit testing                                                    |
-| 4   | vanillatstodo    |      | trabajar en el dashboard grafana                                                       |
-
+| #   | Proyecto         | Done | Next                                                                              |
+| --- | ---------------- | ---- | --------------------------------------------------------------------------------- |
+| 1   | boabsenses jsb   |      | - iniciar con la codificacion  de los impl y <br>controllers usando el patron TDD |
+| 2   | boabsenses react |      | trabajar en los adapters e <br>inmediato el TDD                                   |
+| 3   | reacttodo        |      | - integration testing con los containers                                          |
+| 4   | vanillatstodo    |      | - probar el deploy del codebase y despues del grafana dboard                      |
 
 ___
 

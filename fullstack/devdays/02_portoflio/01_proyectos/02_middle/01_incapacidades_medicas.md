@@ -238,12 +238,38 @@ Agregar un component:
 
 ```
 
+___
+### ==Como ejecutar el proyecto
+
+#### Ejecutar un microfrontend:
+```
+npx nx serve absenses
+```
+#### Ejecutar todo el proyecto
+```
+# Terminal 1 - Start the shell (host)
+npx nx serve shell
+
+# Terminal 2 - Start absenses (remote)
+npx nx serve absenses --port 4201
 
 
-7. 
+```
+
+### Other commands
+```
+# Build the project
+npx nx build absenses
+
+# Run tests
+npx nx test absenses
+
+# See all available commands
+npx nx show project absenses --web
+
+```
 
 ___
-
 ### ==que son los shells en el ambito de microfrontends
 
 Yes. In Module Federation terms, the “shell” is the host application that orchestrates microfrontends (remotes).
@@ -482,7 +508,562 @@ Great question! Here are the key considerations for Redux + React Query across m
 The key is keeping each MF independent while sharing only what's necessary.
 
 ___
+## ==Planning de los microfrontends (UI+Communication with API)
 
+### Arquitectura
+
+- UI Layer: shadcn/ui Table + Input + Select
+- State Management: TanStack Query (React Query)
+- Forms: React Hook Form + Zod validation
+- Adapter Pattern for data gateway
+
+Ejemplo:
+
+```
+libs/shared/ui/
+├── DataTable.tsx          # Generic TanStack Table wrapper
+├── DataTableActions.tsx   # CRUD action buttons
+└── DataTableFilters.tsx   # Reusable filters
+
+libs/[domain]/domain/
+├── types.ts              # Domain entities
+├── columns.tsx           # Domain-specific columns
+└── services.ts           # CRUD operations
+
+
+libs/shared/infrastructure/
+├── adapters/
+│   ├── HttpApiAdapter.ts     # REST API implementation
+│   ├── MockApiAdapter.ts     # For testing/development
+│   └── CachedApiAdapter.ts   # With TanStack Query integration
+
+libs/[domain]/domain/
+├── entities/                 # Pure domain objects
+├── repositories/            # Abstract interfaces
+└── services/               # Domain business logic
+
+libs/[domain]/infrastructure/
+├── adapters/
+│   └── [Domain]ApiAdapter.ts # Domain-specific API adapter
+
+```
+
+### Beneficios de la arquitectura
+
+**1. Clean Architecture Compliance:**
+- Your **domain layer** stays pure (no HTTP/API knowledge)
+- **Infrastructure layer** handles external API details
+- **Application layer** uses domain interfaces
+
+**2. API Independence:**
+- Easy to switch between REST, GraphQL, or different API versions
+- Mock implementations for testing
+- Backend changes don't affect domain logic
+
+**3. Multiple Data Sources:**
+- Different APIs for different domains
+- Mix of internal APIs + external services
+- Easy to add caching, transformation, or aggregation
+
+**4. Testability:**
+- Mock adapters for unit tests
+- Integration tests with real adapters
+- Easy to test different scenarios
+
+**5. Flexibility:**
+- Different authentication strategies
+- API versioning support
+- Rate limiting, retries, error handling
+
+**6. Reusability:**
+- Generic CRUD adapter interface
+- Domain-specific implementations
+- Shared HTTP client configuration
+
+**7. TanStack Query Integration:**
+- Adapters return proper query keys
+- Clean separation of concerns
+- Perfect caching strategies
+
+
+Here's the comprehensive directory map for your enterprise-grade monorepo with DDD, Adapter Pattern, and micro-frontend architecture:
+
+```
+boabsenses/
+├── 📁 absenses/                           # Micro-frontend: Absence Management
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── app.tsx
+│   │   │   └── router.tsx
+│   │   ├── components/                    # App-specific components
+│   │   │   ├── AbsenceList.tsx
+│   │   │   ├── AbsenceForm.tsx
+│   │   │   └── AbsenceDashboard.tsx
+│   │   ├── pages/                         # Route pages
+│   │   │   ├── AbsencesPage.tsx
+│   │   │   ├── CreateAbsencePage.tsx
+│   │   │   └── EditAbsencePage.tsx
+│   │   ├── hooks/                         # App-specific hooks
+│   │   │   ├── useAbsences.ts
+│   │   │   └── useAbsenceForm.ts
+│   │   └── styles.css
+│   ├── project.json
+│   ├── module-federation.config.ts
+│   └── webpack.config.ts
+│
+├── 📁 shell/                              # Host Application (Shell)
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── app.tsx
+│   │   │   ├── layout.tsx
+│   │   │   └── navigation.tsx
+│   │   ├── pages/
+│   │   │   ├── DashboardPage.tsx
+│   │   │   ├── SettingsPage.tsx
+│   │   │   └── NotFoundPage.tsx
+│   │   └── styles.css
+│   ├── project.json
+│   ├── module-federation.config.ts
+│   └── webpack.config.ts
+│
+├── 📁 libs/
+│   ├── 📁 shared/                         # Shared Libraries
+│   │   ├── 📁 ui/                         # UI Component Library
+│   │   │   ├── src/
+│   │   │   │   ├── components/
+│   │   │   │   │   ├── ui/                # shadcn/ui components
+│   │   │   │   │   │   ├── button.tsx
+│   │   │   │   │   │   ├── card.tsx
+│   │   │   │   │   │   ├── input.tsx
+│   │   │   │   │   │   ├── label.tsx
+│   │   │   │   │   │   ├── table.tsx
+│   │   │   │   │   │   ├── dialog.tsx
+│   │   │   │   │   │   ├── form.tsx
+│   │   │   │   │   │   └── select.tsx
+│   │   │   │   │   └── composite/         # Composite components
+│   │   │   │   │       ├── DataTable.tsx
+│   │   │   │   │       ├── CrudTable.tsx
+│   │   │   │   │       ├── SearchFilter.tsx
+│   │   │   │   │       ├── Pagination.tsx
+│   │   │   │   │       └── FormModal.tsx
+│   │   │   │   ├── lib/
+│   │   │   │   │   ├── utils.ts
+│   │   │   │   │   └── types.ts
+│   │   │   │   ├── styles/
+│   │   │   │   │   └── globals.css
+│   │   │   │   └── index.ts
+│   │   │   └── project.json
+│   │   │
+│   │   ├── 📁 application/                # Shared Application Services
+│   │   │   ├── src/
+│   │   │   │   ├── hooks/
+│   │   │   │   │   ├── usePagination.ts
+│   │   │   │   │   ├── useSearch.ts
+│   │   │   │   │   └── useCrud.ts
+│   │   │   │   ├── services/
+│   │   │   │   │   ├── QueryClient.ts
+│   │   │   │   │   └── ApiClient.ts
+│   │   │   │   ├── utils/
+│   │   │   │   │   ├── validation.ts
+│   │   │   │   │   └── formatting.ts
+│   │   │   │   └── index.ts
+│   │   │   └── project.json
+│   │   │
+│   │   ├── 📁 domain/                     # Shared Domain Logic
+│   │   │   ├── src/
+│   │   │   │   ├── interfaces/
+│   │   │   │   │   ├── IRepository.ts
+│   │   │   │   │   ├── IApiAdapter.ts
+│   │   │   │   │   └── ICrudService.ts
+│   │   │   │   ├── types/
+│   │   │   │   │   ├── common.ts
+│   │   │   │   │   ├── pagination.ts
+│   │   │   │   │   └── api.ts
+│   │   │   │   ├── enums/
+│   │   │   │   │   ├── Status.ts
+│   │   │   │   │   └── EntityState.ts
+│   │   │   │   └── index.ts
+│   │   │   └── project.json
+│   │   │
+│   │   └── 📁 infrastructure/             # Shared Infrastructure
+│   │       ├── src/
+│   │       │   ├── adapters/
+│   │       │   │   ├── BaseApiAdapter.ts
+│   │       │   │   ├── HttpApiAdapter.ts
+│   │       │   │   ├── MockApiAdapter.ts
+│   │       │   │   └── CachedApiAdapter.ts
+│   │       │   ├── http/
+│   │       │   │   ├── httpClient.ts
+│   │       │   │   ├── interceptors.ts
+│   │       │   │   └── errorHandler.ts
+│   │       │   ├── config/
+│   │       │   │   ├── environment.ts
+│   │       │   │   └── apiConfig.ts
+│   │       │   └── index.ts
+│   │       └── project.json
+│   │
+│   ├── 📁 org-unit-types/                 # Parent Domain: OU Types
+│   │   └── 📁 domain/
+│   │       ├── src/
+│   │       │   ├── entities/
+│   │       │   │   ├── OrgUnitType.ts
+│   │       │   │   └── OrgUnitTypeAggregate.ts
+│   │       │   ├── repositories/
+│   │       │   │   └── IOrgUnitTypeRepository.ts
+│   │       │   ├── services/
+│   │       │   │   └── OrgUnitTypeService.ts
+│   │       │   ├── value-objects/
+│   │       │   │   └── OrgUnitTypeId.ts
+│   │       │   └── index.ts
+│   │       └── project.json
+│   │
+│   ├── 📁 org-units/                      # Child Domain: Organizational Units
+│   │   ├── 📁 domain/
+│   │   │   ├── src/
+│   │   │   │   ├── entities/
+│   │   │   │   │   ├── OrganizationalUnit.ts
+│   │   │   │   │   └── OrgUnitAggregate.ts
+│   │   │   │   ├── repositories/
+│   │   │   │   │   └── IOrganizationalUnitRepository.ts
+│   │   │   │   ├── services/
+│   │   │   │   │   └── OrganizationalUnitService.ts
+│   │   │   │   ├── value-objects/
+│   │   │   │   │   ├── OrgUnitId.ts
+│   │   │   │   │   └── OrgUnitHierarchy.ts
+│   │   │   │   └── index.ts
+│   │   │   └── project.json
+│   │   │
+│   │   └── 📁 infrastructure/
+│   │       ├── src/
+│   │       │   ├── adapters/
+│   │       │   │   └── OrganizationalUnitApiAdapter.ts
+│   │       │   ├── repositories/
+│   │       │   │   └── OrganizationalUnitRepository.ts
+│   │       │   └── index.ts
+│   │       └── project.json
+│   │
+│   ├── 📁 job-titles/                     # Parent Domain: Job Titles
+│   │   └── 📁 domain/
+│   │       ├── src/
+│   │       │   ├── entities/
+│   │       │   │   ├── JobTitle.ts
+│   │       │   │   └── JobTitleAggregate.ts
+│   │       │   ├── repositories/
+│   │       │   │   └── IJobTitleRepository.ts
+│   │       │   ├── services/
+│   │       │   │   └── JobTitleService.ts
+│   │       │   ├── value-objects/
+│   │       │   │   └── JobTitleId.ts
+│   │       │   └── index.ts
+│   │       └── project.json
+│   │
+│   ├── 📁 employees/                      # Child Domain: Employees
+│   │   ├── 📁 domain/
+│   │   │   ├── src/
+│   │   │   │   ├── entities/
+│   │   │   │   │   ├── Employee.ts
+│   │   │   │   │   └── EmployeeAggregate.ts
+│   │   │   │   ├── repositories/
+│   │   │   │   │   └── IEmployeeRepository.ts
+│   │   │   │   ├── services/
+│   │   │   │   │   └── EmployeeService.ts
+│   │   │   │   ├── value-objects/
+│   │   │   │   │   ├── EmployeeId.ts
+│   │   │   │   │   ├── EmployeeName.ts
+│   │   │   │   │   └── EmployeeNumber.ts
+│   │   │   │   └── index.ts
+│   │   │   └── project.json
+│   │   │
+│   │   └── 📁 infrastructure/
+│   │       ├── src/
+│   │       │   ├── adapters/
+│   │       │   │   └── EmployeeApiAdapter.ts
+│   │       │   ├── repositories/
+│   │       │   │   └── EmployeeRepository.ts
+│   │       │   └── index.ts
+│   │       └── project.json
+│   │
+│   ├── 📁 absences/                       # Domain: Absences
+│   │   ├── 📁 domain/
+│   │   │   ├── src/
+│   │   │   │   ├── entities/
+│   │   │   │   │   ├── Absence.ts
+│   │   │   │   │   └── AbsenceAggregate.ts
+│   │   │   │   ├── repositories/
+│   │   │   │   │   └── IAbsenceRepository.ts
+│   │   │   │   ├── services/
+│   │   │   │   │   └── AbsenceService.ts
+│   │   │   │   ├── value-objects/
+│   │   │   │   │   ├── AbsenceId.ts
+│   │   │   │   │   ├── AbsencePeriod.ts
+│   │   │   │   │   └── AbsenceType.ts
+│   │   │   │   └── index.ts
+│   │   │   └── project.json
+│   │   │
+│   │   └── 📁 infrastructure/
+│   │       ├── src/
+│   │       │   ├── adapters/
+│   │       │   │   └── AbsenceApiAdapter.ts
+│   │       │   ├── repositories/
+│   │       │   │   └── AbsenceRepository.ts
+│   │       │   └── index.ts
+│   │       └── project.json
+│   │
+│   └── 📁 absences-types/                 # Domain: Absence Types
+│       └── 📁 domain/
+│           ├── src/
+│           │   ├── entities/
+│           │   │   ├── AbsenceType.ts
+│           │   │   └── AbsenceTypeAggregate.ts
+│           │   ├── repositories/
+│           │   │   └── IAbsenceTypeRepository.ts
+│           │   ├── services/
+│           │   │   └── AbsenceTypeService.ts
+│           │   ├── value-objects/
+│           │   │   └── AbsenceTypeId.ts
+│           │   └── index.ts
+│           └── project.json
+│
+├── 📄 package.json
+├── 📄 nx.json
+├── 📄 tsconfig.base.json
+├── 📄 tailwind.config.js
+└── 📄 README.md
+```
+
+## 🎯 **Key Architecture Principles:**
+
+### **1. Domain Boundaries:**
+- Each domain has its own `domain/` and `infrastructure/` libraries
+- Clear separation between business logic and technical concerns
+
+### **2. Dependency Flow:**
+```
+Apps → Domain Services → Repositories → Adapters → External APIs
+```
+
+### **3. Shared Libraries:**
+- **UI**: Reusable components across all apps
+- **Application**: Common hooks and services  
+- **Domain**: Shared interfaces and types
+- **Infrastructure**: Base adapters and HTTP clients
+
+### **4. Micro-frontend Structure:**
+- Each app is independently deployable
+- Shared UI library ensures consistency
+- Module Federation enables runtime composition
+
+This structure gives you **maximum flexibility, maintainability, and scalability** for your enterprise application! 🚀
+
+___
+### Sinergia entre microfrontend y monorepo
+
+## 📚 **Definitions:**
+
+### **Monorepo (Repository Structure):**
+- **Single Git repository** containing multiple projects/applications
+- **Shared codebase** with multiple apps, libraries, and services
+- **Centralized dependency management** and tooling
+- Example: Your current setup with absenses, shell, libs in one repo
+
+### **Micro-frontends (Runtime Architecture):**
+- **Multiple independently deployable** frontend applications
+- **Runtime composition** of different apps
+- **Independent teams** can work on different parts
+- **Different technology stacks** possible (though you're using React)
+
+## 🎯 **Your Project is BOTH:**
+
+```
+┌─────────────────────────────────────┐
+│        MONOREPO STRUCTURE           │
+│  ┌─────────────────────────────────┐ │
+│  │     MICRO-FRONTEND RUNTIME      │ │
+│  │                                 │ │
+│  │  shell app ←→ absenses app      │ │
+│  │       ↑           ↑             │ │
+│  │   shared libs  shared libs      │ │
+│  └─────────────────────────────────┘ │
+└─────────────────────────────────────┘
+```
+
+## 🏗️ **Why This Combination Makes Sense:**
+
+### **Monorepo Benefits:**
+- ✅ **Shared UI library** across all micro-frontends
+- ✅ **Consistent tooling** (Nx, TypeScript, ESLint)
+- ✅ **Code sharing** between domains
+- ✅ **Atomic changes** across multiple apps
+- ✅ **Simplified CI/CD** pipeline
+
+### **Micro-frontend Benefits:**
+- ✅ **Independent deployment** of each app
+- ✅ **Team autonomy** (different teams own different apps)
+- ✅ **Runtime modularity** (apps can be loaded/unloaded)
+- ✅ **Technology flexibility** (could mix React, Angular, Vue)
+
+## 🌍 **Real-World Examples:**
+
+**Companies using Monorepo + Micro-frontends:**
+- **Netflix** - Single repo, multiple runtime apps
+- **Spotify** - Shared design system, independent apps  
+- **Uber** - Central tooling, distributed runtime
+- **Microsoft** - Office suite (monorepo structure, micro-frontend runtime)
+
+## 💡 **Alternative Approaches:**
+
+**1. Multi-repo + Micro-frontends:**
+```
+separate-repos/
+├── shell-app/          (separate git repo)
+├── absenses-app/       (separate git repo)
+├── shared-ui-lib/      (separate git repo)
+└── each deployed independently
+```
+
+**2. Monolith (Single app):**
+```
+single-repo/
+└── single-app/         (one big application)
+```
+
+## 🎯 **Your Choice is Actually Optimal:**
+
+**Monorepo + Micro-frontends** gives you:
+- **Development efficiency** (shared code, tooling)
+- **Runtime flexibility** (independent deployment)
+- **Team scalability** (clear boundaries)
+- **Maintenance ease** (centralized dependencies)
+
+## 🤓 **So to Answer Your Question:**
+
+It's called a **monorepo** because of the **repository structure** (single Git repo), but it implements **micro-frontend architecture** at **runtime**.
+
+Think of it as: **"Centralized development, distributed deployment"**
+
+___
+### ==Data Access Layer
+
+## 🌐 **API Communication Components Deep Dive**
+
+You're absolutely right! Let me show you specifically the **API communication mechanism** components from the directory structure:
+
+## 🔧 **Core API Communication Components:**
+
+### **1. Base Infrastructure (Shared)**
+```
+libs/shared/infrastructure/
+├── src/
+│   ├── adapters/
+│   │   ├── BaseApiAdapter.ts        ← 🎯 Abstract adapter interface
+│   │   ├── HttpApiAdapter.ts        ← 🎯 HTTP implementation
+│   │   ├── MockApiAdapter.ts        ← 🎯 Testing/dev implementation
+│   │   └── CachedApiAdapter.ts      ← 🎯 With caching layer
+│   ├── http/
+│   │   ├── httpClient.ts            ← 🎯 Axios/Fetch wrapper
+│   │   ├── interceptors.ts          ← 🎯 Auth, errors, logging
+│   │   └── errorHandler.ts          ← 🎯 Global error handling
+│   └── config/
+│       ├── environment.ts           ← 🎯 API endpoints
+│       └── apiConfig.ts             ← 🎯 HTTP client config
+```
+
+### **2. Domain-Specific Adapters**
+```
+libs/[domain]/infrastructure/
+├── src/
+│   ├── adapters/
+│   │   └── [Domain]ApiAdapter.ts    ← 🎯 Domain-specific API calls
+│   └── repositories/
+│       └── [Domain]Repository.ts    ← 🎯 Repository implementation
+```
+
+### **3. Application Layer (API Integration)**
+```
+libs/shared/application/
+├── src/
+│   ├── services/
+│   │   ├── QueryClient.ts           ← 🎯 TanStack Query setup
+│   │   └── ApiClient.ts             ← 🎯 Global API client
+│   └── hooks/
+│       └── useCrud.ts               ← 🎯 Generic CRUD hook
+```
+
+## 🔄 **API Communication Flow:**
+
+```
+Frontend Component
+       ↓
+   useCrud Hook (TanStack Query)
+       ↓
+   Domain Repository
+       ↓
+   Domain API Adapter
+       ↓
+   Base HTTP Client
+       ↓
+   Backend API
+```
+
+## 🎯 **Key API Communication Components:**
+
+### **1. BaseApiAdapter.ts**
+- Abstract interface for all API operations
+- Defines CRUD methods (get, post, put, delete)
+- Handles pagination, filtering, sorting
+
+### **2. HttpApiAdapter.ts**
+- Concrete HTTP implementation
+- Uses httpClient for actual requests
+- Handles request/response transformation
+
+### **3. [Domain]ApiAdapter.ts** (e.g., EmployeeApiAdapter.ts)
+- Domain-specific API endpoints
+- Request/response mapping
+- Domain validation
+
+### **4. httpClient.ts**
+- Axios/Fetch configuration
+- Base URL, timeouts, headers
+- Request/response interceptors
+
+### **5. interceptors.ts**
+- Authentication token injection
+- Global error handling
+- Request/response logging
+
+### **6. useCrud.ts**
+- TanStack Query integration
+- Cache management
+- Loading/error states
+
+## 🌊 **Data Flow Example:**
+
+```
+Component calls: useEmployees()
+       ↓
+useCrud hook triggers: TanStack Query
+       ↓
+Query calls: EmployeeRepository.getAll()
+       ↓
+Repository calls: EmployeeApiAdapter.getEmployees()
+       ↓
+Adapter calls: httpClient.get('/api/employees')
+       ↓
+HTTP interceptors add: auth headers, logging
+       ↓
+Request goes to: Backend API
+```
+
+These components handle **all API communication** while maintaining clean separation between business logic and infrastructure concerns! 🚀
+
+Does this clarify the API communication mechanism?
+
+
+___
+
+
+## Leftovers
 
 
 

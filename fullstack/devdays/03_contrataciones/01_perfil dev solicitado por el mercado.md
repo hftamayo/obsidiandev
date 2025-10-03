@@ -1,4 +1,39 @@
 
+## ==Areas targets:
+
+- healthcare
+- banca y fintech
+
+## ==DevSecOps
+
+
+## ==BackEnd
+
+### Areas generales:
+	- DataLayer: MySQL, PostgreSQL
+	- TDD, DDD
+	- fulltext search with ElasticSearch
+	- define statement of work, minimum viable product
+
+### RoR:
+	- Rails 7
+	- ActiveAdmin for admin interfaces
+	- sidekiq y redis para queue
+
+### Node:
+- 
+
+### Golang:
+	- concurrency patterns
+	- 
+
+## ==FrontEnd
+
+
+
+
+
+
 Groovy, IaC con Terraform, Azure Defender, Azure FrontDoor
 
 MILESTONE 1: JUNIOR DEVELOPER

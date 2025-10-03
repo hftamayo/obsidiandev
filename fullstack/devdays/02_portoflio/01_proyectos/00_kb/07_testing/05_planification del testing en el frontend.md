@@ -27,6 +27,73 @@
 1. apiClient.ts - API operations (needs fetch mocking)
 2. store.ts - Store configuration
 
+## Cosas que no se testean:
+- rootReducer, useappDispatch, useappSelector
+- hooks como useTranslation pues no tienen mayor logica que evaluar
+- Los routers se testean bajo integration test
+
+___
+## Planificacion del testeo de los componentes que renderizan
+
+### Priorities and scope
+
+- Tier 1 (highest ROI)
+- Presenters (pure UI): render/props/state rendering, interactions (clicks, input), a11y (role/name), empty/error/loading states.
+- Feature hooks/services used by containers (already doing this pattern).
+
+- Tier 2
+- Containers: integration tests that stub hooks/services and assert the correct Presenter is rendered with the right props.
+- Route-level flows (AuthGuard branches, critical navigation).
+
+- Tier 3
+- Cross-feature integration (e.g., report modal launched from dashboard).
+
+### Testing style by layer
+
+- Presenters (React Testing Library)
+- Render with minimal providers (theme if needed).
+- Assert UI based on props; simulate user events (user-event); assert callbacks fired with correct args.
+- Snapshot small components only if very stable (avoid over-snapshotting).
+- Containers
+- Mock feature hooks (e.g., useTaskBoard, useHealthCheck) to return controlled states: loading/success/error.
+- Assert Presenter is chosen correctly and receives transformed props.
+- Assert container actions (e.g., page change) call hook actions with correct params.
+- Feature hooks
+- Already doing unit tests (good). For data hooks (React Query), mock fetch/makeRequest; test cache/params/invalid input.
+- Routing
+- Minimal integration per route: render CustomOutlet with a memory router, navigate to /dashboard, assert correct screen; for PrivateRoute/AuthGuard, assert redirect branches.
+
+### What to mock
+
+- Network: mock makeRequest / fetch (unit) or MSW for integration (optional).
+- Store: mock hooks or supply minimal Provider with a tiny test store when needed.
+- Time/Intersection: mock performance.now, IntersectionObserver.
+
+### Coverage targets
+
+- Presenters: 80–90%
+- Containers: 70–80% (focus on branch behavior)
+- Hooks/Services: 80%+ (you’re already there)
+
+### Rollout order (practical)
+
+1) DashBoard presenters (analytics card): loading/success/error render; a11y roles.
+2) TaskBoard presenter: list rendering, item actions, pagination controls.
+
+3) Containers: DashBoardContainer, TaskBoardContainer with mocked hooks (loading → skeleton, success → presenter, error → fallback).
+4) AuthGuard/PrivateRoute: three branches (unauthenticated, unauthorized role, allowed).
+5) Any feature presenters with non-trivial logic (settings form validation, save/cancel flows).
+
+### Tooling add‑ons (optional, but helpful)
+
+- user-event for realistic input/clicks.
+- a11y checks (axe) on key screens.
+- MSW for integration tests that exercise multiple layers without real network.
+
+If you want, I can scaffold the first presenter and container tests (e.g., TaskBoardPresenter and TaskBoardContainer) to set the pattern for the rest.
+
+___
+
 ## 🛠️ Testing Setup You'll Need
 
 typescript
@@ -38,7 +105,6 @@ typescript
 - IntersectionObserver mocking (for lazy loading)
 - Toast mocking (for notification tests)
 
-## �� Pro Tips
 
 1. Start with pure functions - they're the easiest and most valuable
 2. Mock external dependencies - fetch, toast, IntersectionObserver
@@ -48,7 +114,6 @@ typescript
 This is a solid testing strategy! You'll get high coverage quickly and build confidence before tackling more complex UI component tests.
 
 ___
-
 
 ![[tipos de testing.gif]]
 

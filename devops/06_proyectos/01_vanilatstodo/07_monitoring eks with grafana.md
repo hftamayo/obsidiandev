@@ -1,6 +1,10 @@
 
 **🚀 Absolutely! Adding Prometheus and Grafana to your EKS cluster is a fantastic next step for monitoring!** 
 
+## ==IMPORTANTE: GRAFANA PWD ON GITHUB ACTIONS
+
+GRAFANA_PWD = Milucito123$
+
 ## **🎯 RECOMMENDED APPROACH: Helm + Terraform Hybrid**
 
 ### **Current State Analysis:**
@@ -166,9 +170,72 @@ kubectl port-forward svc/vanillatstodo-monitoring-experimental-prometheus-stack-
 
 **Ready to deploy the monitoring stack? Just run the GitHub Actions workflow and you'll have a world-class monitoring setup in minutes!** 🚀
 
-Would you like me to:
-1. **Walk through the deployment** step by step?
-2. **Show you how to add custom metrics** to your application?
-3. **Help set up alerting** for specific scenarios?
+___
 
-Made changes.
+## Contenido del Grafana Dashboard
+
+Here’s a practical checklist of panels/sections your Grafana dashboard should include:
+
+- Cluster control plane
+  - API server: request rate, latency (P50/P95/P99), error rate, 5xx
+  - Scheduler/Controller Manager: work queue depth, scheduling latency
+  - etcd: leader changes, commit latency, db size, fsync/disk latency
+  - CoreDNS: QPS, latency, SERVFAIL/REFUSED rate
+
+- Nodes and capacity
+  - Node status: Ready/NotReady count, taints
+  - CPU/memory: allocatable vs requested vs used, saturation
+  - Disk: IO usage, inode pressure, filesystem usage
+  - Network: RX/TX throughput, errors/drops
+
+- Workloads and reliability
+  - Deployments: desired vs available replicas, rollout failures
+  - Pods: restarts over time, OOMKilled, CrashLoopBackOff
+  - Container resource usage: CPU throttling, memory RSS/working set
+  - Top-N views: top CPU/memory pods, top restarters
+
+- Kubernetes services and ingress
+  - Service latency (if instrumented), request volume
+  - Ingress/ALB/NLB:
+    - Requests, 4xx/5xx rates
+    - Target response time (P95/P99)
+    - Active targets, unhealthy targets
+    - Load balancer errors
+
+- Networking and DNS
+  - DNS latency (CoreDNS), cache hit ratio
+  - Kube-proxy metrics (conntrack, sync failures) if available
+  - VPC CNI (EKS): IP address pool usage, ENI allocation failures
+
+- Storage and volumes
+  - PVC usage: capacity vs used
+  - Volume provisioning latency/failures (external-provisioner metrics if present)
+  - EBS volume metrics (if exported): throughput, latency, burst balance
+
+- Cluster autoscaling (if used)
+  - HPA: target vs actual metrics, scaling events
+  - Cluster Autoscaler: pending pods due to resources, scale-up/scale-down events
+
+- Security and policy (if used)
+  - Admission controller rejects (OPA Gatekeeper/Kyverno)
+  - Audit log event trends (if logs are ingested)
+
+- Application (vanillatstodo)
+  - HTTP: RPS, latency P50/P95/P99, error rate (4xx/5xx), availability
+  - Business metrics: queue length, task operations/sec, failures (if exposed)
+  - Pod-level: restarts, CPU/memory, liveness/readiness probe failures
+
+- EKS specifics
+  - API server throttling
+  - CNI IP usage, ENI attach/detach errors
+  - Nodegroup health (desired/current/ready)
+
+- SLO/SLA overview
+  - Availability and latency SLO gauges per service
+  - Budget burn rate panels (optional)
+
+- Alerting hooks (linked to Prometheus Alertmanager)
+  - Critical: API down, etcd latency high, no schedulable nodes, LB unhealthy
+  - High: pod crash loops, HPA failing to scale, PVC near full
+  - Warning: node resource pressure, CoreDNS latency elevated
+

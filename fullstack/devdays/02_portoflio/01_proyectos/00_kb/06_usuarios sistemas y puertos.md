@@ -37,3 +37,11 @@ containers:
 - 8041-8050: react
 - 3300 - 3310: mysql
 - 5400 - 5410: postgres
+
+___
+## AWS
+
+### Roles AWS:
+group: project_managers
+usuarios:
+- project_manager, ==tag==: role: pm, ==acceso a la consola==: aws+compuesto+$, ==alias del account id==: superadminues

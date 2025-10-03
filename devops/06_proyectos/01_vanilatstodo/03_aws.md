@@ -11,10 +11,7 @@
 
 ### Roles IAM en mi ecosistema:
 
-1. Administrator: gestionar perfiles IAM
-2. idedev: utilizar este perfil en los IDE para desarrollo y que tienen extensiones para AWS, asi como AWS Toolkit
-3. 
-
+please refer to this link: [[06_usuarios sistemas y puertos]]
 ### Script para eliminar un usuario y sus keys:
 
 ```
