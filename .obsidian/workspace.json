@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "devops/06_proyectos/01_vanilatstodo/07_monitoring eks with grafana.md",
+                "file": "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07_monitoring eks with grafana"
+              "title": "04_github_actions"
             }
           },
           {
@@ -204,7 +204,7 @@
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -347,20 +347,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2409bcabe9880884",
+  "active": "c22dc6b27f0e6779",
   "lastOpenFiles": [
-    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
+    "devops/06_proyectos/01_vanilatstodo/05_getting_in_production.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
+    "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
+    "devops/06_proyectos/01_vanilatstodo/07_monitoring eks with grafana.md",
+    "devops/06_proyectos/01_vanilatstodo/06_helm_implementation.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
+    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_incapacidades_medicas.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/05_planification del testing en el frontend.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
     "devops/06_proyectos/01_vanilatstodo/03_aws.md",
-    "devops/06_proyectos/01_vanilatstodo/07_monitoring eks with grafana.md",
     "devops/06_proyectos/01_vanilatstodo/02_terraform.md",
-    "devops/06_proyectos/01_vanilatstodo/05_getting_in_production.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
-    "devops/06_proyectos/01_vanilatstodo/06_helm_implementation.md",
     "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/08_ planificacion del testing.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
@@ -373,8 +375,6 @@
     "fullstack/devdays/00_planificacion/00_blueprints/00_api_architecture.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/15_graphql y rest.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/03_on_production.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/04_advanced/01_system design.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/03_microservices/kb/01_arquitectura.md",
     "Untitled.base",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",
