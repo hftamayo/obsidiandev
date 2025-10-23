@@ -123,6 +123,19 @@ In TDD (Test-Driven Development), the workflow is:
 
 - If the feature is large, break it into small parts and apply TDD to each.
 
+
+## ==Planificacion de un happy path de un metodo Save
+
+1. guardar cuando no hay pre-existencia
+2. error cuando hay un problema de input params
+3. error cuando ya existe un recurso
+4. error totalmente inesperado (excepcion)
+
+¿Falta algo?
+Error de negocio adicional: Si tienes reglas de negocio específicas (por ejemplo, restricciones de formato, límites de longitud, reglas de negocio propias del dominio), podrías agregar tests para esos casos usando BusinessLogicError.
+Permisos/autorización: Si en el futuro agregas lógica de seguridad (por ejemplo, solo ciertos usuarios pueden crear compañías), podrías agregar tests para errores de autorización.
+Integridad referencial: Si la compañía depende de otras entidades (por ejemplo, debe estar asociada a un usuario o empresa padre), podrías agregar tests para esos casos.
+
 ###  ==Node.JS + MVC project:
 
 ==1. **High Priority Testing**
