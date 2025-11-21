@@ -6,9 +6,19 @@ JS:
 - npm test -- test/services
 - npm test -- test/services/roleService.test.ts
 - npm test -- --coverage --verbose
+ 
+  
+Comandos para monorepo con nx:
+- npx nx test infrastructure --verbose
+- npx nx test infrastructure --code-coverage --verbose
+- npx nx test infrastructure --code-coverage    
+  
+El reporte se genera en:
+coverage/libs/shared/infrastructure/index.html  
   
 JAVA:
 - ./mvnw clean test  (jacoco debe estar configurado en pom.xml)  
+- ./mvnw clean test -Ptest (si tengo profiles activado en pom.xml)
 - el reporte esta en ROOTDIR/target/site/jacoco/index.html  
 
 GOLANG: 

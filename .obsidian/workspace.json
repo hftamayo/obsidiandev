@@ -97,12 +97,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/08_ planificacion del testing.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/03_planificacion del integration test en backend.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08_ planificacion del testing"
+              "title": "03_planificacion del integration test en backend"
+            }
+          },
+          {
+            "id": "420c758f6de6a029",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/00_planificacion/00_blueprints/16_test_coverage.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "16_test_coverage"
             }
           },
           {
@@ -176,20 +190,6 @@
             }
           },
           {
-            "id": "ddc9f9b02a6156c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01_perfil dev solicitado por el mercado"
-            }
-          },
-          {
             "id": "6856c16c3226d838",
             "type": "leaf",
             "state": {
@@ -236,7 +236,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "perfil",
+                "query": "jacoco",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -349,32 +349,32 @@
   },
   "active": "6856c16c3226d838",
   "lastOpenFiles": [
-    "fullstack/devdays/00_planificacion/00_horario.md",
+    "fullstack/devdays/00_planificacion/00_blueprints/16_test_coverage.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/03_planificacion del integration test en backend.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_incapacidades_medicas.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/01_planification del testing en el frontend.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/02_ planificacion del testing en backend.md",
+    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
+    "fullstack/devdays/00_planificacion/00_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/00_roadmap coding.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_backend/00_roadmap_coding.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/08_ planificacion del testing.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/05_planification del testing en el frontend.md",
     "devops/06_proyectos/01_vanilatstodo/05_getting_in_production.md",
     "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
     "devops/06_proyectos/01_vanilatstodo/07_monitoring eks with grafana.md",
     "devops/06_proyectos/01_vanilatstodo/06_helm_implementation.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
     "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/01_incapacidades_medicas.md",
     "devops/06_proyectos/01_vanilatstodo/03_aws.md",
     "devops/06_proyectos/01_vanilatstodo/02_terraform.md",
     "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_leftovers.md",
     "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/mermaid.md",
     "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/01_reacttodo.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/03_nodesotiria.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/01_beginners/04_nodetodo.md",
     "Untitled.base",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",
