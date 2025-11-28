@@ -13,6 +13,9 @@ Comandos para monorepo con nx:
 - npx nx test infrastructure --code-coverage --verbose
 - npx nx test infrastructure --code-coverage    
   
+Para correr un spec en especifico:
+- npx nx test infrastructure --verbose --testFile=libs/shared/infrastructure/src/errorHandling/errorTransformer.spec.ts  
+  
 El reporte se genera en:
 coverage/libs/shared/infrastructure/index.html  
   

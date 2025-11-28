@@ -44,6 +44,43 @@ src/main/java/com/hftamayo/java/todo/
 ___
 ### FrontEnd:
 
+
+#### Arquitectura por layers:
+
+```
+### Layer 1: Communication Layer (complete)
+- HTTP client
+- Adapters
+- Error handling
+- Validation
+- Caching (basic)
+- Logging
+
+### Layer 2: Server State Management Layer (next)
+- React Query as the foundation
+- Purpose: manage server state in React components
+- Responsibilities:
+  - Automatic loading/error states
+  - Request deduplication
+  - Background refetching
+  - Optimistic updates
+  - Cache coordination
+  - Stale-while-revalidate patterns
+
+### Layer 3: Business Logic Layer (future)
+- Repository pattern
+- Domain-specific operations
+- Business rules
+- Aggregations
+
+### Layer 4: Presentation Layer (UI components)
+- React components
+- User interactions
+- UI state
+
+```
+
+
 1. Design Pattern: Nx (monorepo tooling) + Domain Driven Design + Module Federation, repository pattern para acceso al data layer, observer pattern para real time updates, strategy pattern para el microftonend de auth
 2. Estructura del DDD + module federation
 src/domains/
