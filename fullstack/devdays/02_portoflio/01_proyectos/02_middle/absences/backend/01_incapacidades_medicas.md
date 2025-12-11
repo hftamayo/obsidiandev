@@ -5,7 +5,33 @@
 	1. backoffice: employees, organizationalunits, branchoffices, leaves_categories,
 	2. frontoffice: leaves, leaves_attachments
 	3. interaccion con el tenantId que vienes desde auth
+___
+## ==Planning del CI/CD pipeline
 
+# Example workflow
+unstable branch:
+  ├── Build & Compile
+  ├── Unit Tests
+  ├── Integration Tests
+  ├── Security Scanning (OWASP Dependency-Check, Snyk)
+  ├── SAST (Static Analysis - SonarQube, Checkmarx)
+  ├── Code Coverage (JaCoCo - you already have this!)
+  ├── Container Security Scan (Trivy, Grype)
+  └── If all pass → Auto-deploy to staging
+
+staging branch:
+  ├── Deploy to staging environment
+  ├── Smoke tests
+  ├── DAST (Dynamic Analysis - OWASP ZAP)
+  ├── Performance/Load testing
+  ├── Manual QA/UAT
+  └── If approved → Merge to main
+
+main/production:
+  ├── Deploy to production
+  ├── Blue-Green or Canary deployment
+  └── Monitor & Rollback capability
+___
 ## ==Specs del core business:
 
 ### Backend:
@@ -35,6 +61,16 @@ src/main/java/com/hftamayo/java/todo/
 
 ```
 
+### Comandos de ejecución:
+
+```
+Correr los test de un microservicio en especifico:
+- pnpm nx test absenses
+- pnpm nx test companies-application
+- pnpm jest libs/shared/application/src/query/keys/queryKeyFactory.spec.ts    
+
+```
+
 
 11. Generacion del proyecto:
 	1. start.spring.io
@@ -43,7 +79,6 @@ src/main/java/com/hftamayo/java/todo/
 
 ___
 ### FrontEnd:
-
 
 #### Arquitectura por layers:
 
@@ -72,6 +107,40 @@ ___
 - Domain-specific operations
 - Business rules
 - Aggregations
+
+
+## Recommendation: lightweight repository pattern
+Create a Business Logic Layer (Repository) that:
+
+1. Moves validation from adapters to repositories (better separation)
+2. Provides abstraction for future offline functionality
+3. Keeps CRUD simple (wraps adapter calls)
+4. Decouples hooks from adapters
+   
+### Benefits
+
+- Validation in the business logic layer (not infrastructure)
+- Ready for offline: repositories can add offline storage later
+- Clean separation: hooks → repositories → adapters
+- Easy to extend: add business rules later without changing hooks   
+
+libs/shared/application/src/
+├── repositories/
+│   ├── company/
+│   │   ├── CompanyRepository.ts      # Main repository with validation
+│   │   ├── types.ts                   # Repository-specific types
+│   │   └── index.ts
+│   └── index.ts
+
+
+### Architecture flow:
+React Query Hooks 
+  ↓
+CompanyRepository (validates with Zod, handles offline later)
+  ↓
+CompanyAdapter (HTTP calls only)
+  ↓
+HTTP Client → API
 
 ### Layer 4: Presentation Layer (UI components)
 - React components
@@ -546,6 +615,25 @@ The key is keeping each MF independent while sharing only what's necessary.
 
 ___
 ## ==Planning de los microfrontends (UI+Communication with API)
+
+
+### Instalacion
+
+en un monolito los comandos son:
+```
+npx shadcn@latest init
+npx shadcn@latest add table
+
+en el ROOTDIR se crea un archivo denominado components.json
+
+```
+
+Usando un proyecto con nx:
+```
+- desde el sitio de shadcn copio el codigo
+- creo a mano los archivos y lo pego en el dir ui
+- esto debido a que shadcn esta basado en Next.js y mi monorepo no lo necesita  
+```
 
 ### Arquitectura
 

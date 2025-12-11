@@ -14,6 +14,9 @@ Comandos para monorepo con nx:
 - npx nx test infrastructure --code-coverage    
   
 Para correr un spec en especifico:
+
+- pnpm nx test absenses --testFile=CompanyTable.spec.tsx
+
 - npx nx test infrastructure --verbose --testFile=libs/shared/infrastructure/src/errorHandling/errorTransformer.spec.ts  
   
 El reporte se genera en:
