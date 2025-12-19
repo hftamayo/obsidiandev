@@ -218,7 +218,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 14
       }
     ],
     "direction": "vertical"
@@ -361,10 +361,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b10b071c9b44d908",
+  "active": "6856c16c3226d838",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/01_incapacidades_medicas.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/02_devops.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/01_incapacidades_medicas.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences",
