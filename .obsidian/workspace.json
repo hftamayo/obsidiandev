@@ -209,12 +209,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/00_ tecnologia y arquitectura.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/03_CICD and DevOps.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_ tecnologia y arquitectura"
+              "title": "03_CICD and DevOps"
             }
           }
         ],
@@ -363,15 +363,18 @@
   },
   "active": "6856c16c3226d838",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/03_CICD and DevOps.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/01_creacion del scaffold para frontend.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/00_ tecnologia y arquitectura.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_leftovers.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/02_devops.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/01_incapacidades_medicas.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences",
     "fullstack/devdays/00_planificacion/00_blueprints/16_test_coverage.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_leftovers.md",
     "fullstack/devdays/01_laboratorios/frontend/reactjs/02_shadcn.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/03_tanstack query vs redux.md",
@@ -389,9 +392,6 @@
     "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
     "devops/06_proyectos/01_vanilatstodo/07_monitoring eks with grafana.md",
     "devops/06_proyectos/01_vanilatstodo/06_helm_implementation.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
-    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
-    "devops/06_proyectos/01_vanilatstodo/03_aws.md",
     "Untitled.base",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",
