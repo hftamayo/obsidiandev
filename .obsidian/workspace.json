@@ -209,12 +209,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/03_CICD and DevOps.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/04_Reverse Proxy para CORS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_CICD and DevOps"
+              "title": "04_Reverse Proxy para CORS"
             }
           }
         ],
@@ -363,9 +363,10 @@
   },
   "active": "6856c16c3226d838",
   "lastOpenFiles": [
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/03_CICD and DevOps.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/04_Reverse Proxy para CORS.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/01_creacion del scaffold para frontend.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/00_ tecnologia y arquitectura.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_leftovers.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
@@ -391,7 +392,6 @@
     "devops/06_proyectos/01_vanilatstodo/05_getting_in_production.md",
     "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
     "devops/06_proyectos/01_vanilatstodo/07_monitoring eks with grafana.md",
-    "devops/06_proyectos/01_vanilatstodo/06_helm_implementation.md",
     "Untitled.base",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",

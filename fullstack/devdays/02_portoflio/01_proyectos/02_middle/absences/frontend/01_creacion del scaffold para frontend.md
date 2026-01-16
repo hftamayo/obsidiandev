@@ -109,18 +109,32 @@ hacer esta actualizacion:
 
 ORCHESTATION DEL DOMAIN SHARED:
 # Shared UI (Where Shadcn components and 'cn' helper will live)
-pnpm nx g @nx/react:library shared-ui --name=shared-ui --directory=libs/shared/ui --bundler=vite --linter=none --unitTestRunner=vitest --importPath=@boabsenses/shared/ui
+pnpm nx g @nx/react:library shared-ui --name=shared-ui --directory=libs/shared/ui --bundler=vite --linter=none --unitTestRunner=vitest --importPath=@monorepo/shared/ui
 RESPUESTAS: (bundler: VITE, linter: NONE, UNIT TEST RUNNER: VITEST)
 
 # Shared Logic (Domain, Application, Infrastructure)
-pnpm nx g @nx/js:library shared-domain --name=shared-domain --directory=libs/shared/domain --bundler=none --linter=none --unitTestRunner=vitest --importPath=@boabsenses/shared/domain
+pnpm nx g @nx/js:library shared-domain --name=shared-domain --directory=libs/shared/domain --bundler=none --linter=none --unitTestRunner=vitest --importPath=@monorepo/shared/domain
 RESPUESTAS: (bundler: NONE, linter: NONE, UNIT TEST RUNNER: VITEST)
 
-pnpm nx g @nx/js:library shared-application --name=shared-application --directory=libs/shared/application --bundler=none --linter=none --unitTestRunner=vitest --importPath=@boabsenses/shared/application
+pnpm nx g @nx/js:library shared-application --name=shared-application --directory=libs/shared/application --bundler=none --linter=none --unitTestRunner=vitest --importPath=@monorepo/shared/application
 RESPUESTAS: (bundler: NONE, linter: NONE, UNIT TEST RUNNER: VITEST)
 
 pnpm nx g @nx/js:library shared-infrastructure --name=shared-infrastructure --directory=libs/shared/infrastructure --bundler=none --linter=none --unitTestRunner=vitest --importPath=@boabsenses/shared/infrastructure
 RESPUESTAS: (bundler: NONE, linter: NONE, UNIT TEST RUNNER: VITEST)
+
+pnpm nx g @nx/js:library shared-feature --name=shared-feature --directory=libs/shared/feature --bundler=none --linter=none --unitTestRunner=vitest --importPath=@monorepo/shared/feature
+RESPUESTAS: (bundler: NONE, linter: NONE, UNIT TEST RUNNER: VITEST)
+
+este otro estilo de comando no da errores con biome:
+pnpm nx g @nx/react:library shared-feature \
+  --directory=libs/shared/feature \
+  --name=shared-feature \
+  --importPath=@monorepo/shared-feature \
+  --bundler=none \
+  --linter=none \
+  --unitTestRunner=vitest \
+  --component=false \
+  --projectNameAndRootFormat=as-provided
 
 --IMPORTANTE--
 1. durante la ejecucion de estos comandos me generó error en la creacion de shared/ui:
@@ -132,16 +146,21 @@ RESPUESTAS: (bundler: NONE, linter: NONE, UNIT TEST RUNNER: VITEST)
 
 ORCHESTATION DEL DOMINIO COMPANIES: (bundler: NONE, linter: NONE, UNIT TEST RUNNER: VITEST)
 # Companies Domain (Where CompanyResponseDto and types go)
-pnpm nx g @nx/js:library companies-domain --name=companies-domain --directory=libs/companies/domain --bundler=none --linter=none --unitTestRunner=vitest --importPath=@boabsenses/companies/domain
+pnpm nx g @nx/js:library companies-domain --name=companies-domain --directory=libs/companies/domain --bundler=none --linter=none --unitTestRunner=vitest --importPath=@monorepo/companies/domain
 RESPUESTAS: (bundler: NONE, linter: NONE, UNIT TEST RUNNER: VITEST) 
 
 # Companies Application (Where useCompanies hook and useCompanyData go)
-pnpm nx g @nx/js:library companies-application --name=companies-application --directory=libs/companies/application --bundler=none --linter=none --unitTestRunner=vitest --importPath=@boabsenses/companies/application
+pnpm nx g @nx/js:library companies-application --name=companies-application --directory=libs/companies/application --bundler=none --linter=none --unitTestRunner=vitest --importPath=@monorepo/companies/application
 RESPUESTAS: (bundler: NONE, linter: NONE, UNIT TEST RUNNER: VITEST)
 
 # Companies Feature (Where CompanyContainer and CompanyTable go)
-pnpm nx g @nx/react:library companies-feature --name=companies-feature --directory=libs/companies/feature --bundler=vite --linter=none --unitTestRunner=vitest --importPath=@boabsenses/companies/feature
+pnpm nx g @nx/react:library companies-feature --name=companies-feature --directory=libs/companies/feature --bundler=vite --linter=none --unitTestRunner=vitest --importPath=@monorepo/companies/feature
 RESPUESTAS: (bundler: VITE, linter: NONE, UNIT TEST RUNNER: VITEST)
+
+# Companies infrastructure
+pnpm nx g @nx/react:library companies-infrastructure --name=companies-infrastructure --directory=libs/companies/infrastructure --bundler=vite --linter=none --unitTestRunner=vitest --importPath=@monorepo/companies/infrastructure
+RESPUESTAS: (bundler: VITE, linter: NONE, UNIT TEST RUNNER: VITEST)
+
 ```
 
 ## Creacion de un github repo que pueda servir de template
