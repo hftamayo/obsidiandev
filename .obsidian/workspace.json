@@ -209,16 +209,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/04_Reverse Proxy para CORS.md",
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04_Reverse Proxy para CORS"
+              "title": "02_branch strategy"
+            }
+          },
+          {
+            "id": "96cf36807af1da8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02_horario"
             }
           }
         ],
-        "currentTab": 14
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -361,15 +375,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6856c16c3226d838",
+  "active": "96cf36807af1da8e",
   "lastOpenFiles": [
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
+    "fullstack/blueprints/devops/02_IAC.md",
+    "fullstack/blueprints/devops/01_PLANNING.md",
+    "fullstack/blueprints/be/BE_BACKOFFICE_ARCHITECTURAL_BLUEPRINT.md",
+    "fullstack/blueprints/fe/FE_ARCHITECTURAL_BLUEPRINT.md",
+    "fullstack/blueprints/REPORTING_ARCHITECTURAL_BLUEPRINT.md",
+    "fullstack/blueprints/LOGGER_ARCHITECTURAL_BLUEPRINT.md",
+    "fullstack/blueprints/AUTHENTICATION_ARCHITECTURAL_BLUEPRINT.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/03_CICD and DevOps.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/05_github multi identidad.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/04_Reverse Proxy para CORS.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/01_creacion del scaffold para frontend.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/00_ tecnologia y arquitectura.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_leftovers.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/02_devops.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/01_incapacidades_medicas.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend",
@@ -384,14 +406,6 @@
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/01_planification del testing en el frontend.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/02_ planificacion del testing en backend.md",
     "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
-    "fullstack/devdays/00_planificacion/00_horario.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/00_roadmap coding.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_backend/00_roadmap_coding.md",
-    "devops/06_proyectos/01_vanilatstodo/05_getting_in_production.md",
-    "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
-    "devops/06_proyectos/01_vanilatstodo/07_monitoring eks with grafana.md",
     "Untitled.base",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",
