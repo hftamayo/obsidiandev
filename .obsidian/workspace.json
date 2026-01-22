@@ -230,9 +230,23 @@
               "icon": "lucide-file",
               "title": "02_horario"
             }
+          },
+          {
+            "id": "3d3e85bcaab04157",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fullstack/blueprints/devops/04_BACKUP_STRATEGY_BLUEPRINT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04_BACKUP_STRATEGY_BLUEPRINT"
+            }
           }
         ],
-        "currentTab": 15
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -375,8 +389,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "96cf36807af1da8e",
+  "active": "3d3e85bcaab04157",
   "lastOpenFiles": [
+    "fullstack/blueprints/devops/01_IAC_BLUEPRINT.md",
+    "fullstack/blueprints/devops/02_K8S_CLUSTER_BLUEPRINT.md",
+    "fullstack/blueprints/devops/proj_struct.png",
+    "fullstack/blueprints/devops/04_BACKUP_STRATEGY_BLUEPRINT.md",
+    "fullstack/blueprints/devops/03_OBSERVABILITY_BLUEPRINT.md",
+    "fullstack/blueprints/devops/00_DELIVERY_RELEASE_BLUEPRINT.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
     "fullstack/blueprints/devops/02_IAC.md",
     "fullstack/blueprints/devops/01_PLANNING.md",
@@ -385,7 +406,6 @@
     "fullstack/blueprints/REPORTING_ARCHITECTURAL_BLUEPRINT.md",
     "fullstack/blueprints/LOGGER_ARCHITECTURAL_BLUEPRINT.md",
     "fullstack/blueprints/AUTHENTICATION_ARCHITECTURAL_BLUEPRINT.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/03_CICD and DevOps.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/05_github multi identidad.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/04_Reverse Proxy para CORS.md",
@@ -400,12 +420,6 @@
     "fullstack/devdays/00_planificacion/00_blueprints/16_test_coverage.md",
     "fullstack/devdays/01_laboratorios/frontend/reactjs/02_shadcn.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/03_tanstack query vs redux.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/01_optimizacion y memorizacion.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/03_planificacion del integration test en backend.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/01_planification del testing en el frontend.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/02_ planificacion del testing en backend.md",
-    "fullstack/devdays/03_contrataciones/01_perfil dev solicitado por el mercado.md",
     "Untitled.base",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",
@@ -416,7 +430,6 @@
     "fullstack/devdays/02_portoflio/img/Pasted image 20250901122417.png",
     "fullstack/devdays/02_portoflio/img/Pasted image 20250901112116.png",
     "fullstack/devdays/02_portoflio/img/design_paterns_junior2senior.jpeg",
-    "fullstack/devdays/02_portoflio/img/when_to_use_design_patterns.jpeg",
     "fullstack/devdays/02_portoflio/01_proyectos/04_advanced",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting",
     "fullstack/devdays/00_planificacion/00_blueprints",
