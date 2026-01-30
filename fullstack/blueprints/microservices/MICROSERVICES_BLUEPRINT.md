@@ -264,14 +264,16 @@ Examples:
 **Partitioning rule**
 - Choose a partition key that preserves ordering where needed, usually:
     - `orderId`, `userId`, `accountId` depending on the aggregate
-- Document the key per topic (“Ordering guarantee is per <key>”)
+- Document the key per topic (“Ordering guarantee is per key”)
 
 ---
 
 ### A.3 RabbitMQ exchange/queue naming (recommended)
+
 RabbitMQ is best when you want explicit queue/worker semantics.
 
 **Exchanges**
+
 ```
 <domain>.<bounded-context>.<purpose>.x
 ```
@@ -418,3 +420,9 @@ If you have a REST gateway at the edge, map consistently:
 Pick a single mapping and document it to avoid different services behaving differently.
 
 ---
+
+## Heads up
+
+![Check List](./ms_design_checklist.jpeg)
+
+### To Do
