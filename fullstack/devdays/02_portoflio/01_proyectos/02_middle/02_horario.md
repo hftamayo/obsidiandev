@@ -65,14 +65,14 @@ If you want, I can:
 
 ### Status:
 
-| #   | Proyecto      | Next                                |
-| --- | ------------- | ----------------------------------- |
-| 1   | absences-be   | ejecutar el migration plan          |
-| 2   | absences-fe   | unit testing                        |
-| 3   | loggerservice | crear el scaffold                   |
-| 4   | rptservice    |                                     |
-| 5   | auth          |                                     |
-| 6   | devops        | migrar la pipeline de vanillatstodo |
+| #   | Proyecto      | Next                                                                                                                                   |
+| --- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | absences-be   | verificar si no tengo un leftover acorde al blueprint                                                                                  |
+| 2   | absences-fe   | code review de shared, posible refactor y finalizar unit testing                                                                       |
+| 3   | loggerservice | crear el scaffold                                                                                                                      |
+| 4   | rptservice    |                                                                                                                                        |
+| 5   | auth          |                                                                                                                                        |
+| 6   | devops        | migrar la pipeline de vanillatstodo<br>#3: CI pipeline (unit + integration tests)<br>#4: CD to cloud/K8s + post-deploy smoke tests<br> |
 
 | #   | Proyecto         | Done | Next                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | --- | ---------------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

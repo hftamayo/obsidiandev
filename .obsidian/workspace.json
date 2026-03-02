@@ -246,7 +246,7 @@
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -269,7 +269,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -380,24 +380,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
     }
   },
-  "active": "3cb4c82d4189f8a9",
+  "active": "96cf36807af1da8e",
   "lastOpenFiles": [
-    "devops/06_proyectos/01_vanilatstodo/01_github.md",
     "fullstack/blueprints/be/RESPONSES.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "devops/06_proyectos/01_vanilatstodo/01_github.md",
     "fullstack/Glosario.md",
     "fullstack/blueprints/be/apidesign.jpeg",
     "devsetup_enviro/services behind proxy/04_ instalacion locales de mysql y pg por docker containers.md",
     "fullstack/devdays/01_laboratorios/backend_rest/golang/fibertodo/01_postgres.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/blueprints/be/BE_BACKOFFICE_ARCHITECTURAL_BLUEPRINT.md",
     "fullstack/blueprints/microservices/MICROSERVICES_BLUEPRINT.md",
     "fullstack/blueprints/fe/TESTING_STRATEGY.md",

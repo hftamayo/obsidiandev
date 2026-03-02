@@ -1,5 +1,5 @@
 
-## Command Operations:
+## COMMAND OPERATIONS:
 
 ### Adding a Record:
 
@@ -138,3 +138,32 @@ Date: Wed, 11 Feb 2026 17:49:53 GMT
 
 ```
 
+## QUERY OPERATIONS
+
+### Retrieving all active records (delete = false, active=true)
+
+```
+curl -i -X GET "http://localhost:8081/api/v1/companies?page=0&size=10"
+Success:
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 24 Feb 2026 15:45:54 GMT
+
+{"responseType":"success","statusCode":200,"resultMessage":"ENTITY_RETRIEVED","data":[{"id":1,"name":"Acme Corp","description":"Default demo company","address":"123 Main St","createdBy":1,"updatedBy":null,"createdDate":"2026-02-10T21:07:03.095813Z","updatedDate":null,"deleted":false,"active":true},{"id":5,"name":"Acme2 Subsidiary2","description":"Company2 created via curl smoke test","address":"200 Market Street","createdBy":0,"updatedBy":0,"createdDate":"2026-02-10T21:57:06.425566Z","updatedDate":"2026-02-11T17:49:15.204221Z","deleted":false,"active":true},{"id":2,"name":"Globex","description":"Reference company for testing","address":"456 Market Ave","createdBy":1,"updatedBy":0,"createdDate":"2026-02-10T21:07:03.095813Z","updatedDate":"2026-02-11T17:55:01.651360Z","deleted":false,"active":true},{"id":3,"name":"Initech","description":"Internal seed record","address":"789 Industrial Rd","createdBy":1,"updatedBy":0,"createdDate":"2026-02-10T21:07:03.095813Z","updatedDate":"2026-02-11T18:01:14.345061Z","deleted":false,"active":true}],"pagination":{"pageIndex":0,"pageSize":10,"totalCount":4,"totalPages":1,"hasNext":false,"hasPrev":false},"timestamp":"2026-02-24T15:45:53.965828246Z","cacheTTL":null}
+
+hftamayo@csj-Latitude-5510:absencesbobe$ curl -i "http://localhost:8081/api/v1/companies"
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Tue, 24 Feb 2026 16:30:59 GMT
+
+{"responseType":"success","statusCode":200,"resultMessage":"ENTITY_RETRIEVED","data":[{"id":1,"name":"Acme Corp","description":"Default demo company","address":"123 Main St","createdBy":1,"updatedBy":null,"createdDate":"2026-02-10T21:07:03.095813Z","updatedDate":null,"deleted":false,"active":true},{"id":5,"name":"Acme2 Subsidiary2","description":"Company2 created via curl smoke test","address":"200 Market Street","createdBy":0,"updatedBy":0,"createdDate":"2026-02-10T21:57:06.425566Z","updatedDate":"2026-02-11T17:49:15.204221Z","deleted":false,"active":true},{"id":2,"name":"Globex","description":"Reference company for testing","address":"456 Market Ave","createdBy":1,"updatedBy":0,"createdDate":"2026-02-10T21:07:03.095813Z","updatedDate":"2026-02-11T17:55:01.651360Z","deleted":false,"active":true},{"id":3,"name":"Initech","description":"Internal seed record","address":"789 Industrial Rd","createdBy":1,"updatedBy":0,"createdDate":"2026-02-10T21:07:03.095813Z","updatedDate":"2026-02-11T18:01:14.345061Z","deleted":false,"active":true}],"pagination":{"pageIndex":0,"pageSize":10,"totalCount":4,"totalPages":1,"hasNext":false,"hasPrev":false},"timestamp":"2026-02-24T16:30:59.413581720Z","cacheTTL":null}
+
+```
+
+Disclosure:
+- Is **0** or **1** when `totalCount = 0`? (Both are seen in the wild; pick one and document it.) `totalPages` -> ANSWER: when no records totalCount=0 and totalPages = 0
+- Is `hasPrev` equivalent to `pageIndex > 0` always? -> ANSWER: yes
+- Is `hasNext` equivalent to `pageIndex + 1 < totalPages` always? -> ANSWER: yes
+- Is sorting stable across pages? (important if you do infinite scrolling / rapid paging -> ANSWER: in this project we will not require infinite scrolling, pagination will be across navigation buttons (back, forward, first, last) basically the default method will be offset so pagination is expected to be stable
