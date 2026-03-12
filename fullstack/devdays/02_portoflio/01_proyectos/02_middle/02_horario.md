@@ -65,14 +65,303 @@ If you want, I can:
 
 ### Status:
 
-| #   | Proyecto      | Next                                                                                                                                   |
-| --- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | absences-be   | verificar si no tengo un leftover acorde al blueprint                                                                                  |
-| 2   | absences-fe   | code review de shared, posible refactor y finalizar unit testing                                                                       |
-| 3   | loggerservice | crear el scaffold                                                                                                                      |
-| 4   | rptservice    |                                                                                                                                        |
-| 5   | auth          |                                                                                                                                        |
-| 6   | devops        | migrar la pipeline de vanillatstodo<br>#3: CI pipeline (unit + integration tests)<br>#4: CD to cloud/K8s + post-deploy smoke tests<br> |
+| #   | Proyecto      | Next                                                                                                                                                                                                                                                                                         |
+| --- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | absences-be   | -mejorar el code coverage del core business<br>- code a new domain using TDD<br>- no confiar directamente en lo que manda el frontend para no exponerse a broken access control<br>- implementar rate limit<br>- como gestionar los SSRF<br>(por favor chequear el mapa abajo de esta tabla) |
+| 2   | absences-fe   | - unit testing<br>- playwright<br>- como evitar CSRF                                                                                                                                                                                                                                         |
+| 3   | loggerservice | crear el scaffold                                                                                                                                                                                                                                                                            |
+| 4   | rptservice    |                                                                                                                                                                                                                                                                                              |
+| 5   | auth          |                                                                                                                                                                                                                                                                                              |
+| 6   | devops        | probar si me funciona el deploy iac, dejarlo 25 minutos y luego un destroy iac<br><br>#3: CI pipeline (unit + integration tests)<br>#4: CD to cloud/K8s + post-deploy smoke tests<br>                                                                                                        |
+
+---
+## Short answer
+
+**Build the rest of the CRUD first, but do it with a “quality-by-default” checklist baked into each new endpoint.**
+
+So the order I’d recommend is:
+
+1. **Finish the missing CRUD**
+2. **Apply basic input validation/sanitization as you build it**
+3. **Add/complete coverage checks around the new CRUD**
+4. **Introduce rate limiting**
+5. **Review SSRF risk where the app performs outbound calls**
+6. **Then tighten the rest with deeper hardening/refactoring**
+
+That gives you delivery **and** avoids building features that you’ll have to partially rewrite later.
+
+---
+
+## Why I would not postpone CRUD until all quality tasks are done
+
+Because not all “quality” items have the same dependency relationship with CRUD.
+
+### Some quality tasks should be done **during** CRUD
+
+These are cheap to add early and expensive to retrofit later:
+
+- **Request validation**
+- **DTO boundary discipline**
+- **basic input normalization**
+- **tests for expected/invalid payloads**
+- **consistent error handling**
+
+If you skip these now, every new endpoint becomes future cleanup work.
+
+### Some quality tasks can safely come **right after** CRUD
+
+These are usually cross-cutting and can be layered in once the endpoint surface is clearer:
+
+- **coverage measurement/reporting**
+- **rate limiting**
+- **security review for SSRF**, if outbound HTTP/file fetch behavior exists
+- **broader abuse-protection policies**
+
+These benefit from knowing what routes and use cases actually exist.
+
+---
+
+## My recommended strategy
+
+## Option A — best practical choice
+
+### **Feature-first, with mandatory guardrails**
+
+For each missing CRUD operation, implement it with this minimum bar:
+
+- request DTO validation
+- domain/service-level business rules
+- controller tests
+- service tests
+- integration test for happy path + key failure paths
+- basic malicious/invalid input cases
+
+This is usually the sweet spot.
+
+You avoid two bad extremes:
+
+- **“Ship features now, fix quality later”** → technical debt party
+- **“Perfect the foundation before adding features”** → analysis paralysis in a suit
+
+---
+
+## Suggested execution order
+
+## Phase 1 — Finish the remaining CRUD
+
+Do this first because it is your functional baseline.
+
+While implementing each endpoint, include:
+
+- **bean validation** on incoming requests
+- strict field constraints:
+    - required vs optional
+    - max lengths
+    - allowed characters where relevant
+    - enum/whitelist validation where applicable
+- reject unknown/invalid shapes if your API contract requires that
+- keep request DTOs separate from persistence/domain entities
+- test valid + invalid + edge-case payloads
+
+### Why this matters
+
+If CRUD is incomplete, every later task is being applied to a moving target.
+
+---
+
+## Phase 2 — Check coverage immediately after CRUD lands
+
+Once the CRUD surface is complete, evaluate:
+
+- what lines/branches are uncovered
+- which business rules are untested
+- whether error paths are missing tests
+- whether controllers are only tested for happy path
+
+### Why not do this before CRUD?
+
+Because your coverage number before the missing CRUD exists is not very useful.  
+It’s like weighing a cake before you finish baking it.
+
+Coverage is most helpful **once the main feature set is present**.
+
+---
+
+## Phase 3 — Harden input handling
+
+You mentioned “sanitize input data” with a zero-trust mindset. That is good, but I’d phrase it carefully:
+
+### Prefer this order:
+
+1. **Validate**
+2. **Normalize**
+3. **Sanitize only when needed for a specific sink**
+
+That distinction matters.
+
+### Examples
+
+- For names, codes, emails, IDs:
+    - validate format/length
+    - normalize whitespace/case if appropriate
+- For free text that may later be rendered in HTML:
+    - output-encode or sanitize for that rendering context
+- For SQL:
+    - use parameterized queries/JPA, not string concatenation
+- For logs:
+    - avoid logging raw user input blindly
+- For file paths/URLs:
+    - strict allowlists and parsing rules
+
+### Important note
+
+“Sanitize everything” sounds safe, but can become fuzzy and inconsistent.  
+A stronger model is:
+
+- **accept only expected input**
+- **reject unexpected input**
+- **encode/sanitize at dangerous sinks**
+
+That’s a more solid zero-trust approach.
+
+---
+
+## Phase 4 — Rate limiting
+
+Rate limiting is valuable, but it doesn’t usually need to block CRUD development unless:
+
+- you are already exposing the app publicly, and
+- abuse risk is immediate, especially on auth/search/heavy endpoints
+
+### Prioritize rate limiting for:
+
+- login/auth
+- password reset / verification endpoints
+- expensive search/list endpoints
+- bulk operations
+- endpoints that can enumerate data
+- endpoints callable anonymously
+
+### Why after CRUD?
+
+Because rate limiting rules are easier to define well when the endpoint set is mostly complete.
+
+---
+
+## Phase 5 — SSRF assessment
+
+This one depends on whether your app makes **outbound requests**.
+
+### If your app does **not** fetch external URLs / webhooks / files / remote resources
+
+Then SSRF is probably **not a current priority**.
+
+### If your app **does** accept or construct URLs for outbound access
+
+Then SSRF jumps much higher in priority.
+
+Typical SSRF-risk situations:
+
+- user supplies a URL to fetch
+- webhook callback testing
+- avatar/document import from URL
+- PDF/image generation from remote resource
+- integrations with arbitrary endpoints
+
+### If SSRF is relevant, defend with:
+
+- allowlists of domains or hosts
+- block private/internal IP ranges
+- block localhost and link-local
+- resolve and verify DNS carefully
+- restrict schemes to `http/https` if needed
+- disable redirects or re-validate after redirects
+- set short timeouts
+- restrict ports
+- don’t let users control raw internal destination URLs
+
+So: **check whether SSRF is even applicable before spending much effort there**.
+
+---
+
+## What I would do in your situation
+
+## Recommended plan
+
+### **Step 0**
+
+Finish the missing CRUD.
+
+### **But while doing it, require these non-negotiables**
+
+- request validation
+- clean DTO boundaries
+- tests for invalid input
+- consistent exception/error responses
+
+### **Immediately after CRUD**
+
+- measure coverage
+- close meaningful test gaps
+- add rate limiting
+- assess SSRF based on actual outbound integrations
+- then do a focused hardening pass
+
+---
+
+## A practical rule for prioritization
+
+Use this matrix:
+
+### Do **now during CRUD** if the task is:
+
+- cheap to add incrementally
+- hard to retrofit
+- directly tied to request/response design
+
+That means:
+
+- validation
+- normalization
+- error handling
+- tests
+
+### Do **after CRUD** if the task is:
+
+- cross-cutting
+- policy-oriented
+- easier to tune once endpoints exist
+
+That means:
+
+- coverage reporting
+- rate limiting
+- broader security reviews like SSRF
+
+---
+
+## My final recommendation
+
+## **Do not pause feature delivery to complete every quality task first.**
+
+Instead:
+
+## **Finish the remaining CRUD on top of the current codebase, but implement each piece with baseline quality/security controls from day one.**
+
+In one sentence:
+
+> **Feature completion first, but never “feature now, quality later”; do “feature with guardrails,” then add the broader cross-cutting protections once the CRUD surface is complete.**
+
+---
+
+## If you want, I can help you turn this into a concrete next-step plan such as:
+
+- a **priority backlog order**
+- a **definition of done** for each CRUD endpoint
+- a **security checklist** for validation/rate limiting/SSRF in your Spring app
+- or a **week-by-week implementation plan** based on your current project structure
+
+---
 
 | #   | Proyecto         | Done | Next                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | --- | ---------------- | ---- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

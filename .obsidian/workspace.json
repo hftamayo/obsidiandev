@@ -64,6 +64,20 @@
             }
           },
           {
+            "id": "8c2b6c6003a46e31",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "devops/06_proyectos/01_vanilatstodo/01_github.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_github"
+            }
+          },
+          {
             "id": "9e1abea83014ea0c",
             "type": "leaf",
             "state": {
@@ -148,20 +162,6 @@
             }
           },
           {
-            "id": "52604a546128c3f2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04_microservices_design patterns"
-            }
-          },
-          {
             "id": "b10b071c9b44d908",
             "type": "leaf",
             "state": {
@@ -173,20 +173,6 @@
               },
               "icon": "lucide-file",
               "title": "02_devops"
-            }
-          },
-          {
-            "id": "92f77ea8015b9c47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04_microservices_design patterns"
             }
           },
           {
@@ -204,20 +190,6 @@
             }
           },
           {
-            "id": "6856c16c3226d838",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02_branch strategy"
-            }
-          },
-          {
             "id": "96cf36807af1da8e",
             "type": "leaf",
             "state": {
@@ -232,21 +204,21 @@
             }
           },
           {
-            "id": "3cb4c82d4189f8a9",
+            "id": "bc67ef420ade031f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/blueprints/be/RESPONSES.md",
+                "file": "fullstack/blueprints/be/TESTING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RESPONSES"
+              "title": "TESTING"
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -278,7 +250,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rebase",
+                "query": "jacoco",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -286,7 +258,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -391,9 +363,30 @@
   },
   "active": "96cf36807af1da8e",
   "lastOpenFiles": [
-    "fullstack/blueprints/be/RESPONSES.md",
+    "fullstack/blueprints/be/TESTING.md",
+    "fullstack/blueprints/be/img/Pasted image 20260312121238.png",
+    "fullstack/blueprints/be/img/Pasted image 20260312121151.png",
+    "fullstack/blueprints/be/img",
+    "fullstack/devdays/00_planificacion/00_blueprints/16_test_coverage.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "fullstack/blueprints/be/RESPONSES.md",
+    "fullstack/blueprints/be/dbstrat.jpeg",
+    "fullstack/blueprints/be/start_spring_io dep selection.png",
+    "devops/06_proyectos/01_vanilatstodo/02_terraform.md",
     "devops/06_proyectos/01_vanilatstodo/01_github.md",
+    "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/02_devops.md",
+    "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
+    "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
+    "devops/06_proyectos/01_vanilatstodo/05_getting_in_production.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/03_planificacion del integration test en backend.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/99_leftovers.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
     "fullstack/Glosario.md",
     "fullstack/blueprints/be/apidesign.jpeg",
     "devsetup_enviro/services behind proxy/04_ instalacion locales de mysql y pg por docker containers.md",
@@ -402,24 +395,7 @@
     "fullstack/blueprints/microservices/MICROSERVICES_BLUEPRINT.md",
     "fullstack/blueprints/fe/TESTING_STRATEGY.md",
     "fullstack/blueprints/testing",
-    "fullstack/blueprints/devops/04_BACKUP_STRATEGY_BLUEPRINT.md",
-    "fullstack/blueprints/devops/01_IAC_BLUEPRINT.md",
-    "fullstack/blueprints/devops/02_K8S_CLUSTER_BLUEPRINT.md",
     "fullstack/blueprints/devops/proj_struct.png",
-    "fullstack/blueprints/devops/03_OBSERVABILITY_BLUEPRINT.md",
-    "fullstack/blueprints/devops/00_DELIVERY_RELEASE_BLUEPRINT.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/02_branch strategy.md",
-    "fullstack/blueprints/devops/02_IAC.md",
-    "fullstack/blueprints/devops/01_PLANNING.md",
-    "fullstack/blueprints/fe/FE_ARCHITECTURAL_BLUEPRINT.md",
-    "fullstack/blueprints/REPORTING_ARCHITECTURAL_BLUEPRINT.md",
-    "fullstack/blueprints/LOGGER_ARCHITECTURAL_BLUEPRINT.md",
-    "fullstack/blueprints/AUTHENTICATION_ARCHITECTURAL_BLUEPRINT.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/03_CICD and DevOps.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/05_github multi identidad.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/04_Reverse Proxy para CORS.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/01_creacion del scaffold para frontend.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend/00_ tecnologia y arquitectura.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/frontend",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences",
@@ -428,14 +404,9 @@
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101036.png",
     "fullstack/devdays/02_portoflio/img/Pasted image 20250905103840.png",
-    "fullstack/devdays/02_portoflio/img/Pasted image 20250905075954.png",
-    "Pasted image 20250901100139.png",
-    "fullstack/devdays/02_portoflio/img/Pasted image 20250901122417.png",
-    "fullstack/devdays/02_portoflio/img/Pasted image 20250901112116.png",
     "fullstack/devdays/02_portoflio/01_proyectos/04_advanced",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting",
     "fullstack/devdays/00_planificacion/00_blueprints",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing"
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/endpoints"
   ]
 }
