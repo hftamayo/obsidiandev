@@ -209,12 +209,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "fullstack/blueprints/be/TESTING.md",
+                "file": "fullstack/blueprints/devops/05_K8S_COMMANDS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TESTING"
+              "title": "05_K8S_COMMANDS"
             }
           }
         ],
@@ -250,7 +250,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "jacoco",
+                "query": "git fetch",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -363,25 +363,27 @@
   },
   "active": "96cf36807af1da8e",
   "lastOpenFiles": [
+    "fullstack/blueprints/devops/05_K8S_COMMANDS.md",
     "fullstack/blueprints/be/TESTING.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
+    "devops/06_proyectos/01_vanilatstodo/01_github.md",
+    "fullstack/devdays/00_planificacion/00_blueprints/16_test_coverage.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/03_planificacion del integration test en backend.md",
+    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/02_devops.md",
+    "fullstack/blueprints/be/img/Pasted image 20260316105728.png",
     "fullstack/blueprints/be/img/Pasted image 20260312121238.png",
     "fullstack/blueprints/be/img/Pasted image 20260312121151.png",
     "fullstack/blueprints/be/img",
-    "fullstack/devdays/00_planificacion/00_blueprints/16_test_coverage.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/02_horario.md",
     "fullstack/blueprints/be/RESPONSES.md",
     "fullstack/blueprints/be/dbstrat.jpeg",
     "fullstack/blueprints/be/start_spring_io dep selection.png",
     "devops/06_proyectos/01_vanilatstodo/02_terraform.md",
-    "devops/06_proyectos/01_vanilatstodo/01_github.md",
     "devops/06_proyectos/01_vanilatstodo/04_github_actions.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_frontend_performance.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/02_middle/absences/backend/02_devops.md",
     "devops/01_bootcamp_roxross/edicion2023/00_detalle de los ejercicios bootcamp RossRox.md",
     "devops/01_bootcamp_roxross/100_links recolectados en bootcamp.md",
     "devops/06_proyectos/01_vanilatstodo/05_getting_in_production.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/06_usuarios sistemas y puertos.md",
-    "fullstack/devdays/02_portoflio/01_proyectos/00_kb/07_testing/03_planificacion del integration test en backend.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_observaciones_0.1.5-experimental.md",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/00_the roadmap.md",
     "fullstack/devdays/02_portoflio/01_proyectos/00_kb/05_frontend/04_microservices_design patterns.md",
@@ -403,7 +405,6 @@
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101132.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101103.png",
     "fullstack/devdays/02_portoflio/00_backend/portfolio/proyectos/02_ssr/img/Pasted image 20241009101036.png",
-    "fullstack/devdays/02_portoflio/img/Pasted image 20250905103840.png",
     "fullstack/devdays/02_portoflio/01_proyectos/04_advanced",
     "fullstack/devdays/02_portoflio/01_proyectos/02_middle/troubleshooting",
     "fullstack/devdays/00_planificacion/00_blueprints",
