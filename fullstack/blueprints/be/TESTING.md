@@ -9,16 +9,17 @@
 Correr test en especifico:
 ./mvnw clean verify -Ptest -Dspring.profiles.active=test -Dskip.tests=true -Dskip.integration.tests=false -Dskip.coverage.check=true -Dit.test=CompanyCommandRepositoryAdapterIT
 
-./mvnw clean verify -Ptest -Dspring.profiles.active=test -Dskip.tests=true -Dskip.integration.tests=false -Dskip.coverage.check=true -Dit.test=CompanyQueryRepositoryAdapterIT
+Correr todos los IT tests:
+./mvnw clean verify -Ptest -Dspring.profiles.active=test -Dskip.tests=true -Dskip.integration.tests=false -Dskip.coverage.check=true
 
 Correr test verificando los test coverage esperados en el setup de Jacoco:
 ./mvnw clean verify -Ptest -Dspring.profiles.active=test -Dskip.tests=true -Dskip.integration.tests=false -Dit.test=CompanyCommandRepositoryAdapterIT
 
-Correr todos los unit tests:
-./mvnw clean verify -Ptest -Dspring.profiles.active=test -Dskip.tests=true -Dskip.integration.tests=false
+Correr todos los unit tests con code coverage:
+./mvnw clean verify -Ptest -Dspring.profiles.active=test -Dskip.tests=false -Dskip.integration.tests=true
 
-correrlos todos sin code coverage:
-./mvnw clean verify -Ptest -Dspring.profiles.active=test -Dskip.tests=true -Dskip.integration.tests=false -Dskip.coverage.check=true
+correr los unit tests sin code coverage:
+./mvnw clean verify -Ptest -Dspring.profiles.active=test -Dskip.tests=false -Dskip.integration.tests=true -Dskip.coverage.check=true
 
 
 ```
