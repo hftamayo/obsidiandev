@@ -129,6 +129,8 @@ aws eks describe-addon \
 ```
 export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 
+kubectl get ns
+
 helm uninstall absencesbo-experimental \
   -n absencesbo-experimental \
   --wait \
@@ -138,9 +140,9 @@ kubectl delete namespace absencesbo-experimental \
   --wait=true \
   --timeout=5m || true
   
-helm list -n absencesbo-experimental --all || true
+helm list -n absencesbo-dev --all || true
 
-kubectl get namespace absencesbo-experimental || true
+kubectl get namespace absencesbo-dev || true
 
 kubectl get pods -A
 
