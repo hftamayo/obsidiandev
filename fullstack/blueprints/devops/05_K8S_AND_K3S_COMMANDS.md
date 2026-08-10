@@ -146,9 +146,9 @@ kubectl get namespace absencesbo-dev || true
 
 kubectl get pods -A
 
-kubectl get svc -n absencesbo-experimental
+kubectl get svc -n absencesbo-dev
 
-kubectl describe svc absencesbo-experimental-nginx-695fd6bbd7-wdwzq -n absencesbo-experimental
+kubectl describe svc absencesbo-dev-backend-d75744846-6k5ql -n absencesbo-dev
 
 kubectl get svc -A
 
@@ -192,8 +192,8 @@ export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
 Kubernetes only replaces Pods when the Deployment’s spec.template changes.
 
 CONFIRMAR IMAGEN VERSION DE UN POD:
-kubectl get deployment absencesbo-experimental-nginx \
-  -n absencesbo-experimental \
+kubectl get deployment absencesbo-dev-frontend \
+  -n absencesbo-dev \
   -o jsonpath='{.spec.template.spec.containers[0].image}{"\n"}'
   
 kubectl get rs -n absencesbo-experimental | grep nginx

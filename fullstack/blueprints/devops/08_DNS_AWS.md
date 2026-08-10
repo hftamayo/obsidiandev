@@ -155,3 +155,233 @@ k3s + nginx
 
 
 This gives us a stable public HTTPS URL, AWS-managed DNS, ACM-managed TLS, and a simple k3s runtime that does not need to manage public certificates directly.
+
+___
+## A MORE PRACTICAL APPROACH
+
+create an AWS ACM certificate
+validate it by adding ACM CNAME records in name.com
+point your domain/subdomain to the AWS Load Balancer
+
+Target architecture:
+Browser
+  |
+  | https://exp.absencesbo.tamayo.dev
+  v
+name.com DNS
+  |
+  | CNAME to AWS Load Balancer
+  v
+AWS Load Balancer
+  |
+  | ACM SSL certificate terminates HTTPS
+  v
+Kubernetes nginx service on HTTP :80
+  |
+  v
+frontend/backend services
+
+exp.absencesbo.tamayo.dev
+
+
+actualizar las anotaciones en nginx:
+service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "arn:aws:acm:REGION:ACCOUNT_ID:certificate/CERTIFICATE_ID"
+service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
+service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"
+
+
+in name.com add this dns record:
+Type: CNAME
+Host: exp.absencesbo
+Answer: YOUR_LOAD_BALANCER_DNS_NAME
+TTL: 300
+
+ejemplo:
+Type: CNAME
+Host: exp.absencesbo
+Answer: absencesbo-experimental-abc123.elb.us-east-2.amazonaws.com
+TTL: 300
+
+test dns:
+dig exp.absencesbo.tamayo.dev
+dig CNAME exp.absencesbo.tamayo.dev
+curl -I https://exp.absencesbo.tamayo.dev
+curl -I https://exp.absencesbo.tamayo.dev/healthz
+
+
+# Recommended production-grade option
+
+## Best option: **Custom domain + Route 53 + ACM + AWS Load Balancer**
+
+For a serious AWS-based project, I would choose:
+
+| Purpose | Service |
+|---|---|
+| Domain registration | Route 53, Namecheap, Name.com, Porkbun, etc. |
+| DNS management | **AWS Route 53** |
+| TLS/HTTPS certificate | **AWS Certificate Manager ACM** |
+| Public traffic entrypoint | AWS Load Balancer |
+| Kubernetes production routing | ALB Ingress / AWS Load Balancer Controller |
+
+This gives you stable URLs like:
+
+```plain text
+https://exp.absencesbo.tamayo.dev
+https://stg.absencesbo.tamayo.dev
+https://app.absencesbo.tamayo.dev
+```
+
+My personal recommendation:
+
+2. Create a hosted zone in Route 53 for that domain.
+3. Copy Route 53 nameservers.
+4. Paste those nameservers into the domain registrar settings.
+5. Manage all records in AWS Route 53.
+
+That way, your registrar can be Namecheap/Name.com/etc., but AWS controls DNS. Just delegate DNS to Route 53.
+
+
+# Route 53 record type to use
+
+For AWS Load Balancers, use a Route 53 **Alias A record**.
+
+Example:
+
+```plain text
+exp.absencesbo.com -> Alias to NLB DNS name
+```
+
+
+This is better than hardcoding the long NLB DNS everywhere.
+
+So instead of users visiting:
+
+```plain text
+http://experimental-absencesbo-dev-nlb-af4a2a02822dfc79.elb.us-east-2.amazonaws.com
+```
+
+
+they visit:
+
+```plain text
+http://exp.absencesbo.com
+```
+
+
+Later with TLS:
+
+```plain text
+https://exp.absencesbo.com
+```
+
+
+If the NLB is recreated and its AWS DNS changes, Terraform updates the Route 53 alias, and your public URL stays the same.
+
+---
+
+# For production, HTTPS is mandatory
+
+For production, don’t stop at HTTP.
+
+Use:
+
+```plain text
+https://absencesbo.com
+```
+
+
+For certificates, use:
+
+```plain text
+AWS Certificate Manager
+```
+
+
+ACM certificates are free for AWS-integrated services like ALB, NLB, CloudFront, and API Gateway.
+
+---
+
+# NLB vs ALB for production
+
+For your current experimental setup, NLB is acceptable.
+
+But for production with EKS, I’d strongly consider:
+
+```plain text
+AWS Load Balancer Controller + ALB Ingress
+```
+
+
+Why?
+
+ALB is better for HTTP/HTTPS applications because it supports:
+
+- Host-based routing
+- Path-based routing
+- Native HTTP awareness
+- TLS termination
+- Better web app routing patterns
+- Cleaner Kubernetes Ingress integration
+
+Example future routing:
+
+```plain text
+https://absencesbo.com/        -> frontend/nginx
+https://absencesbo.com/api/    -> backend
+```
+
+
+Or:
+
+```plain text
+https://app.absencesbo.com     -> frontend
+https://api.absencesbo.com     -> backend
+```
+
+
+For your current EC2+k3s experimental environment, keep NLB for now. For EKS staging/prod, I’d move to ALB Ingress.
+
+
+2. **Use Route 53 as DNS manager**
+   - Even if the domain is registered elsewhere.
+
+3. **Create stable environment subdomains**
+
+
+
+4. **Point Route 53 Alias records to AWS Load Balancers**
+
+```plain text
+exp.yourdomain.com -> experimental NLB/ALB
+stg.yourdomain.com -> staging ALB
+yourdomain.com -> production ALB
+```
+
+
+5. **Use ACM for TLS certificates**
+
+```plain text
+*.yourdomain.com
+yourdomain.com
+```
+
+
+6. **Update app config to use stable DNS**
+
+Example:
+
+```yaml
+frontendOrigins: "http://localhost,http://localhost:8041,https://exp.yourdomain.com"
+```
+
+
+Later:
+
+```yaml
+frontendOrigins: "http://localhost,http://localhost:8041,https://exp.yourdomain.com,https://stg.yourdomain.com,https://yourdomain.com"
+```
+
+
+---
+
+My vote: **custom domain + Route 53 + ACM**.
