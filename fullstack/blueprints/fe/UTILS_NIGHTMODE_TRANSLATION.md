@@ -207,3 +207,145 @@ But the whole implementation should be layered like this:
 So the answer is:
 
 > Build the React-facing feature modules in `libs/shared/feature`, but keep their lower-level contracts, logic, infrastructure, and visual components in the corresponding shared libraries.
+
+
+## Spaguetti code and bad decissions about Translation and NotificationService
+
+Shared UI is not fully stateless anymore
+Translation is too app-specific / hard-coded
+App state/services/tools like translation should be consumed by app-owned components, not generic scaffold components
+
+target architecture:
+shared-domain
+  pure types, contracts, DTO-independent primitives
+
+shared-ui
+  stateless visual primitives and scaffold components
+  no translation store
+  no notification service
+  no app-specific labels
+  no business rules
+
+shared-features-translation
+  app-level/feature-level state and translation lookup
+  can be used by app components and feature containers
+Good, this confirms the diagnosis.
+
+
+## What is exactly going on?
+
+`shared-ui` imports the translation feature directly:
+
+```plain text
+libs/shared/ui/src/components/... 
+import { useTranslation } from '@monorepo/shared-features-translation';
+```
+So Nx sees:
+
+```plain text
+shared-ui --> shared-features-translation
+```
+
+Then something in the translation dependency path points back to `shared-ui`.
+
+Because translation depends on shared-domain, and shared-domain depends on shared-ui:
+
+```plain text
+shared-features-translation
+  --> shared-domain
+      --> shared-ui
+```
+So the full cycle is probably:
+
+```plain text
+shared-ui
+  --> shared-features-translation
+      --> shared-domain
+          --> shared-ui
+```
+
+
+```plain text
+libs/shared/shared-infrastructure/src/notifications/notificationService.ts
+import { toasterMessagesStyles } from '@monorepo/shared/ui';
+```
+
+
+That one may not be part of this exact cycle, but architecturally it is also inverted:
+
+```plain text
+shared-infrastructure --> shared-ui
+```
+
+
+Infrastructure should not depend on UI styling.
+
+The clean design is:
+
+```plain text
+apps/features call useTranslation()
+apps/features pass translated labels into shared-ui components
+shared-ui renders labels only
+```
+
+
+So `shared-ui` should receive strings via props, not call `useTranslation()` itself.
+
+Example:
+
+```typescript
+<EntityModal
+  closeLabel={commonLabels.btnClose}
+  // other props...
+/>
+```
+
+
+Instead of `EntityModal` importing `useTranslation()` internally.
+
+
+And because translation depends on domain:
+
+```plain text
+shared-features-translation --> shared-domain --> shared-ui
+```
+
+That is why the cycle survives the rollbacks.
+
+---
+
+# About `notificationService`
+
+This import is also bad:
+
+```typescript
+import { toasterMessagesStyles } from '@monorepo/shared/ui';
+```
+
+
+in:
+
+```plain text
+libs/shared/shared-infrastructure/src/notifications/notificationService.ts
+```
+
+
+A notification service should probably emit a notification with semantic data:
+
+```typescript
+type: 'success' | 'error' | 'warning'
+```
+
+
+Then the UI layer decides the styles.
+
+So yes, rolling it back is reasonable, but it is likely **not the main reason** for the reported cycle.
+
+Fix the direction of dependencies:
+
+```plain text
+domain -> no UI imports
+translation -> domain only
+ui -> domain allowed, but ideally no translation
+app/features -> translation + UI composition
+```

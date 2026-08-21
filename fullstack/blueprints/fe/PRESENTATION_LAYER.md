@@ -60,3 +60,13 @@ The "brains" behind the UI, bridging the Application layer with React components
 ---
 
 *This document serves as the implementation standard for all future feature modules.*
+
+
+A hook makes sense only when the logic depends on React lifecycle or React state, for example if it reads from context, subscribes to a store, or needs memoized reactive behavior tied to rendering. Your getSearchableColumn function is deterministic and side-effect free, so it belongs as a regular utility function.
+
+In your current setup, the cleaner split is:
+
+UI component like CompanyBrowserPanel handles rendering and user interaction
+Zustand store handles search state and pagination state
+crud-metadata-utils provides pure metadata helpers like searchable column extraction
+So the short answer is: keep it as a utility, not a hook.

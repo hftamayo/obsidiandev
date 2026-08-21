@@ -24,6 +24,11 @@ Lenguajes mejores pagados: Scala, Go, Kotlin y Rust
 
 Tipos de Tests: Unit, Integration, End to End, Performance
 
+## Proyectos 2026:
+
+- fintech
+- caja de herramientas para empresa mype
+
 ## Proyectos 2025
 
 ### Enero - junio
