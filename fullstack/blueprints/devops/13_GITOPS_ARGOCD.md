@@ -1,4 +1,28 @@
 
+## Comandos para eliminar instalaciones a medias de ArgoCD
+
+```
+export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+
+sudo /usr/local/bin/k3s kubectl delete namespace argocd --ignore-not-found
+sudo /usr/local/bin/k3s kubectl delete crd applications.argoproj.io appprojects.argoproj.io applicationsets.argoproj.io --ignore-not-found
+
+```
+
+### Goals
+
+- Terraform → AWS infra: Route53, ACM, LB, EC2, networking
+- Ansible → VM + k3s + cluster bootstrap tools, including ArgoCD installation
+- ArgoCD → application manifests, Helm apps, Services, Ingress, routing, config
+
+Your attention for ArgoCD should be on:
+- installing ArgoCD after k3s exists
+- moving app Helm deployment/config into ArgoCD:
+- Ansible should stop deploying the app directly later. It should only bootstrap:VM, k3s, kubectl/helm tools, ArgoCD
+- stopping direct app deployment from Ansible/CI once ArgoCD owns it
+
+- Git change → GitHub Actions validates → ArgoCD syncs from Git → Kubernetes updated
+
 
 Yes, brother — **this type of update is exactly the kind of change ArgoCD is good at managing**, but whether you should introduce it **right now** depends on how mature/stable you want this deployment flow to be.
 
